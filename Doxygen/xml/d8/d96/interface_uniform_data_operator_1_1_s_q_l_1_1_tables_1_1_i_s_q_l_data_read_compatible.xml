@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d8/d96/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_data_read_compatible" kind="interface" language="C#" prot="public">
+    <compoundname>UniformDataOperator::SQL::Tables::ISQLDataReadCompatible</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d96/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_data_read_compatible_1ae3ee33fbd62885e08138cc3d26215893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UniformDataOperator.SQL.Tables.ISQLDataReadCompatible.ReadSQLObject</definition>
+        <argsstring>(DbDataReader reader)</argsstring>
+        <name>ReadSQLObject</name>
+        <param>
+          <type>DbDataReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>Read data from data base data reader, and apply it to fields. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLDataReadCompatible.cs" line="29" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provide methods to allow applying data from DB data readers to this object that was implemented from that interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLDataReadCompatible.cs" line="24" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLDataReadCompatible.cs" bodystart="23" bodyend="30"/>
+    <listofallmembers>
+      <member refid="d8/d96/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_data_read_compatible_1ae3ee33fbd62885e08138cc3d26215893" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::Tables::ISQLDataReadCompatible</scope><name>ReadSQLObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

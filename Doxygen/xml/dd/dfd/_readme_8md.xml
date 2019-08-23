@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dd/dfd/_readme_8md" kind="file" language="Markdown">
+    <compoundname>Readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Uniform<sp/>Data<sp/>Operator</highlight></codeline>
+<codeline><highlight class="normal">It&apos;s<sp/>a<sp/>framwork<sp/>that<sp/>allow<sp/>to<sp/>flexible<sp/>bind<sp/>your<sp/>data<sp/>to<sp/>any<sp/>type<sp/>of<sp/>storages.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Included<sp/>operators:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>MySQLOperator<sp/>-<sp/>provide<sp/>uniform<sp/>way<sp/>to<sp/>manage<sp/>your<sp/>data<sp/>via<sp/>MySQL<sp/>database.</highlight></codeline>
+    </programlisting>
+    <location file="D:/Work/GitHub/uniform-data-operator/Readme.md"/>
+  </compounddef>
+</doxygen>

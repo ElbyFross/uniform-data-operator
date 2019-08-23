@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::SQL::MySQL::MySQLDataOperator</compoundname>
+    <basecompoundref refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator" prot="public" virt="non-virtual">UniformDataOperator.SQL.ISQLOperator</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1aa9f199b686be335bb2828893f7ad2a90" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator" kindref="compound">MySQLDataOperator</ref></type>
+        <definition>MySQLDataOperator UniformDataOperator.SQL.MySQL.MySQLDataOperator.Active</definition>
+        <argsstring></argsstring>
+        <name>Active</name>
+        <briefdescription>
+<para>Active single tone instance of <ref refid="db/d61/namespace_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l" kindref="compound">MySQL</ref> data provider. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="36" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="37" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="property" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a14653be731b7636d2c1dd7ed31daba48" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.SQL.MySQL.MySQLDataOperator.Server</definition>
+        <argsstring></argsstring>
+        <name>Server</name>
+        <briefdescription>
+<para>Server&apos;s ip. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="58" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="property" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a070214377e958a70594e877dba859449" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.SQL.MySQL.MySQLDataOperator.Database</definition>
+        <argsstring></argsstring>
+        <name>Database</name>
+        <briefdescription>
+<para>Database&apos;s name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="63" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="property" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1ace67458f32cee24fd48f0cc409f4b45a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.SQL.MySQL.MySQLDataOperator.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <briefdescription>
+<para>User for connection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="68" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="property" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a40b331c12f0b184e3bf771a73e4c2bfd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.SQL.MySQL.MySQLDataOperator.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <briefdescription>
+<para>User&apos;s password. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="73" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a006ae5b7a455a4409ab7e9551ad6d33c" prot="private" static="yes" mutable="no">
+        <type><ref refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator" kindref="compound">MySQLDataOperator</ref></type>
+        <definition>MySQLDataOperator UniformDataOperator.SQL.MySQL.MySQLDataOperator._Active</definition>
+        <argsstring></argsstring>
+        <name>_Active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="51" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1acdc80f644c1a4bc7d8cf71705d513aff" prot="private" static="no" mutable="no">
+        <type>MySqlConnection</type>
+        <definition>MySqlConnection UniformDataOperator.SQL.MySQL.MySQLDataOperator.connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+<para>Object that managing connection with DB. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="80" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a40f968c5e4fd76b611eba5f59faa16c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UniformDataOperator.SQL.MySQL.MySQLDataOperator.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1a653f3722befbd300e9ae8ae6f363790f">Initialize</reimplements>
+        <briefdescription>
+<para>Initialize MySqlConnection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="87" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1acb5a33a4c04bb78290d2ee44ba8479f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.SQL.MySQL.MySQLDataOperator.OpenConnection</definition>
+        <argsstring>()</argsstring>
+        <name>OpenConnection</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1aca1b52435a858e57db8d762026ceef2e">OpenConnection</reimplements>
+        <briefdescription>
+<para>Opening connection to <ref refid="d5/dd9/namespace_uniform_data_operator_1_1_s_q_l" kindref="compound">SQL</ref> server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Result of connection.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="101" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="101" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a91ede325ae734daa6a6fff90cab920bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.SQL.MySQL.MySQLDataOperator.CloseConnection</definition>
+        <argsstring>()</argsstring>
+        <name>CloseConnection</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1a4d13aeb36ebbe0f08eedf48777b048a3">CloseConnection</reimplements>
+        <briefdescription>
+<para>Closing connection to <ref refid="d5/dd9/namespace_uniform_data_operator_1_1_s_q_l" kindref="compound">SQL</ref> server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Result of connection closing.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="133" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="133" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a9e565918b8328323520c6e059d8e3d1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UniformDataOperator.SQL.MySQL.MySQLDataOperator.ExecuteNonQuery</definition>
+        <argsstring>(string query)</argsstring>
+        <name>ExecuteNonQuery</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1a15108adeb878698e82104e374ac37ef2">ExecuteNonQuery</reimplements>
+        <param>
+          <type>string</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>Sending <ref refid="d5/dd9/namespace_uniform_data_operator_1_1_s_q_l" kindref="compound">SQL</ref> query to server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="153" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="153" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a0dbc2a3ee5fb7768868138bbd2d9967e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object UniformDataOperator.SQL.MySQL.MySQLDataOperator.ExecuteScalar</definition>
+        <argsstring>(string query)</argsstring>
+        <name>ExecuteScalar</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1a8a39200efe4781edee40151982940f75">ExecuteScalar</reimplements>
+        <param>
+          <type>string</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>Serching for first entry suitable to query and return as result. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Recived data.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="182" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="182" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1aef1f1d171818fffe2f0c0642de27596d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DbDataReader</type>
+        <definition>DbDataReader UniformDataOperator.SQL.MySQL.MySQLDataOperator.ExecuteReader</definition>
+        <argsstring>(string query)</argsstring>
+        <name>ExecuteReader</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1a1f6dfa5dd14f7d52559b4e8f1ffda52e">ExecuteReader</reimplements>
+        <param>
+          <type>string</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>Execute complex data reader. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d5/dd9/namespace_uniform_data_operator_1_1_s_q_l" kindref="compound">SQL</ref> query that would be shared to server.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Data reader with recived data.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="211" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="211" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a05cba564076cc8506ab0272b29f96098" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int UniformDataOperator.SQL.MySQL.MySQLDataOperator.Count</definition>
+        <argsstring>(string query)</argsstring>
+        <name>Count</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1a92feb21e03810b152f16f06d02d2034a">Count</reimplements>
+        <param>
+          <type>string</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>Try to return count by query. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d5/dd9/namespace_uniform_data_operator_1_1_s_q_l" kindref="compound">SQL</ref> query that would send to server.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Count. -1 by default.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="240" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="240" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a3684b6d5abbcde94880ef433a8ffb28f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UniformDataOperator.SQL.MySQL.MySQLDataOperator.Backup</definition>
+        <argsstring>(string directory)</argsstring>
+        <name>Backup</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1acc29fb7a4b5c3d2dc91d5f9f32b91ca5">Backup</reimplements>
+        <param>
+          <type>string</type>
+          <declname>directory</declname>
+        </param>
+        <briefdescription>
+<para>Backuping data base to sql file in directory. Name would be generated by timestamp. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>directory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Directory that would store the backup file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="273" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="273" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a469885c20c44b1b83d7edc46cda6d539" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UniformDataOperator.SQL.MySQL.MySQLDataOperator.Restore</definition>
+        <argsstring>(string filePath)</argsstring>
+        <name>Restore</name>
+        <reimplements refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator_1ae55ed846c8954ddf7baa6d6dd2e8cb68">Restore</reimplements>
+        <param>
+          <type>string</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Restoring <ref refid="d5/dd9/namespace_uniform_data_operator_1_1_s_q_l" kindref="compound">SQL</ref> db from file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to file</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="324" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="324" bodyend="350"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Operator that provides possibility to operate data on <ref refid="db/d61/namespace_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l" kindref="compound">MySQL</ref> data base server. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>ISQLOperator</label>
+        <link refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator"/>
+      </node>
+      <node id="9">
+        <label>UniformDataOperator.SQL.MySQL.MySQLDataOperator</label>
+        <link refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>ISQLOperator</label>
+        <link refid="de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator"/>
+      </node>
+      <node id="11">
+        <label>UniformDataOperator.SQL.MySQL.MySQLDataOperator</label>
+        <link refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>_Active</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="31" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" bodystart="30" bodyend="352"/>
+    <listofallmembers>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a006ae5b7a455a4409ab7e9551ad6d33c" prot="private" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>_Active</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1aa9f199b686be335bb2828893f7ad2a90" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Active</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a3684b6d5abbcde94880ef433a8ffb28f" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Backup</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a91ede325ae734daa6a6fff90cab920bc" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>CloseConnection</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1acdc80f644c1a4bc7d8cf71705d513aff" prot="private" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>connection</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a05cba564076cc8506ab0272b29f96098" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Count</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a070214377e958a70594e877dba859449" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Database</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a9e565918b8328323520c6e059d8e3d1f" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>ExecuteNonQuery</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1aef1f1d171818fffe2f0c0642de27596d" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>ExecuteReader</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a0dbc2a3ee5fb7768868138bbd2d9967e" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>ExecuteScalar</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a40f968c5e4fd76b611eba5f59faa16c2" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Initialize</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1acb5a33a4c04bb78290d2ee44ba8479f7" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>OpenConnection</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a40b331c12f0b184e3bf771a73e4c2bfd" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Password</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a469885c20c44b1b83d7edc46cda6d539" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Restore</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1a14653be731b7636d2c1dd7ed31daba48" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>Server</name></member>
+      <member refid="d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator_1ace67458f32cee24fd48f0cc409f4b45a" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::MySQL::MySQLDataOperator</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

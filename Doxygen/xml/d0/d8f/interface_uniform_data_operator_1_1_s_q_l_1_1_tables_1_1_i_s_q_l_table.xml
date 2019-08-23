@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table" kind="interface" language="C#" prot="public">
+    <compoundname>UniformDataOperator::SQL::Tables::ISQLTable</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1afe5c80cd1f594bfdd6f0ba3d9ffaf674" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.SQL.Tables.ISQLTable.SchemaName</definition>
+        <argsstring></argsstring>
+        <name>SchemaName</name>
+        <briefdescription>
+<para>Name of the target schema. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1ae29ed8f9fa5796db79a6f30c2006d79a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.SQL.Tables.ISQLTable.TableName</definition>
+        <argsstring></argsstring>
+        <name>TableName</name>
+        <briefdescription>
+<para>Name of the table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1a13b1d02d264dc49bf8998a2c84e491d4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.SQL.Tables.ISQLTable.TableEngine</definition>
+        <argsstring></argsstring>
+        <name>TableEngine</name>
+        <briefdescription>
+<para>Engine of this table. InnoDB by default. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" line="36" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="property" id="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1a7cd3fd1a60284eb30b48fb7deabec462" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta" kindref="compound">TableColumnMeta</ref> []</type>
+        <definition>TableColumnMeta [] UniformDataOperator.SQL.Tables.ISQLTable.TableFields</definition>
+        <argsstring></argsstring>
+        <name>TableFields</name>
+        <briefdescription>
+<para>Array of table fields names. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" line="41" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface that allow to get description of target table required for object. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" line="21" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/ISQLTable.cs" bodystart="20" bodyend="42"/>
+    <listofallmembers>
+      <member refid="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1afe5c80cd1f594bfdd6f0ba3d9ffaf674" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::Tables::ISQLTable</scope><name>SchemaName</name></member>
+      <member refid="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1a13b1d02d264dc49bf8998a2c84e491d4" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::Tables::ISQLTable</scope><name>TableEngine</name></member>
+      <member refid="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1a7cd3fd1a60284eb30b48fb7deabec462" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::Tables::ISQLTable</scope><name>TableFields</name></member>
+      <member refid="d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table_1ae29ed8f9fa5796db79a6f30c2006d79a" prot="public" virt="non-virtual"><scope>UniformDataOperator::SQL::Tables::ISQLTable</scope><name>TableName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

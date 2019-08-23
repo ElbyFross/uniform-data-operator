@@ -1,0 +1,27 @@
+var struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta =
+[
+    [ "ColumnDeclarationCommand", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a787d487a7f78fa047adebb048756a3a5", null ],
+    [ "ConstrainDeclarationCommand", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a33a985719580b9ced15a87d93af7c4e3", null ],
+    [ "FKIndexDeclarationCommand", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#ace15a20fed1d2abba337afe1649025e9", null ],
+    [ "FKKeyName", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a05d36834e7f15a94c9f9a4bbdaeacfb5", null ],
+    [ "UniqueIndexDeclarationCommand", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#af0156c8b36f305d3715cd87d8b6c4d17", null ],
+    [ "comment", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a1423e182970cb18fdf08adadde6d6cd2", null ],
+    [ "defExp", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a426aeb143cf2aeba1cfb749f0de5630e", null ],
+    [ "isAutoIncrement", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a6ebe4a5185b6b4273f0b4cdf68161064", null ],
+    [ "isBinary", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#ad13d6009030869b890d76e20266f8e59", null ],
+    [ "isForeignKey", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a47d22c9a96853dd42e02fa938fa3589a", null ],
+    [ "isGenerated", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#af0bb00291b16439c43fdc8fd98bd14be", null ],
+    [ "isNotNull", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a248a0650ed2f1c11ebad71478e624131", null ],
+    [ "isPrimaryKey", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#af32b6ebc700969a0d2acb9d723f8ba46", null ],
+    [ "isStored", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#aa098249a3873650245e796c855dc3a78", null ],
+    [ "isUnique", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a661feecc5876fbabda334122fd9c940b", null ],
+    [ "isUnsigned", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a910f4023fa20c7f484150bd2a27d2488", null ],
+    [ "isZeroFill", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#ac44c4b5da6b44872bd069b4842fd6948", null ],
+    [ "name", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a45446064367c10698f81576012c5af56", null ],
+    [ "onDeleteCommand", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a746de96024d0d5e624e37f6efed1d247", null ],
+    [ "onUpdateCommand", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a83c28574d4442fb95228d9855743d046", null ],
+    [ "refColumn", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a316042a6e97b76c45ad6ddf36818452e", null ],
+    [ "refSchema", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a09e7b789ca6fc2622c123cc3fbb7f5e2", null ],
+    [ "refTable", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#ab0914573e6361d644aee3d39d9981b45", null ],
+    [ "type", "d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a28f7e1b419d55df48eb3627c37d69b07", null ]
+];

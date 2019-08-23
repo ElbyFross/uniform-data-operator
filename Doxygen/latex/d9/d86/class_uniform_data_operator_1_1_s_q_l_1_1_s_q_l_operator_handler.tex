@@ -1,0 +1,101 @@
+\hypertarget{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler}{}\section{Uniform\+Data\+Operator.\+S\+Q\+L.\+S\+Q\+L\+Operator\+Handler Class Reference}
+\label{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler}\index{Uniform\+Data\+Operator.\+S\+Q\+L.\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator.\+S\+Q\+L.\+S\+Q\+L\+Operator\+Handler}}
+
+
+Contains base catalog of uniform queries that strongly simplify managing of the data base.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a328f3133fc68bad4a27e0f91ab48a38f}{Activate\+Schema}} (string shema\+Name)
+\begin{DoxyCompactList}\small\item\em Trying to set schema to databases server in case if shema not exist. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a4cedfb2433ea241db4b2e858d16138ea}{Generate\+Create\+Table\+Command}} (\mbox{\hyperlink{interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table}{Tables.\+I\+S\+Q\+L\+Table}} table\+Descriptor)
+\begin{DoxyCompactList}\small\item\em Return command that would allow to create table by descriptor. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a71e288c8eb9549154c0026f9bc7e5e34}{Try\+Set\+Table}} (\mbox{\hyperlink{interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table}{Tables.\+I\+S\+Q\+L\+Table}} table\+Descriptor)
+\begin{DoxyCompactList}\small\item\em Trying to set table if required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator}{I\+S\+Q\+L\+Operator}} \mbox{\hyperlink{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a0352c7146abccf0b231bf8bd83cd40c0}{Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Contains las operator that asing itself to handler as active one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains base catalog of uniform queries that strongly simplify managing of the data base. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a328f3133fc68bad4a27e0f91ab48a38f}\label{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a328f3133fc68bad4a27e0f91ab48a38f}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}!Activate\+Schema@{Activate\+Schema}}
+\index{Activate\+Schema@{Activate\+Schema}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Activate\+Schema()}{ActivateSchema()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+S\+Q\+L.\+S\+Q\+L\+Operator\+Handler.\+Activate\+Schema (\begin{DoxyParamCaption}\item[{string}]{shema\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trying to set schema to databases server in case if shema not exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shema\+Name} & Name of the schema that would be used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a4cedfb2433ea241db4b2e858d16138ea}\label{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a4cedfb2433ea241db4b2e858d16138ea}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}!Generate\+Create\+Table\+Command@{Generate\+Create\+Table\+Command}}
+\index{Generate\+Create\+Table\+Command@{Generate\+Create\+Table\+Command}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Generate\+Create\+Table\+Command()}{GenerateCreateTableCommand()}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+S\+Q\+L.\+S\+Q\+L\+Operator\+Handler.\+Generate\+Create\+Table\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table}{Tables.\+I\+S\+Q\+L\+Table}}}]{table\+Descriptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return command that would allow to create table by descriptor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Descriptor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a71e288c8eb9549154c0026f9bc7e5e34}\label{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a71e288c8eb9549154c0026f9bc7e5e34}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}!Try\+Set\+Table@{Try\+Set\+Table}}
+\index{Try\+Set\+Table@{Try\+Set\+Table}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Try\+Set\+Table()}{TrySetTable()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+S\+Q\+L.\+S\+Q\+L\+Operator\+Handler.\+Try\+Set\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table}{Tables.\+I\+S\+Q\+L\+Table}}}]{table\+Descriptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trying to set table if required. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Descriptor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a0352c7146abccf0b231bf8bd83cd40c0}\label{class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler_a0352c7146abccf0b231bf8bd83cd40c0}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}!Active@{Active}}
+\index{Active@{Active}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+S\+Q\+L\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Active}{Active}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator}{I\+S\+Q\+L\+Operator}} Uniform\+Data\+Operator.\+S\+Q\+L.\+S\+Q\+L\+Operator\+Handler.\+Active\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Contains las operator that asing itself to handler as active one. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/S\+Q\+L\+Operator\+Handler.\+cs\end{DoxyCompactItemize}

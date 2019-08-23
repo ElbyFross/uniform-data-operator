@@ -1,0 +1,290 @@
+\hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta}{}\section{Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta Struct Reference}
+\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta}\index{Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta@{Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta}}
+
+
+Describe requirments to field in \mbox{\hyperlink{namespace_uniform_data_operator_1_1_s_q_l}{S\+QL}} table.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a787d487a7f78fa047adebb048756a3a5}{Column\+Declaration\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Return generated \mbox{\hyperlink{namespace_uniform_data_operator_1_1_s_q_l}{S\+QL}} command relative to init time. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ace15a20fed1d2abba337afe1649025e9}{F\+K\+Index\+Declaration\+Command}} (string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Return index init string suitable from forgeign key suitable for this column. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a05d36834e7f15a94c9f9a4bbdaeacfb5}{F\+K\+Key\+Name}} (string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Generate fk key name related to this column. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af0156c8b36f305d3715cd87d8b6c4d17}{Unique\+Index\+Declaration\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Return unique index init string. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a33a985719580b9ced15a87d93af7c4e3}{Constrain\+Declaration\+Command}} (string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Generate init string from contrains related to this column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a45446064367c10698f81576012c5af56}{name}}
+\begin{DoxyCompactList}\small\item\em Name of field. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a28f7e1b419d55df48eb3627c37d69b07}{type}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_uniform_data_operator_1_1_s_q_l}{S\+QL}} like type of the field. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a248a0650ed2f1c11ebad71478e624131}{is\+Not\+Null}}
+\begin{DoxyCompactList}\small\item\em Is value always not null. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a661feecc5876fbabda334122fd9c940b}{is\+Unique}}
+\begin{DoxyCompactList}\small\item\em Is this value must be unique by this column. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ad13d6009030869b890d76e20266f8e59}{is\+Binary}}
+\begin{DoxyCompactList}\small\item\em Is data would stored in binary format. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a910f4023fa20c7f484150bd2a27d2488}{is\+Unsigned}}
+\begin{DoxyCompactList}\small\item\em Is not have signs after dot. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ac44c4b5da6b44872bd069b4842fd6948}{is\+Zero\+Fill}}
+\begin{DoxyCompactList}\small\item\em Is value wold be willed by zero by default. Only for numerical columns. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a6ebe4a5185b6b4273f0b4cdf68161064}{is\+Auto\+Increment}}
+\begin{DoxyCompactList}\small\item\em Is value of this column would incremented relative to previous one during init. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af0bb00291b16439c43fdc8fd98bd14be}{is\+Generated}}
+\begin{DoxyCompactList}\small\item\em Is this colum is generated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_aa098249a3873650245e796c855dc3a78}{is\+Stored}}
+\begin{DoxyCompactList}\small\item\em Stored or Virtual. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a426aeb143cf2aeba1cfb749f0de5630e}{def\+Exp}}
+\begin{DoxyCompactList}\small\item\em Default or Expression value. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a1423e182970cb18fdf08adadde6d6cd2}{comment}}
+\begin{DoxyCompactList}\small\item\em Commentary that would added to column. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af32b6ebc700969a0d2acb9d723f8ba46}{is\+Primary\+Key}}
+\begin{DoxyCompactList}\small\item\em Is it\textquotesingle{}s primary key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a47d22c9a96853dd42e02fa938fa3589a}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a47d22c9a96853dd42e02fa938fa3589a}} 
+bool {\bfseries is\+Foreign\+Key}
+\item 
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a09e7b789ca6fc2622c123cc3fbb7f5e2}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a09e7b789ca6fc2622c123cc3fbb7f5e2}} 
+string {\bfseries ref\+Schema}
+\item 
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ab0914573e6361d644aee3d39d9981b45}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ab0914573e6361d644aee3d39d9981b45}} 
+string {\bfseries ref\+Table}
+\item 
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a316042a6e97b76c45ad6ddf36818452e}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a316042a6e97b76c45ad6ddf36818452e}} 
+string {\bfseries ref\+Column}
+\item 
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a746de96024d0d5e624e37f6efed1d247}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a746de96024d0d5e624e37f6efed1d247}} 
+string {\bfseries on\+Delete\+Command}
+\item 
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a83c28574d4442fb95228d9855743d046}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a83c28574d4442fb95228d9855743d046}} 
+string {\bfseries on\+Update\+Command}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describe requirments to field in \mbox{\hyperlink{namespace_uniform_data_operator_1_1_s_q_l}{S\+QL}} table. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a787d487a7f78fa047adebb048756a3a5}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a787d487a7f78fa047adebb048756a3a5}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!Column\+Declaration\+Command@{Column\+Declaration\+Command}}
+\index{Column\+Declaration\+Command@{Column\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{Column\+Declaration\+Command()}{ColumnDeclarationCommand()}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+Column\+Declaration\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return generated \mbox{\hyperlink{namespace_uniform_data_operator_1_1_s_q_l}{S\+QL}} command relative to init time. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a33a985719580b9ced15a87d93af7c4e3}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a33a985719580b9ced15a87d93af7c4e3}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!Constrain\+Declaration\+Command@{Constrain\+Declaration\+Command}}
+\index{Constrain\+Declaration\+Command@{Constrain\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{Constrain\+Declaration\+Command()}{ConstrainDeclarationCommand()}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+Constrain\+Declaration\+Command (\begin{DoxyParamCaption}\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})}
+
+
+
+Generate init string from contrains related to this column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\+Table\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ace15a20fed1d2abba337afe1649025e9}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ace15a20fed1d2abba337afe1649025e9}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}}
+\index{F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{F\+K\+Index\+Declaration\+Command()}{FKIndexDeclarationCommand()}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+F\+K\+Index\+Declaration\+Command (\begin{DoxyParamCaption}\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})}
+
+
+
+Return index init string suitable from forgeign key suitable for this column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\+Table\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a05d36834e7f15a94c9f9a4bbdaeacfb5}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a05d36834e7f15a94c9f9a4bbdaeacfb5}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!F\+K\+Key\+Name@{F\+K\+Key\+Name}}
+\index{F\+K\+Key\+Name@{F\+K\+Key\+Name}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{F\+K\+Key\+Name()}{FKKeyName()}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+F\+K\+Key\+Name (\begin{DoxyParamCaption}\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})}
+
+
+
+Generate fk key name related to this column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\+Table\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af0156c8b36f305d3715cd87d8b6c4d17}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af0156c8b36f305d3715cd87d8b6c4d17}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!Unique\+Index\+Declaration\+Command@{Unique\+Index\+Declaration\+Command}}
+\index{Unique\+Index\+Declaration\+Command@{Unique\+Index\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{Unique\+Index\+Declaration\+Command()}{UniqueIndexDeclarationCommand()}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+Unique\+Index\+Declaration\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return unique index init string. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a1423e182970cb18fdf08adadde6d6cd2}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a1423e182970cb18fdf08adadde6d6cd2}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!comment@{comment}}
+\index{comment@{comment}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+comment}
+
+
+
+Commentary that would added to column. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a426aeb143cf2aeba1cfb749f0de5630e}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a426aeb143cf2aeba1cfb749f0de5630e}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!def\+Exp@{def\+Exp}}
+\index{def\+Exp@{def\+Exp}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{def\+Exp}{defExp}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+def\+Exp}
+
+
+
+Default or Expression value. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a6ebe4a5185b6b4273f0b4cdf68161064}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a6ebe4a5185b6b4273f0b4cdf68161064}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Auto\+Increment@{is\+Auto\+Increment}}
+\index{is\+Auto\+Increment@{is\+Auto\+Increment}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Auto\+Increment}{isAutoIncrement}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Auto\+Increment}
+
+
+
+Is value of this column would incremented relative to previous one during init. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ad13d6009030869b890d76e20266f8e59}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ad13d6009030869b890d76e20266f8e59}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Binary@{is\+Binary}}
+\index{is\+Binary@{is\+Binary}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Binary}{isBinary}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Binary}
+
+
+
+Is data would stored in binary format. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af0bb00291b16439c43fdc8fd98bd14be}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af0bb00291b16439c43fdc8fd98bd14be}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Generated@{is\+Generated}}
+\index{is\+Generated@{is\+Generated}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Generated}{isGenerated}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Generated}
+
+
+
+Is this colum is generated. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a248a0650ed2f1c11ebad71478e624131}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a248a0650ed2f1c11ebad71478e624131}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Not\+Null@{is\+Not\+Null}}
+\index{is\+Not\+Null@{is\+Not\+Null}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Not\+Null}{isNotNull}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Not\+Null}
+
+
+
+Is value always not null. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af32b6ebc700969a0d2acb9d723f8ba46}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_af32b6ebc700969a0d2acb9d723f8ba46}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Primary\+Key@{is\+Primary\+Key}}
+\index{is\+Primary\+Key@{is\+Primary\+Key}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Primary\+Key}{isPrimaryKey}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Primary\+Key}
+
+
+
+Is it\textquotesingle{}s primary key. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_aa098249a3873650245e796c855dc3a78}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_aa098249a3873650245e796c855dc3a78}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Stored@{is\+Stored}}
+\index{is\+Stored@{is\+Stored}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Stored}{isStored}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Stored}
+
+
+
+Stored or Virtual. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a661feecc5876fbabda334122fd9c940b}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a661feecc5876fbabda334122fd9c940b}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Unique@{is\+Unique}}
+\index{is\+Unique@{is\+Unique}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Unique}{isUnique}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Unique}
+
+
+
+Is this value must be unique by this column. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a910f4023fa20c7f484150bd2a27d2488}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a910f4023fa20c7f484150bd2a27d2488}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Unsigned@{is\+Unsigned}}
+\index{is\+Unsigned@{is\+Unsigned}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Unsigned}{isUnsigned}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Unsigned}
+
+
+
+Is not have signs after dot. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ac44c4b5da6b44872bd069b4842fd6948}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_ac44c4b5da6b44872bd069b4842fd6948}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!is\+Zero\+Fill@{is\+Zero\+Fill}}
+\index{is\+Zero\+Fill@{is\+Zero\+Fill}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{is\+Zero\+Fill}{isZeroFill}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+is\+Zero\+Fill}
+
+
+
+Is value wold be willed by zero by default. Only for numerical columns. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a45446064367c10698f81576012c5af56}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a45446064367c10698f81576012c5af56}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!name@{name}}
+\index{name@{name}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+name}
+
+
+
+Name of field. 
+
+\mbox{\Hypertarget{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a28f7e1b419d55df48eb3627c37d69b07}\label{struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta_a28f7e1b419d55df48eb3627c37d69b07}} 
+\index{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}!type@{type}}
+\index{type@{type}!Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta@{Uniform\+Data\+Operator\+::\+S\+Q\+L\+::\+Tables\+::\+Table\+Column\+Meta}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+S\+Q\+L.\+Tables.\+Table\+Column\+Meta.\+type}
+
+
+
+\mbox{\hyperlink{namespace_uniform_data_operator_1_1_s_q_l}{S\+QL}} like type of the field. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+Tables/Table\+Column\+Meta.\+cs\end{DoxyCompactItemize}
