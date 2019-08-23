@@ -1,8 +1,12 @@
 ﻿## Uniform Data Operator
-It's a framwork that allow to flexible bind your data to any type of storages. 
+It's a framework that allow to oparate and manage yours data by unified way, not depending from your data base or prefered format.
+Standartize your data sturctures and avoid tuning of your product only for one storage that can't be not suitable for you in future.
+
+### Binnary Handler
+Provides base API for binary serizliation process.
+
+### SQLOperatorHandler
+Provides base API for creating and managing of Transact Sql queries.
 
 ### Included operators:
-- XMLOparator - provide uniform way to serialize your objects using XML. 
-Provide simple way to store result in local file system.
-
-- MySQLOperator - provide uniform way to manage your data via MySQL database.
+- MySQLDataOperator - provides uniform way to manage your data via MySQL database.
