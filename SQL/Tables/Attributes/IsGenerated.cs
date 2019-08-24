@@ -12,32 +12,35 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 
-namespace UniformDataOperator.SQL.Tables
+using System;
+
+namespace UniformDataOperator.SQL.Tables.Attributes
 {
     /// <summary>
-    /// Interface that allow to get description of target table required for object.
+    /// Mark field as generated.
     /// </summary>
-    public interface ISQLTable
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    public class IsGenerated : Default
     {
-        /// <summary>
-        /// Name of the target schema.
-        /// </summary>
-        string SchemaName { get; }
+        public enum Mode
+        {
+            Stored,
+            Virual
+        }
 
         /// <summary>
-        /// Name of the table.
+        /// How to operate with value.
         /// </summary>
-        string TableName { get; }
-
+        public Mode mode = Mode.Virual;
+        
         /// <summary>
-        /// Engine of this table.
-        /// InnoDB by default.
+        /// Init generated expression.
         /// </summary>
-        string TableEngine { get; }
-
-        /// <summary>
-        /// Array of table fields names.
-        /// </summary>
-        TableColumnMeta[] TableFields { get; }
+        /// <param name="mode">How to operate with value.</param>
+        /// <param name="defExp">Default or Expression value.</param>
+        public IsGenerated(Mode mode, string defExp) : base(defExp)
+        {
+            this.mode = mode;
+        }
     }
 }
