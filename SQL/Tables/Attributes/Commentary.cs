@@ -14,18 +14,18 @@
 
 using System;
 
-namespace UniformDataOperator.SQL.Tables.Attributes
+namespace UniformDataOperator.Sql.Tables.Attributes
 {
     /// <summary>
     /// Add commentary to SQL table.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct)]
     public class Commentary : Attribute
     {
         /// <summary>
         /// Commentary to the column.
         /// </summary>
-        public string commentary;
+        protected string commentary;
 
         /// <summary>
         /// Init commentary for column in table.
@@ -34,6 +34,16 @@ namespace UniformDataOperator.SQL.Tables.Attributes
         public Commentary(string commentary)
         {
             this.commentary = commentary;
+        }
+
+        public override string ToString()
+        {
+            return commentary;
+        }
+
+        public static implicit operator string(Commentary commentary)
+        {
+            return commentary.commentary;
         }
     }
 }

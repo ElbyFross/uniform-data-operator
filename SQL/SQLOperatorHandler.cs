@@ -13,201 +13,85 @@
 //limitations under the License.
 
 using System;
+using System.Data.Common;
+using System.Data.SqlClient;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TA = UniformDataOperator.SQL.Tables.Attributes;
 
-namespace UniformDataOperator.SQL
+namespace UniformDataOperator.Sql
 {
     /// <summary>
     /// Contains base catalog of uniform queries that strongly simplify managing of the data base.
     /// </summary>
-    public static class SQLOperatorHandler
+    public static class SqlOperatorHandler
     {
         /// <summary>
         /// Contains las operator that asing itself to handler as active one.
         /// </summary>
-        public static ISQLOperator Active { get; set; }
+        public static ISqlOperator Active { get; set; }
 
         /// <summary>
-        /// Trying to set schema to databases server in case if shema not exist.
+        /// Conver collection view to string order.
+        /// 
+        /// Elemets of collection must has overrided ToString() methods.
         /// </summary>
-        /// <param name="shemaName">Name of the schema that would be used\created.</param>
-        /// <returns></returns>
-        public static bool ActivateSchema(string shemaName)
+        /// <param name="collection">Collection with strings,</param>
+        /// <returns>String in format: "i0, i1, ..., in"</returns>
+        public static string CollectionToString(IEnumerable<object> collection)
         {
-            // Check is SQL operator exist.
-            if (Active == null)
+            string result = "";
+            foreach (object obj in collection)
             {
-                throw new NullReferenceException("Active 'ISQLOperator' not exist. Select it before managing of database.");
+                // Skip invalid.
+                if (string.IsNullOrEmpty(obj.ToString()))
+                {
+                    continue;
+                }
+
+                result += obj + ", ";
             }
 
-            // Variable that would contain SQL comand.
-            string command = "";
-
-            // Creating shema if not exist.
-            command += "CREATE SCHEMA IF NOT EXISTS `" + shemaName + "` DEFAULT CHARACTER SET utf8 ;\n";
-
-            // Setting schema as target.
-            command += "USE `datum-point` ;";
-
-            // Tring to open connection to the server.
-            if (!Active.OpenConnection())
-            {
-                // Inform about fail.
-                return false;
-            }
-
-            // Execute command
-            Active.ExecuteNonQuery(command);
-            
-            // Close connection after finish.
-            Active.CloseConnection();
-         
-            // Confirm success.
-            return true;
+            return result.Length > 2 ? result.Remove(result.Length - 2) : "";
         }
 
         /// <summary>
-        /// Return command that would allow to create table by descriptor.
+        /// Concat to collections in format:
+        /// headers0 = [braket]values0[braket], ..., headersN = [braket]valuesN[braket]
+        /// 
+        /// Elemets of collections must has overrided ToString() methods.
         /// </summary>
-        /// <param name="tableDescriptor"></param>
-        /// <returns></returns>
-        public static string GenerateCreateTableCommand(Type sourceType)
+        /// <param name="headers">Header of the value.</param>
+        /// <param name="values">Value acording to header.</param>
+        /// <param name="bracketsSymbol">Symbol that will has been using to clamp value.</param>
+        /// <returns>String that contain collection suitable for SQL commands.</returns>
+        public static string ConcatFormatedCollections(
+            IEnumerable<object> headers,
+            IEnumerable<object> values,
+            char bracketsSymbol)
         {
-            if(!AttributesHandler.TryToGetAttribute<TA.Table>(sourceType, out TA.Table table))
+            // Validate.
+            if (headers.Count() != values.Count())
             {
-                // Drop cause not a table descriptor.
-                return "";
+                throw new InvalidOperationException("Headers and Values collection must contains the same count of elements.");
             }
-            
-            // Variable that would contain SQL comand.
-            string command = "";
-            command += "CREATE TABLE IF NOT EXISTS `" + table.shema + "`.`" + table.table + "` (\n";
 
-            IEnumerable<MemberInfo> columns = AttributesHandler.FindMembersWithAttribute<TA.Column>(sourceType);
-
-            #region Declere columns
-            string colCommand = "";
-            foreach (MemberInfo member in columns)
+            string result = "";
+            for (int i = 0; i < headers.Count(); i++)
             {
-                AttributesHandler.TryToGetAttribute<TA.Column>(member, out TA.Column column);
-                if (!string.IsNullOrEmpty(colCommand))
+                if (bracketsSymbol != '\0')
                 {
-                    colCommand += ",\n";
+                    result += headers.ElementAt(i).ToString() + " = " + bracketsSymbol + values.ElementAt(i).ToString() + bracketsSymbol + ", ";
                 }
-                colCommand += column.ColumnDeclarationCommand(member);
-            }
-            command += colCommand;
-            #endregion
-
-            #region Primary keys
-            // Build PKs substring string.
-            string subPkCommand = "";
-            foreach (MemberInfo cMeta in columns)
-            {
-                if (AttributesHandler.TryToGetAttribute<TA.IsPrimaryKey>(cMeta, out TA.IsPrimaryKey isPrimaryKey))
+                else
                 {
-                    if (!string.IsNullOrEmpty(subPkCommand))
-                    {
-                        command += ", ";
-                    }
-
-                    AttributesHandler.TryToGetAttribute<TA.Column>(cMeta, out TA.Column column);
-                    subPkCommand += "`" + column.title + "`";
+                    result += headers.ElementAt(i).ToString() + " = " + values.ElementAt(i).ToString() + ", ";
                 }
             }
 
-            // Add to command command if pks exist.
-            command += subPkCommand.Length > 0 ? ",\nPRIMARY KEY(" + subPkCommand + ")" : "";
-            #endregion
-
-            #region Unique indexes
-            foreach (MemberInfo cMeta in columns)
-            {
-                if (AttributesHandler.TryToGetAttribute<TA.IsUnique>(cMeta, out TA.IsUnique isUnique))
-                {
-                    command += ",\n";
-                    command += isUnique.UniqueIndexDeclarationCommand(cMeta);
-                }
-            }
-            #endregion
-
-            #region FK indexes
-            foreach (MemberInfo cMeta in columns)
-            {
-                if (AttributesHandler.TryToGetAttribute<TA.IsForeignKey>(cMeta, out TA.IsForeignKey isForeignKey))
-                {
-                    command += ",\n";
-
-                    AttributesHandler.TryToGetAttribute<TA.Column>(cMeta, out TA.Column column);
-                    command += TA.IsForeignKey.FKIndexDeclarationCommand(column, isForeignKey, table.table);
-                }
-            }
-            #endregion
-
-            #region Constraints
-            foreach (MemberInfo cMeta in columns)
-            {
-                if (AttributesHandler.TryToGetAttribute<TA.IsForeignKey>(cMeta, out TA.IsForeignKey isForeignKey))
-                {
-                    command += ",\n";
-
-                    AttributesHandler.TryToGetAttribute<TA.Column>(cMeta, out TA.Column column);
-                    command += TA.IsForeignKey.ConstrainDeclarationCommand(column, isForeignKey, table.table);
-                }
-            }
-            #endregion
-
-            command += ")\n";
-            command += "ENGINE = " + (string.IsNullOrEmpty(table.engine) ? "InnoDB" : table.engine) + ";";
-
-            return command;
-        }
-
-        /// <summary>
-        /// Trying to set table if required.
-        /// </summary>
-        /// <param name="tableDescriptor">Type that would be trying to recreate on your SQL server. 
-        /// Must has defined UniformDataOperator.SQL.Tables.Attributes.Table attribute.</param>
-        /// <returns>Success of operation.</returns>
-        public static bool TrySetTable(Type tableDescriptor)
-        {
-            // Check is SQL operator exist.
-            if (Active == null)
-            {
-                throw new NullReferenceException("Active 'ISQLOperator' not exist. Select it before managing of database.");
-            }
-
-            // Drop if not table descriptor.
-            if(!AttributesHandler.HasAttribute<TA.Table>(tableDescriptor))
-            {
-                return false;
-            }
-
-            // Get command.
-            string command = GenerateCreateTableCommand(tableDescriptor);
-
-            #region Execute command
-            // Tring to open connection to the server.
-            if (!Active.OpenConnection())
-            {
-                // Inform about fail.
-                return false;
-            }
-
-            // Execute command
-            Active.ExecuteNonQuery(command);
-
-            // Close connection after finish.
-            Active.CloseConnection();
-
-            // Confirm success.
-            return true;
-            #endregion
+            return result.Length > 2 ? result.Remove(result.Length - 2) : "";
         }
     }
 }

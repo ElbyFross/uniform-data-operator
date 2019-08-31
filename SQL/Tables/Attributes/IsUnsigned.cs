@@ -14,7 +14,7 @@
 
 using System;
 
-namespace UniformDataOperator.SQL.Tables.Attributes
+namespace UniformDataOperator.Sql.Tables.Attributes
 {
     /// <summary>
     /// Is not have signs after dot.

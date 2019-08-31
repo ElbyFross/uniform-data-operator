@@ -14,7 +14,7 @@
 
 using System;
 
-namespace UniformDataOperator.SQL.Tables.Attributes
+namespace UniformDataOperator.Sql.Tables.Attributes
 {
     /// <summary>
     /// Is value of this column would incremented relative to previous one during init.

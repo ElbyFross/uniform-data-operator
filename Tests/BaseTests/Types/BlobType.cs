@@ -12,18 +12,21 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 
-using System.Data.Common;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace UniformDataOperator.SQL.Tables
+namespace BaseTests.Types
 {
-    /// <summary>
-    /// Provide unified way to coonect object storing to SQLDataHadler.
-    /// </summary>
-    public interface ISQLDataWriteCompatible
+    [System.Serializable]
+    public class BlobType
     {
-        /// <summary>
-        /// Return SQL query that would used to store data in database.
-        /// </summary>
-        string ObjectToSqlQuery { get; }
+        public string s = "Test";
+
+        public int i = -2;
+
+        public uint ui = 4;
     }
 }

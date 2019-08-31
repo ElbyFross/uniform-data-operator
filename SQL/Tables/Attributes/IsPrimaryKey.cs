@@ -14,7 +14,7 @@
 
 using System;
 
-namespace UniformDataOperator.SQL.Tables.Attributes
+namespace UniformDataOperator.Sql.Tables.Attributes
 {
     /// <summary>
     /// Is it's primary key.

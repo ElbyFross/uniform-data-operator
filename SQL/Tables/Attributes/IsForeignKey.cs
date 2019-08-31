@@ -15,7 +15,7 @@
 using System;
 using System.Reflection;
 
-namespace UniformDataOperator.SQL.Tables.Attributes
+namespace UniformDataOperator.Sql.Tables.Attributes
 {
     /// <summary>
     /// Mark fireld as foreign key to other column.

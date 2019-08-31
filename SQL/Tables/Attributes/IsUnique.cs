@@ -15,7 +15,7 @@
 using System;
 using System.Reflection;
 
-namespace UniformDataOperator.SQL.Tables.Attributes
+namespace UniformDataOperator.Sql.Tables.Attributes
 {
     /// <summary>
     /// Is this value must be unique by this column. 

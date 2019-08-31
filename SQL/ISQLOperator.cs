@@ -12,23 +12,37 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 
+using System;
+using System.Data;
 using System.Data.Common;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
+using UniformDataOperator.Sql.Tables.Attributes;
 
-namespace UniformDataOperator.SQL
+namespace UniformDataOperator.Sql
 {
     /// <summary>
     /// Implement that interface to provide possiblity to controll your data base by using SQL queries.
     /// </summary>
-    public interface ISQLOperator
+    public interface ISqlOperator
     {
+        /// <summary>
+        /// Return new clear command suitable for current DB.
+        /// </summary>
+        DbCommand NewCommand { get; }
+
         /// <summary>
         /// Server's ip.
         /// </summary>
         string Server { get; set; }
+
+        /// <summary>
+        /// Port for server access.
+        /// </summary>
+        int Port { get; set; }
 
         /// <summary>
         /// Database's name.
@@ -46,6 +60,11 @@ namespace UniformDataOperator.SQL
         string Password { get; set; }
 
         /// <summary>
+        /// Connection to DB.
+        /// </summary>
+        DbConnection Connection { get; }
+
+        /// <summary>
         /// Initialize operator.
         /// </summary>
         void Initialize();
@@ -53,8 +72,9 @@ namespace UniformDataOperator.SQL
         /// <summary>
         /// Opening connection to SQL server.
         /// </summary>
+        /// <param name="error">Faced error. Null if passed success.</param>
         /// <returns>Result of connection.</returns>
-        bool OpenConnection();
+        bool OpenConnection(out string error);
 
         /// <summary>
         /// Closing connection to SQL server.
@@ -101,5 +121,68 @@ namespace UniformDataOperator.SQL
         /// </summary>
         /// <param name="filePath">Full path to file</param>
         void Restore(string filePath);
+
+        /// <summary>
+        /// Convert value of member to data base parameter that can be used in command.
+        /// </summary>
+        /// <param name="data">Value of the object that would applied to parameter.</param>
+        /// <param name="column">Column attribute relative to member of data.</param>
+        /// <returns>Parameter that could by used in commands to data base.</returns>
+        DbParameter MemberToParameter(object data, Tables.Attributes.Column column);
+
+        /// <summary>
+        /// Add code that disabling SQL checks during executing command.
+        /// </summary>
+        /// <param name="command">Target command that would be modified during operation.</param>
+        /// <returns>Modified comand.</returns>
+        DbCommand DisableSqlChecks(DbCommand command);
+
+        /// <summary>
+        /// Add code that disabling SQL checks during executing command.
+        /// </summary>
+        /// <param name="command">Target command that would be modified during operation.</param>
+        /// <returns>Modified comand.</returns>
+        string DisableSqlChecks(string command);
+
+        /// <summary>
+        /// Trying to set schema to databases server in case if shema not exist.
+        /// </summary>
+        /// <param name="schemaName">Name of the schema that would be used\created.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns></returns>
+        bool ActivateSchema(string schemaName, out string error);
+
+        /// <summary>
+        /// Validate data base table column acording to member attributes.
+        /// </summary>
+        /// <param name="tableDescriptor">Table meta data.</param>
+        /// <param name="columnMember">Member with defined Column attribute that would be comared with </param>
+        /// <returns>Result of validation.</returns>
+        bool ValidateTableMember(Table tableDescriptor, MemberInfo columnMember);
+
+        /// <summary>
+        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. Would be used as table descriptor during queri building.</typeparam>
+        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// Affected only fields and properties with defined Column attribute.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns>Result of operation.</returns>
+        bool SetToTable<T>(object data, out string error);
+
+        /// <summary>
+        /// Trying to convert DBType to specified type in string format that suitable to this database.
+        /// </summary>
+        /// <param name="type">Common DBType.</param>
+        /// <returns>Type suitable for SQL command relative to this type of data base. 
+        /// InvalidCastException in case if converting not possible.</returns>
+        string DbTypeToString(DbType type);
+
+        /// <summary>
+        /// Return generated SQL command relative to init time.
+        /// </summary>
+        /// <param name="member">Member that contains defined attributes that describes column definition.</param>
+        /// <returns>SQL command relative to target server.</returns>
+        string ColumnDeclarationCommand(MemberInfo member);
     }
 }

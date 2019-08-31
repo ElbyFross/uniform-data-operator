@@ -30,7 +30,7 @@ namespace UniformDataOperator
         /// Looking for fields with defined target attribute.
         /// </summary>
         /// <typeparam name="T">Attribute's type.</typeparam>
-        /// <param name="source">Type the fould by used as source of fields.</param>
+        /// <param name="source">Type the would by used as source of fields.</param>
         /// <returns>Collection of found attributes.</returns>
         public static IEnumerable<FieldInfo> FindFieldsWithAttribute<T>(Type source) where T : Attribute
         {
@@ -41,7 +41,7 @@ namespace UniformDataOperator
         /// Looking for fields an properties members with defined target attribute.
         /// </summary>
         /// <typeparam name="T">Attribute's type.</typeparam>
-        /// <param name="source">Type the fould by used as source of fields.</param>
+        /// <param name="source">Type the would by used as source of fields.</param>
         /// <returns>Collection of found attributes.</returns>
         public static IEnumerable<MemberInfo> FindMembersWithAttribute<T>(Type source) where T : Attribute
         {
@@ -56,11 +56,22 @@ namespace UniformDataOperator
         /// Looking for members with defined target attribute.
         /// </summary>
         /// <typeparam name="T">Attribute's type.</typeparam>
-        /// <param name="source">Type the fould by used as source of fields.</param>
+        /// <param name="source">Type the would by used as source of fields.</param>
         /// <returns>Collection of found attributes.</returns>
         public static IEnumerable<MemberInfo> FindMembersWithAttribute<T>(IEnumerable<MemberInfo> source) where T : Attribute
         {
             return source.Where(f => Attribute.IsDefined(f, typeof(T)));
+        }
+
+        /// <summary>
+        /// Looking for members without defined target attribute.
+        /// </summary>
+        /// <typeparam name="T">Attribute's type.</typeparam>
+        /// <param name="source">Type the would by used as source of fields.</param>
+        /// <returns>Collection of found attributes.</returns>
+        public static IEnumerable<MemberInfo> FindMembersWithoutAttribute<T>(IEnumerable<MemberInfo> source) where T : Attribute
+        {
+            return source.Where(f => !Attribute.IsDefined(f, typeof(T)));
         }
 
         /// <summary>
@@ -98,11 +109,54 @@ namespace UniformDataOperator
         /// Looking for properties with defined target attribute.
         /// </summary>
         /// <typeparam name="T">Attribute's type.</typeparam>
-        /// <param name="source">Type the fould by used as source of fields.</param>
+        /// <param name="source">Type the would by used as source of fields.</param>
         /// <returns>Collection of found attributes.</returns>
         public static IEnumerable<PropertyInfo> FindPropertiesWithAttribute<T>(Type source) where T : Attribute
         {
             return source.GetProperties().Where(f => Attribute.IsDefined(f, typeof(T)));
+        }
+
+        /// <summary>
+        /// Return value of member.
+        /// </summary>
+        /// <param name="holder">Object that contain member info.</param>
+        /// <param name="member">Target memeber's info.</param>
+        /// <returns>Value of member.</returns>
+        public static object GetValue(object holder, MemberInfo member)
+        {
+            if (member is PropertyInfo pi)
+            {
+                return pi.GetValue(holder);
+            }
+
+            if (member is FieldInfo fi)
+            {
+                return fi.GetValue(holder);
+            }
+
+            throw new InvalidCastException("Member must be PropertyInfo or FieldInfo");
+        }
+
+        /// <summary>
+        /// Setting value to member on specific object.
+        /// </summary>
+        /// <param name="holder">Object that contain member info.</param>
+        /// <param name="member">Target memeber's info.</param>
+        /// <param name="data">Data that would be setted up to member.</param>
+        /// <returns></returns>
+        public static void SetValue(object holder, MemberInfo member, object data)
+        {
+            if (member is PropertyInfo pi)
+            {
+                pi.SetValue(holder, data);
+            }
+
+            if (member is FieldInfo fi)
+            {
+                fi.SetValue(holder, data);
+            }
+
+            throw new InvalidCastException("Member must be PropertyInfo or FieldInfo");
         }
     }
 }

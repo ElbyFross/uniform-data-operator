@@ -12,20 +12,15 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 
-using System.Data.Common;
+using System;
 
-namespace UniformDataOperator.SQL.Tables
+namespace UniformDataOperator.Sql.Tables.Attributes.Modifiers
 {
     /// <summary>
-    /// Provide methods  to allow applying data from DB data readers
-    /// to this object that was implemented from that interface.
+    /// Can be defined to ignore of writing this value during set-like queries to server.
     /// </summary>
-    public interface ISQLDataReadCompatible
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    public class SetQueryIgnore : Attribute
     {
-        /// <summary>
-        /// Read data from data base data reader, and apply it to fields.
-        /// </summary>
-        /// <param name="reader"></param>
-        void ReadSQLObject(DbDataReader reader);
     }
 }

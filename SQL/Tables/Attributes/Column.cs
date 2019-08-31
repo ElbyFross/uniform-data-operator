@@ -14,8 +14,9 @@
 
 using System;
 using System.Reflection;
+using System.Data;
 
-namespace UniformDataOperator.SQL.Tables.Attributes
+namespace UniformDataOperator.Sql.Tables.Attributes
 {
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
     public class Column : Attribute
@@ -28,82 +29,22 @@ namespace UniformDataOperator.SQL.Tables.Attributes
         /// <summary>
         /// Type of column in table.
         /// </summary>
-        public string type;
+        public DbType type;
 
         /// <summary>
         /// Init column.
         /// </summary>
         /// <param name="title">Title of column in table.</param>
         /// <param name="type">Type of column in table.</param>
-        public Column(string title, string type)
+        public Column(string title, DbType type)
         {
             this.title = title;
             this.type = type;
         }
 
-        /// <summary>
-        /// Return generated SQL command relative to init time.
-        /// </summary>
-        public string ColumnDeclarationCommand(MemberInfo member)
+        public override string ToString()
         {
-            string command = "";
-
-            command += "'" + title + "'";
-            command += " " + type;
-
-            if (AttributesHandler.HasAttribute<IsZeroFill>(member))
-            {
-                command += " ZEROFILL";
-            }
-
-            if (AttributesHandler.HasAttribute<IsBinary>(member))
-            {
-                command += " BINARY";
-            }
-
-            if (AttributesHandler.HasAttribute<IsUnsigned>(member))
-            {
-                command += " UNSIGNED";
-            }
-
-            if (AttributesHandler.TryToGetAttribute<Default>(member, out Default hasDefault) && 
-                !string.IsNullOrEmpty(hasDefault.defExp))
-            {
-                // If generated
-                if (hasDefault is IsGenerated isGenerated)
-                {
-                    command += " GENERATED ALWAYS AS(";
-                    command += isGenerated.defExp + ") ";
-                    command += (isGenerated.mode == IsGenerated.Mode.Stored ? "STORED" : "VIRTUAL");
-                }
-                // If  has default.
-                else
-                {
-                    command += " DEFAULT " + hasDefault.defExp;
-                }
-            }
-
-            // If not generated.
-            if (hasDefault == null || !(hasDefault is IsGenerated))
-            {
-                // If has NotNull attribute.
-                if (AttributesHandler.HasAttribute<IsNotNull>(member))
-                {
-                    command += " NOT NULL";
-                }
-                else
-                {
-                    command += " NULL";
-                }
-            }
-
-            // If has AutoIncrement attribute.
-            if (AttributesHandler.HasAttribute<IsAutoIncrement>(member))
-            {
-                command += " AUTO_INCREMENT";
-            }
-
-            return command;
+            return title;
         }
     }
 }
