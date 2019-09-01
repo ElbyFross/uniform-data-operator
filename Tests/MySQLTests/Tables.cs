@@ -76,10 +76,27 @@ namespace MySQLTests
 
             // Generate tables.
             bool tableResult = UniformDataOperator.Sql.Tables.Attributes.Table.TrySetTables(
-                true, out error, typeof(TableType), typeof(Table2Type));
+                true, out error, 
+                typeof(TableType), 
+                typeof(Table2Type),
+                typeof(Table3Type),
+                typeof(Table4Type), 
+                typeof(Table5Type));
             if (!tableResult)
             {
                 Assert.Fail("Table not created. " + error);
+                return;
+            }
+
+            Table2Type data2 = new Table2Type()
+            {
+                intFK = 0,
+                stringVar = "Test init"
+            };
+            bool setResult = SqlOperatorHandler.Active.SetToTable<Table2Type>(data2, out error);
+            if (!setResult)
+            {
+                Assert.Fail("Data2 set not operated. " + error);
                 return;
             }
 
@@ -97,7 +114,7 @@ namespace MySQLTests
                 IntProp = -256,
                 fk = 0
             };
-            bool setResult = SqlOperatorHandler.Active.SetToTable<TableType>(data, out error);
+            setResult = SqlOperatorHandler.Active.SetToTable<TableType>(data, out error);
             if (!setResult)
             {
                 Assert.Fail("Data set not operated. " + error);

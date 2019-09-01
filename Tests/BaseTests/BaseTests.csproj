@@ -54,6 +54,9 @@
     <Compile Include="Binary\BinaryHandlerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\BlobType.cs" />
+    <Compile Include="Types\Table5Type.cs" />
+    <Compile Include="Types\Table4Type.cs" />
+    <Compile Include="Types\Table3Type.cs" />
     <Compile Include="Types\Table2Type.cs" />
     <Compile Include="Types\TableType.cs" />
   </ItemGroup>

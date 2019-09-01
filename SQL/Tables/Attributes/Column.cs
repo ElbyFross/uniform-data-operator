@@ -13,8 +13,10 @@
 //limitations under the License.
 
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using System.Data;
+using System.Data.Common;
 
 namespace UniformDataOperator.Sql.Tables.Attributes
 {
@@ -42,9 +44,67 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             this.type = type;
         }
 
+        public static implicit operator string(Column column)
+        {
+            return column.title;
+        }
+
         public override string ToString()
         {
             return title;
+        }
+
+        /// <summary>
+        /// Adding members columns data to params.
+        /// </summary>
+        /// <param name="data">Object that contains values relative to members.</param>
+        /// <param name="command">Command objects that would share values.</param>
+        /// <param name="members">Members that with defined Column attribute that would be stored to command.</param>
+        public static void MembersDataToCommand(ref object data, ref DbCommand command, IEnumerable<MemberInfo> members)
+        {
+            foreach (MemberInfo member in members)
+            {
+                // Get column.
+                AttributesHandler.TryToGetAttribute<Column>(member, out Column column);
+
+                // Drop generated cirtual columns.
+                if (AttributesHandler.TryToGetAttribute<IsGenerated>(member, out IsGenerated isGenerated) &&
+                    isGenerated.mode == IsGenerated.Mode.Virual)
+                {
+                    continue;
+                }
+
+                // Add param.
+                command.Parameters.Add(
+                        SqlOperatorHandler.Active.MemberToParameter(
+                            AttributesHandler.GetValue(data, member), 
+                        column)
+                    );
+            }
+        }
+
+        /// <summary>
+        /// Converting collection of members to lists that contain's splited meta data suitable for queries.
+        /// </summary>
+        /// <param name="members">Source collection of memers.</param>
+        /// <param name="columns">List that contains all detected columns descriptors.</param>
+        /// <param name="variables">List that contains names of local variables in format allowed to internal queries generators.</param>
+        public static void MembersToMetaLists(IEnumerable<MemberInfo> members,
+            out List<Column> columns,
+            out List<string> variables)
+        {
+            // Init lists.
+            columns = new List<Column>();
+            variables = new List<string>();
+
+            foreach (MemberInfo member in members)
+            {
+                if(member.GetCustomAttribute<Column>() is Column column)
+                {
+                    columns.Add(column); // Coping column.
+                    variables.Add("@" + column.title); // Generate local var name.
+                }
+            }
         }
     }
 }

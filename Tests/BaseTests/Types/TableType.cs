@@ -51,7 +51,7 @@ namespace BaseTests.Types
         [Column("uintVar", DbType.Int32)]
         public uint uintVar = 4;
 
-        [Column("intFK", DbType.Int32), IsForeignKey("testShema", "testTable2", "fkSourceColumn")]
+        [Column("intFK", DbType.Int32), IsForeignKey("testSchema", "testTable2", "fkSourceColumn")]
         public int fk = 4;
 
         //[Column("generatedVirtual", "INT"), IsGenerated(IsGenerated.Mode.Virual, ""]

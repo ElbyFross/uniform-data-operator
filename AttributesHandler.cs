@@ -69,6 +69,16 @@ namespace UniformDataOperator
         /// <typeparam name="T">Attribute's type.</typeparam>
         /// <param name="source">Type the would by used as source of fields.</param>
         /// <returns>Collection of found attributes.</returns>
+        public static IEnumerable<MemberInfo> FindMembersWithoutAttribute<T>(IEnumerable<MemberInfo> source, System.Func<MemberInfo, bool> expression) where T : Attribute
+        {
+            return source.Where(f => !Attribute.IsDefined(f, typeof(T)) && expression.Invoke(f));
+        }
+        /// <summary>
+        /// Looking for members without defined target attribute.
+        /// </summary>
+        /// <typeparam name="T">Attribute's type.</typeparam>
+        /// <param name="source">Type the would by used as source of fields.</param>
+        /// <returns>Collection of found attributes.</returns>
         public static IEnumerable<MemberInfo> FindMembersWithoutAttribute<T>(IEnumerable<MemberInfo> source) where T : Attribute
         {
             return source.Where(f => !Attribute.IsDefined(f, typeof(T)));

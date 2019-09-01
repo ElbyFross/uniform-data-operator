@@ -108,7 +108,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
                 {
                     if (!string.IsNullOrEmpty(subPkCommand))
                     {
-                        command += ", ";
+                        subPkCommand += ", ";
                     }
 
                     AttributesHandler.TryToGetAttribute<Column>(cMeta, out Column column);

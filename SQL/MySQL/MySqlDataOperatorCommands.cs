@@ -213,111 +213,63 @@ namespace UniformDataOperator.Sql.MySql
                 error = "Not defined Table attribute for target type.";
                 return false;
             }
+            
+            #region Members detection
+            // Detect memebers on objects that contain columns definition.
+            List<MemberInfo> members = AttributesHandler.FindMembersWithAttribute<Column>(data.GetType()).ToList();
 
+            // Drop set ignore columns.
+            members = AttributesHandler.FindMembersWithoutAttribute<SetQueryIgnore>(members).ToList();
 
+            // Drop virtual generated columns.
+            bool NotVirtual (MemberInfo member)
+            {
+                return !(member.GetCustomAttribute<IsGenerated>() is IsGenerated isGenerated) ||
+                    isGenerated.mode != IsGenerated.Mode.Virual;
+            };
+            members = AttributesHandler.FindMembersWithoutAttribute<IsGenerated>(members, NotVirtual).ToList();
+            
+            // Trying to detect member with defined isAutoIncrement attribute that has default value.
+            MemberInfo autoIncrementMember = null;
+            try
+            {
+                autoIncrementMember = IsAutoIncrement.GetIgnorable(ref data, members);
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+                return false;
+            }
+            // Remove ignorable.
+            if (autoIncrementMember != null)
+            {
+                members.Remove(autoIncrementMember);
+            }
+
+            // Find our not key elements.
+            IEnumerable<MemberInfo> membersNK = AttributesHandler.FindMembersWithoutAttribute<IsPrimaryKey>(members);
+            #endregion
+
+            #region Generating command
             // Command that can be executed on the server.
             DbCommand command = Active.NewCommand;
 
-            #region Members detection
-            // Detect memebers on objects that contain columns definition.
-            IEnumerable<MemberInfo> members = AttributesHandler.FindMembersWithAttribute<Column>(data.GetType());
-            // Drop set ignore columns.
-            members = AttributesHandler.FindMembersWithoutAttribute<SetQueryIgnore>(members);
+            // Set values as local params.
+            Column.MembersDataToCommand(ref data, ref command, members);
 
-            // Detect keys members.
-            IEnumerable<MemberInfo> membersPK = AttributesHandler.FindMembersWithAttribute<IsPrimaryKey>(members);
+            // Getting metas.
+            Column.MembersToMetaLists(members, out List<Column> membersColumns, out List<string> membersVars);
+            Column.MembersToMetaLists(membersNK, out List<Column> membersNKColumns, out List<string> membersNKVars);
 
-            // Detect keys that hasn't defined auto increment.
-            IEnumerable<MemberInfo> membersPKNonAuto = AttributesHandler.FindMembersWithoutAttribute<IsAutoIncrement>(membersPK);
-            List<string> membersPKNonAutoValuesMarks = new List<string>();
-            foreach (MemberInfo member in membersPKNonAuto)
-            {
-                // Get column.
-                AttributesHandler.TryToGetAttribute<Column>(member, out Column column);
-                membersPKNonAutoValuesMarks.Add("@" + column.title);
-            }
+            string commadText = "";
+            commadText += "INSERT INTO " + tableDesciptor.shema + "." + tableDesciptor.table + "\n";
+            commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersColumns) + ")\n";
+            commadText += "\tVALUES\n";
+            commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersVars) + ")\n";
+            commadText += "\tON DUPLICATE KEY UPDATE\n";
+            commadText += "\t\t" + SqlOperatorHandler.ConcatFormatedCollections(membersNKColumns, membersNKVars, '\0') + ";\n";
 
-            // Find not key members.
-            IEnumerable<MemberInfo> membersNK = AttributesHandler.FindMembersWithoutAttribute<IsPrimaryKey>(members);
-
-            // Defining members to storaging.
-            List<Column> toStorage = new List<Column>();
-            List<string> toStorageValuesMarks = new List<string>();
-            foreach (MemberInfo member in membersNK)
-            {
-                // Get column.
-                AttributesHandler.TryToGetAttribute<Column>(member, out Column column);
-
-                // Drop generated cirtual columns.
-                if (AttributesHandler.TryToGetAttribute<IsGenerated>(member, out IsGenerated isGenerated) &&
-                    isGenerated.mode == IsGenerated.Mode.Virual)
-                {
-                    continue;
-                }
-
-                toStorage.Add(column);
-                toStorageValuesMarks.Add("@" + column.title);
-
-                // Add param.
-                command.Parameters.Add(Active.MemberToParameter(AttributesHandler.GetValue(data, member), column));
-            }
-            #endregion
-
-            #region Generating SQL command
-            string where = "";
-
-            // Define all PKs.
-            foreach (MemberInfo member in membersPK)
-            {
-                // Add separators.
-                if (!string.IsNullOrEmpty(where))
-                {
-                    where += " AND ";
-                }
-
-                // Get column.
-                AttributesHandler.TryToGetAttribute<Column>(member, out Column column);
-                // Get a member descriptor.
-                where += column.title + " = @" + column.title;
-                // Add param.
-                command.Parameters.Add(Active.MemberToParameter(AttributesHandler.GetValue(data, member), column));
-            }
-
-            // Set base command.
-            command.CommandText = "BEGIN\n\tIF NOT EXISTS (SELECT * FROM " + tableDesciptor.shema + "." + tableDesciptor.table;
-
-            if (!string.IsNullOrEmpty(where))
-            {
-                command.CommandText += " WHERE " + where;
-            }
-
-            command.CommandText += ")\n";
-
-            // Geneerate command that will has been checking existing of the entry in database.
-            // Updating if exist.
-            // Insert new if not found
-            string membersPKNonAutoString = SqlOperatorHandler.CollectionToString(membersPKNonAuto);
-            string membersPKNonAutoValuesMarksString = SqlOperatorHandler.CollectionToString(membersPKNonAutoValuesMarks);
-            command.CommandText +=
-                        "\t\tBEGIN\n" +
-                            "\t\t\tINSERT INTO " + tableDesciptor.shema + "." + tableDesciptor.table + "\n" +
-                                "\t\t\t\t(" +
-                                (string.IsNullOrEmpty(membersPKNonAutoString) ? "" : membersPKNonAutoString + ", ") +
-                                SqlOperatorHandler.CollectionToString(toStorage) +
-                                ")\n" +
-                            "\t\t\tVALUES\n" +
-                                "\t\t\t\t(" +
-                                (string.IsNullOrEmpty(membersPKNonAutoString) ? "" : membersPKNonAutoValuesMarksString + ", ") +
-                                SqlOperatorHandler.CollectionToString(toStorageValuesMarks) +
-                                ")\n" +
-                        "\t\tEND\n" +
-                    "\tELSE\n" +
-                        "\t\tBEGIN\n" +
-                            "\t\t\tUPDATE " + tableDesciptor.shema + "." + tableDesciptor.table + "\n" +
-                            "\t\t\tSET " + SqlOperatorHandler.ConcatFormatedCollections(toStorage, toStorageValuesMarks, '\0') + "\n" +
-                            "\t\t\tWHERE " + where + "\n" +
-                        "\t\tEND\n" +
-                "END";
+            command.CommandText = commadText;
             #endregion
 
             #region Execute command
