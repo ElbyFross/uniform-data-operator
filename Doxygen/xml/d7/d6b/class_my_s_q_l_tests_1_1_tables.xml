@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d6b/class_my_s_q_l_tests_1_1_tables" kind="class" language="C#" prot="public">
+    <compoundname>MySQLTests::Tables</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d7/d6b/class_my_s_q_l_tests_1_1_tables_1a2bf30026249403d4a1764d4bc88af649" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MySQLTests.Tables.SetDefault</definition>
+        <argsstring>()</argsstring>
+        <name>SetDefault</name>
+        <briefdescription>
+<para>Setting default SQL operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="29" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d6b/class_my_s_q_l_tests_1_1_tables_1ae9a63c27e5b8bae040555a7d633de210" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MySQLTests.Tables.Connection</definition>
+        <argsstring>()</argsstring>
+        <name>Connection</name>
+        <briefdescription>
+<para>Checking connection to database server. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="43" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="43" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6b/class_my_s_q_l_tests_1_1_tables_1a8b0f4f83fdeedb1cba72d520644b3bd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MySQLTests.Tables.Generate</definition>
+        <argsstring>()</argsstring>
+        <name>Generate</name>
+        <briefdescription>
+<para>Generating the test&apos;s tables. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="64" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="64" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="24" bodyend="163"/>
+    <listofallmembers>
+      <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1ae9a63c27e5b8bae040555a7d633de210" prot="public" virt="non-virtual"><scope>MySQLTests::Tables</scope><name>Connection</name></member>
+      <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1a8b0f4f83fdeedb1cba72d520644b3bd9" prot="public" virt="non-virtual"><scope>MySQLTests::Tables</scope><name>Generate</name></member>
+      <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1a2bf30026249403d4a1764d4bc88af649" prot="public" virt="non-virtual"><scope>MySQLTests::Tables</scope><name>SetDefault</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

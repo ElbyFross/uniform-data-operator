@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_2ed167d6e6cfc2212692214a326d670a" kind="dir">
+    <compoundname>D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Properties</compoundname>
+    <innerfile refid="d9/dfb/_tests_2_my_s_q_l_tests_2_properties_2_assembly_info_8cs">AssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Properties/"/>
+  </compounddef>
+</doxygen>

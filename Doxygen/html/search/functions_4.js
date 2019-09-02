@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fkindexdeclarationcommand',['FKIndexDeclarationCommand',['../d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#ace15a20fed1d2abba337afe1649025e9',1,'UniformDataOperator::SQL::Tables::TableColumnMeta']]],
-  ['fkkeyname',['FKKeyName',['../d4/df8/struct_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_table_column_meta.html#a05d36834e7f15a94c9f9a4bbdaeacfb5',1,'UniformDataOperator::SQL::Tables::TableColumnMeta']]],
-  ['frombytearray_3c_20t_20_3e',['FromByteArray&lt; T &gt;',['../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#a31772237797bd25f97b204b74289df70',1,'UniformDataOperator::Binary::BinaryHandler']]]
+  ['executenonquery',['ExecuteNonQuery',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a94a133a152ee1f509bcb049c7175c445',1,'UniformDataOperator.Sql.ISqlOperator.ExecuteNonQuery()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a2ae34bb488958f927723a66914e56a0b',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.ExecuteNonQuery()']]],
+  ['executereader',['ExecuteReader',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a1f12179dd2e639b12556e8821b0f7607',1,'UniformDataOperator.Sql.ISqlOperator.ExecuteReader()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#af268707ebe1917b32e450fb0f50e717d',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.ExecuteReader()']]],
+  ['executescalar',['ExecuteScalar',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a0124a73135270fb2b6eb33077f4dd38f',1,'UniformDataOperator.Sql.ISqlOperator.ExecuteScalar()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5d6645ebf8d909cb553dbdf6ab7e9b29',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.ExecuteScalar()']]]
 ];

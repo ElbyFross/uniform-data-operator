@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Tables::Attributes::IsGenerated</compoundname>
+    <basecompoundref refid="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default" prot="public" virt="non-virtual">UniformDataOperator.Sql.Tables.Attributes.Default</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1aac521588c251e4dac4b3eebf96db38d2" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Mode</name>
+        <enumvalue id="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1aac521588c251e4dac4b3eebf96db38d2a7bf2d26eab899c413218b729d4d914b7" prot="public">
+          <name>Stored</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1aac521588c251e4dac4b3eebf96db38d2aa6d194ab7efe0417c28a02b8a8997bd0" prot="public">
+          <name>Virual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" line="26" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" bodystart="25" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1af3fa1eea5f12c0a0f8128b794df15b78" prot="public" static="no" mutable="no">
+        <type>Mode</type>
+        <definition>Mode UniformDataOperator.Sql.Tables.Attributes.IsGenerated.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <initializer>= Mode.Virual</initializer>
+        <briefdescription>
+<para>How to operate with value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" line="34" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1ae7a7020b285f0208b1ec1e19bbee3814" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Tables.Attributes.IsGenerated.IsGenerated</definition>
+        <argsstring>(Mode mode, string defExp)</argsstring>
+        <name>IsGenerated</name>
+        <param>
+          <type>Mode</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>defExp</declname>
+        </param>
+        <briefdescription>
+<para>Init generated expression. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How to operate with value.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defExp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default" kindref="compound">Default</ref> or Expression value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" line="41" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" bodystart="41" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mark field as generated. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>Attribute</label>
+      </node>
+      <node id="34">
+        <label>Default</label>
+        <link refid="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>UniformDataOperator.Sql.Tables.Attributes.IsGenerated</label>
+        <link refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="38">
+        <label>Attribute</label>
+      </node>
+      <node id="37">
+        <label>Default</label>
+        <link refid="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>UniformDataOperator.Sql.Tables.Attributes.IsGenerated</label>
+        <link refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" line="24" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs" bodystart="23" bodyend="45"/>
+    <listofallmembers>
+      <member refid="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default_1a727920a02bdfc4af5fb187729f048ca5" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::IsGenerated</scope><name>Default</name></member>
+      <member refid="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default_1af6b009142552ad61a6e17e9dd401b84e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::IsGenerated</scope><name>defExp</name></member>
+      <member refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1ae7a7020b285f0208b1ec1e19bbee3814" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::IsGenerated</scope><name>IsGenerated</name></member>
+      <member refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1aac521588c251e4dac4b3eebf96db38d2" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::IsGenerated</scope><name>Mode</name></member>
+      <member refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated_1af3fa1eea5f12c0a0f8128b794df15b78" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::IsGenerated</scope><name>mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

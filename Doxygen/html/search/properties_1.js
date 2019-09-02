@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['database',['Database',['../de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator.html#a03fee3fec4e4915a540af2b9ac6ecb30',1,'UniformDataOperator.SQL.ISQLOperator.Database()'],['../d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator.html#a070214377e958a70594e877dba859449',1,'UniformDataOperator.SQL.MySQL.MySQLDataOperator.Database()']]]
+  ['connection',['Connection',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a99f034a986828e96955e3187cdfb28da',1,'UniformDataOperator.Sql.ISqlOperator.Connection()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5c5d34c3f7b7d95773ba44ede46409a0',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.Connection()']]]
 ];

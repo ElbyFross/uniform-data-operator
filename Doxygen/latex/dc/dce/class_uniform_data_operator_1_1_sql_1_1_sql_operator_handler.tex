@@ -1,0 +1,169 @@
+\hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler}{}\section{Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler Class Reference}
+\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler}\index{Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler}}
+
+
+Contains base catalog of uniform queries that strongly simplify managing of the data base.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a898993886fbe98ece762f9f7f2af11fb}{Invoke\+S\+Q\+L\+Error\+Occured}} (object sender, string message)
+\begin{DoxyCompactList}\small\item\em Invoke global error event informing about error occuring. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab2de5b9d7f8e8e67b518cf39c7e6f7a5}{Collection\+To\+String}} (I\+Enumerable$<$ object $>$ collection)
+\begin{DoxyCompactList}\small\item\em Conver collection view to string order. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a6973169901301adaecd52fab70df280e}{Concat\+Formated\+Collections}} (I\+Enumerable$<$ object $>$ headers, I\+Enumerable$<$ object $>$ values)
+\begin{DoxyCompactList}\small\item\em Concat to collections in format\+: headers0 = \mbox{[}braket\mbox{]}values0\mbox{[}braket\mbox{]}, ..., headersN = \mbox{[}braket\mbox{]}valuesN\mbox{[}braket\mbox{]} \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ac17e36b29fe5a17281927ab04dbeab26}{Concat\+Formated\+Collections}} (I\+Enumerable$<$ object $>$ headers, I\+Enumerable$<$ object $>$ values, char brackets\+Symbol)
+\begin{DoxyCompactList}\small\item\em Concat to collections in format\+: headers0 = \mbox{[}braket\mbox{]}values0\mbox{[}braket\mbox{]}, ..., headersN = \mbox{[}braket\mbox{]}valuesN\mbox{[}braket\mbox{]} \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a97954b0bb1559fbe600c12aa5e2c53ef}{Database\+Data\+To\+Object}} (Db\+Data\+Reader reader, I\+Enumerable$<$ Member\+Info $>$ members, object obj, out string error)
+\begin{DoxyCompactList}\small\item\em Trying to apply data base data to object by members map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator}{I\+Sql\+Operator}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_aa96eb9fd201700acbf53954599fec534}{Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Contains las operator that asing itself to handler as active one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+static System.\+Action$<$ object, string $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}{Sql\+Error\+Occured}}
+\begin{DoxyCompactList}\small\item\em Event that can be called by operator to share errors during sql commands from async methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains base catalog of uniform queries that strongly simplify managing of the data base. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab2de5b9d7f8e8e67b518cf39c7e6f7a5}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab2de5b9d7f8e8e67b518cf39c7e6f7a5}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Collection\+To\+String@{Collection\+To\+String}}
+\index{Collection\+To\+String@{Collection\+To\+String}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Collection\+To\+String()}{CollectionToString()}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Collection\+To\+String (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ object $>$}]{collection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Conver collection view to string order. 
+
+Elemets of collection must has overrided To\+String() methods. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & Collection with strings,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String in format\+: \char`\"{}i0, i1, ..., in\char`\"{}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a6973169901301adaecd52fab70df280e}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a6973169901301adaecd52fab70df280e}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Concat\+Formated\+Collections@{Concat\+Formated\+Collections}}
+\index{Concat\+Formated\+Collections@{Concat\+Formated\+Collections}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Concat\+Formated\+Collections()}{ConcatFormatedCollections()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Concat\+Formated\+Collections (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ object $>$}]{headers,  }\item[{I\+Enumerable$<$ object $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concat to collections in format\+: headers0 = \mbox{[}braket\mbox{]}values0\mbox{[}braket\mbox{]}, ..., headersN = \mbox{[}braket\mbox{]}valuesN\mbox{[}braket\mbox{]} 
+
+Elemets of collections must has overrided To\+String() methods. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em headers} & Header of the value.\\
+\hline
+{\em values} & Value acording to header.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that contain collection suitable for S\+QL commands.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ac17e36b29fe5a17281927ab04dbeab26}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ac17e36b29fe5a17281927ab04dbeab26}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Concat\+Formated\+Collections@{Concat\+Formated\+Collections}}
+\index{Concat\+Formated\+Collections@{Concat\+Formated\+Collections}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Concat\+Formated\+Collections()}{ConcatFormatedCollections()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Concat\+Formated\+Collections (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ object $>$}]{headers,  }\item[{I\+Enumerable$<$ object $>$}]{values,  }\item[{char}]{brackets\+Symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concat to collections in format\+: headers0 = \mbox{[}braket\mbox{]}values0\mbox{[}braket\mbox{]}, ..., headersN = \mbox{[}braket\mbox{]}valuesN\mbox{[}braket\mbox{]} 
+
+Elemets of collections must has overrided To\+String() methods. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em headers} & Header of the value.\\
+\hline
+{\em values} & Value acording to header.\\
+\hline
+{\em brackets\+Symbol} & Symbol that will has been using to clamp value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that contain collection suitable for S\+QL commands.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a97954b0bb1559fbe600c12aa5e2c53ef}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a97954b0bb1559fbe600c12aa5e2c53ef}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Database\+Data\+To\+Object@{Database\+Data\+To\+Object}}
+\index{Database\+Data\+To\+Object@{Database\+Data\+To\+Object}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Database\+Data\+To\+Object()}{DatabaseDataToObject()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Database\+Data\+To\+Object (\begin{DoxyParamCaption}\item[{Db\+Data\+Reader}]{reader,  }\item[{I\+Enumerable$<$ Member\+Info $>$}]{members,  }\item[{object}]{obj,  }\item[{out string}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trying to apply data base data to object by members map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Data base data reader that contains data recived from server.\\
+\hline
+{\em members} & Map of members that would be lokking in reader.\\
+\hline
+{\em obj} & Target object that would contain output data.\\
+\hline
+{\em error} & Error occured during operation. Null if operation is success.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a898993886fbe98ece762f9f7f2af11fb}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a898993886fbe98ece762f9f7f2af11fb}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Invoke\+S\+Q\+L\+Error\+Occured@{Invoke\+S\+Q\+L\+Error\+Occured}}
+\index{Invoke\+S\+Q\+L\+Error\+Occured@{Invoke\+S\+Q\+L\+Error\+Occured}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Invoke\+S\+Q\+L\+Error\+Occured()}{InvokeSQLErrorOccured()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Invoke\+S\+Q\+L\+Error\+Occured (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Invoke global error event informing about error occuring. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_aa96eb9fd201700acbf53954599fec534}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_aa96eb9fd201700acbf53954599fec534}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Active@{Active}}
+\index{Active@{Active}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Active}{Active}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator}{I\+Sql\+Operator}} Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Active\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Contains las operator that asing itself to handler as active one. 
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Sql\+Error\+Occured@{Sql\+Error\+Occured}}
+\index{Sql\+Error\+Occured@{Sql\+Error\+Occured}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Sql\+Error\+Occured}{SqlErrorOccured}}
+{\footnotesize\ttfamily System.\+Action$<$object, string$>$ Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Sql\+Error\+Occured\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event that can be called by operator to share errors during sql commands from async methods. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/Sql\+Operator\+Handler.\+cs\end{DoxyCompactItemize}

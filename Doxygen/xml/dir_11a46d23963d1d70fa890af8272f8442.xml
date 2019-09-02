@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_11a46d23963d1d70fa890af8272f8442" kind="dir">
+    <compoundname>D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests</compoundname>
+    <innerdir refid="dir_2ed167d6e6cfc2212692214a326d670a">D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Properties</innerdir>
+    <innerfile refid="d5/d5b/_local_8cs">Local.cs</innerfile>
+    <innerfile refid="d7/dba/_tables_8cs">Tables.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/"/>
+  </compounddef>
+</doxygen>

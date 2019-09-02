@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dd/d67/namespace_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers" kind="namespace" language="C#">
+    <compoundname>UniformDataOperator::Sql::Tables::Attributes::Modifiers</compoundname>
+    <innerclass refid="d2/d13/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" prot="public">UniformDataOperator::Sql::Tables::Attributes::Modifiers::SetQueryIgnore</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Modifiers/SetQueryIgnore.cs" line="18" column="1"/>
+  </compounddef>
+</doxygen>

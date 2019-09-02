@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperator.cs" line="23" column="1"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" line="16" column="1"/>
   </compounddef>
 </doxygen>

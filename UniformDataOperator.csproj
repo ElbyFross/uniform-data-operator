@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AuthorityController">
-      <HintPath>..\doloro-networking-framework\libs\AuthorityController.dll</HintPath>
-    </Reference>
     <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,13 +43,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Binary\BinaryHandler.cs" />
-    <Compile Include="SQL\ISQLOperator.cs" />
-    <Compile Include="SQL\SQLOperatorHandler.cs" />
-    <Compile Include="SQL\Tables\ISQLDataReadCompatible.cs" />
-    <Compile Include="SQL\Tables\ISQLTable.cs" />
-    <Compile Include="SQL\MySQL\MySQLDataOperator.cs" />
+    <Compile Include="SQL\ISqlOperator.cs" />
+    <Compile Include="SQL\MySQL\Attributes\MySqlDBTypeOverride.cs" />
+    <Compile Include="SQL\MySQL\MySqlDataOperatorService.cs" />
+    <Compile Include="SQL\MySQL\MySqlDataOperatorConnection.cs" />
+    <Compile Include="SQL\MySQL\MySqlDataOperatorQueries.cs" />
+    <Compile Include="SQL\MySQL\MySqlDataOperatorBackup.cs" />
+    <Compile Include="SQL\MySQL\MySqlDataOperatorParams.cs" />
+    <Compile Include="SQL\SqlOperatorHandler.cs" />
+    <Compile Include="AttributesHandler.cs" />
+    <Compile Include="SQL\Tables\Attributes\Default.cs" />
+    <Compile Include="SQL\Tables\Attributes\Modifiers\SetQueryIgnore.cs" />
+    <Compile Include="SQL\Tables\Attributes\Table.cs" />
+    <Compile Include="SQL\Tables\Attributes\Commentary.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsGenerated.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsAutoIncrement.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsUnsigned.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsBinary.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsPrimaryKey.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsZeroFill.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsUnique.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsNotNull.cs" />
+    <Compile Include="SQL\Tables\Attributes\IsForeignKey.cs" />
+    <Compile Include="SQL\Tables\Attributes\Column.cs" />
+    <Compile Include="SQL\MySQL\MySqlDataOperatorCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQL\Tables\TableColumnMeta.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
