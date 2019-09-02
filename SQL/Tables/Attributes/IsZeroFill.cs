@@ -19,7 +19,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Is value wold be willed by zero by default. Only for numerical columns.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsZeroFill : Attribute
     {
     }

@@ -391,7 +391,11 @@ namespace UniformDataOperator.Sql.MySql
         /// <param name="members"></param>
         /// <param name="columns"></param>
         /// <returns></returns>
-        public static DbCommand GenerateSetToObjectCommand<T>(object obj, out string error, out List<MemberInfo> members, params string[] columns)
+        public static DbCommand GenerateSetToObjectCommand<T>(
+            object obj, 
+            out string error,
+            out List<MemberInfo> members,
+            params string[] columns)
         {
             members = null;
 

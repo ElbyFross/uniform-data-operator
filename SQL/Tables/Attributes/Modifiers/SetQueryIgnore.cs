@@ -19,7 +19,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes.Modifiers
     /// <summary>
     /// Can be defined to ignore of writing this value during set-like queries to server.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class SetQueryIgnore : Attribute
     {
     }

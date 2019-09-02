@@ -32,7 +32,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Is value of this column would incremented relative to previous one during init.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsAutoIncrement : Attribute
     {
         /// <summary>

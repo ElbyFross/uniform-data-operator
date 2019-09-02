@@ -20,7 +20,7 @@ using System.Data.Common;
 
 namespace UniformDataOperator.Sql.Tables.Attributes
 {
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class Column : Attribute
     {
         /// <summary>

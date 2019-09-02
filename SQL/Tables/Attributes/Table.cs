@@ -24,7 +24,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Attribute that would force to automatic generation of table on your SQL server suitable for declered members in class or structure.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, Inherited=false)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, Inherited = false)]
     public class Table : Attribute
     { 
         /// <summary>

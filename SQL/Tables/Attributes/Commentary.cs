@@ -19,7 +19,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Add commentary to SQL table.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct, Inherited = true)]
     public class Commentary : Attribute
     {
         /// <summary>

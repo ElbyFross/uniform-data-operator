@@ -19,7 +19,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Is it's primary key.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsPrimaryKey : Attribute
     {
     }

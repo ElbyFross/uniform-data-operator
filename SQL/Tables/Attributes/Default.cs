@@ -19,7 +19,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Add default valu to the field.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class Default : Attribute
     {
         /// <summary>

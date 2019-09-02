@@ -20,7 +20,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Mark fireld as foreign key to other column.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsForeignKey : Attribute
     {
         public enum Action

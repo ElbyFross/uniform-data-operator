@@ -19,7 +19,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Is data would stored in binary format.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsBinary : Attribute
     {
     }

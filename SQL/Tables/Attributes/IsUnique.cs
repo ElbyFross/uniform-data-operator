@@ -20,7 +20,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     /// <summary>
     /// Is this value must be unique by this column. 
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsUnique : Attribute
     {
         /// <summary>

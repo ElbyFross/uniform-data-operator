@@ -20,7 +20,7 @@ namespace UniformDataOperator.Sql.MySql.Attributes
     /// <summary>
     /// Attribute that can be defined to override standard DBType defined in Column attribute, for columns that would created in MySql tables.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class MySqlDBTypeOverride : Attribute
     {
         /// <summary>
