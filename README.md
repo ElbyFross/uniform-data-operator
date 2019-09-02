@@ -61,7 +61,7 @@ Check how it using at 'MySqlDataOperatorCommands.cs' in  'ColumnDeclarationComma
 
 ## Auto write/read not enough flexible for me. How I can make custom query?
 Auto managing of duplex exchanging of data with SQL server it's just a high end feature.
-But not the only way to manage your data by uniformed way.
+But not the only way to manage your uniformed data.
 
 All what you need it's pipe down on one level and start direct work with your 'ISqlOperator' instance.
 
