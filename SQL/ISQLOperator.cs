@@ -173,15 +173,37 @@ namespace UniformDataOperator.Sql
         bool SetToTable<T>(object data, out string error);
 
         /// <summary>
+        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// Would be used as table descriptor during queri building.</typeparam>
+        /// <param name="data">Object that contains fields that would be writed to data base. 
+        /// Affected only fields and properties with defined Column attribute.</param>
+        void SetToTableAsync<T>(CancellationToken cancellationToken, object data);
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <param name="columns">List of requested columns that would included to SQL query.</param>
+        /// <returns>Result of operation.</returns>
+        bool SetToObject<T>(object obj, out string error, params string[] columns);
+
+        /// <summary>
         /// Setting data from DB Data reader to object by using column map described at object Type.
         /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
         /// </summary>
         /// <typeparam name="T">Type that has defined Table attribute. 
         /// <param name="cancellationToken">Token that can terminate operation.</param>
         /// Would be used as table descriptor during queri building.</typeparam>
-        /// <param name="obj">Target object that cantains described primary keys, that would be used during query generation.</param>
-        /// <param name="error">Error faces during operation.</param>
-        /// <returns>Result of operation.</returns>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="columns">List of requested columns that would included to SQL query.</param>
         void SetToObjectAsync<T>(CancellationToken cancellationToken, object obj, params string[] columns);
 
         /// <summary>

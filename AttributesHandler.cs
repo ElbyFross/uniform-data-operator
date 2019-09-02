@@ -177,7 +177,7 @@ namespace UniformDataOperator
         /// <param name="targetType">Prefered type of output object.</param>
         /// <param name="data">Soutce object.</param>
         /// <returns>Converted object. The same if converting not possible</returns>
-        private static object Converter(Type targetType, object data)
+        public static object Converter(Type targetType, object data)
         {
             switch(Type.GetTypeCode(targetType))
             {
@@ -208,6 +208,5 @@ namespace UniformDataOperator
                 default: return data;
             }
         }
-
     }
 }

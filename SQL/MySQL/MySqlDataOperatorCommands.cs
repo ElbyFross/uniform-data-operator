@@ -191,16 +191,17 @@ namespace UniformDataOperator.Sql.MySql
 
             return command;
         }
-        
+
+        #region Auto set to object data to database
         /// <summary>
-        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// Generating set to table sql command from provided source data.
         /// </summary>
         /// <typeparam name="T">Type that has defined Table attribute. Would be used as table descriptor during queri building.</typeparam>
         /// <param name="data">Object that contain's fields that would be writed to data base. 
         /// Affected only fields and properties with defined Column attribute.</param>
         /// <param name="error">Error faces during operation.</param>
-        /// <returns>Result of operation.</returns>
-        public bool SetToTable<T>(object data, out string error)
+        /// <returns>Generated command or null if failed.</returns>
+        public DbCommand GenerateSetTotableCommand<T>(object data, out string error)
         {
             #region Validate entry data
             // Check is SQL operator exist.
@@ -213,7 +214,7 @@ namespace UniformDataOperator.Sql.MySql
             if (!AttributesHandler.TryToGetAttribute<Table>(typeof(T), out Table tableDesciptor))
             {
                 error = "Not defined Table attribute for target type.";
-                return false;
+                return null;
             }
             #endregion
 
@@ -225,13 +226,13 @@ namespace UniformDataOperator.Sql.MySql
             members = AttributesHandler.FindMembersWithoutAttribute<SetQueryIgnore>(members).ToList();
 
             // Drop virtual generated columns.
-            bool NotVirtual (MemberInfo member)
+            bool NotVirtual(MemberInfo member)
             {
                 return !(member.GetCustomAttribute<IsGenerated>() is IsGenerated isGenerated) ||
                     isGenerated.mode != IsGenerated.Mode.Virual;
             };
             members = AttributesHandler.FindMembersWithoutAttribute<IsGenerated>(members, NotVirtual).ToList();
-            
+
             // Trying to detect member with defined isAutoIncrement attribute that has default value.
             MemberInfo autoIncrementMember = null;
             try
@@ -241,7 +242,7 @@ namespace UniformDataOperator.Sql.MySql
             catch (Exception ex)
             {
                 error = ex.Message;
-                return false;
+                return null;
             }
             // Remove ignorable.
             if (autoIncrementMember != null)
@@ -275,6 +276,29 @@ namespace UniformDataOperator.Sql.MySql
             command.CommandText = commadText;
             #endregion
 
+            error = null;
+            return command;
+        }
+
+        /// <summary>
+        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. Would be used as table descriptor during queri building.</typeparam>
+        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// Affected only fields and properties with defined Column attribute.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns>Result of operation.</returns>
+        public bool SetToTable<T>(object data, out string error)
+        {
+            // Generate command
+            DbCommand command = GenerateSetTotableCommand<T>(data, out error);
+
+            // Drop if error has been occured.
+            if (!string.IsNullOrEmpty(error))
+            {
+                return false;
+            }
+
             #region Execute command
             // Opening connection to DB srver.
             if (!Active.OpenConnection(out error))
@@ -303,19 +327,74 @@ namespace UniformDataOperator.Sql.MySql
             return affectedRowsCount > 0;
         }
 
-
         /// <summary>
-        /// Setting data from DB Data reader to object by using column map described at object Type.
-        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// Creating request that setting up data from object to data base server acording to attributes.
         /// </summary>
         /// <typeparam name="T">Type that has defined Table attribute. 
         /// <param name="cancellationToken">Token that can terminate operation.</param>
         /// Would be used as table descriptor during queri building.</typeparam>
-        /// <param name="obj">Target object that cantains described primary keys, that would be used during query generation.</param>
-        /// <param name="error">Error faces during operation.</param>
-        /// <returns>Result of operation.</returns>
-        public async void SetToObjectAsync<T>(CancellationToken cancellationToken, object obj, params string[] columns)
+        /// <param name="data">Object that contains fields that would be writed to data base. 
+        /// Affected only fields and properties with defined Column attribute.</param>
+        public async void SetToTableAsync<T>(CancellationToken cancellationToken, object data)
         {
+            // Generate command
+            DbCommand command = GenerateSetTotableCommand<T>(data, out string error);
+
+            // Drop if error has been occured.
+            if (!string.IsNullOrEmpty(error))
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Commnad generation failed. Details:\n" + error);
+                return;
+            }
+
+            #region Execute command
+            // Opening connection to DB srver.
+            if (!Active.OpenConnection(out error))
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Connection failed.\n" + error);
+                return;
+            }
+
+            // Executing command.
+            command.Connection = Active.Connection;
+
+            int affectedRowsCount;
+            try
+            {
+                affectedRowsCount = await command.ExecuteNonQueryAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
+            }
+
+            // Closing connection.
+            Active.CloseConnection();
+            #endregion
+
+            // Log if command failed.
+            if(affectedRowsCount == 0)
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Query not affect any row.\n\n" + command.CommandText);
+            }
+        }
+        #endregion
+
+        #region Auto read from DB to object
+        /// <summary>
+        /// Trying to generate command that would request objects members from server.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <param name="members"></param>
+        /// <param name="columns"></param>
+        /// <returns></returns>
+        public static DbCommand GenerateSetToObjectCommand<T>(object obj, out string error, out List<MemberInfo> members, params string[] columns)
+        {
+            members = null;
+
             #region Validate entry data
             // Check is SQL operator exist.
             if (Active == null)
@@ -326,21 +405,21 @@ namespace UniformDataOperator.Sql.MySql
             // Drop if not table descriptor.
             if (!AttributesHandler.TryToGetAttribute<Table>(typeof(T), out Table tableDesciptor))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Not defined Table attribute for target type.");
-                return;
+                error = "Not defined Table attribute for target type.";
+                return null;
             }
 
             // Drop if object not contains data.
             if (obj == null)
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Target object is null and can't be processed. Operation declined.");
-                return;
+                error = "Target object is null and can't be processed. Operation declined.";
+                return null;
             }
             #endregion
 
             #region Mapping
             // Get target type map.
-            List<MemberInfo> members = AttributesHandler.FindMembersWithAttribute<Column>(typeof(T)).ToList();
+            members = AttributesHandler.FindMembersWithAttribute<Column>(typeof(T)).ToList();
             // Trying to detect member with defined isAutoIncrement attribute that has default value.
             MemberInfo autoIncrementMember;
             try
@@ -349,8 +428,8 @@ namespace UniformDataOperator.Sql.MySql
             }
             catch (Exception ex)
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, ex.Message);
-                return;
+                error = ex.Message;
+                return null;
             }
             // Remove ignorable.
             if (autoIncrementMember != null)
@@ -377,11 +456,11 @@ namespace UniformDataOperator.Sql.MySql
             query += "LIMIT 1;\n";
 
             // Add values as params of command.
-            foreach(MemberInfo pk in membersPK)
+            foreach (MemberInfo pk in membersPK)
             {
                 command.Parameters.Add(
                     Active.MemberToParameter(
-                            AttributesHandler.GetValue(obj, pk), 
+                            AttributesHandler.GetValue(obj, pk),
                             pk.GetCustomAttribute<Column>()
                         )
                     );
@@ -391,8 +470,94 @@ namespace UniformDataOperator.Sql.MySql
             command.CommandText = query;
             #endregion
 
+            error = null;
+            return command;
+        }
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <param name="columns">List of requested columns that would included to SQL query.</param>
+        /// <returns>Result of operation.</returns>
+        public bool SetToObject<T>(object obj, out string error, params string[] columns)
+        {
+            // Generate command.
+            DbCommand command = GenerateSetToObjectCommand<T>(
+                obj,
+                out error,
+                out List<MemberInfo> members,
+                columns);
+
+            // Drop if error has been occured.
+            if (!string.IsNullOrEmpty(error))
+            {
+                error = "Commnad generation failed. Details:\n" + error;
+                return false;
+            }
+
+            #region Execute query
             // Opening connection to DB srver.
-            if (!Active.OpenConnection(out string error))
+            if (!Active.OpenConnection(out error))
+            {
+                error = "Connection failed. Details:\n" + error;
+                return false;
+            }
+            command.Connection = SqlOperatorHandler.Active.Connection;
+
+            // Await for reader.
+            DbDataReader reader = command.ExecuteReader();
+
+            // Drop if DbDataReader is invalid.           
+            if (reader == null || reader.IsClosed)
+            {
+                error = "DbDataReader is null or closed. Operation declined.";
+                return false;
+            }
+
+            // Try to apply data from reader to object.
+            bool result = SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error);
+
+            // Closing connection.
+            Active.CloseConnection();
+            #endregion
+
+            return result;
+        }
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// Would be used as table descriptor during queri building.</typeparam>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="columns">List of requested columns that would included to SQL query.</param>
+        public async void SetToObjectAsync<T>(CancellationToken cancellationToken, object obj, params string[] columns)
+        {
+            // Generate command.
+            DbCommand command = GenerateSetToObjectCommand<T>(
+                obj, 
+                out string error, 
+                out List<MemberInfo> members, 
+                columns);
+
+            // Drop if error has been occured.
+            if (!string.IsNullOrEmpty(error))
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Commnad generation failed. Details:\n" + error);
+                return;
+            }
+
+            #region Execute query
+            // Opening connection to DB srver.
+            if (!Active.OpenConnection(out error))
             {
                 SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Connection failed. Details:\n" + error);
                 return;
@@ -405,53 +570,22 @@ namespace UniformDataOperator.Sql.MySql
             // Drop if DbDataReader is invalid.           
             if (reader == null || reader.IsClosed)
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "DbDataReader is null or closed. Operation declined.");
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active,
+                    "DbDataReader is null or closed. Operation declined.");
                 return;
             }
 
-            // Drop if data not found.
-            if (!reader.Read())
+            // Try to apply data from reader to object.
+            if (!SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Data not found.");
-                return;
-            }
-
-            // Try to init all maped memvers.
-            foreach (MemberInfo member in members)
-            {
-                Column column = member.GetCustomAttribute<Column>();
-
-                // Trying to get value from reader relative to this member.
-                object receivedValue = null;
-                try
-                {
-                    receivedValue = reader[column.title];
-                }
-                catch
-                {
-                    // Skip if data not included to query.
-                    continue;
-                }
-
-
-                try
-                {
-                    // Try to set value
-                    AttributesHandler.SetValue(obj, member, receivedValue);
-                }
-                catch(Exception ex)
-                {
-                    // Inform about error during deserialization.
-                    SqlOperatorHandler.InvokeSQLErrorOccured(Active, ex.Message);
-
-                    // Closing connection.
-                    Active.CloseConnection();
-                    return;
-                }
+                // Log error.
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, error);
             }
 
             // Closing connection.
             Active.CloseConnection();
+            #endregion
         }
+        #endregion
     }
 }

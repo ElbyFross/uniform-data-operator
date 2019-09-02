@@ -122,5 +122,60 @@ namespace UniformDataOperator.Sql
 
             return result.Length > 2 ? result.Remove(result.Length - 2) : "";
         }
+
+        /// <summary>
+        /// Trying to apply data base data to object by members map.
+        /// </summary>
+        /// <param name="reader">Data base data reader that contains data recived from server.</param>
+        /// <param name="members">Map of members that would be lokking in reader.</param>
+        /// <param name="obj">Target object that would contain output data.</param>
+        /// <param name="error">Error occured during operation. Null if operation is success.</param>
+        /// <returns>Result of operation.</returns>
+        public static bool DatabaseDataToObject(
+            DbDataReader reader,
+            IEnumerable<MemberInfo> members, 
+            object obj,
+            out string error)
+        {
+            // Drop if data not found.
+            if (!reader.Read())
+            {
+                error = "Data not found.";
+                return false;
+            }
+
+            // Try to init all maped memvers.
+            foreach (MemberInfo member in members)
+            {
+                Tables.Attributes.Column column = member.GetCustomAttribute<Tables.Attributes.Column>();
+
+                // Trying to get value from reader relative to this member.
+                object receivedValue = null;
+                try
+                {
+                    receivedValue = reader[column.title];
+                }
+                catch
+                {
+                    // Skip if data not included to query.
+                    continue;
+                }
+
+
+                try
+                {
+                    // Try to set value
+                    AttributesHandler.SetValue(obj, member, receivedValue);
+                }
+                catch (Exception ex)
+                {
+                    // Inform about error during deserialization.
+                    error = ex.Message;
+                    return false;
+                }
+            }
+            error = null;
+            return true;
+        }
     }
 }

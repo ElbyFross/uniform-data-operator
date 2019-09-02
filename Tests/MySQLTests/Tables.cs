@@ -160,12 +160,5 @@ namespace MySQLTests
             Assert.IsTrue(readingError == null, readingError);
             #endregion
         }
-
-
-        private void SqlOperatorHandler_SqlErrorOccured(object arg1, string arg2)
-        {
-            // Unsubscribe.
-            SqlOperatorHandler.SqlErrorOccured -= SqlOperatorHandler_SqlErrorOccured;
-        }
     }
 }
