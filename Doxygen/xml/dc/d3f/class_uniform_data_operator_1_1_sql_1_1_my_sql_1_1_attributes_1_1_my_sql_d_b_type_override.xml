@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1a6521991385a038d7f5878ab6bbcb5795" prot="public" static="no" mutable="no">
+        <type>MySqlDbType</type>
+        <definition>MySqlDbType UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type relative to <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> params. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1a708ba68a2b1ab31ed51c196bb3e4574f" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride.stringFormat</definition>
+        <argsstring></argsstring>
+        <name>stringFormat</name>
+        <briefdescription>
+<para>Type in string format that would be used during column declaration. Example: VARCHAR(45), BLOB(4196) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" line="35" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1aa560e25692613f1a6860f8991dc18a66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride.MySqlDBTypeOverride</definition>
+        <argsstring>(MySqlDbType type)</argsstring>
+        <name>MySqlDBTypeOverride</name>
+        <param>
+          <type>MySqlDbType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Overriding standard type&apos;s definition of column and specifiy it for <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> databases. </para>        </briefdescription>
+        <detaileddescription>
+<para>Warning: unsafe method, cause just converts type to string to receive stringFormat value. Acceptable only for types that hasn&apos;t params. TINYBLOB as example. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type relative to <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> params.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" line="45" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1acd28e7a908283c3cb18a0c83e701b85e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride.MySqlDBTypeOverride</definition>
+        <argsstring>(MySqlDbType type, string stringFormat)</argsstring>
+        <name>MySqlDBTypeOverride</name>
+        <param>
+          <type>MySqlDbType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>stringFormat</declname>
+        </param>
+        <briefdescription>
+<para>Overriding standard type&apos;s definition of column and specifiy it for <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> databases. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type relative to <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> params.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stringFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type in string format that would be used during column declaration. Example: VARCHAR(45), BLOB(4196)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" bodystart="57" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attribute that can be defined to override standard DBType defined in Column attribute, for columns that would created in <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> tables. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="69">
+        <label>Attribute</label>
+      </node>
+      <node id="68">
+        <label>UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride</label>
+        <link refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="71">
+        <label>Attribute</label>
+      </node>
+      <node id="70">
+        <label>UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride</label>
+        <link refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/MySqlDBTypeOverride.cs" bodystart="24" bodyend="62"/>
+    <listofallmembers>
+      <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1aa560e25692613f1a6860f8991dc18a66" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</scope><name>MySqlDBTypeOverride</name></member>
+      <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1acd28e7a908283c3cb18a0c83e701b85e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</scope><name>MySqlDBTypeOverride</name></member>
+      <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1a708ba68a2b1ab31ed51c196bb3e4574f" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</scope><name>stringFormat</name></member>
+      <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1a6521991385a038d7f5878ab6bbcb5795" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

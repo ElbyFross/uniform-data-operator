@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/dde/class_my_s_q_l_tests_1_1_local" kind="class" language="C#" prot="public">
+    <compoundname>MySQLTests::Local</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d9/dde/class_my_s_q_l_tests_1_1_local_1a19d9d8d0e3af59a0856bba6184a464eb" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string MySQLTests.Local.username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <initializer>= &quot;root&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Local.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Local.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dde/class_my_s_q_l_tests_1_1_local_1ad4430d5a115b43817b9776f2ccbf5633" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string MySQLTests.Local.password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <initializer>= &quot;57182631Qbit&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Local.cs" line="26" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Local.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Local.cs" line="24" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Local.cs" bodystart="23" bodyend="27"/>
+    <listofallmembers>
+      <member refid="d9/dde/class_my_s_q_l_tests_1_1_local_1ad4430d5a115b43817b9776f2ccbf5633" prot="public" virt="non-virtual"><scope>MySQLTests::Local</scope><name>password</name></member>
+      <member refid="d9/dde/class_my_s_q_l_tests_1_1_local_1a19d9d8d0e3af59a0856bba6184a464eb" prot="public" virt="non-virtual"><scope>MySQLTests::Local</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

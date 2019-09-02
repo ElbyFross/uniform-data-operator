@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::SqlOperatorHandler</compoundname>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab6cf915e80cf89b3e6eb14bf48a19185" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>System.Action&lt; object, string &gt;</type>
+        <definition>System.Action&lt;object, string&gt; UniformDataOperator.Sql.SqlOperatorHandler.SqlErrorOccured</definition>
+        <argsstring></argsstring>
+        <name>SqlErrorOccured</name>
+        <briefdescription>
+<para>Event that can be called by operator to share errors during sql commands from async methods. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="34" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1aa96eb9fd201700acbf53954599fec534" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator" kindref="compound">ISqlOperator</ref></type>
+        <definition>ISqlOperator UniformDataOperator.Sql.SqlOperatorHandler.Active</definition>
+        <argsstring></argsstring>
+        <name>Active</name>
+        <briefdescription>
+<para>Contains las operator that asing itself to handler as active one. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="47" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a898993886fbe98ece762f9f7f2af11fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UniformDataOperator.Sql.SqlOperatorHandler.InvokeSQLErrorOccured</definition>
+        <argsstring>(object sender, string message)</argsstring>
+        <name>InvokeSQLErrorOccured</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Invoke global error event informing about error occuring. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="39" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab2de5b9d7f8e8e67b518cf39c7e6f7a5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.SqlOperatorHandler.CollectionToString</definition>
+        <argsstring>(IEnumerable&lt; object &gt; collection)</argsstring>
+        <name>CollectionToString</name>
+        <param>
+          <type>IEnumerable&lt; object &gt;</type>
+          <declname>collection</declname>
+        </param>
+        <briefdescription>
+<para>Conver collection view to string order. </para>        </briefdescription>
+        <detaileddescription>
+<para>Elemets of collection must has overrided ToString() methods. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Collection with strings,</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String in format: &quot;i0, i1, ..., in&quot;</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="56" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a6973169901301adaecd52fab70df280e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.SqlOperatorHandler.ConcatFormatedCollections</definition>
+        <argsstring>(IEnumerable&lt; object &gt; headers, IEnumerable&lt; object &gt; values)</argsstring>
+        <name>ConcatFormatedCollections</name>
+        <param>
+          <type>IEnumerable&lt; object &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; object &gt;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Concat to collections in format: headers0 = [braket]values0[braket], ..., headersN = [braket]valuesN[braket] </para>        </briefdescription>
+        <detaileddescription>
+<para>Elemets of collections must has overrided ToString() methods. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Header of the value.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value acording to header.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String that contain collection suitable for SQL commands.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="82" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ac17e36b29fe5a17281927ab04dbeab26" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.SqlOperatorHandler.ConcatFormatedCollections</definition>
+        <argsstring>(IEnumerable&lt; object &gt; headers, IEnumerable&lt; object &gt; values, char bracketsSymbol)</argsstring>
+        <name>ConcatFormatedCollections</name>
+        <param>
+          <type>IEnumerable&lt; object &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; object &gt;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>bracketsSymbol</declname>
+        </param>
+        <briefdescription>
+<para>Concat to collections in format: headers0 = [braket]values0[braket], ..., headersN = [braket]valuesN[braket] </para>        </briefdescription>
+        <detaileddescription>
+<para>Elemets of collections must has overrided ToString() methods. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Header of the value.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value acording to header.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bracketsSymbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Symbol that will has been using to clamp value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String that contain collection suitable for SQL commands.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="99" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="99" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a97954b0bb1559fbe600c12aa5e2c53ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UniformDataOperator.Sql.SqlOperatorHandler.DatabaseDataToObject</definition>
+        <argsstring>(DbDataReader reader, IEnumerable&lt; MemberInfo &gt; members, object obj, out string error)</argsstring>
+        <name>DatabaseDataToObject</name>
+        <param>
+          <type>DbDataReader</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; MemberInfo &gt;</type>
+          <declname>members</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Trying to apply data base data to object by members map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data base data reader that contains data recived from server.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>members</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map of members that would be lokking in reader.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object that would contain output data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error occured during operation. Null if operation is success.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of operation.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="134" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="134" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains base catalog of uniform queries that strongly simplify managing of the data base. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="29" bodyend="180"/>
+    <listofallmembers>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1aa96eb9fd201700acbf53954599fec534" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>Active</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab2de5b9d7f8e8e67b518cf39c7e6f7a5" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>CollectionToString</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a6973169901301adaecd52fab70df280e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>ConcatFormatedCollections</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ac17e36b29fe5a17281927ab04dbeab26" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>ConcatFormatedCollections</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a97954b0bb1559fbe600c12aa5e2c53ef" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>DatabaseDataToObject</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a898993886fbe98ece762f9f7f2af11fb" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>InvokeSQLErrorOccured</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab6cf915e80cf89b3e6eb14bf48a19185" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>SqlErrorOccured</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

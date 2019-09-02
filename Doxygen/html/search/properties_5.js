@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userid',['UserId',['../de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator.html#a47f3c169274d8efefa64a777e0b06b51',1,'UniformDataOperator.SQL.ISQLOperator.UserId()'],['../d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator.html#ace67458f32cee24fd48f0cc409f4b45a',1,'UniformDataOperator.SQL.MySQL.MySQLDataOperator.UserId()']]]
+  ['server',['Server',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ab1b593e38cb9377dac847811c483f2f3',1,'UniformDataOperator.Sql.ISqlOperator.Server()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a2154fef9e522ef26cf08642483fed223',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.Server()']]]
 ];

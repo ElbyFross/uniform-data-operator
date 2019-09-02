@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['isqldatareadcompatible',['ISQLDataReadCompatible',['../d8/d96/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_data_read_compatible.html',1,'UniformDataOperator::SQL::Tables']]],
-  ['isqloperator',['ISQLOperator',['../de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator.html',1,'UniformDataOperator::SQL']]],
-  ['isqltable',['ISQLTable',['../d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table.html',1,'UniformDataOperator::SQL::Tables']]]
+  ['binaryhandler',['BinaryHandler',['../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html',1,'UniformDataOperator::Binary']]],
+  ['binaryhandlertests',['BinaryHandlerTests',['../d3/d34/class_base_tests_1_1_binary_1_1_binary_handler_tests.html',1,'BaseTests::Binary']]],
+  ['blobtype',['BlobType',['../dd/dac/class_base_tests_1_1_types_1_1_blob_type.html',1,'BaseTests::Types']]]
 ];

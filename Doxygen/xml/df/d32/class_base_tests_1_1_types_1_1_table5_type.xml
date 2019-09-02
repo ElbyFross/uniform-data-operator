@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="df/d32/class_base_tests_1_1_types_1_1_table5_type" kind="class" language="C#" prot="public">
+    <compoundname>BaseTests::Types::Table5Type</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d32/class_base_tests_1_1_types_1_1_table5_type_1ae14f965f57c11a3a98b3b0533ef26f13" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BaseTests.Types.Table5Type.intPKAI</definition>
+        <argsstring></argsstring>
+        <name>intPKAI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Types/Table5Type.cs" line="33" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Types/Table5Type.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d32/class_base_tests_1_1_types_1_1_table5_type_1ae30aa67ba478910dd4e0d7872e898f83" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string BaseTests.Types.Table5Type.stringVar</definition>
+        <argsstring></argsstring>
+        <name>stringVar</name>
+        <initializer>= &quot;testString&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Types/Table5Type.cs" line="36" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Types/Table5Type.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Types/Table5Type.cs" line="31" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Types/Table5Type.cs" bodystart="30" bodyend="37"/>
+    <listofallmembers>
+      <member refid="df/d32/class_base_tests_1_1_types_1_1_table5_type_1ae14f965f57c11a3a98b3b0533ef26f13" prot="public" virt="non-virtual"><scope>BaseTests::Types::Table5Type</scope><name>intPKAI</name></member>
+      <member refid="df/d32/class_base_tests_1_1_types_1_1_table5_type_1ae30aa67ba478910dd4e0d7872e898f83" prot="public" virt="non-virtual"><scope>BaseTests::Types::Table5Type</scope><name>stringVar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

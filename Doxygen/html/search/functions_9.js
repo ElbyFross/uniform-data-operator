@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['tobytearray_3c_20t_20_3e',['ToByteArray&lt; T &gt;',['../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#ab02d6e27dd8d96934cc6d08f3970b33d',1,'UniformDataOperator::Binary::BinaryHandler']]],
-  ['trysettable',['TrySetTable',['../d9/d86/class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler.html#a71e288c8eb9549154c0026f9bc7e5e34',1,'UniformDataOperator::SQL::SQLOperatorHandler']]]
+  ['membersdatatocommand',['MembersDataToCommand',['../d2/da8/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column.html#a8351a69a11f029f6cd4c079bf4612c6e',1,'UniformDataOperator::Sql::Tables::Attributes::Column']]],
+  ['memberstometalists',['MembersToMetaLists',['../d2/da8/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column.html#a2b541e05a1c7ef24a047b9a896899dce',1,'UniformDataOperator::Sql::Tables::Attributes::Column']]],
+  ['membertoparameter',['MemberToParameter',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ab43375e7f5d9dcce2adfef2f19a2078f',1,'UniformDataOperator.Sql.ISqlOperator.MemberToParameter()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a7d10fc1dfc16ece78ad066f596523782',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.MemberToParameter()']]],
+  ['mysqldbtypeoverride',['MySqlDBTypeOverride',['../dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override.html#aa560e25692613f1a6860f8991dc18a66',1,'UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride.MySqlDBTypeOverride(MySqlDbType type)'],['../dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override.html#acd28e7a908283c3cb18a0c83e701b85e',1,'UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride.MySqlDBTypeOverride(MySqlDbType type, string stringFormat)']]]
 ];

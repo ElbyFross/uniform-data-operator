@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_4c47892d8e1a099eb81c31c13360c560" kind="dir">
+    <compoundname>D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes</compoundname>
+    <innerfile refid="d5/d5b/_my_sql_d_b_type_override_8cs">MySqlDBTypeOverride.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes/"/>
+  </compounddef>
+</doxygen>

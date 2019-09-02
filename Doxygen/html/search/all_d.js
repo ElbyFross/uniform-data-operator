@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['schemaname',['SchemaName',['../d0/d8f/interface_uniform_data_operator_1_1_s_q_l_1_1_tables_1_1_i_s_q_l_table.html#afe5c80cd1f594bfdd6f0ba3d9ffaf674',1,'UniformDataOperator::SQL::Tables::ISQLTable']]],
-  ['server',['Server',['../de/d4a/interface_uniform_data_operator_1_1_s_q_l_1_1_i_s_q_l_operator.html#af3e81967d2c0d3457e96d3c41f4c6712',1,'UniformDataOperator.SQL.ISQLOperator.Server()'],['../d9/d5d/class_uniform_data_operator_1_1_s_q_l_1_1_my_s_q_l_1_1_my_s_q_l_data_operator.html#a14653be731b7636d2c1dd7ed31daba48',1,'UniformDataOperator.SQL.MySQL.MySQLDataOperator.Server()']]],
-  ['sqloperatorhandler',['SQLOperatorHandler',['../d9/d86/class_uniform_data_operator_1_1_s_q_l_1_1_s_q_l_operator_handler.html',1,'UniformDataOperator::SQL']]]
+  ['password',['Password',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a90f63ab37347ec080b37dc3256ead7a4',1,'UniformDataOperator.Sql.ISqlOperator.Password()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#aa080c79169d2bf29ac2249436ef2471c',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.Password()']]],
+  ['port',['Port',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a2d0ac2538fa196b181f6e0ab523db137',1,'UniformDataOperator.Sql.ISqlOperator.Port()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a2cfc65d2842491734270dfe114d9eec5',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.Port()']]]
 ];

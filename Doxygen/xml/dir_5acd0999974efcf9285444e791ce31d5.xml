@@ -4,8 +4,8 @@
     <compoundname>D:/Work/GitHub/uniform-data-operator/SQL</compoundname>
     <innerdir refid="dir_0ccb68387d9136c295cc472a658b0e07">D:/Work/GitHub/uniform-data-operator/SQL/MySQL</innerdir>
     <innerdir refid="dir_99ab059e38fb04bca6764f606b831ffc">D:/Work/GitHub/uniform-data-operator/SQL/Tables</innerdir>
-    <innerfile refid="d8/df3/_i_s_q_l_operator_8cs">ISQLOperator.cs</innerfile>
-    <innerfile refid="dd/d9c/_s_q_l_operator_handler_8cs">SQLOperatorHandler.cs</innerfile>
+    <innerfile refid="d6/de1/_i_sql_operator_8cs">ISqlOperator.cs</innerfile>
+    <innerfile refid="d2/dac/_sql_operator_handler_8cs">SqlOperatorHandler.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
