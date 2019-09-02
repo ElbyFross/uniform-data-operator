@@ -29,6 +29,19 @@ namespace UniformDataOperator.Sql
     public static class SqlOperatorHandler
     {
         /// <summary>
+        /// Event that can be called by operator to share errors during sql commands from async methods.
+        /// </summary>
+        public static event System.Action<object, string> SqlErrorOccured;
+
+        /// <summary>
+        /// Invoke global error event informing about error occuring.
+        /// </summary>
+        public static void InvokeSQLErrorOccured(object sender, string message)
+        {
+            SqlErrorOccured?.Invoke(sender, message);
+        }
+
+        /// <summary>
         /// Contains las operator that asing itself to handler as active one.
         /// </summary>
         public static ISqlOperator Active { get; set; }
@@ -55,6 +68,22 @@ namespace UniformDataOperator.Sql
             }
 
             return result.Length > 2 ? result.Remove(result.Length - 2) : "";
+        }
+
+        /// <summary>
+        /// Concat to collections in format:
+        /// headers0 = [braket]values0[braket], ..., headersN = [braket]valuesN[braket]
+        /// 
+        /// Elemets of collections must has overrided ToString() methods.
+        /// </summary>
+        /// <param name="headers">Header of the value.</param>
+        /// <param name="values">Value acording to header.</param>
+        /// <returns>String that contain collection suitable for SQL commands.</returns>
+        public static string ConcatFormatedCollections(
+            IEnumerable<object> headers,
+            IEnumerable<object> values)
+        {
+            return ConcatFormatedCollections(headers, values, '\0');
         }
 
         /// <summary>

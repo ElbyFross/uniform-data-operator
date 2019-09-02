@@ -20,6 +20,7 @@ using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
@@ -190,7 +191,7 @@ namespace UniformDataOperator.Sql.MySql
 
             return command;
         }
-
+        
         /// <summary>
         /// Creating request that setting up data from object to data base server acording to attributes.
         /// </summary>
@@ -201,6 +202,7 @@ namespace UniformDataOperator.Sql.MySql
         /// <returns>Result of operation.</returns>
         public bool SetToTable<T>(object data, out string error)
         {
+            #region Validate entry data
             // Check is SQL operator exist.
             if (Active == null)
             {
@@ -213,7 +215,8 @@ namespace UniformDataOperator.Sql.MySql
                 error = "Not defined Table attribute for target type.";
                 return false;
             }
-            
+            #endregion
+
             #region Members detection
             // Detect memebers on objects that contain columns definition.
             List<MemberInfo> members = AttributesHandler.FindMembersWithAttribute<Column>(data.GetType()).ToList();
@@ -273,7 +276,7 @@ namespace UniformDataOperator.Sql.MySql
             #endregion
 
             #region Execute command
-            // Oppen connection to DB srver.
+            // Opening connection to DB srver.
             if (!Active.OpenConnection(out error))
             {
                 return false;
@@ -298,6 +301,157 @@ namespace UniformDataOperator.Sql.MySql
 
             // Retrun true if query was success, false if rows not affected.
             return affectedRowsCount > 0;
+        }
+
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// Would be used as table descriptor during queri building.</typeparam>
+        /// <param name="obj">Target object that cantains described primary keys, that would be used during query generation.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns>Result of operation.</returns>
+        public async void SetToObjectAsync<T>(CancellationToken cancellationToken, object obj, params string[] columns)
+        {
+            #region Validate entry data
+            // Check is SQL operator exist.
+            if (Active == null)
+            {
+                throw new NullReferenceException("Active 'ISQLOperator' not exist. Select it before managing of database.");
+            }
+
+            // Drop if not table descriptor.
+            if (!AttributesHandler.TryToGetAttribute<Table>(typeof(T), out Table tableDesciptor))
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Not defined Table attribute for target type.");
+                return;
+            }
+
+            // Drop if object not contains data.
+            if (obj == null)
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Target object is null and can't be processed. Operation declined.");
+                return;
+            }
+            #endregion
+
+            #region Mapping
+            // Get target type map.
+            List<MemberInfo> members = AttributesHandler.FindMembersWithAttribute<Column>(typeof(T)).ToList();
+            // Trying to detect member with defined isAutoIncrement attribute that has default value.
+            MemberInfo autoIncrementMember;
+            try
+            {
+                autoIncrementMember = IsAutoIncrement.GetIgnorable(ref obj, members);
+            }
+            catch (Exception ex)
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, ex.Message);
+                return;
+            }
+            // Remove ignorable.
+            if (autoIncrementMember != null)
+            {
+                members.Remove(autoIncrementMember);
+            }
+
+            // Looking for primary keys.
+            IEnumerable<MemberInfo> membersPK = AttributesHandler.FindMembersWithAttribute<IsPrimaryKey>(members);
+            Column.MembersToMetaLists(membersPK, out List<Column> membersPKColumns, out List<string> membersPKVars);
+
+            // Looking for not key elements.
+            IEnumerable<MemberInfo> membersNK = AttributesHandler.FindMembersWithoutAttribute<IsPrimaryKey>(members);
+            Column.MembersToMetaLists(membersNK, out List<Column> membersNKColumns, out List<string> _);
+            #endregion
+
+            #region Generate SQL query
+            // Init query.
+            DbCommand command = SqlOperatorHandler.Active.NewCommand;
+            string query = "SELECT ";
+            query += (membersNKColumns.Count == 0 ? "*" : SqlOperatorHandler.CollectionToString(membersNKColumns)) + "\n";
+            query += "FROM " + tableDesciptor.shema + "." + tableDesciptor.table + "\n";
+            query += "WHERE " + SqlOperatorHandler.ConcatFormatedCollections(membersPKColumns, membersPKVars) + "\n";
+            query += "LIMIT 1;\n";
+
+            // Add values as params of command.
+            foreach(MemberInfo pk in membersPK)
+            {
+                command.Parameters.Add(
+                    Active.MemberToParameter(
+                            AttributesHandler.GetValue(obj, pk), 
+                            pk.GetCustomAttribute<Column>()
+                        )
+                    );
+            }
+
+            // Sign query to commandd.
+            command.CommandText = query;
+            #endregion
+
+            // Opening connection to DB srver.
+            if (!Active.OpenConnection(out string error))
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Connection failed. Details:\n" + error);
+                return;
+            }
+            command.Connection = SqlOperatorHandler.Active.Connection;
+            
+            // Await for reader.
+            DbDataReader reader = await command.ExecuteReaderAsync(cancellationToken);
+            
+            // Drop if DbDataReader is invalid.           
+            if (reader == null || reader.IsClosed)
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "DbDataReader is null or closed. Operation declined.");
+                return;
+            }
+
+            // Drop if data not found.
+            if (!reader.Read())
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Data not found.");
+                return;
+            }
+
+            // Try to init all maped memvers.
+            foreach (MemberInfo member in members)
+            {
+                Column column = member.GetCustomAttribute<Column>();
+
+                // Trying to get value from reader relative to this member.
+                object receivedValue = null;
+                try
+                {
+                    receivedValue = reader[column.title];
+                }
+                catch
+                {
+                    // Skip if data not included to query.
+                    continue;
+                }
+
+
+                try
+                {
+                    // Try to set value
+                    AttributesHandler.SetValue(obj, member, receivedValue);
+                }
+                catch(Exception ex)
+                {
+                    // Inform about error during deserialization.
+                    SqlOperatorHandler.InvokeSQLErrorOccured(Active, ex.Message);
+
+                    // Closing connection.
+                    Active.CloseConnection();
+                    return;
+                }
+            }
+
+            // Closing connection.
+            Active.CloseConnection();
         }
     }
 }

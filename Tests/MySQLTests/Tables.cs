@@ -66,6 +66,7 @@ namespace MySQLTests
             // Set default operator.
             SetDefault();
 
+            #region Schema test
             // Create schema.
             bool chemaResult = SqlOperatorHandler.Active.ActivateSchema("testSchema", out string error);
             if (!chemaResult)
@@ -73,7 +74,9 @@ namespace MySQLTests
                 Assert.Fail("Schema not created. " + error);
                 return;
             }
+            #endregion
 
+            #region Table set test
             // Generate tables.
             bool tableResult = UniformDataOperator.Sql.Tables.Attributes.Table.TrySetTables(
                 true, out error, 
@@ -87,7 +90,9 @@ namespace MySQLTests
                 Assert.Fail("Table not created. " + error);
                 return;
             }
+            #endregion
 
+            #region Data auto-write
             Table2Type data2 = new Table2Type()
             {
                 intFK = 0,
@@ -103,6 +108,7 @@ namespace MySQLTests
             // Set obejct's data.
             TableType data = new TableType()
             {
+                pk = 1,
                 intVar = 99,
                 uintVar = 42,
                 blob = new BlobType()
@@ -120,6 +126,46 @@ namespace MySQLTests
                 Assert.Fail("Data set not operated. " + error);
                 return;
             }
+            #endregion
+
+            #region Data auto-read
+            // Initialize object with desciped primary keys that would be used as source for data request.
+            TableType readedObject = new TableType()
+            {
+                pk = 1
+            };
+
+            // Variable that would contain error's message in case of occuring.
+            string readingError = null;
+            // Subscribing on errors occuring event.
+            void SqlOperatorHandler_SqlErrorOccured(object arg1, string arg2)
+            {
+                // Unsubscribe.
+                SqlOperatorHandler.SqlErrorOccured -= SqlOperatorHandler_SqlErrorOccured;
+
+                readingError = arg2;
+            }
+            SqlOperatorHandler.SqlErrorOccured += SqlOperatorHandler_SqlErrorOccured;
+
+            // Request data set from server.
+            SqlOperatorHandler.Active.SetToObjectAsync<TableType>(
+                new System.Threading.CancellationToken(), 
+                readedObject, 
+                "intVar", 
+                "uintVar", 
+                "intFK", 
+                "intProp", 
+                "blobProp");
+
+            Assert.IsTrue(readingError == null, readingError);
+            #endregion
+        }
+
+
+        private void SqlOperatorHandler_SqlErrorOccured(object arg1, string arg2)
+        {
+            // Unsubscribe.
+            SqlOperatorHandler.SqlErrorOccured -= SqlOperatorHandler_SqlErrorOccured;
         }
     }
 }

@@ -158,15 +158,56 @@ namespace UniformDataOperator
         {
             if (member is PropertyInfo pi)
             {
-                pi.SetValue(holder, data);
+                pi.SetValue(holder, Converter(pi.PropertyType, data));
+                return;
             }
-
+            
             if (member is FieldInfo fi)
             {
-                fi.SetValue(holder, data);
+                fi.SetValue(holder, Converter(fi.FieldType, data));
+                return;
             }
 
             throw new InvalidCastException("Member must be PropertyInfo or FieldInfo");
         }
+
+        /// <summary>
+        /// Trying to convers object to other type.
+        /// </summary>
+        /// <param name="targetType">Prefered type of output object.</param>
+        /// <param name="data">Soutce object.</param>
+        /// <returns>Converted object. The same if converting not possible</returns>
+        private static object Converter(Type targetType, object data)
+        {
+            switch(Type.GetTypeCode(targetType))
+            {
+                case TypeCode.UInt16:
+                    return Convert.ToUInt16(data);
+                case TypeCode.UInt32:
+                    return Convert.ToUInt32(data);
+                case TypeCode.UInt64:
+                    return Convert.ToUInt64(data);
+
+                case TypeCode.Int16:
+                    return Convert.ToInt16(data);
+                case TypeCode.Int32:
+                    return Convert.ToInt32(data);
+                case TypeCode.Int64:
+                    return Convert.ToInt64(data);
+
+                case TypeCode.Single:
+                    return Convert.ToSingle(data);
+                case TypeCode.Double:
+                    return Convert.ToDouble(data);
+                case TypeCode.Decimal:
+                    return Convert.ToDecimal(data);
+
+                case TypeCode.Boolean:
+                    return Convert.ToBoolean(data);
+
+                default: return data;
+            }
+        }
+
     }
 }

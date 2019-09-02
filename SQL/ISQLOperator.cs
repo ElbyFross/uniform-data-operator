@@ -18,6 +18,7 @@ using System.Data.Common;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Reflection;
 using UniformDataOperator.Sql.Tables.Attributes;
@@ -163,12 +164,25 @@ namespace UniformDataOperator.Sql
         /// <summary>
         /// Creating request that setting up data from object to data base server acording to attributes.
         /// </summary>
-        /// <typeparam name="T">Type that has defined Table attribute. Would be used as table descriptor during queri building.</typeparam>
-        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// Would be used as table descriptor during queri building.</typeparam>
+        /// <param name="data">Object that contains fields that would be writed to data base. 
         /// Affected only fields and properties with defined Column attribute.</param>
         /// <param name="error">Error faces during operation.</param>
         /// <returns>Result of operation.</returns>
         bool SetToTable<T>(object data, out string error);
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <typeparam name="T">Type that has defined Table attribute. 
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// Would be used as table descriptor during queri building.</typeparam>
+        /// <param name="obj">Target object that cantains described primary keys, that would be used during query generation.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns>Result of operation.</returns>
+        void SetToObjectAsync<T>(CancellationToken cancellationToken, object obj, params string[] columns);
 
         /// <summary>
         /// Trying to convert DBType to specified type in string format that suitable to this database.
