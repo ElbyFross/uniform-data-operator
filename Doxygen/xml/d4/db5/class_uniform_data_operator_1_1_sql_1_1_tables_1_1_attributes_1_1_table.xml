@@ -253,6 +253,43 @@
         </inbodydescription>
         <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" line="245" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" bodystart="245" bodyend="295"/>
       </memberdef>
+      <memberdef kind="function" id="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1a8886912a323f3a9e1da5e23c8dd45ca0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; MemberInfo &gt;</type>
+        <definition>static List&lt;MemberInfo&gt; UniformDataOperator.Sql.Tables.Attributes.Table.FindMembersByColumns</definition>
+        <argsstring>(IEnumerable&lt; MemberInfo &gt; members, params string[] columnTitles)</argsstring>
+        <name>FindMembersByColumns</name>
+        <param>
+          <type>IEnumerable&lt; MemberInfo &gt;</type>
+          <declname>members</declname>
+        </param>
+        <param>
+          <type>params string []</type>
+          <declname>columnTitles</declname>
+        </param>
+        <briefdescription>
+<para>Looking for members that&apos;s column&apos;s titles included to array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>members</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of members that will be used for columns search.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>columnTitles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array that contais column&apos;s titles that would be looking among members.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List with suitable members.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" line="303" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" bodystart="303" bodyend="332"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Attribute that would force to automatic generation of table on your SQL server suitable for declered members in class or structure. </para>    </briefdescription>
@@ -280,9 +317,10 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" bodystart="28" bodyend="296"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Table.cs" bodystart="28" bodyend="333"/>
     <listofallmembers>
       <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1a1d9e900b69ea04e44858116c6aa01983" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::Table</scope><name>engine</name></member>
+      <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1a8886912a323f3a9e1da5e23c8dd45ca0" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::Table</scope><name>FindMembersByColumns</name></member>
       <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1aab5f211f9d9f392317fbe610ba63d91c" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::Table</scope><name>GenerateCreateTableCommand</name></member>
       <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1a7b9dd4e1623154ae8956d699bced397d" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::Table</scope><name>shema</name></member>
       <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1a107099bc2c29a01d3d4885751fe49c98" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Tables::Attributes::Table</scope><name>table</name></member>

@@ -26,7 +26,9 @@ static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_
 static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_ac3f20322c0c96c7cbd876d4a8bc29656}{Try\+Set\+Tables}} (bool disable\+S\+Q\+L\+Checks, out string error, params Type\mbox{[}$\,$\mbox{]} table\+Descriptors)
 \begin{DoxyCompactList}\small\item\em Trying to set some tables to S\+QL server. Existed ones would be skiped. Not updating alter columns. \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_a609ed9b13e7e9007709d76a6f08d96e8}{Try\+Set\+Table}} (bool disable\+S\+Q\+L\+Checks, Type table\+Descriptor, out string error)
-\begin{DoxyCompactList}\small\item\em Trying to set table if required. Not updating alter columns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Trying to set table if required. Not updating alter columns. \end{DoxyCompactList}\item 
+static List$<$ Member\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_a8886912a323f3a9e1da5e23c8dd45ca0}{Find\+Members\+By\+Columns}} (I\+Enumerable$<$ Member\+Info $>$ members, params string\mbox{[}$\,$\mbox{]} column\+Titles)
+\begin{DoxyCompactList}\small\item\em Looking for members that\textquotesingle{}s column\textquotesingle{}s titles included to array. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -83,6 +85,26 @@ Configurate S\+QL table.
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_a8886912a323f3a9e1da5e23c8dd45ca0}\label{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_a8886912a323f3a9e1da5e23c8dd45ca0}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table}!Find\+Members\+By\+Columns@{Find\+Members\+By\+Columns}}
+\index{Find\+Members\+By\+Columns@{Find\+Members\+By\+Columns}!Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Find\+Members\+By\+Columns()}{FindMembersByColumns()}}
+{\footnotesize\ttfamily static List$<$Member\+Info$>$ Uniform\+Data\+Operator.\+Sql.\+Tables.\+Attributes.\+Table.\+Find\+Members\+By\+Columns (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ Member\+Info $>$}]{members,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{column\+Titles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for members that\textquotesingle{}s column\textquotesingle{}s titles included to array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em members} & List of members that will be used for columns search.\\
+\hline
+{\em column\+Titles} & Array that contais column\textquotesingle{}s titles that would be looking among members.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List with suitable members.
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_aab5f211f9d9f392317fbe610ba63d91c}\label{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_aab5f211f9d9f392317fbe610ba63d91c}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table}!Generate\+Create\+Table\+Command@{Generate\+Create\+Table\+Command}}
 \index{Generate\+Create\+Table\+Command@{Generate\+Create\+Table\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Tables\+::\+Attributes\+::\+Table}}

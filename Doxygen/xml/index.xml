@@ -87,7 +87,6 @@
   <compound refid="d9/dad/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_primary_key" kind="class"><name>UniformDataOperator::Sql::Tables::Attributes::IsPrimaryKey</name>
   </compound>
   <compound refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator" kind="interface"><name>UniformDataOperator::Sql::ISqlOperator</name>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2b2c0870f78e1be23decc59e37d03cf0" kind="property"><name>NewCommand</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab1b593e38cb9377dac847811c483f2f3" kind="property"><name>Server</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2d0ac2538fa196b181f6e0ab523db137" kind="property"><name>Port</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a55b7f28ed4ab20f124e67e2d447f8b40" kind="property"><name>Database</name></member>
@@ -95,25 +94,27 @@
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a90f63ab37347ec080b37dc3256ead7a4" kind="property"><name>Password</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a99f034a986828e96955e3187cdfb28da" kind="property"><name>Connection</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a590fa080f8c35ebf5ee6ac535545e2a8" kind="function"><name>Initialize</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" kind="function"><name>OpenConnection</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a6429996e1bbb452f4e034fd634e640" kind="function"><name>CloseConnection</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a94a133a152ee1f509bcb049c7175c445" kind="function"><name>ExecuteNonQuery</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0124a73135270fb2b6eb33077f4dd38f" kind="function"><name>ExecuteScalar</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1f12179dd2e639b12556e8821b0f7607" kind="function"><name>ExecuteReader</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad53cec492d507ed154f5535ce1db4e42" kind="function"><name>Count</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" kind="function"><name>Backup</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1acf6fdbfc57a21efc371e0772244defd5" kind="function"><name>Restore</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1afc0fd8b8c82515c498a6959453f331f1" kind="function"><name>NewCommand</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a10c43a3bfb6e8c88b692488c3341f297" kind="function"><name>NewCommand</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab43375e7f5d9dcce2adfef2f19a2078f" kind="function"><name>MemberToParameter</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a12d464e0532a3e194b1221eee0c32d34" kind="function"><name>DisableSqlChecks</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0757f304a24ffaa743e23e8bdd210950" kind="function"><name>DisableSqlChecks</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5ae8328a464ef80f1ae1bd46a573c265" kind="function"><name>ActivateSchema</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3b5fbe97e664e1ef689576ab8757f957" kind="function"><name>ValidateTableMember</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1072f029395858ff11d574ac09011332" kind="function"><name>SetToTable&lt; T &gt;</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1af43c4421b85e52d180763871be8147f6" kind="function"><name>SetToTableAsync&lt; T &gt;</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1af96d3f0bd2b58dfad705d2bfc3eba8fc" kind="function"><name>SetToObject&lt; T &gt;</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab2ab621174a956a67f9799469570dd11" kind="function"><name>SetToObjectAsync&lt; T &gt;</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a51af40df39808d53cdcc81852b836634" kind="function"><name>DbTypeToString</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3b5fbe97e664e1ef689576ab8757f957" kind="function"><name>ValidateTableMember</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" kind="function"><name>OpenConnection</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a6429996e1bbb452f4e034fd634e640" kind="function"><name>CloseConnection</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" kind="function"><name>Backup</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1acf6fdbfc57a21efc371e0772244defd5" kind="function"><name>Restore</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5ae8328a464ef80f1ae1bd46a573c265" kind="function"><name>ActivateSchema</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aac9c3ed1e73af66e383340a154786ec7" kind="function"><name>ColumnDeclarationCommand</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad05106eb6bd1a50f35b476a42821dfa3" kind="function"><name>SetToTable</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a35ef3899954f213e391751e9cda09322" kind="function"><name>SetToTableAsync</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a9a1822fcafcb1a3abd59b40f2cef7930" kind="function"><name>SetToObject</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ae1053edf9aa3d9385ef3591e7ee863c7" kind="function"><name>SetToObject</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac170526dd0fa31f2848ece5f5c5bb9d7" kind="function"><name>SetToObject</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a16e1513f43f3b9d76c687ba3b026573d" kind="function"><name>SetToObjectAsync</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3a973b49f190dabe6bcd0bf3e79b3c5e" kind="function"><name>SetToObjectAsync</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a497325acf359d4f8444ee0c2ff858e6e" kind="function"><name>SetToObjectAsync</name></member>
   </compound>
   <compound refid="dd/d9c/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_unique" kind="class"><name>UniformDataOperator::Sql::Tables::Attributes::IsUnique</name>
     <member refid="dd/d9c/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_unique_1a5d1cafbf328813bbce6b514abb6cf08e" kind="function"><name>UniqueIndexDeclarationCommand</name></member>
@@ -128,7 +129,6 @@
   </compound>
   <compound refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator" kind="class"><name>UniformDataOperator::Sql::MySql::MySqlDataOperator</name>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a8e8f8f936f6a4306dc4dc0d3eb07770c" kind="property"><name>Active</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1aed89486b1b51de67c62a97c160dcf048" kind="property"><name>NewCommand</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2154fef9e522ef26cf08642483fed223" kind="property"><name>Server</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2cfc65d2842491734270dfe114d9eec5" kind="property"><name>Port</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a144616e12acb2b55c7046af0c9af989d" kind="property"><name>Database</name></member>
@@ -140,24 +140,31 @@
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a22a9e92989ebdb3a52b8ebe409c59831" kind="function"><name>Restore</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2ed7d06bc016ae6d07cbcceffc21bbd3" kind="function"><name>ActivateSchema</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a0bdc2943e5d10576fb564913cdd744e7" kind="function"><name>ColumnDeclarationCommand</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1aafd50d73bfdb7cebf3631b2ecac36b80" kind="function"><name>GenerateSetTotableCommand&lt; T &gt;</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ac3af074cabe5721a685f0650dc69a871" kind="function"><name>GenerateSetToTableCommand</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ac1bee965fd57e9b2949c09a6b72a9e3e" kind="function"><name>SetToTable&lt; T &gt;</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a31e1837ecb4c58bbd39a31fa9cf51962" kind="function"><name>SetToTableAsync&lt; T &gt;</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1add7cba0bf95fbe58e589b770eee695ee" kind="function"><name>SetToObject&lt; T &gt;</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae3b550f82c725fa4f17d71f5f489dc10" kind="function"><name>SetToObjectAsync&lt; T &gt;</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5a12c84883a7e4945b4fb3787a39b302" kind="function"><name>SetToTable</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ac615a17b6330b292dcf3fd912e1f4fe2" kind="function"><name>SetToTableAsync&lt; T &gt;</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a036b234868363f2f680e5157ee459439" kind="function"><name>SetToTableAsync</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae7ad4f4d29d927fa8551b087a6e596b5" kind="function"><name>OpenConnection</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae096306ef55611afbe96b0017f2032f6" kind="function"><name>CloseConnection</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2ae34bb488958f927723a66914e56a0b" kind="function"><name>ExecuteNonQuery</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5d6645ebf8d909cb553dbdf6ab7e9b29" kind="function"><name>ExecuteScalar</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1af268707ebe1917b32e450fb0f50e717d" kind="function"><name>ExecuteReader</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1acf051b5431ee10337b9ab6bc6184d4db" kind="function"><name>Count</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a8f44635dc337c3652041f079190a792d" kind="function"><name>SetToObject</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1af763205fa1d8a8ad83afc672d5743d65" kind="function"><name>SetToObject</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5da5cc531c8c953f73e7fc50513790e9" kind="function"><name>SetToObject</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a98b579ed4a87c3f9dbdb90ffc28bf15c" kind="function"><name>SetToObjectAsync</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a49ee22a2a69fbc0752c989c7b79e5e43" kind="function"><name>SetToObjectAsync</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a3be9aeb9ce11e3fd536449843a585490" kind="function"><name>SetToObjectAsync</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5aad834d2ceba598037b6ed19b27db6d" kind="function"><name>Initialize</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1af5850bfb38f7dfcd5acd5157458ef4bd" kind="function"><name>NewCommand</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a6c2e2d374072c275953a515379963881" kind="function"><name>NewCommand</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1affbacb4fb1773fc14cdbb9cbcd315c5f" kind="function"><name>DisableSqlChecks</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a3e80f9136c9fef46a443901a15f1e289" kind="function"><name>DisableSqlChecks</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a233ab791c68b93aded97bfd9986767e8" kind="function"><name>ValidateTableMember</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7d10fc1dfc16ece78ad066f596523782" kind="function"><name>MemberToParameter</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7b854ebbcdf31c67716d8c365c321a31" kind="function"><name>DbTypeToString</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a62557a54a6ac875bbc3ea0b934190224" kind="function"><name>GenerateSetToObjectCommand&lt; T &gt;</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a821d08d641098b3f5e4dd6342a3db718" kind="function"><name>ValidateEntryRD</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ad6b8397c665d57eac1a2680c7b5f44e9" kind="function"><name>MembersAllowedToSet</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a0d3153822bac0ad760aed9f37e58d69b" kind="function"><name>GenerateSetToObjectCommand</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a30fd1063d13dae2c7833aed7c405554c" kind="function"><name>DetectPKToSet</name></member>
   </compound>
   <compound refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override" kind="class"><name>UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</name>
     <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1a6521991385a038d7f5878ab6bbcb5795" kind="variable"><name>type</name></member>
@@ -185,6 +192,7 @@
     <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1aab5f211f9d9f392317fbe610ba63d91c" kind="function"><name>GenerateCreateTableCommand</name></member>
     <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1ac3f20322c0c96c7cbd876d4a8bc29656" kind="function"><name>TrySetTables</name></member>
     <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1a609ed9b13e7e9007709d76a6f08d96e8" kind="function"><name>TrySetTable</name></member>
+    <member refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table_1a8886912a323f3a9e1da5e23c8dd45ca0" kind="function"><name>FindMembersByColumns</name></member>
   </compound>
   <compound refid="d3/d81/class_base_tests_1_1_types_1_1_table2_type" kind="class"><name>BaseTests::Types::Table2Type</name>
     <member refid="d3/d81/class_base_tests_1_1_types_1_1_table2_type_1a2de891713a0dc1d7e774bb0bdad1ef3c" kind="variable"><name>intFK</name></member>
@@ -290,7 +298,7 @@
   </compound>
   <compound refid="d9/dfb/_tests_2_my_s_q_l_tests_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
   </compound>
-  <compound refid="dd/dfd/_readme_8md" kind="file"><name>Readme.md</name>
+  <compound refid="d9/dd6/_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="d6/de1/_i_sql_operator_8cs" kind="file"><name>ISqlOperator.cs</name>
   </compound>
@@ -302,13 +310,13 @@
   </compound>
   <compound refid="d6/dc8/_my_s_q_l_data_operator_connection_8cs" kind="file"><name>MySQLDataOperatorConnection.cs</name>
   </compound>
-  <compound refid="dd/d2b/_my_s_q_l_data_operator_params_8cs" kind="file"><name>MySQLDataOperatorParams.cs</name>
+  <compound refid="d8/dda/_my_sql_data_operator_db_read_8cs" kind="file"><name>MySqlDataOperatorDbRead.cs</name>
   </compound>
-  <compound refid="d3/d93/_my_s_q_l_data_operator_queries_8cs" kind="file"><name>MySQLDataOperatorQueries.cs</name>
+  <compound refid="d7/d4a/_my_sql_data_operator_params_8cs" kind="file"><name>MySqlDataOperatorParams.cs</name>
   </compound>
   <compound refid="d2/d61/_my_sql_data_operator_service_8cs" kind="file"><name>MySqlDataOperatorService.cs</name>
   </compound>
-  <compound refid="d2/dac/_sql_operator_handler_8cs" kind="file"><name>SqlOperatorHandler.cs</name>
+  <compound refid="dd/d9c/_s_q_l_operator_handler_8cs" kind="file"><name>SQLOperatorHandler.cs</name>
   </compound>
   <compound refid="d3/daa/_column_8cs" kind="file"><name>Column.cs</name>
   </compound>
@@ -356,7 +364,7 @@
   </compound>
   <compound refid="d7/dba/_tables_8cs" kind="file"><name>Tables.cs</name>
   </compound>
-  <compound refid="d8/d91/md__d_1__work__git_hub_uniform-data-operator__readme" kind="page"><name>md_D:_Work_GitHub_uniform-data-operator_Readme</name>
+  <compound refid="d4/d04/md__d_1__work__git_hub_uniform-data-operator__r_e_a_d_m_e" kind="page"><name>md_D:_Work_GitHub_uniform-data-operator_README</name>
   </compound>
   <compound refid="dir_4c47892d8e1a099eb81c31c13360c560" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes</name>
   </compound>

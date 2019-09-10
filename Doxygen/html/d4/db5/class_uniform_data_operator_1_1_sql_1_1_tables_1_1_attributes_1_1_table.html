@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Uniform Data Operator
-   &#160;<span id="projectnumber">1.0.0 alpha</span>
+   &#160;<span id="projectnumber">1.0.0 alpha 3.0</span>
    </div>
    <div id="projectbrief">Easy | Fast | Protected</div>
   </td>
@@ -128,6 +128,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a609ed9b13e7e9007709d76a6f08d96e8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a609ed9b13e7e9007709d76a6f08d96e8">TrySetTable</a> (bool disableSQLChecks, Type tableDescriptor, out string error)</td></tr>
 <tr class="memdesc:a609ed9b13e7e9007709d76a6f08d96e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trying to set table if required. Not updating alter columns.  <a href="#a609ed9b13e7e9007709d76a6f08d96e8">More...</a><br /></td></tr>
 <tr class="separator:a609ed9b13e7e9007709d76a6f08d96e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8886912a323f3a9e1da5e23c8dd45ca0"><td class="memItemLeft" align="right" valign="top">static List&lt; MemberInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a8886912a323f3a9e1da5e23c8dd45ca0">FindMembersByColumns</a> (IEnumerable&lt; MemberInfo &gt; members, params string[] columnTitles)</td></tr>
+<tr class="memdesc:a8886912a323f3a9e1da5e23c8dd45ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looking for members that's column's titles included to array.  <a href="#a8886912a323f3a9e1da5e23c8dd45ca0">More...</a><br /></td></tr>
+<tr class="separator:a8886912a323f3a9e1da5e23c8dd45ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -226,6 +229,52 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8886912a323f3a9e1da5e23c8dd45ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8886912a323f3a9e1da5e23c8dd45ca0">&#9670;&nbsp;</a></span>FindMembersByColumns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt;MemberInfo&gt; UniformDataOperator.Sql.Tables.Attributes.Table.FindMembersByColumns </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; MemberInfo &gt;&#160;</td>
+          <td class="paramname"><em>members</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params string []&#160;</td>
+          <td class="paramname"><em>columnTitles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Looking for members that's column's titles included to array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">members</td><td>List of members that will be used for columns search.</td></tr>
+    <tr><td class="paramname">columnTitles</td><td>Array that contais column's titles that would be looking among members.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List with suitable members.</dd></dl>
+
+</div>
+</div>
 <a id="aab5f211f9d9f392317fbe610ba63d91c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab5f211f9d9f392317fbe610ba63d91c">&#9670;&nbsp;</a></span>GenerateCreateTableCommand()</h2>
 

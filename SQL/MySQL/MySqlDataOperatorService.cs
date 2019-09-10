@@ -51,6 +51,22 @@ namespace UniformDataOperator.Sql.MySql
         }
 
         /// <summary>
+        /// Return new clear command suitable for current DB.
+        /// </summary>
+        public DbCommand NewCommand()
+        {
+            return new MySqlCommand("", connection);
+        }
+
+        /// <summary>
+        /// Return new clear command suitable for current DB with included command text.
+        /// </summary>
+        public DbCommand NewCommand(string commandText)
+        {
+            return new MySqlCommand(commandText, connection);
+        }
+
+        /// <summary>
         /// Add code that disabling SQL checks during executing command.
         /// </summary>
         /// <param name="command">Target command that would be modified during operation.</param>

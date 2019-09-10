@@ -42,14 +42,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="64" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="64" bodyend="162"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="64" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="64" bodyend="163"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="24" bodyend="163"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Tables.cs" bodystart="24" bodyend="164"/>
     <listofallmembers>
       <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1ae9a63c27e5b8bae040555a7d633de210" prot="public" virt="non-virtual"><scope>MySQLTests::Tables</scope><name>Connection</name></member>
       <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1a8b0f4f83fdeedb1cba72d520644b3bd9" prot="public" virt="non-virtual"><scope>MySQLTests::Tables</scope><name>Generate</name></member>
