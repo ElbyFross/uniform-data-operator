@@ -295,6 +295,14 @@ namespace UniformDataOperator.Sql.MySql
             return SetToTable(typeof(T), data, out error);
         }
 
+        /// <summary>
+        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute. Would be used as table descriptor during queri building.</param>
+        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// Affected only fields and properties with defined Column attribute.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns>Result of operation.</returns>
         public bool SetToTable(Type tableType, object data, out string error)
         {
             // Generate command
@@ -347,6 +355,14 @@ namespace UniformDataOperator.Sql.MySql
             await SetToObjectAsync(typeof(T), cancellationToken, data);
         }
 
+        /// <summary>
+        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute. Would be used as table descriptor during queri building.</param>
+        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// Affected only fields and properties with defined Column attribute.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns>Result of operation.</returns>
         public async Task SetToTableAsync(Type tableType, CancellationToken cancellationToken, object data)
         {
             // Generate command
