@@ -98,7 +98,7 @@ namespace MySQLTests
                 intFK = 0,
                 stringVar = "Test init"
             };
-            bool setResult = SqlOperatorHandler.Active.SetToTable<Table2Type>(data2, out error);
+            bool setResult = SqlOperatorHandler.Active.SetToTable(typeof(Table2Type), data2, out error);
             if (!setResult)
             {
                 Assert.Fail("Data2 set not operated. " + error);
@@ -120,7 +120,7 @@ namespace MySQLTests
                 IntProp = -256,
                 fk = 0
             };
-            setResult = SqlOperatorHandler.Active.SetToTable<TableType>(data, out error);
+            setResult = SqlOperatorHandler.Active.SetToTable(typeof(TableType), data, out error);
             if (!setResult)
             {
                 Assert.Fail("Data set not operated. " + error);
@@ -148,7 +148,8 @@ namespace MySQLTests
             SqlOperatorHandler.SqlErrorOccured += SqlOperatorHandler_SqlErrorOccured;
 
             // Request data set from server.
-            SqlOperatorHandler.Active.SetToObjectAsync<TableType>(
+            SqlOperatorHandler.Active.SetToObjectAsync(
+                typeof(TableType),
                 new System.Threading.CancellationToken(), 
                 readedObject, 
                 "intVar", 

@@ -223,7 +223,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             }
 
             // Execute command
-            SqlOperatorHandler.Active.ExecuteNonQuery(command);
+            SqlOperatorHandler.Active.NewCommand(command)?.ExecuteNonQuery();
 
             // Close connection after finish.
             SqlOperatorHandler.Active.CloseConnection();
@@ -284,7 +284,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             }
 
             // Execute command
-            SqlOperatorHandler.Active.ExecuteNonQuery(command);
+            SqlOperatorHandler.Active.NewCommand(command)?.ExecuteNonQuery();
 
             // Close connection after finish.
             SqlOperatorHandler.Active.CloseConnection();
@@ -292,6 +292,43 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             // Confirm success.
             return true;
             #endregion
+        }
+
+        /// <summary>
+        /// Looking for members that's column's titles included to array.
+        /// </summary>
+        /// <param name="members">List of members that will be used for columns search.</param>
+        /// <param name="columnTitles">Array that contais column's titles that would be looking among members.</param>
+        /// <returns>List with suitable members.</returns>
+        public static List<MemberInfo>FindMembersByColumns(IEnumerable<MemberInfo> members, params string[] columnTitles)
+        {
+            // List that would contains all member that has the column title requested in columnTitles array.
+            List<MemberInfo> result = new List<MemberInfo>();
+
+            // Convert to list to allow fast removing.
+            List<string> ctl = columnTitles.ToList();
+
+            // Check every provided member for existing in requesteed list.
+            foreach(MemberInfo mi in members)
+            {
+                // Getting column descriptor.
+                if(mi.GetCustomAttribute<Column>() is Column column)
+                {
+                    // Checl every request.
+                    for(int i = 0; i < ctl.Count; i++)
+                    {
+                        // Check if member included to request list.
+                        if(column.title == ctl[i])
+                        {
+                            result.Add(mi);     // Add member to output list.
+                            ctl.RemoveAt(i);    // Remove found element.
+                            break;              // Drop serching.
+                        }
+                    }
+                }
+            }
+
+            return result;
         }
     }
 }

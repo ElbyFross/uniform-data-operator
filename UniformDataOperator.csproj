@@ -45,9 +45,9 @@
     <Compile Include="Binary\BinaryHandler.cs" />
     <Compile Include="SQL\ISqlOperator.cs" />
     <Compile Include="SQL\MySQL\Attributes\MySqlDBTypeOverride.cs" />
+    <Compile Include="SQL\MySQL\MySqlDataOperatorDbRead.cs" />
     <Compile Include="SQL\MySQL\MySqlDataOperatorService.cs" />
     <Compile Include="SQL\MySQL\MySqlDataOperatorConnection.cs" />
-    <Compile Include="SQL\MySQL\MySqlDataOperatorQueries.cs" />
     <Compile Include="SQL\MySQL\MySqlDataOperatorBackup.cs" />
     <Compile Include="SQL\MySQL\MySqlDataOperatorParams.cs" />
     <Compile Include="SQL\SqlOperatorHandler.cs" />

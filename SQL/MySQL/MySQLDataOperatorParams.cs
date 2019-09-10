@@ -51,17 +51,6 @@ namespace UniformDataOperator.Sql.MySql
 
         #region Public properties
         /// <summary>
-        /// Return new clear command suitable for current DB.
-        /// </summary>
-        public DbCommand NewCommand
-        {
-            get
-            {
-                return new MySqlCommand();
-            }
-        }
-
-        /// <summary>
         /// Server's ip.
         /// </summary>
         public string Server { get; set; } = "127.0.0.1";

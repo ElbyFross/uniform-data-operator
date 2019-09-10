@@ -64,13 +64,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\UniformDataOperator.csproj">
       <Project>{98bd25ca-0338-405b-a1ca-1a63ce9da34d}</Project>
       <Name>UniformDataOperator</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SQL\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
