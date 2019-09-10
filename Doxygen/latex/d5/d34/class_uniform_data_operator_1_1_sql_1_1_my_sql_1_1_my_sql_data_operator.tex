@@ -22,30 +22,38 @@ bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_
 \begin{DoxyCompactList}\small\item\em Trying to set schema to databases server in case if shema not exist. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a0bdc2943e5d10576fb564913cdd744e7}{Column\+Declaration\+Command}} (Member\+Info member)
 \begin{DoxyCompactList}\small\item\em Return generated S\+QL command relative to init time. \end{DoxyCompactList}\item 
-Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aafd50d73bfdb7cebf3631b2ecac36b80}{Generate\+Set\+Totable\+Command$<$ T $>$}} (object data, out string error)
+Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac3af074cabe5721a685f0650dc69a871}{Generate\+Set\+To\+Table\+Command}} (Type table\+Type, object data, out string error)
 \begin{DoxyCompactList}\small\item\em Generating set to table sql command from provided source data. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac1bee965fd57e9b2949c09a6b72a9e3e}{Set\+To\+Table$<$ T $>$}} (object data, out string error)
 \begin{DoxyCompactList}\small\item\em Creating request that setting up data from object to data base server acording to attributes. \end{DoxyCompactList}\item 
-async void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a31e1837ecb4c58bbd39a31fa9cf51962}{Set\+To\+Table\+Async$<$ T $>$}} (Cancellation\+Token cancellation\+Token, object data)
+bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5a12c84883a7e4945b4fb3787a39b302}{Set\+To\+Table}} (Type table\+Type, object data, out string error)
 \begin{DoxyCompactList}\small\item\em Creating request that setting up data from object to data base server acording to attributes. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_add7cba0bf95fbe58e589b770eee695ee}{Set\+To\+Object$<$ T $>$}} (object obj, out string error, params string\mbox{[}$\,$\mbox{]} columns)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
-async void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ae3b550f82c725fa4f17d71f5f489dc10}{Set\+To\+Object\+Async$<$ T $>$}} (Cancellation\+Token cancellation\+Token, object obj, params string\mbox{[}$\,$\mbox{]} columns)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac615a17b6330b292dcf3fd912e1f4fe2}{Set\+To\+Table\+Async$<$ T $>$}} (Cancellation\+Token cancellation\+Token, object data)
+\begin{DoxyCompactList}\small\item\em Creating request that setting up data from object to data base server acording to attributes. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a036b234868363f2f680e5157ee459439}{Set\+To\+Table\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object data)
+\begin{DoxyCompactList}\small\item\em Creating request that setting up data from object to data base server acording to attributes. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ae7ad4f4d29d927fa8551b087a6e596b5}{Open\+Connection}} (out string error)
 \begin{DoxyCompactList}\small\item\em Opening connection to S\+QL server. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ae096306ef55611afbe96b0017f2032f6}{Close\+Connection}} ()
 \begin{DoxyCompactList}\small\item\em Closing connection to S\+QL server. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a2ae34bb488958f927723a66914e56a0b}{Execute\+Non\+Query}} (string query)
-\begin{DoxyCompactList}\small\item\em Sending S\+QL query to server. \end{DoxyCompactList}\item 
-object \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5d6645ebf8d909cb553dbdf6ab7e9b29}{Execute\+Scalar}} (string query)
-\begin{DoxyCompactList}\small\item\em Serching for first entry suitable to query and return as result. \end{DoxyCompactList}\item 
-Db\+Data\+Reader \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af268707ebe1917b32e450fb0f50e717d}{Execute\+Reader}} (string query)
-\begin{DoxyCompactList}\small\item\em Execute complex data reader. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_acf051b5431ee10337b9ab6bc6184d4db}{Count}} (string query)
-\begin{DoxyCompactList}\small\item\em Try to return count by query. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a8f44635dc337c3652041f079190a792d}{Set\+To\+Object}} (Type table\+Type, object obj, out string error, string\mbox{[}$\,$\mbox{]} select, params string\mbox{[}$\,$\mbox{]} where)
+\begin{DoxyCompactList}\small\item\em Trying to set object data to database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af763205fa1d8a8ad83afc672d5743d65}{Set\+To\+Object}} (Type table\+Type, object obj, out string error, params string\mbox{[}$\,$\mbox{]} select)
+\begin{DoxyCompactList}\small\item\em Trying to set object data to database. Automaticly build where block with primary keys. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5da5cc531c8c953f73e7fc50513790e9}{Set\+To\+Object}} (Type table\+Type, object obj, out string error)
+\begin{DoxyCompactList}\small\item\em Trying to set object data to database. Automaticly build where block with primary keys. Select all available columns. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a98b579ed4a87c3f9dbdb90ffc28bf15c}{Set\+To\+Object\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj, string\mbox{[}$\,$\mbox{]} select, params string\mbox{[}$\,$\mbox{]} where)
+\begin{DoxyCompactList}\small\item\em Trying to set object data to database. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a49ee22a2a69fbc0752c989c7b79e5e43}{Set\+To\+Object\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj, params string\mbox{[}$\,$\mbox{]} select)
+\begin{DoxyCompactList}\small\item\em Trying to set object data to database. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a3be9aeb9ce11e3fd536449843a585490}{Set\+To\+Object\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj)
+\begin{DoxyCompactList}\small\item\em Trying to set object data to database. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5aad834d2ceba598037b6ed19b27db6d}{Initialize}} ()
 \begin{DoxyCompactList}\small\item\em Initialize My\+Sql\+Connection. \end{DoxyCompactList}\item 
+Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af5850bfb38f7dfcd5acd5157458ef4bd}{New\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Return new clear command suitable for current DB. \end{DoxyCompactList}\item 
+Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a6c2e2d374072c275953a515379963881}{New\+Command}} (string command\+Text)
+\begin{DoxyCompactList}\small\item\em Return new clear command suitable for current DB with included command text. \end{DoxyCompactList}\item 
 Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_affbacb4fb1773fc14cdbb9cbcd315c5f}{Disable\+Sql\+Checks}} (Db\+Command command)
 \begin{DoxyCompactList}\small\item\em Add code that disabling S\+QL checks during executing command. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a3e80f9136c9fef46a443901a15f1e289}{Disable\+Sql\+Checks}} (string command)
@@ -56,18 +64,11 @@ Db\+Parameter \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_
 \begin{DoxyCompactList}\small\item\em Convert value of member to data base parameter that can be used in command. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7b854ebbcdf31c67716d8c365c321a31}{Db\+Type\+To\+String}} (Db\+Type type)
 \begin{DoxyCompactList}\small\item\em Trying to convert D\+B\+Type to specified type in string format that suitable to this database. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a62557a54a6ac875bbc3ea0b934190224}{Generate\+Set\+To\+Object\+Command$<$ T $>$}} (object obj, out string error, out List$<$ Member\+Info $>$ members, params string\mbox{[}$\,$\mbox{]} columns)
-\begin{DoxyCompactList}\small\item\em Trying to generate command that would request objects members from server. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator}{My\+Sql\+Data\+Operator}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a8e8f8f936f6a4306dc4dc0d3eb07770c}{Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em Active single tone instance of My\+S\+QL data provider. \end{DoxyCompactList}\item 
-Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aed89486b1b51de67c62a97c160dcf048}{New\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em Return new clear command suitable for current DB. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a2154fef9e522ef26cf08642483fed223}{Server}} = \char`\"{}127.\+0.\+0.\+1\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \begin{DoxyCompactList}\small\item\em Server\textquotesingle{}s ip. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a2cfc65d2842491734270dfe114d9eec5}{Port}} = 3306\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
@@ -80,6 +81,17 @@ string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sq
 \begin{DoxyCompactList}\small\item\em User\textquotesingle{}s password. \end{DoxyCompactList}\item 
 Db\+Connection \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5c5d34c3f7b7d95773ba44ede46409a0}{Connection}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em Connection to DB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a821d08d641098b3f5e4dd6342a3db718}{Validate\+Entry\+RD}} (Type table\+Type, object obj, out string error)
+\begin{DoxyCompactList}\small\item\em Validate entry data for read query. \end{DoxyCompactList}\item 
+static List$<$ Member\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ad6b8397c665d57eac1a2680c7b5f44e9}{Members\+Allowed\+To\+Set}} (Type table\+Type, object obj, out string error)
+\begin{DoxyCompactList}\small\item\em Detect common collection of members that can be included to query. \end{DoxyCompactList}\item 
+static Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a0d3153822bac0ad760aed9f37e58d69b}{Generate\+Set\+To\+Object\+Command}} (Type table\+Type, object obj, I\+Enumerable$<$ Member\+Info $>$ where, I\+Enumerable$<$ Member\+Info $>$ select)
+\begin{DoxyCompactList}\small\item\em Trying to generate command that would request objects members from server. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a30fd1063d13dae2c7833aed7c405554c}{Detect\+P\+K\+To\+Set}} (Type table\+Type, out string error, out string\mbox{[}$\,$\mbox{]} pks\+Array)
+\begin{DoxyCompactList}\small\item\em Looking for primary keys in table and build them names to array. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -175,28 +187,6 @@ S\+QL command relative to \mbox{\hyperlink{namespace_uniform_data_operator_1_1_s
 
 Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_aac9c3ed1e73af66e383340a154786ec7}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_acf051b5431ee10337b9ab6bc6184d4db}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_acf051b5431ee10337b9ab6bc6184d4db}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Count@{Count}}
-\index{Count@{Count}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Count()}{Count()}}
-{\footnotesize\ttfamily int Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Count (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})}
-
-
-
-Try to return count by query. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em query} & S\+QL query that would send to server.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Count. -\/1 by default.
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ad53cec492d507ed154f5535ce1db4e42}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
-
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7b854ebbcdf31c67716d8c365c321a31}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7b854ebbcdf31c67716d8c365c321a31}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Db\+Type\+To\+String@{Db\+Type\+To\+String}}
 \index{Db\+Type\+To\+String@{Db\+Type\+To\+String}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
@@ -219,6 +209,28 @@ Type suitable for S\+QL command relative to this type of data base. Invalid\+Cas
 
 Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a51af40df39808d53cdcc81852b836634}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a30fd1063d13dae2c7833aed7c405554c}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a30fd1063d13dae2c7833aed7c405554c}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Detect\+P\+K\+To\+Set@{Detect\+P\+K\+To\+Set}}
+\index{Detect\+P\+K\+To\+Set@{Detect\+P\+K\+To\+Set}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Detect\+P\+K\+To\+Set()}{DetectPKToSet()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Detect\+P\+K\+To\+Set (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{out string}]{error,  }\item[{out string \mbox{[}$\,$\mbox{]}}]{pks\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Looking for primary keys in table and build them names to array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type that describe table.\\
+\hline
+{\em error} & Error if occured. Null if operation success.\\
+\hline
+{\em pks\+Array} & Output arrey that contains names of PK columns.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_affbacb4fb1773fc14cdbb9cbcd315c5f}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_affbacb4fb1773fc14cdbb9cbcd315c5f}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Disable\+Sql\+Checks@{Disable\+Sql\+Checks}}
 \index{Disable\+Sql\+Checks@{Disable\+Sql\+Checks}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
@@ -263,115 +275,44 @@ Modified comand.
 
 Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a0757f304a24ffaa743e23e8bdd210950}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a2ae34bb488958f927723a66914e56a0b}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a2ae34bb488958f927723a66914e56a0b}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Execute\+Non\+Query@{Execute\+Non\+Query}}
-\index{Execute\+Non\+Query@{Execute\+Non\+Query}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Execute\+Non\+Query()}{ExecuteNonQuery()}}
-{\footnotesize\ttfamily void Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Execute\+Non\+Query (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})}
-
-
-
-Sending S\+QL query to server. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em query} & \\
-\hline
-\end{DoxyParams}
-
-
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a94a133a152ee1f509bcb049c7175c445}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
-
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af268707ebe1917b32e450fb0f50e717d}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af268707ebe1917b32e450fb0f50e717d}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Execute\+Reader@{Execute\+Reader}}
-\index{Execute\+Reader@{Execute\+Reader}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Execute\+Reader()}{ExecuteReader()}}
-{\footnotesize\ttfamily Db\+Data\+Reader Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Execute\+Reader (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})}
-
-
-
-Execute complex data reader. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em query} & S\+QL query that would be shared to server.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Data reader with recived data.
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a1f12179dd2e639b12556e8821b0f7607}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
-
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5d6645ebf8d909cb553dbdf6ab7e9b29}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5d6645ebf8d909cb553dbdf6ab7e9b29}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Execute\+Scalar@{Execute\+Scalar}}
-\index{Execute\+Scalar@{Execute\+Scalar}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Execute\+Scalar()}{ExecuteScalar()}}
-{\footnotesize\ttfamily object Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Execute\+Scalar (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})}
-
-
-
-Serching for first entry suitable to query and return as result. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em query} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Recived data.
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a0124a73135270fb2b6eb33077f4dd38f}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
-
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a62557a54a6ac875bbc3ea0b934190224}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a62557a54a6ac875bbc3ea0b934190224}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Generate\+Set\+To\+Object\+Command$<$ T $>$@{Generate\+Set\+To\+Object\+Command$<$ T $>$}}
-\index{Generate\+Set\+To\+Object\+Command$<$ T $>$@{Generate\+Set\+To\+Object\+Command$<$ T $>$}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Generate\+Set\+To\+Object\+Command$<$ T $>$()}{GenerateSetToObjectCommand< T >()}}
-{\footnotesize\ttfamily static Db\+Command Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Generate\+Set\+To\+Object\+Command$<$ T $>$ (\begin{DoxyParamCaption}\item[{object}]{obj,  }\item[{out string}]{error,  }\item[{out List$<$ Member\+Info $>$}]{members,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{columns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a0d3153822bac0ad760aed9f37e58d69b}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a0d3153822bac0ad760aed9f37e58d69b}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Generate\+Set\+To\+Object\+Command@{Generate\+Set\+To\+Object\+Command}}
+\index{Generate\+Set\+To\+Object\+Command@{Generate\+Set\+To\+Object\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Generate\+Set\+To\+Object\+Command()}{GenerateSetToObjectCommand()}}
+{\footnotesize\ttfamily static Db\+Command Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Generate\+Set\+To\+Object\+Command (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{I\+Enumerable$<$ Member\+Info $>$}]{where,  }\item[{I\+Enumerable$<$ Member\+Info $>$}]{select }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
 Trying to generate command that would request objects members from server. 
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em T} & Type that has defined Table attribute. 
 \begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type that has defined Table attribute.\\
+\hline
 {\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
 \hline
-{\em error} & Error faces during operation.\\
+{\em where} & Collection that contains membewrs that need to be included to W\+H\+E\+RE \mbox{\hyperlink{namespace_uniform_data_operator_1_1_sql}{Sql}} block of S\+E\+L\+E\+CT query.\\
 \hline
-{\em members} & \\
-\hline
-{\em columns} & \\
+{\em select} & Collection that contains membewrs that need to be included to S\+E\+L\+E\+CT \mbox{\hyperlink{namespace_uniform_data_operator_1_1_sql}{Sql}} block of S\+E\+L\+E\+CT query. If empty then would be auto changed to $\ast$\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+Generated command suitable for current {\ttfamily Active} S\+QL server.
 \end{DoxyReturn}
-\\
-\hline
-\end{DoxyTemplParams}
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aafd50d73bfdb7cebf3631b2ecac36b80}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aafd50d73bfdb7cebf3631b2ecac36b80}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Generate\+Set\+Totable\+Command$<$ T $>$@{Generate\+Set\+Totable\+Command$<$ T $>$}}
-\index{Generate\+Set\+Totable\+Command$<$ T $>$@{Generate\+Set\+Totable\+Command$<$ T $>$}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Generate\+Set\+Totable\+Command$<$ T $>$()}{GenerateSetTotableCommand< T >()}}
-{\footnotesize\ttfamily Db\+Command Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Generate\+Set\+Totable\+Command$<$ T $>$ (\begin{DoxyParamCaption}\item[{object}]{data,  }\item[{out string}]{error }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac3af074cabe5721a685f0650dc69a871}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac3af074cabe5721a685f0650dc69a871}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Generate\+Set\+To\+Table\+Command@{Generate\+Set\+To\+Table\+Command}}
+\index{Generate\+Set\+To\+Table\+Command@{Generate\+Set\+To\+Table\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Generate\+Set\+To\+Table\+Command()}{GenerateSetToTableCommand()}}
+{\footnotesize\ttfamily Db\+Command Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Generate\+Set\+To\+Table\+Command (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{data,  }\item[{out string}]{error }\end{DoxyParamCaption})}
 
 
 
 Generating set to table sql command from provided source data. 
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em T} & Type that has defined Table attribute. Would be used as table descriptor during queri building.\\
-\hline
-\end{DoxyTemplParams}
-
 \begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type that has defined Table attribute. Would be used as table descriptor during queri building.\\
+\hline
 {\em data} & Object that contain\textquotesingle{}s fields that would be writed to data base. Affected only fields and properties with defined Column attribute.\\
 \hline
 {\em error} & Error faces during operation.\\
@@ -394,6 +335,30 @@ Initialize My\+Sql\+Connection.
 
 Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a590fa080f8c35ebf5ee6ac535545e2a8}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ad6b8397c665d57eac1a2680c7b5f44e9}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ad6b8397c665d57eac1a2680c7b5f44e9}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Members\+Allowed\+To\+Set@{Members\+Allowed\+To\+Set}}
+\index{Members\+Allowed\+To\+Set@{Members\+Allowed\+To\+Set}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Members\+Allowed\+To\+Set()}{MembersAllowedToSet()}}
+{\footnotesize\ttfamily static List$<$Member\+Info$>$ Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Members\+Allowed\+To\+Set (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{out string}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Detect common collection of members that can be included to query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type that has defined Table attribute.\\
+\hline
+{\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
+\hline
+{\em error} & Error faces during operation.\\
+\hline
+{\em table\+Descriptor} & Table descriptor recived during validation process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7d10fc1dfc16ece78ad066f596523782}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7d10fc1dfc16ece78ad066f596523782}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Member\+To\+Parameter@{Member\+To\+Parameter}}
 \index{Member\+To\+Parameter@{Member\+To\+Parameter}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
@@ -414,6 +379,34 @@ Convert value of member to data base parameter that can be used in command.
 \begin{DoxyReturn}{Returns}
 Parameter that could by used in commands to data base.
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af5850bfb38f7dfcd5acd5157458ef4bd}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af5850bfb38f7dfcd5acd5157458ef4bd}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!New\+Command@{New\+Command}}
+\index{New\+Command@{New\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{New\+Command()}{NewCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Db\+Command Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+New\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return new clear command suitable for current DB. 
+
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_afc0fd8b8c82515c498a6959453f331f1}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a6c2e2d374072c275953a515379963881}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a6c2e2d374072c275953a515379963881}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!New\+Command@{New\+Command}}
+\index{New\+Command@{New\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{New\+Command()}{NewCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Db\+Command Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+New\+Command (\begin{DoxyParamCaption}\item[{string}]{command\+Text }\end{DoxyParamCaption})}
+
+
+
+Return new clear command suitable for current DB with included command text. 
+
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a10c43a3bfb6e8c88b692488c3341f297}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ae7ad4f4d29d927fa8551b087a6e596b5}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ae7ad4f4d29d927fa8551b087a6e596b5}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Open\+Connection@{Open\+Connection}}
 \index{Open\+Connection@{Open\+Connection}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
@@ -455,73 +448,211 @@ Restoring S\+QL db from file.
 
 Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_acf6fdbfc57a21efc371e0772244defd5}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_add7cba0bf95fbe58e589b770eee695ee}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_add7cba0bf95fbe58e589b770eee695ee}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object$<$ T $>$@{Set\+To\+Object$<$ T $>$}}
-\index{Set\+To\+Object$<$ T $>$@{Set\+To\+Object$<$ T $>$}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Set\+To\+Object$<$ T $>$()}{SetToObject< T >()}}
-{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object$<$ T $>$ (\begin{DoxyParamCaption}\item[{object}]{obj,  }\item[{out string}]{error,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{columns }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a8f44635dc337c3652041f079190a792d}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a8f44635dc337c3652041f079190a792d}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object@{Set\+To\+Object}}
+\index{Set\+To\+Object@{Set\+To\+Object}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Object()}{SetToObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{out string}]{error,  }\item[{string \mbox{[}$\,$\mbox{]}}]{select,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{where }\end{DoxyParamCaption})}
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Trying to set object data to database. 
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em T} & Type that has defined Table attribute. 
 \begin{DoxyParams}{Parameters}
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
+{\em table\+Type} & Type with defined Table attribute. Contains columns with defined column attributes. Using as map for collecting data.\\
 \hline
-{\em error} & Error faces during operation.\\
+{\em obj} & Instance that contains data tha with the same column sttributes as in table\+Type.\\
 \hline
-{\em columns} & List of requested columns that would included to S\+QL query.\\
+{\em error} & Occurred error. Null if operation passed success.\\
+\hline
+{\em select} & Array that contains columns\textquotesingle{} names that would be requested in select block. If empty then would auto select all columns.\\
+\hline
+{\em where} & Array that contains columns\textquotesingle{} names taht wouyld be added to Where block.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Result of operation.
 \end{DoxyReturn}
-\\
-\hline
-\end{DoxyTemplParams}
 
 
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_af96d3f0bd2b58dfad705d2bfc3eba8fc}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a9a1822fcafcb1a3abd59b40f2cef7930}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ae3b550f82c725fa4f17d71f5f489dc10}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ae3b550f82c725fa4f17d71f5f489dc10}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object\+Async$<$ T $>$@{Set\+To\+Object\+Async$<$ T $>$}}
-\index{Set\+To\+Object\+Async$<$ T $>$@{Set\+To\+Object\+Async$<$ T $>$}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{Set\+To\+Object\+Async$<$ T $>$()}{SetToObjectAsync< T >()}}
-{\footnotesize\ttfamily async void Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object\+Async$<$ T $>$ (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{cancellation\+Token,  }\item[{object}]{obj,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{columns }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af763205fa1d8a8ad83afc672d5743d65}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af763205fa1d8a8ad83afc672d5743d65}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object@{Set\+To\+Object}}
+\index{Set\+To\+Object@{Set\+To\+Object}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Object()}{SetToObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{out string}]{error,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{select }\end{DoxyParamCaption})}
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Trying to set object data to database. Automaticly build where block with primary keys. 
 
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em T} & Type that has defined Table attribute. 
-\begin{DoxyParams}{Parameters}
-{\em cancellation\+Token} & Token that can terminate operation.\\
-\hline
-\end{DoxyParams}
-Would be used as table descriptor during queri building.\\
-\hline
-\end{DoxyTemplParams}
 
 \begin{DoxyParams}{Parameters}
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
+{\em table\+Type} & Type with defined Table attribute. Contains columns with defined column attributes. Using as map for collecting data.\\
 \hline
-{\em columns} & List of requested columns that would included to S\+QL query.\\
+{\em obj} & Instance that contains data tha with the same column sttributes as in table\+Type.\\
+\hline
+{\em error} & Occurred error. Null if operation passed success.\\
+\hline
+{\em select} & Array that contains columns\textquotesingle{} names that would be requested in select block. If empty then would auto select all columns.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ab2ab621174a956a67f9799469570dd11}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ae1053edf9aa3d9385ef3591e7ee863c7}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5da5cc531c8c953f73e7fc50513790e9}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5da5cc531c8c953f73e7fc50513790e9}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object@{Set\+To\+Object}}
+\index{Set\+To\+Object@{Set\+To\+Object}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Object()}{SetToObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{out string}]{error }\end{DoxyParamCaption})}
+
+
+
+Trying to set object data to database. Automaticly build where block with primary keys. Select all available columns. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type with defined Table attribute. Contains columns with defined column attributes. Using as map for collecting data.\\
+\hline
+{\em obj} & Instance that contains data tha with the same column sttributes as in table\+Type.\\
+\hline
+{\em error} & Occurred error. Null if operation passed success.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac170526dd0fa31f2848ece5f5c5bb9d7}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a98b579ed4a87c3f9dbdb90ffc28bf15c}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a98b579ed4a87c3f9dbdb90ffc28bf15c}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object\+Async@{Set\+To\+Object\+Async}}
+\index{Set\+To\+Object\+Async@{Set\+To\+Object\+Async}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Object\+Async()}{SetToObjectAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily async Task Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object\+Async (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{Cancellation\+Token}]{cancellation\+Token,  }\item[{object}]{obj,  }\item[{string \mbox{[}$\,$\mbox{]}}]{select,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{where }\end{DoxyParamCaption})}
+
+
+
+Trying to set object data to database. 
+
+Ocurred error can be recived via subscribtion on \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} event; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type with defined Table attribute. Contains columns with defined column attributes. Using as map for collecting data.\\
+\hline
+{\em cancellation\+Token} & Token that will terminate operation if would be required.\\
+\hline
+{\em obj} & Instance that contains data tha with the same column sttributes as in table\+Type.\\
+\hline
+{\em select} & Array that contains columns\textquotesingle{} names that would be requested in select block. If empty then would auto select all columns.\\
+\hline
+{\em where} & Array that contains columns\textquotesingle{} names taht wouyld be added to Where block.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Awaitable task.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a16e1513f43f3b9d76c687ba3b026573d}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a49ee22a2a69fbc0752c989c7b79e5e43}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a49ee22a2a69fbc0752c989c7b79e5e43}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object\+Async@{Set\+To\+Object\+Async}}
+\index{Set\+To\+Object\+Async@{Set\+To\+Object\+Async}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Object\+Async()}{SetToObjectAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily async Task Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object\+Async (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{Cancellation\+Token}]{cancellation\+Token,  }\item[{object}]{obj,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{select }\end{DoxyParamCaption})}
+
+
+
+Trying to set object data to database. 
+
+Ocurred error can be recived via subscribtion on \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} event; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type with defined Table attribute. Contains columns with defined column attributes. Using as map for collecting data.\\
+\hline
+{\em cancellation\+Token} & Token that will terminate operation if would be required.\\
+\hline
+{\em obj} & Instance that contains data tha with the same column sttributes as in table\+Type.\\
+\hline
+{\em select} & Array that contains columns\textquotesingle{} names that would be requested in select block. If empty then would auto select all columns.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Awaitable task.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a3a973b49f190dabe6bcd0bf3e79b3c5e}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a3be9aeb9ce11e3fd536449843a585490}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a3be9aeb9ce11e3fd536449843a585490}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Object\+Async@{Set\+To\+Object\+Async}}
+\index{Set\+To\+Object\+Async@{Set\+To\+Object\+Async}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Object\+Async()}{SetToObjectAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily async Task Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Object\+Async (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{Cancellation\+Token}]{cancellation\+Token,  }\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Trying to set object data to database. 
+
+Ocurred error can be recived via subscribtion on \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} event; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type with defined Table attribute. Contains columns with defined column attributes. Using as map for collecting data.\\
+\hline
+{\em cancellation\+Token} & Token that will terminate operation if would be required.\\
+\hline
+{\em obj} & Instance that contains data tha with the same column sttributes as in table\+Type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Awaitable task.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a497325acf359d4f8444ee0c2ff858e6e}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5a12c84883a7e4945b4fb3787a39b302}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5a12c84883a7e4945b4fb3787a39b302}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Table@{Set\+To\+Table}}
+\index{Set\+To\+Table@{Set\+To\+Table}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Table()}{SetToTable()}}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Table (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{data,  }\item[{out string}]{error }\end{DoxyParamCaption})}
+
+
+
+Creating request that setting up data from object to data base server acording to attributes. 
+
+$<$type name=\char`\"{}table\+Type\char`\"{}$>$Type that has defined Table attribute. Would be used as table descriptor during query building.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.\\
+\hline
+{\em error} & Error faces during operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ad05106eb6bd1a50f35b476a42821dfa3}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac1bee965fd57e9b2949c09a6b72a9e3e}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac1bee965fd57e9b2949c09a6b72a9e3e}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Table$<$ T $>$@{Set\+To\+Table$<$ T $>$}}
 \index{Set\+To\+Table$<$ T $>$@{Set\+To\+Table$<$ T $>$}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
 \subsubsection{\texorpdfstring{Set\+To\+Table$<$ T $>$()}{SetToTable< T >()}}
-{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Table$<$ T $>$ (\begin{DoxyParamCaption}\item[{object}]{data,  }\item[{out string}]{error }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a5a12c84883a7e4945b4fb3787a39b302}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Table}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{object}]{data,  }\item[{out string}]{error }\end{DoxyParamCaption})}
 
 
 
@@ -542,15 +673,34 @@ Creating request that setting up data from object to data base server acording t
 \begin{DoxyReturn}{Returns}
 Result of operation.
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a036b234868363f2f680e5157ee459439}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a036b234868363f2f680e5157ee459439}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Table\+Async@{Set\+To\+Table\+Async}}
+\index{Set\+To\+Table\+Async@{Set\+To\+Table\+Async}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Set\+To\+Table\+Async()}{SetToTableAsync()}}
+{\footnotesize\ttfamily async Task Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Table\+Async (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{Cancellation\+Token}]{cancellation\+Token,  }\item[{object}]{data }\end{DoxyParamCaption})}
 
 
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a1072f029395858ff11d574ac09011332}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a31e1837ecb4c58bbd39a31fa9cf51962}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a31e1837ecb4c58bbd39a31fa9cf51962}} 
+Creating request that setting up data from object to data base server acording to attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+\hline
+{\em cancellation\+Token} & Token that can terminate operation.\\
+\hline
+{\em data} & Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a35ef3899954f213e391751e9cda09322}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac615a17b6330b292dcf3fd912e1f4fe2}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac615a17b6330b292dcf3fd912e1f4fe2}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Set\+To\+Table\+Async$<$ T $>$@{Set\+To\+Table\+Async$<$ T $>$}}
 \index{Set\+To\+Table\+Async$<$ T $>$@{Set\+To\+Table\+Async$<$ T $>$}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
 \subsubsection{\texorpdfstring{Set\+To\+Table\+Async$<$ T $>$()}{SetToTableAsync< T >()}}
-{\footnotesize\ttfamily async void Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Table\+Async$<$ T $>$ (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{cancellation\+Token,  }\item[{object}]{data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a036b234868363f2f680e5157ee459439}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Set\+To\+Table\+Async}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{cancellation\+Token,  }\item[{object}]{data }\end{DoxyParamCaption})}
 
 
 
@@ -571,10 +721,28 @@ Would be used as table descriptor during queri building.\\
 {\em data} & Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.\\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a821d08d641098b3f5e4dd6342a3db718}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a821d08d641098b3f5e4dd6342a3db718}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Validate\+Entry\+RD@{Validate\+Entry\+RD}}
+\index{Validate\+Entry\+RD@{Validate\+Entry\+RD}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
+\subsubsection{\texorpdfstring{Validate\+Entry\+R\+D()}{ValidateEntryRD()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Validate\+Entry\+RD (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{out string}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
-Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_af43c4421b85e52d180763871be8147f6}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
 
+Validate entry data for read query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type that has defined Table attribute.\\
+\hline
+{\em obj} & Entry object/\\
+\hline
+{\em error} & Possible error. Null if success.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of validation.
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a233ab791c68b93aded97bfd9986767e8}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a233ab791c68b93aded97bfd9986767e8}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Validate\+Table\+Member@{Validate\+Table\+Member}}
 \index{Validate\+Table\+Member@{Validate\+Table\+Member}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
@@ -645,16 +813,6 @@ Connection to DB.
 
 Database\textquotesingle{}s name. 
 
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aed89486b1b51de67c62a97c160dcf048}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aed89486b1b51de67c62a97c160dcf048}} 
-\index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!New\+Command@{New\+Command}}
-\index{New\+Command@{New\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
-\subsubsection{\texorpdfstring{New\+Command}{NewCommand}}
-{\footnotesize\ttfamily Db\+Command Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+New\+Command\hspace{0.3cm}{\ttfamily [get]}}
-
-
-
-Return new clear command suitable for current DB. 
-
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aa080c79169d2bf29ac2249436ef2471c}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_aa080c79169d2bf29ac2249436ef2471c}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Password@{Password}}
 \index{Password@{Password}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
@@ -700,8 +858,8 @@ User for connection.
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+S\+Q\+L\+Data\+Operator\+Backup.\+cs\item 
-D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+S\+Q\+L\+Data\+Operator\+Params.\+cs\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+Sql\+Data\+Operator\+Params.\+cs\item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+Sql\+Data\+Operator\+Commands.\+cs\item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+S\+Q\+L\+Data\+Operator\+Connection.\+cs\item 
-D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+S\+Q\+L\+Data\+Operator\+Queries.\+cs\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+Sql\+Data\+Operator\+Db\+Read.\+cs\item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+Sql\+Data\+Operator\+Service.\+cs\end{DoxyCompactItemize}

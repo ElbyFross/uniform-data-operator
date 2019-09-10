@@ -9,19 +9,6 @@
     <derivedcompoundref refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator" prot="public" virt="non-virtual">UniformDataOperator.Sql.MySql.MySqlDataOperator</derivedcompoundref>
     <derivedcompoundref refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator" prot="public" virt="non-virtual">UniformDataOperator.Sql.MySql.MySqlDataOperator</derivedcompoundref>
       <sectiondef kind="property">
-      <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2b2c0870f78e1be23decc59e37d03cf0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
-        <type>DbCommand</type>
-        <definition>DbCommand UniformDataOperator.Sql.ISqlOperator.NewCommand</definition>
-        <argsstring></argsstring>
-        <name>NewCommand</name>
-        <briefdescription>
-<para>Return new clear command suitable for current DB. </para>        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="36" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="36" bodyend="36"/>
-      </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab1b593e38cb9377dac847811c483f2f3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
         <definition>string UniformDataOperator.Sql.ISqlOperator.Server</definition>
@@ -33,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="41" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="41" bodyend="41"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="37" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="37" bodyend="37"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2d0ac2538fa196b181f6e0ab523db137" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -46,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="46" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="46" bodyend="46"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="42" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a55b7f28ed4ab20f124e67e2d447f8b40" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -59,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="51" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="51" bodyend="51"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="47" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1abf0c3a32c8161030b37ccf960c395d4f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -72,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="56" bodyend="56"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="52" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a90f63ab37347ec080b37dc3256ead7a4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -85,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="61" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="61" bodyend="61"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="57" bodyend="57"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a99f034a986828e96955e3187cdfb28da" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>DbConnection</type>
@@ -98,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="66" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="66" bodyend="66"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="62" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="62" bodyend="62"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -114,208 +101,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="71" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="69" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool UniformDataOperator.Sql.ISqlOperator.OpenConnection</definition>
-        <argsstring>(out string error)</argsstring>
-        <name>OpenConnection</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae7ad4f4d29d927fa8551b087a6e596b5">OpenConnection</reimplementedby>
-        <param>
-          <type>out string</type>
-          <declname>error</declname>
-        </param>
-        <briefdescription>
-<para>Opening connection to SQL server. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>error</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Faced error. Null if passed success.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Result of connection.</para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="78" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a6429996e1bbb452f4e034fd634e640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool UniformDataOperator.Sql.ISqlOperator.CloseConnection</definition>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1afc0fd8b8c82515c498a6959453f331f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DbCommand</type>
+        <definition>DbCommand UniformDataOperator.Sql.ISqlOperator.NewCommand</definition>
         <argsstring>()</argsstring>
-        <name>CloseConnection</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae096306ef55611afbe96b0017f2032f6">CloseConnection</reimplementedby>
+        <name>NewCommand</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1af5850bfb38f7dfcd5acd5157458ef4bd">NewCommand</reimplementedby>
         <briefdescription>
-<para>Closing connection to SQL server. </para>        </briefdescription>
+<para>Return new clear command suitable for current DB. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Result of connection closing.</para></simplesect>
-</para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="84" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="74" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a94a133a152ee1f509bcb049c7175c445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void UniformDataOperator.Sql.ISqlOperator.ExecuteNonQuery</definition>
-        <argsstring>(string query)</argsstring>
-        <name>ExecuteNonQuery</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2ae34bb488958f927723a66914e56a0b">ExecuteNonQuery</reimplementedby>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a10c43a3bfb6e8c88b692488c3341f297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DbCommand</type>
+        <definition>DbCommand UniformDataOperator.Sql.ISqlOperator.NewCommand</definition>
+        <argsstring>(string commandText)</argsstring>
+        <name>NewCommand</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a6c2e2d374072c275953a515379963881">NewCommand</reimplementedby>
         <param>
           <type>string</type>
-          <declname>query</declname>
+          <declname>commandText</declname>
         </param>
         <briefdescription>
-<para>Sending SQL query to server. </para>        </briefdescription>
+<para>Return new clear command suitable for current DB with included command text. </para>        </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>query</parametername>
-</parameternamelist>
-<parameterdescription>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="90" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0124a73135270fb2b6eb33077f4dd38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>object</type>
-        <definition>object UniformDataOperator.Sql.ISqlOperator.ExecuteScalar</definition>
-        <argsstring>(string query)</argsstring>
-        <name>ExecuteScalar</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5d6645ebf8d909cb553dbdf6ab7e9b29">ExecuteScalar</reimplementedby>
-        <param>
-          <type>string</type>
-          <declname>query</declname>
-        </param>
-        <briefdescription>
-<para>Serching for first entry suitable to query and return as result. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>query</parametername>
-</parameternamelist>
-<parameterdescription>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Recived data.</para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="97" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1f12179dd2e639b12556e8821b0f7607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>DbDataReader</type>
-        <definition>DbDataReader UniformDataOperator.Sql.ISqlOperator.ExecuteReader</definition>
-        <argsstring>(string query)</argsstring>
-        <name>ExecuteReader</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1af268707ebe1917b32e450fb0f50e717d">ExecuteReader</reimplementedby>
-        <param>
-          <type>string</type>
-          <declname>query</declname>
-        </param>
-        <briefdescription>
-<para>Execute complex data reader. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>query</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>SQL query that would be shared to server.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Data reader with recived data.</para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="104" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad53cec492d507ed154f5535ce1db4e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int UniformDataOperator.Sql.ISqlOperator.Count</definition>
-        <argsstring>(string query)</argsstring>
-        <name>Count</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1acf051b5431ee10337b9ab6bc6184d4db">Count</reimplementedby>
-        <param>
-          <type>string</type>
-          <declname>query</declname>
-        </param>
-        <briefdescription>
-<para>Try to return count by query. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>query</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>SQL query that would send to server.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Count. -1 if not found.</para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="111" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void UniformDataOperator.Sql.ISqlOperator.Backup</definition>
-        <argsstring>(string directory)</argsstring>
-        <name>Backup</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a0dbd58206733a17dd26143b58d0859d7">Backup</reimplementedby>
-        <param>
-          <type>string</type>
-          <declname>directory</declname>
-        </param>
-        <briefdescription>
-<para>Backuping data base to sql file in directory. Name would be generated by timestamp. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>directory</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Directory that would store the backup file.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="118" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1acf6fdbfc57a21efc371e0772244defd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void UniformDataOperator.Sql.ISqlOperator.Restore</definition>
-        <argsstring>(string filePath)</argsstring>
-        <name>Restore</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a22a9e92989ebdb3a52b8ebe409c59831">Restore</reimplementedby>
-        <param>
-          <type>string</type>
-          <declname>filePath</declname>
-        </param>
-        <briefdescription>
-<para>Restoring SQL db from file. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>filePath</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Full path to file</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="124" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="79" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab43375e7f5d9dcce2adfef2f19a2078f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>DbParameter</type>
@@ -352,7 +170,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="132" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="87" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a12d464e0532a3e194b1221eee0c32d34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>DbCommand</type>
@@ -379,7 +197,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="139" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="94" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0757f304a24ffaa743e23e8bdd210950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -406,45 +224,34 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="146" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="101" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5ae8328a464ef80f1ae1bd46a573c265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool UniformDataOperator.Sql.ISqlOperator.ActivateSchema</definition>
-        <argsstring>(string schemaName, out string error)</argsstring>
-        <name>ActivateSchema</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2ed7d06bc016ae6d07cbcceffc21bbd3">ActivateSchema</reimplementedby>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a51af40df39808d53cdcc81852b836634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.ISqlOperator.DbTypeToString</definition>
+        <argsstring>(DbType type)</argsstring>
+        <name>DbTypeToString</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7b854ebbcdf31c67716d8c365c321a31">DbTypeToString</reimplementedby>
         <param>
-          <type>string</type>
-          <declname>schemaName</declname>
-        </param>
-        <param>
-          <type>out string</type>
-          <declname>error</declname>
+          <type>DbType</type>
+          <declname>type</declname>
         </param>
         <briefdescription>
-<para>Trying to set schema to databases server in case if shema not exist. </para>        </briefdescription>
+<para>Trying to convert DBType to specified type in string format that suitable to this database. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>schemaName</parametername>
+<parametername>type</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Name of the schema that would be used.</para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>error</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Error faces during operation.</para></parameterdescription>
+<para>Common DBType.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para></para></simplesect>
+<simplesect kind="return"><para>Type suitable for SQL command relative to this type of data base. InvalidCastException in case if converting not possible.</para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="154" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="109" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3b5fbe97e664e1ef689576ab8757f957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -482,240 +289,139 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="162" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="117" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1072f029395858ff11d574ac09011332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool UniformDataOperator.Sql.ISqlOperator.SetToTable&lt; T &gt;</definition>
-        <argsstring>(object data, out string error)</argsstring>
-        <name>SetToTable&lt; T &gt;</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ac1bee965fd57e9b2949c09a6b72a9e3e">SetToTable&lt; T &gt;</reimplementedby>
-        <param>
-          <type>object</type>
-          <declname>data</declname>
-        </param>
+        <definition>bool UniformDataOperator.Sql.ISqlOperator.OpenConnection</definition>
+        <argsstring>(out string error)</argsstring>
+        <name>OpenConnection</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae7ad4f4d29d927fa8551b087a6e596b5">OpenConnection</reimplementedby>
         <param>
           <type>out string</type>
           <declname>error</declname>
         </param>
         <briefdescription>
-<para>Creating request that setting up data from object to data base server acording to attributes. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Type that has defined Table attribute. Would be used as table descriptor during queri building.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.</para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>error</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Error faces during operation.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Result of operation.</para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="173" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1af43c4421b85e52d180763871be8147f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void UniformDataOperator.Sql.ISqlOperator.SetToTableAsync&lt; T &gt;</definition>
-        <argsstring>(CancellationToken cancellationToken, object data)</argsstring>
-        <name>SetToTableAsync&lt; T &gt;</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a31e1837ecb4c58bbd39a31fa9cf51962">SetToTableAsync&lt; T &gt;</reimplementedby>
-        <param>
-          <type>CancellationToken</type>
-          <declname>cancellationToken</declname>
-        </param>
-        <param>
-          <type>object</type>
-          <declname>data</declname>
-        </param>
-        <briefdescription>
-<para>Creating request that setting up data from object to data base server acording to attributes. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Type that has defined Table attribute. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>cancellationToken</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Token that can terminate operation.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-Would be used as table descriptor during queri building.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="183" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1af96d3f0bd2b58dfad705d2bfc3eba8fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool UniformDataOperator.Sql.ISqlOperator.SetToObject&lt; T &gt;</definition>
-        <argsstring>(object obj, out string error, params string[] columns)</argsstring>
-        <name>SetToObject&lt; T &gt;</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1add7cba0bf95fbe58e589b770eee695ee">SetToObject&lt; T &gt;</reimplementedby>
-        <param>
-          <type>object</type>
-          <declname>obj</declname>
-        </param>
-        <param>
-          <type>out string</type>
-          <declname>error</declname>
-        </param>
-        <param>
-          <type>params string []</type>
-          <declname>columns</declname>
-        </param>
-        <briefdescription>
-<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Type that has defined Table attribute. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>obj</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>error</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Error faces during operation.</para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>columns</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>List of requested columns that would included to SQL query.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Result of operation.</para></simplesect>
-</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="195" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab2ab621174a956a67f9799469570dd11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void UniformDataOperator.Sql.ISqlOperator.SetToObjectAsync&lt; T &gt;</definition>
-        <argsstring>(CancellationToken cancellationToken, object obj, params string[] columns)</argsstring>
-        <name>SetToObjectAsync&lt; T &gt;</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae3b550f82c725fa4f17d71f5f489dc10">SetToObjectAsync&lt; T &gt;</reimplementedby>
-        <param>
-          <type>CancellationToken</type>
-          <declname>cancellationToken</declname>
-        </param>
-        <param>
-          <type>object</type>
-          <declname>obj</declname>
-        </param>
-        <param>
-          <type>params string []</type>
-          <declname>columns</declname>
-        </param>
-        <briefdescription>
-<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Type that has defined Table attribute. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>cancellationToken</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Token that can terminate operation.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-Would be used as table descriptor during queri building.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>obj</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>columns</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>List of requested columns that would included to SQL query.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="207" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a51af40df39808d53cdcc81852b836634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>string</type>
-        <definition>string UniformDataOperator.Sql.ISqlOperator.DbTypeToString</definition>
-        <argsstring>(DbType type)</argsstring>
-        <name>DbTypeToString</name>
-        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7b854ebbcdf31c67716d8c365c321a31">DbTypeToString</reimplementedby>
-        <param>
-          <type>DbType</type>
-          <declname>type</declname>
-        </param>
-        <briefdescription>
-<para>Trying to convert DBType to specified type in string format that suitable to this database. </para>        </briefdescription>
+<para>Opening connection to SQL server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>type</parametername>
+<parametername>error</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Common DBType.</para></parameterdescription>
+<para>Faced error. Null if passed success.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Type suitable for SQL command relative to this type of data base. InvalidCastException in case if converting not possible.</para></simplesect>
+<simplesect kind="return"><para>Result of connection.</para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="215" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a6429996e1bbb452f4e034fd634e640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.Sql.ISqlOperator.CloseConnection</definition>
+        <argsstring>()</argsstring>
+        <name>CloseConnection</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae096306ef55611afbe96b0017f2032f6">CloseConnection</reimplementedby>
+        <briefdescription>
+<para>Closing connection to SQL server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Result of connection closing.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UniformDataOperator.Sql.ISqlOperator.Backup</definition>
+        <argsstring>(string directory)</argsstring>
+        <name>Backup</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a0dbd58206733a17dd26143b58d0859d7">Backup</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>directory</declname>
+        </param>
+        <briefdescription>
+<para>Backuping data base to sql file in directory. Name would be generated by timestamp. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>directory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Directory that would store the backup file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1acf6fdbfc57a21efc371e0772244defd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UniformDataOperator.Sql.ISqlOperator.Restore</definition>
+        <argsstring>(string filePath)</argsstring>
+        <name>Restore</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a22a9e92989ebdb3a52b8ebe409c59831">Restore</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Restoring SQL db from file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to file</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5ae8328a464ef80f1ae1bd46a573c265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.Sql.ISqlOperator.ActivateSchema</definition>
+        <argsstring>(string schemaName, out string error)</argsstring>
+        <name>ActivateSchema</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2ed7d06bc016ae6d07cbcceffc21bbd3">ActivateSchema</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>schemaName</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Trying to set schema to databases server in case if shema not exist. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>schemaName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the schema that would be used.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error faces during operation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="157" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aac9c3ed1e73af66e383340a154786ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -742,11 +448,458 @@ Would be used as table descriptor during queri building.</para></parameterdescri
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="222" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad05106eb6bd1a50f35b476a42821dfa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.Sql.ISqlOperator.SetToTable</definition>
+        <argsstring>(Type tableType, object data, out string error)</argsstring>
+        <name>SetToTable</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5a12c84883a7e4945b4fb3787a39b302">SetToTable</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Creating request that setting up data from object to data base server acording to attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para>&lt;type name=&quot;tableType&quot;&gt;Type that has defined Table attribute. Would be used as table descriptor during query building.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error faces during operation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of operation.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a35ef3899954f213e391751e9cda09322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task UniformDataOperator.Sql.ISqlOperator.SetToTableAsync</definition>
+        <argsstring>(Type tableType, CancellationToken cancellationToken, object data)</argsstring>
+        <name>SetToTableAsync</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a036b234868363f2f680e5157ee459439">SetToTableAsync</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Creating request that setting up data from object to data base server acording to attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellationToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Token that can terminate operation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a9a1822fcafcb1a3abd59b40f2cef7930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.Sql.ISqlOperator.SetToObject</definition>
+        <argsstring>(Type tableType, object obj, out string error, string[] select, params string[] where)</argsstring>
+        <name>SetToObject</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a8f44635dc337c3652041f079190a792d">SetToObject</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>string []</type>
+          <declname>select</declname>
+        </param>
+        <param>
+          <type>params string []</type>
+          <declname>where</declname>
+        </param>
+        <briefdescription>
+<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error faces during operation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>select</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of requested columns that would included to SQL query.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of requested columns that would included to <computeroutput>WHERE</computeroutput> part of SQL query.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of operation.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ae1053edf9aa3d9385ef3591e7ee863c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.Sql.ISqlOperator.SetToObject</definition>
+        <argsstring>(Type tableType, object obj, out string error, params string[] selsect)</argsstring>
+        <name>SetToObject</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1af763205fa1d8a8ad83afc672d5743d65">SetToObject</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>params string []</type>
+          <declname>selsect</declname>
+        </param>
+        <briefdescription>
+<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute. Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error faces during operation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selsect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of requested columns that would included to SQL query.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of operation.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac170526dd0fa31f2848ece5f5c5bb9d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UniformDataOperator.Sql.ISqlOperator.SetToObject</definition>
+        <argsstring>(Type tableType, object obj, out string error)</argsstring>
+        <name>SetToObject</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5da5cc531c8c953f73e7fc50513790e9">SetToObject</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute. Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error faces during operation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of operation.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a16e1513f43f3b9d76c687ba3b026573d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task UniformDataOperator.Sql.ISqlOperator.SetToObjectAsync</definition>
+        <argsstring>(Type tableType, CancellationToken cancellationToken, object obj, string[] select, params string[] where)</argsstring>
+        <name>SetToObjectAsync</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a98b579ed4a87c3f9dbdb90ffc28bf15c">SetToObjectAsync</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>string []</type>
+          <declname>select</declname>
+        </param>
+        <param>
+          <type>params string []</type>
+          <declname>where</declname>
+        </param>
+        <briefdescription>
+<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Add to WHERE block only requested columns. Request data only for required columns. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellationToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Token that can terminate operation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>select</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of requested columns that would included to SQL query.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of requested columns that would included to <computeroutput>WHERE</computeroutput> part of SQL query.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3a973b49f190dabe6bcd0bf3e79b3c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task UniformDataOperator.Sql.ISqlOperator.SetToObjectAsync</definition>
+        <argsstring>(Type tableType, CancellationToken cancellationToken, object obj, params string[] select)</argsstring>
+        <name>SetToObjectAsync</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a49ee22a2a69fbc0752c989c7b79e5e43">SetToObjectAsync</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>params string []</type>
+          <declname>select</declname>
+        </param>
+        <briefdescription>
+<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Request data only for required columns. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellationToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Token that can terminate operation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>select</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of requested columns that would included to SQL query.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a497325acf359d4f8444ee0c2ff858e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task UniformDataOperator.Sql.ISqlOperator.SetToObjectAsync</definition>
+        <argsstring>(Type tableType, CancellationToken cancellationToken, object obj)</argsstring>
+        <name>SetToObjectAsync</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a3be9aeb9ce11e3fd536449843a585490">SetToObjectAsync</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellationToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Token that can terminate operation.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object that cantains described primary keys, that would be used during query generation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="270" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Implement that interface to provide possiblity to controll your data base by using SQL queries. </para>    </briefdescription>
+<para>Implement that interface to provide possiblity to controll your data base by using SQL queryes. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
@@ -771,33 +924,34 @@ Would be used as table descriptor during queri building.</para></parameterdescri
         <link refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator"/>
       </node>
     </inheritancegraph>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="32" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="31" bodyend="223"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="32" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="31" bodyend="272"/>
     <listofallmembers>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5ae8328a464ef80f1ae1bd46a573c265" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>ActivateSchema</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Backup</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a6429996e1bbb452f4e034fd634e640" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>CloseConnection</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aac9c3ed1e73af66e383340a154786ec7" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>ColumnDeclarationCommand</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a99f034a986828e96955e3187cdfb28da" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Connection</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad53cec492d507ed154f5535ce1db4e42" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Count</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a55b7f28ed4ab20f124e67e2d447f8b40" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Database</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a51af40df39808d53cdcc81852b836634" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>DbTypeToString</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a12d464e0532a3e194b1221eee0c32d34" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>DisableSqlChecks</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0757f304a24ffaa743e23e8bdd210950" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>DisableSqlChecks</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a94a133a152ee1f509bcb049c7175c445" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>ExecuteNonQuery</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1f12179dd2e639b12556e8821b0f7607" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>ExecuteReader</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0124a73135270fb2b6eb33077f4dd38f" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>ExecuteScalar</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a590fa080f8c35ebf5ee6ac535545e2a8" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Initialize</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab43375e7f5d9dcce2adfef2f19a2078f" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>MemberToParameter</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2b2c0870f78e1be23decc59e37d03cf0" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>NewCommand</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1afc0fd8b8c82515c498a6959453f331f1" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>NewCommand</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a10c43a3bfb6e8c88b692488c3341f297" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>NewCommand</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>OpenConnection</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a90f63ab37347ec080b37dc3256ead7a4" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Password</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2d0ac2538fa196b181f6e0ab523db137" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Port</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1acf6fdbfc57a21efc371e0772244defd5" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Restore</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab1b593e38cb9377dac847811c483f2f3" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Server</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1af96d3f0bd2b58dfad705d2bfc3eba8fc" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObject&lt; T &gt;</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab2ab621174a956a67f9799469570dd11" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObjectAsync&lt; T &gt;</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1072f029395858ff11d574ac09011332" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToTable&lt; T &gt;</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1af43c4421b85e52d180763871be8147f6" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToTableAsync&lt; T &gt;</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a9a1822fcafcb1a3abd59b40f2cef7930" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObject</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ae1053edf9aa3d9385ef3591e7ee863c7" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObject</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac170526dd0fa31f2848ece5f5c5bb9d7" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObject</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a16e1513f43f3b9d76c687ba3b026573d" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObjectAsync</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3a973b49f190dabe6bcd0bf3e79b3c5e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObjectAsync</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a497325acf359d4f8444ee0c2ff858e6e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToObjectAsync</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad05106eb6bd1a50f35b476a42821dfa3" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToTable</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a35ef3899954f213e391751e9cda09322" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>SetToTableAsync</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1abf0c3a32c8161030b37ccf960c395d4f" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>UserId</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3b5fbe97e664e1ef689576ab8757f957" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>ValidateTableMember</name></member>
     </listofallmembers>

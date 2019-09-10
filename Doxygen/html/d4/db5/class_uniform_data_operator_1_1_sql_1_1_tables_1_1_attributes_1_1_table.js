@@ -2,6 +2,7 @@ var class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table =
 [
     [ "Table", "d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a9a9520de93e5915cc5ba19876a46fd72", null ],
     [ "Table", "d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a0ebe98496d866be368b2c480a485c812", null ],
+    [ "FindMembersByColumns", "d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a8886912a323f3a9e1da5e23c8dd45ca0", null ],
     [ "GenerateCreateTableCommand", "d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#aab5f211f9d9f392317fbe610ba63d91c", null ],
     [ "TrySetTable", "d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a609ed9b13e7e9007709d76a6f08d96e8", null ],
     [ "TrySetTables", "d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#ac3f20322c0c96c7cbd876d4a8bc29656", null ],

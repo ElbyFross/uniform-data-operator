@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['engine',['engine',['../d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a1d9e900b69ea04e44858116c6aa01983',1,'UniformDataOperator::Sql::Tables::Attributes::Table']]],
-  ['executenonquery',['ExecuteNonQuery',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a94a133a152ee1f509bcb049c7175c445',1,'UniformDataOperator.Sql.ISqlOperator.ExecuteNonQuery()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a2ae34bb488958f927723a66914e56a0b',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.ExecuteNonQuery()']]],
-  ['executereader',['ExecuteReader',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a1f12179dd2e639b12556e8821b0f7607',1,'UniformDataOperator.Sql.ISqlOperator.ExecuteReader()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#af268707ebe1917b32e450fb0f50e717d',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.ExecuteReader()']]],
-  ['executescalar',['ExecuteScalar',['../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a0124a73135270fb2b6eb33077f4dd38f',1,'UniformDataOperator.Sql.ISqlOperator.ExecuteScalar()'],['../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5d6645ebf8d909cb553dbdf6ab7e9b29',1,'UniformDataOperator.Sql.MySql.MySqlDataOperator.ExecuteScalar()']]]
+  ['engine',['engine',['../d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a1d9e900b69ea04e44858116c6aa01983',1,'UniformDataOperator::Sql::Tables::Attributes::Table']]]
 ];

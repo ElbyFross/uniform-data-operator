@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Uniform Data Operator
-   &#160;<span id="projectnumber">1.0.0 alpha</span>
+   &#160;<span id="projectnumber">1.0.0 alpha 3.0</span>
    </div>
    <div id="projectbrief">Easy | Fast | Protected</div>
   </td>
@@ -138,10 +138,6 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>Converter()
 : <a class="el" href="da/dcd/class_uniform_data_operator_1_1_attributes_handler.html#a3c0dc5fda5e0397bf6b284392236c46e">UniformDataOperator.AttributesHandler</a>
 </li>
-<li>Count()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ad53cec492d507ed154f5535ce1db4e42">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#acf051b5431ee10337b9ab6bc6184d4db">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
-</li>
 </ul>
 
 
@@ -156,6 +152,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>Default()
 : <a class="el" href="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default.html#a727920a02bdfc4af5fb187729f048ca5">UniformDataOperator.Sql.Tables.Attributes.Default</a>
 </li>
+<li>DetectPKToSet()
+: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a30fd1063d13dae2c7833aed7c405554c">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+</li>
 <li>DisableSqlChecks()
 : <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a12d464e0532a3e194b1221eee0c32d34">UniformDataOperator.Sql.ISqlOperator</a>
 , <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#affbacb4fb1773fc14cdbb9cbcd315c5f">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
@@ -163,25 +162,12 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </ul>
 
 
-<h3><a id="index_e"></a>- e -</h3><ul>
-<li>ExecuteNonQuery()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a94a133a152ee1f509bcb049c7175c445">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a2ae34bb488958f927723a66914e56a0b">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
-</li>
-<li>ExecuteReader()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a1f12179dd2e639b12556e8821b0f7607">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#af268707ebe1917b32e450fb0f50e717d">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
-</li>
-<li>ExecuteScalar()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a0124a73135270fb2b6eb33077f4dd38f">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5d6645ebf8d909cb553dbdf6ab7e9b29">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
-</li>
-</ul>
-
-
 <h3><a id="index_f"></a>- f -</h3><ul>
 <li>FindFieldsWithAttribute&lt; T &gt;()
 : <a class="el" href="da/dcd/class_uniform_data_operator_1_1_attributes_handler.html#a075ceb8dabe05f15f7bd0bd4b1517c80">UniformDataOperator.AttributesHandler</a>
+</li>
+<li>FindMembersByColumns()
+: <a class="el" href="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#a8886912a323f3a9e1da5e23c8dd45ca0">UniformDataOperator.Sql.Tables.Attributes.Table</a>
 </li>
 <li>FindMembersWithAttribute&lt; T &gt;()
 : <a class="el" href="da/dcd/class_uniform_data_operator_1_1_attributes_handler.html#af629ef53b40e2b73b2e8fb5dafd1239d">UniformDataOperator.AttributesHandler</a>
@@ -211,11 +197,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>GenerateCreateTableCommand()
 : <a class="el" href="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html#aab5f211f9d9f392317fbe610ba63d91c">UniformDataOperator.Sql.Tables.Attributes.Table</a>
 </li>
-<li>GenerateSetToObjectCommand&lt; T &gt;()
-: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a62557a54a6ac875bbc3ea0b934190224">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+<li>GenerateSetToObjectCommand()
+: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a0d3153822bac0ad760aed9f37e58d69b">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
 </li>
-<li>GenerateSetTotableCommand&lt; T &gt;()
-: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#aafd50d73bfdb7cebf3631b2ecac36b80">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+<li>GenerateSetToTableCommand()
+: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#ac3af074cabe5721a685f0650dc69a871">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
 </li>
 <li>GetIgnorable()
 : <a class="el" href="df/d8d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_auto_increment.html#a8f767a4f923f096b67444fda9cb11cc6">UniformDataOperator.Sql.Tables.Attributes.IsAutoIncrement</a>
@@ -257,6 +243,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>MembersAllowedToSet()
+: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#ad6b8397c665d57eac1a2680c7b5f44e9">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+</li>
 <li>MembersDataToCommand()
 : <a class="el" href="d2/da8/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column.html#a8351a69a11f029f6cd4c079bf4612c6e">UniformDataOperator.Sql.Tables.Attributes.Column</a>
 </li>
@@ -269,6 +258,14 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>MySqlDBTypeOverride()
 : <a class="el" href="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override.html#aa560e25692613f1a6860f8991dc18a66">UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>NewCommand()
+: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#afc0fd8b8c82515c498a6959453f331f1">UniformDataOperator.Sql.ISqlOperator</a>
+, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#af5850bfb38f7dfcd5acd5157458ef4bd">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
 </li>
 </ul>
 
@@ -293,21 +290,27 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>SetDefault()
 : <a class="el" href="d7/d6b/class_my_s_q_l_tests_1_1_tables.html#a2bf30026249403d4a1764d4bc88af649">MySQLTests.Tables</a>
 </li>
-<li>SetToObject&lt; T &gt;()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#af96d3f0bd2b58dfad705d2bfc3eba8fc">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#add7cba0bf95fbe58e589b770eee695ee">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+<li>SetToObject()
+: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a9a1822fcafcb1a3abd59b40f2cef7930">UniformDataOperator.Sql.ISqlOperator</a>
+, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a8f44635dc337c3652041f079190a792d">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
 </li>
-<li>SetToObjectAsync&lt; T &gt;()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ab2ab621174a956a67f9799469570dd11">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#ae3b550f82c725fa4f17d71f5f489dc10">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+<li>SetToObjectAsync()
+: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a16e1513f43f3b9d76c687ba3b026573d">UniformDataOperator.Sql.ISqlOperator</a>
+, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a98b579ed4a87c3f9dbdb90ffc28bf15c">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+</li>
+<li>SetToTable()
+: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ad05106eb6bd1a50f35b476a42821dfa3">UniformDataOperator.Sql.ISqlOperator</a>
+, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5a12c84883a7e4945b4fb3787a39b302">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
 </li>
 <li>SetToTable&lt; T &gt;()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a1072f029395858ff11d574ac09011332">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#ac1bee965fd57e9b2949c09a6b72a9e3e">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#ac1bee965fd57e9b2949c09a6b72a9e3e">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+</li>
+<li>SetToTableAsync()
+: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a35ef3899954f213e391751e9cda09322">UniformDataOperator.Sql.ISqlOperator</a>
+, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a036b234868363f2f680e5157ee459439">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
 </li>
 <li>SetToTableAsync&lt; T &gt;()
-: <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#af43c4421b85e52d180763871be8147f6">UniformDataOperator.Sql.ISqlOperator</a>
-, <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a31e1837ecb4c58bbd39a31fa9cf51962">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#ac615a17b6330b292dcf3fd912e1f4fe2">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
 </li>
 <li>SetValue()
 : <a class="el" href="da/dcd/class_uniform_data_operator_1_1_attributes_handler.html#a2619c62d9978b033619e4bfd248f5290">UniformDataOperator.AttributesHandler</a>
@@ -342,6 +345,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_v"></a>- v -</h3><ul>
+<li>ValidateEntryRD()
+: <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a821d08d641098b3f5e4dd6342a3db718">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
+</li>
 <li>ValidateTableMember()
 : <a class="el" href="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a3b5fbe97e664e1ef689576ab8757f957">UniformDataOperator.Sql.ISqlOperator</a>
 , <a class="el" href="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a233ab791c68b93aded97bfd9986767e8">UniformDataOperator.Sql.MySql.MySqlDataOperator</a>
