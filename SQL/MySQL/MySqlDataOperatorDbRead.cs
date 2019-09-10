@@ -187,7 +187,7 @@ namespace UniformDataOperator.Sql.MySql
             // Drop if error has been occured.
             if (!string.IsNullOrEmpty(error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Commnad generation failed. Details:\n" + error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, "Commnad generation failed. Details:\n" + error);
                 return;
             }
 
@@ -195,7 +195,7 @@ namespace UniformDataOperator.Sql.MySql
             // Opening connection to DB srver.
             if (!Active.OpenConnection(out error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Connection failed. Details:\n" + error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, "Connection failed. Details:\n" + error);
                 return;
             }
             command.Connection = SqlOperatorHandler.Active.Connection;
@@ -206,7 +206,7 @@ namespace UniformDataOperator.Sql.MySql
             // Drop if DbDataReader is invalid.           
             if (reader == null || reader.IsClosed)
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active,
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj,
                     "DbDataReader is null or closed. Operation declined.");
                 return;
             }
@@ -215,7 +215,7 @@ namespace UniformDataOperator.Sql.MySql
             if (!SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error))
             {
                 // Log error.
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
             }
 
             // Closing connection.
@@ -244,7 +244,7 @@ namespace UniformDataOperator.Sql.MySql
             // Collect pk keys as where expression.
             if (!DetectPKToSet(tableType, out string error, out string[] where))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
             }
 
             await SetToObjectAsync(tableType, cancellationToken, obj, select, where);
@@ -268,7 +268,7 @@ namespace UniformDataOperator.Sql.MySql
             // Collect pk keys as where expression.
             if (!DetectPKToSet(tableType, out string error, out string[] where))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
             }
 
             string[] select = new string[0];

@@ -371,7 +371,7 @@ namespace UniformDataOperator.Sql.MySql
             // Drop if error has been occured.
             if (!string.IsNullOrEmpty(error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Commnad generation failed. Details:\n" + error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Commnad generation failed. Details:\n" + error);
                 return;
             }
 
@@ -379,7 +379,7 @@ namespace UniformDataOperator.Sql.MySql
             // Opening connection to DB srver.
             if (!Active.OpenConnection(out error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Connection failed.\n" + error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Connection failed.\n" + error);
                 return;
             }
 
@@ -403,7 +403,7 @@ namespace UniformDataOperator.Sql.MySql
             // Log if command failed.
             if (affectedRowsCount == 0)
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(Active, "Query not affect any row.\n\n" + command.CommandText);
+                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Query not affect any row.\n\n" + command.CommandText);
             }
         }
         #endregion
