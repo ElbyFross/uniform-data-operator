@@ -14,26 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
-    /// Add default valu to the field.
+    /// Is it's primary key.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class Default : Attribute
+    public class IsPrimaryKey : Attribute
     {
-        /// <summary>
-        /// Default or Expression value.
-        /// </summary>
-        public string defExp;
-
-        /// <summary>
-        /// Init default value.
-        /// </summary>
-        /// <param name="defExp">Default or Expression value.</param>
-        public Default(string defExp)
-        {
-            this.defExp = defExp;
-        }
     }
 }

@@ -19,7 +19,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
     /// Attribute that would force to automatic generation of table on your SQL server suitable for declered members in class or structure.
@@ -28,9 +28,9 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     public class Table : Attribute
     { 
         /// <summary>
-        /// Name of the holding shema.
+        /// Name of the holding schema.
         /// </summary>
-        public string shema;
+        public string schema;
 
         /// <summary>
         /// Name of the table.
@@ -45,32 +45,32 @@ namespace UniformDataOperator.Sql.Tables.Attributes
         /// <summary>
         /// Configurate SQL table.
         /// </summary>
-        /// <param name="shema">Name of foreign shema.</param>
+        /// <param name="schema">Name of foreign schema.</param>
         /// <param name="table">Name of foreign table.</param>
-        public Table(string shema, string table)
+        public Table(string schema, string table)
         {
-            this.shema = shema;
+            this.schema = schema;
             this.table = table;
         }
 
         /// <summary>
         /// Configurate SQL table.
         /// </summary>
-        /// <param name="shema">Name of foreign shema.</param>
+        /// <param name="schema">Name of foreign schema.</param>
         /// <param name="table">Name of foreign table.</param>
         /// <param name="engine">Name of the database engine.</param>
-        public Table(string shema, string table, string engine)
+        public Table(string schema, string table, string engine)
         {
-            this.shema = shema;
+            this.schema = schema;
             this.table = table;
             this.engine = engine;
         }
-        
+
 
         /// <summary>
         /// Return command that would allow to create table by descriptor.
         /// </summary>
-        /// <param name="tableDescriptor"></param>
+        /// <param name="sourceType"></param>
         /// <returns></returns>
         public static string GenerateCreateTableCommand(Type sourceType)
         {
@@ -82,7 +82,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
 
             // Variable that would contain SQL comand.
             string command = "";
-            command += "CREATE TABLE IF NOT EXISTS `" + table.shema + "`.`" + table.table + "` (\n";
+            command += "CREATE TABLE IF NOT EXISTS `" + table.schema + "`.`" + table.table + "` (\n";
 
             IEnumerable<MemberInfo> columns = AttributesHandler.FindMembersWithAttribute<Column>(sourceType);
 
@@ -239,7 +239,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
         /// </summary>
         /// <param name="disableSQLChecks">Disable check of data itegrity during command.</param>
         /// <param name="tableDescriptor">Type that would be trying to recreate on your SQL server. 
-        /// Must has defined UniformDataOperator.SQL.Tables.Attributes.Table attribute.</param>
+        /// Must has defined UniformDataOperator.Sql.Attributes.Table attribute.</param>
         /// <param name="error">Error faces during operation.</param>
         /// <returns>Result of operation.</returns>
         public static bool TrySetTable(bool disableSQLChecks, Type tableDescriptor, out string error)

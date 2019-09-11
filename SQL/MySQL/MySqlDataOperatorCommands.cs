@@ -25,8 +25,8 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 using System.Reflection;
-using UniformDataOperator.Sql.Tables.Attributes;
-using UniformDataOperator.Sql.Tables.Attributes.Modifiers;
+using UniformDataOperator.Sql.Attributes;
+using UniformDataOperator.Sql.Attributes.Modifiers;
 
 namespace UniformDataOperator.Sql.MySql
 {
@@ -36,7 +36,7 @@ namespace UniformDataOperator.Sql.MySql
     public partial class MySqlDataOperator : ISqlOperator
     { 
         /// <summary>
-        /// Trying to set schema to databases server in case if shema not exist.
+        /// Trying to set schema to databases server in case if schema not exist.
         /// </summary>
         /// <param name="schemaName">Name of the schema that would be used\created.</param>
         /// <param name="error">Error faces during operation.</param>
@@ -52,7 +52,7 @@ namespace UniformDataOperator.Sql.MySql
             // Variable that would contain SQL comand.
             string command = "";
 
-            // Creating shema if not exist.
+            // Creating schema if not exist.
             command += "CREATE SCHEMA IF NOT EXISTS `" + schemaName + "` DEFAULT CHARACTER SET utf8 ;\n";
 
             // Setting schema as target.
@@ -267,7 +267,7 @@ namespace UniformDataOperator.Sql.MySql
             Column.MembersToMetaLists(membersNK, out List<Column> membersNKColumns, out List<string> membersNKVars);
 
             string commadText = "";
-            commadText += "INSERT INTO " + tableDesciptor.shema + "." + tableDesciptor.table + "\n";
+            commadText += "INSERT INTO " + tableDesciptor.schema + "." + tableDesciptor.table + "\n";
             commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersColumns) + ")\n";
             commadText += "\tVALUES\n";
             commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersVars) + ")\n";
@@ -358,11 +358,11 @@ namespace UniformDataOperator.Sql.MySql
         /// <summary>
         /// Creating request that setting up data from object to data base server acording to attributes.
         /// </summary>
-        /// <param name="tableType">Type that has defined Table attribute. Would be used as table descriptor during queri building.</param>
-        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// <param name="tableType">Type that has defined Table attribute
+        /// Would be used as table descriptor during query building.</param>
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// <param name="data">Object that contains fields that would be writed to data base. 
         /// Affected only fields and properties with defined Column attribute.</param>
-        /// <param name="error">Error faces during operation.</param>
-        /// <returns>Result of operation.</returns>
         public async Task SetToTableAsync(Type tableType, CancellationToken cancellationToken, object data)
         {
             // Generate command

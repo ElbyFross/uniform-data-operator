@@ -13,30 +13,14 @@
 //limitations under the License.
 
 using System;
-using System.Reflection;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
-    /// Is this value must be unique by this column. 
+    /// Is not have signs after dot.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsUnique : Attribute
+    public class IsUnsigned : Attribute
     {
-        /// <summary>
-        /// Return unique index init string.
-        /// </summary>
-        /// <returns></returns>
-        public string UniqueIndexDeclarationCommand(MemberInfo member)
-        {
-            // Looking for column attribute.
-            if(!AttributesHandler.TryToGetAttribute<Column>(member, out Column column))
-            {
-                // Drop if not column.
-                return "";
-            }
-
-            return "UNIQUE INDEX `" + column.title + "_UNIQUE` (`" + column.title + "` ASC) VISIBLE";
-        }
     }
 }

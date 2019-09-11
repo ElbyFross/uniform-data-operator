@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes.Modifiers
 {
     /// <summary>
-    /// Is value wold be willed by zero by default. Only for numerical columns.
+    /// Can be defined to ignore of writing this value during set-like queries to server.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsZeroFill : Attribute
+    public class SetQueryIgnore : Attribute
     {
     }
 }

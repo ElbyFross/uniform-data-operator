@@ -147,7 +147,7 @@ namespace UniformDataOperator.Sql
             // Try to init all maped memvers.
             foreach (MemberInfo member in members)
             {
-                Tables.Attributes.Column column = member.GetCustomAttribute<Tables.Attributes.Column>();
+                Attributes.Column column = member.GetCustomAttribute<Attributes.Column>();
 
                 // Trying to get value from reader relative to this member.
                 object receivedValue = null;

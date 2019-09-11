@@ -24,10 +24,10 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 using System.Reflection;
-using UniformDataOperator.Sql.Tables.Attributes;
-using UniformDataOperator.Sql.Tables.Attributes.Modifiers;
+using UniformDataOperator.Sql.Attributes;
+using UniformDataOperator.Sql.Attributes.Modifiers;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
     /// Is value of this column would incremented relative to previous one during init.

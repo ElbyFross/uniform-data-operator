@@ -13,14 +13,30 @@
 //limitations under the License.
 
 using System;
+using System.Reflection;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
-    /// Is data would stored in binary format.
+    /// Is this value must be unique by this column. 
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsBinary : Attribute
+    public class IsUnique : Attribute
     {
+        /// <summary>
+        /// Return unique index init string.
+        /// </summary>
+        /// <returns></returns>
+        public string UniqueIndexDeclarationCommand(MemberInfo member)
+        {
+            // Looking for column attribute.
+            if(!AttributesHandler.TryToGetAttribute<Column>(member, out Column column))
+            {
+                // Drop if not column.
+                return "";
+            }
+
+            return "UNIQUE INDEX `" + column.title + "_UNIQUE` (`" + column.title + "` ASC) VISIBLE";
+        }
     }
 }

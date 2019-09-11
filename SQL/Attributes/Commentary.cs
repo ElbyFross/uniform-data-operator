@@ -14,7 +14,7 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
     /// Add commentary to SQL table.
@@ -36,11 +36,19 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             this.commentary = commentary;
         }
 
+        /// <summary>
+        /// Return comment in string format.
+        /// </summary>
+        /// <returns>Comment in string format.</returns>
         public override string ToString()
         {
             return commentary;
         }
 
+        /// <summary>
+        /// Return comment in string format.
+        /// </summary>
+        /// <param name="commentary">Input comment.</param>
         public static implicit operator string(Commentary commentary)
         {
             return commentary.commentary;

@@ -18,8 +18,11 @@ using System.Reflection;
 using System.Data;
 using System.Data.Common;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
+    /// <summary>
+    /// Descriptro of data base table's column.
+    /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class Column : Attribute
     {
@@ -44,11 +47,19 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             this.type = type;
         }
 
+        /// <summary>
+        /// Converting column to string view.
+        /// </summary>
+        /// <param name="column">Input column.</param>
         public static implicit operator string(Column column)
         {
-            return column.title;
+            return column?.title;
         }
 
+        /// <summary>
+        /// Converting column to string view.
+        /// </summary>
+        /// <returns>Tielt of column.</returns>
         public override string ToString()
         {
             return title;

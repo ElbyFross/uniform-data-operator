@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
-    /// Is it's primary key.
+    /// Is data would stored in binary format.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsPrimaryKey : Attribute
+    public class IsBinary : Attribute
     {
     }
 }

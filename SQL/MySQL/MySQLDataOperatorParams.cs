@@ -22,7 +22,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using UniformDataOperator.Sql.Tables.Attributes;
+using UniformDataOperator.Sql.Attributes;
 
 namespace UniformDataOperator.Sql.MySql
 {

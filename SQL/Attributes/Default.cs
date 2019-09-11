@@ -14,13 +14,26 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Tables.Attributes.Modifiers
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
-    /// Can be defined to ignore of writing this value during set-like queries to server.
+    /// Add default valu to the field.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class SetQueryIgnore : Attribute
+    public class Default : Attribute
     {
+        /// <summary>
+        /// Default or Expression value.
+        /// </summary>
+        public string defExp;
+
+        /// <summary>
+        /// Init default value.
+        /// </summary>
+        /// <param name="defExp">Default or Expression value.</param>
+        public Default(string defExp)
+        {
+            this.defExp = defExp;
+        }
     }
 }

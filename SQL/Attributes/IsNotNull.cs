@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
-    /// Is not have signs after dot.
+    /// Is value always not null.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsUnsigned : Attribute
+    public class IsNotNull : Attribute
     {
     }
 }

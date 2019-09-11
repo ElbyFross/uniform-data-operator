@@ -14,7 +14,7 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
     /// Mark field as generated.
@@ -22,9 +22,18 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
     public class IsGenerated : Default
     {
+        /// <summary>
+        /// Modes of generated columns.
+        /// </summary>
         public enum Mode
         {
+            /// <summary>
+            /// Value computed be expression and stored in data base as value.
+            /// </summary>
             Stored,
+            /// <summary>
+            /// Value would be computed as expression during every call.
+            /// </summary>
             Virual
         }
 

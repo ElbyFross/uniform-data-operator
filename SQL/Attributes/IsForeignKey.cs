@@ -15,7 +15,7 @@
 using System;
 using System.Reflection;
 
-namespace UniformDataOperator.Sql.Tables.Attributes
+namespace UniformDataOperator.Sql.Attributes
 {
     /// <summary>
     /// Mark fireld as foreign key to other column.
@@ -23,18 +23,33 @@ namespace UniformDataOperator.Sql.Tables.Attributes
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsForeignKey : Attribute
     {
+        /// <summary>
+        /// Action's mode that would be used as reaction on event.
+        /// </summary>
         public enum Action
         {
+            /// <summary>
+            /// Don't do anything.
+            /// </summary>
             NoAction,
+            /// <summary>
+            /// Goins down by member and react all members in relative tables.
+            /// </summary>
             Cascade,
+            /// <summary>
+            /// Don't do anything.
+            /// </summary>
             Restrict,
+            /// <summary>
+            /// Setting null to coulmn value.
+            /// </summary>
             SetNull
         }
 
         /// <summary>
-        /// Name of foreign shema.
+        /// Name of foreign schema.
         /// </summary>
-        public string shema;
+        public string schema;
 
         /// <summary>
         /// Name of foreign table.
@@ -59,12 +74,12 @@ namespace UniformDataOperator.Sql.Tables.Attributes
         /// <summary>
         /// Configurate forgeign column reference.
         /// </summary>
-        /// <param name="shema">Name of foreign shema.</param>
+        /// <param name="schema">Name of foreign schema.</param>
         /// <param name="table">Name of foreign table.</param>
         /// <param name="column">Name of foreign column.</param>
-        public IsForeignKey(string shema, string table, string column)
+        public IsForeignKey(string schema, string table, string column)
         {
-            this.shema = shema;
+            this.schema = schema;
             this.table = table;
             this.column = column;
         }
@@ -72,14 +87,14 @@ namespace UniformDataOperator.Sql.Tables.Attributes
         /// <summary>
         /// Configurate forgeign column reference.
         /// </summary>
-        /// <param name="shema">Name of foreign shema.</param>
+        /// <param name="schema">Name of foreign schema.</param>
         /// <param name="table">Name of foreign table.</param>
         /// <param name="column">Name of foreign column.</param>
         /// <param name="onDeleteCommand">Command that would be applied in case of deleting.</param>
         /// <param name="onUpdateCommand">Command that would be applied in case of updating.</param>
-        public IsForeignKey(string shema, string table, string column, Action onDeleteCommand, Action onUpdateCommand)
+        public IsForeignKey(string schema, string table, string column, Action onDeleteCommand, Action onUpdateCommand)
         {
-            this.shema = shema;
+            this.schema = schema;
             this.table = table;
             this.column = column;
 
@@ -104,10 +119,10 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             }
         }
 
-
         /// <summary>
         /// Return index init string suitable from forgeign key suitable for this column.
         /// </summary>
+        /// <param name="member">Member that would be used to looking for descriptors.</param>
         /// <param name="selfTableName">Name of the table that contain column.</param>
         /// <returns>Return SQL command that wold generate FK index.</returns>
         public static string FKIndexDeclarationCommand(MemberInfo member, string selfTableName)
@@ -164,7 +179,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
             string command = "";
             command += "CONSTRAINT `" + isForeignKey.FKName(selfTableName) + "`\n";
             command += "\tFOREIGN KEY(`" + column.title + "`)\n";
-            command += "\tREFERENCES `" + isForeignKey.shema + "`.`" + isForeignKey.table + "` (`" + isForeignKey.column + "`)\n";
+            command += "\tREFERENCES `" + isForeignKey.schema + "`.`" + isForeignKey.table + "` (`" + isForeignKey.column + "`)\n";
             command += "\tON DELETE " + IsForeignKey.ActionToCommand(isForeignKey.onDeleteCommand) + "\n";
             command += "\tON UPDATE " + IsForeignKey.ActionToCommand(isForeignKey.onUpdateCommand);
             return command;
@@ -173,6 +188,7 @@ namespace UniformDataOperator.Sql.Tables.Attributes
         /// <summary>
         /// Generate init string from contrains related to this column.
         /// </summary>
+        /// <param name="member">Member that would be used to looking for descriptors.</param>
         /// <param name="selfTableName">Name of holding table.</param>
         /// <returns>Generated SQL command.</returns>
         public static string ConstrainDeclarationCommand(MemberInfo member, string selfTableName)
