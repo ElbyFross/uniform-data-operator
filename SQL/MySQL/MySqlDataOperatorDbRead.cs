@@ -371,7 +371,12 @@ namespace UniformDataOperator.Sql.MySql
             IEnumerable<MemberInfo> where,
             IEnumerable<MemberInfo> select)
         {
-            Table tableDescriptor = tableType.GetCustomAttribute<Table>();
+            // Loking for table descriptor.
+            if (!Table.TryToGetTableAttribute(tableType, out Table tableDescriptor, out string error))
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
+                return null;
+            }
 
             // Looking for primary keys.
             Column.MembersToMetaLists(

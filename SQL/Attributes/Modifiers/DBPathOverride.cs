@@ -13,6 +13,7 @@
 //limitations under the License.
 
 using System;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,10 +39,10 @@ namespace UniformDataOperator.Sql.Attributes.Modifiers
         public Type targetAttribute;
 
         /// <summary>
-        /// Name of scheme that would be used during mentoing of this member in queries if possible.
+        /// Name of schema that would be used during mentoing of this member in queries if possible.
         /// Will be skiped if null.
         /// </summary>
-        public string scheme;
+        public string schema;
 
         /// <summary>
         /// Name of table that would be used during mentoing of this member in queries if possible.
@@ -54,5 +55,33 @@ namespace UniformDataOperator.Sql.Attributes.Modifiers
         /// Will be skiped if null.
         /// </summary>
         public string column;
+
+        /// <summary>
+        /// Looking for path overriding attribute suitable for specified member and assking attribute.
+        /// </summary>
+        /// <typeparam name="T">Attribute that would be locked as an overriding target</typeparam>
+        /// <param name="member">Member that could contains attribute.</param>
+        /// <param name="output">Suitable override attribute.</param>
+        /// <returns>Result of operation.</returns>
+        public static bool TryToGetValidOverride<T>(MemberInfo member, out DBPathOverride output) where T : Attribute
+        {
+            // Get all overriding attributes.
+            IEnumerable<Attribute> overriders = member.GetCustomAttributes(typeof(DBPathOverride));
+
+            // Check every override attribute.
+            foreach(DBPathOverride @override in overriders)
+            {
+                // Check if uniform or for specified type.
+                if(@override.targetAttribute == null || @override.Equals(typeof(T)))
+                {
+                    // Set as output and inform about existing.
+                    output = @override;
+                    return true;
+                }
+            }
+            // Inform that not exist.
+            output = null;
+            return false;
+        }
     }
 }

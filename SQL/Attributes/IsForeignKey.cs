@@ -121,6 +121,7 @@ namespace UniformDataOperator.Sql.Attributes
 
         /// <summary>
         /// Return index init string suitable from forgeign key suitable for this column.
+        /// Can auto detect modifers.
         /// </summary>
         /// <param name="member">Member that would be used to looking for descriptors.</param>
         /// <param name="selfTableName">Name of the table that contain column.</param>
@@ -133,6 +134,25 @@ namespace UniformDataOperator.Sql.Attributes
             {
                 // Deop if not defined.
                 return "";
+            }
+
+            //// Try to find overriding attribute.
+            //if (Modifiers.DBPathOverride.TryToGetValidOverride<Column>(
+            //    member,
+            //    out Modifiers.DBPathOverride columnOverrider))
+            //{
+            //    column.title = columnOverrider.column ?? column.title;
+            //}
+
+            // Try to find overriding attribute.
+            if (Modifiers.DBPathOverride.TryToGetValidOverride<IsForeignKey>(
+                member, 
+                out Modifiers.DBPathOverride fkOverrider))
+            {
+                // Override fields.
+                isForeignKey.schema = fkOverrider.schema ?? isForeignKey.schema;
+                isForeignKey.table = fkOverrider.table ?? isForeignKey.table;
+                isForeignKey.column = fkOverrider.column ?? isForeignKey.column;
             }
 
             return FKIndexDeclarationCommand(column, isForeignKey, selfTableName);
@@ -187,6 +207,7 @@ namespace UniformDataOperator.Sql.Attributes
 
         /// <summary>
         /// Generate init string from contrains related to this column.
+        /// Can auto detect modifers.
         /// </summary>
         /// <param name="member">Member that would be used to looking for descriptors.</param>
         /// <param name="selfTableName">Name of holding table.</param>
@@ -199,6 +220,25 @@ namespace UniformDataOperator.Sql.Attributes
             {
                 // Deop if not defined.
                 return "";
+            }
+            
+            //// Try to find overriding attribute.
+            //if (Modifiers.DBPathOverride.TryToGetValidOverride<Column>(
+            //    member,
+            //    out Modifiers.DBPathOverride columnOverrider))
+            //{
+            //    column.title = columnOverrider.column ?? column.title;
+            //}
+
+            // Try to find overriding attribute.
+            if (Modifiers.DBPathOverride.TryToGetValidOverride<IsForeignKey>(
+                member,
+                out Modifiers.DBPathOverride fkOverrider))
+            {
+                // Override fields.
+                isForeignKey.schema = fkOverrider.schema ?? isForeignKey.schema;
+                isForeignKey.table = fkOverrider.table ?? isForeignKey.table;
+                isForeignKey.column = fkOverrider.column ?? isForeignKey.column;
             }
             
             return ConstrainDeclarationCommand(column, isForeignKey, selfTableName);

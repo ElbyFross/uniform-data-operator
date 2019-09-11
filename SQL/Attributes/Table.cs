@@ -74,15 +74,16 @@ namespace UniformDataOperator.Sql.Attributes
         /// <returns></returns>
         public static string GenerateCreateTableCommand(Type sourceType)
         {
-            if (!AttributesHandler.TryToGetAttribute<Table>(sourceType, out Table table))
+            // Loking for table descriptor.
+            if (!Table.TryToGetTableAttribute(sourceType, out Table tableDescriptor, out string error))
             {
-                // Drop cause not a table descriptor.
-                return "";
+                SqlOperatorHandler.InvokeSQLErrorOccured(sourceType, error);
+                return null;
             }
 
             // Variable that would contain SQL comand.
             string command = "";
-            command += "CREATE TABLE IF NOT EXISTS `" + table.schema + "`.`" + table.table + "` (\n";
+            command += "CREATE TABLE IF NOT EXISTS `" + tableDescriptor.schema + "`.`" + tableDescriptor.table + "` (\n";
 
             IEnumerable<MemberInfo> columns = AttributesHandler.FindMembersWithAttribute<Column>(sourceType);
 
@@ -134,12 +135,10 @@ namespace UniformDataOperator.Sql.Attributes
             #region FK indexes
             foreach (MemberInfo cMeta in columns)
             {
-                if (AttributesHandler.TryToGetAttribute<IsForeignKey>(cMeta, out IsForeignKey isForeignKey))
+                string decleration = IsForeignKey.FKIndexDeclarationCommand(cMeta, tableDescriptor.table);
+                if (!string.IsNullOrEmpty(decleration))
                 {
-                    command += ",\n";
-
-                    AttributesHandler.TryToGetAttribute<Column>(cMeta, out Column column);
-                    command += IsForeignKey.FKIndexDeclarationCommand(column, isForeignKey, table.table);
+                    command += ",\n" + decleration;
                 }
             }
             #endregion
@@ -147,19 +146,17 @@ namespace UniformDataOperator.Sql.Attributes
             #region Constraints
             foreach (MemberInfo cMeta in columns)
             {
-                if (AttributesHandler.TryToGetAttribute<IsForeignKey>(cMeta, out IsForeignKey isForeignKey))
+                string decleration = IsForeignKey.ConstrainDeclarationCommand(cMeta, tableDescriptor.table);
+                if (!string.IsNullOrEmpty(decleration))
                 {
-                    command += ",\n";
-
-                    AttributesHandler.TryToGetAttribute<Column>(cMeta, out Column column);
-                    command += IsForeignKey.ConstrainDeclarationCommand(column, isForeignKey, table.table);
+                    command += ",\n" + decleration;
                 }
             }
             #endregion
 
             command += ")\n";
 
-            command += "ENGINE = " + (string.IsNullOrEmpty(table.engine) ? "InnoDB" : table.engine) + ";";
+            command += "ENGINE = " + (string.IsNullOrEmpty(tableDescriptor.engine) ? "InnoDB" : tableDescriptor.engine) + ";";
 
             return command;
         }
@@ -329,6 +326,36 @@ namespace UniformDataOperator.Sql.Attributes
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// Looking for valid Table attribute. Chack all overridings and return correct descriptor.
+        /// </summary>
+        /// <param name="tableType">Type that contains defined Table attribute.</param>
+        /// <param name="tableDescriptor">Output table descriptor.</param>
+        /// <param name="error">Error message in cvase if occured. Null in other case.</param>
+        /// <returns></returns>
+        public static bool TryToGetTableAttribute(Type tableType, out Table tableDescriptor, out string error)
+        {
+            // Drop if not table descriptor.
+            if (!AttributesHandler.TryToGetAttribute<Table>(tableType, out tableDescriptor))
+            {
+                error = "Not defined Table attribute for target type.";
+                tableDescriptor = null;
+                return false;
+            }
+
+            // Try to find overriding attribute for table descriptor.
+            if (Modifiers.DBPathOverride.TryToGetValidOverride<Table>(
+                tableType,
+                out Modifiers.DBPathOverride tableOverrider))
+            {
+                tableDescriptor.schema = tableOverrider.schema ?? tableDescriptor.schema;
+                tableDescriptor.table = tableOverrider.table ?? tableDescriptor.table;
+            }
+
+            error = null;
+            return true;
         }
     }
 }

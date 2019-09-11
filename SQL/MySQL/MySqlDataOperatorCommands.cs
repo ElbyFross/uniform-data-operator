@@ -211,10 +211,9 @@ namespace UniformDataOperator.Sql.MySql
                 throw new NullReferenceException("Active 'ISQLOperator' not exist. Select it before managing of database.");
             }
 
-            // Drop if not table descriptor.
-            if (!AttributesHandler.TryToGetAttribute<Table>(tableType, out Table tableDesciptor))
+            // Loking for table descriptor.
+            if(!Table.TryToGetTableAttribute(tableType, out Table tableDescriptor, out error))
             {
-                error = "Not defined Table attribute for target type.";
                 return null;
             }
             #endregion
@@ -267,7 +266,7 @@ namespace UniformDataOperator.Sql.MySql
             Column.MembersToMetaLists(membersNK, out List<Column> membersNKColumns, out List<string> membersNKVars);
 
             string commadText = "";
-            commadText += "INSERT INTO " + tableDesciptor.schema + "." + tableDesciptor.table + "\n";
+            commadText += "INSERT INTO " + tableDescriptor.schema + "." + tableDescriptor.table + "\n";
             commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersColumns) + ")\n";
             commadText += "\tVALUES\n";
             commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersVars) + ")\n";
