@@ -19,7 +19,7 @@ void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_
 void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a22a9e92989ebdb3a52b8ebe409c59831}{Restore}} (string file\+Path)
 \begin{DoxyCompactList}\small\item\em Restoring S\+QL db from file. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a2ed7d06bc016ae6d07cbcceffc21bbd3}{Activate\+Schema}} (string schema\+Name, out string error)
-\begin{DoxyCompactList}\small\item\em Trying to set schema to databases server in case if shema not exist. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Trying to set schema to databases server in case if schema not exist. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a0bdc2943e5d10576fb564913cdd744e7}{Column\+Declaration\+Command}} (Member\+Info member)
 \begin{DoxyCompactList}\small\item\em Return generated S\+QL command relative to init time. \end{DoxyCompactList}\item 
 Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_ac3af074cabe5721a685f0650dc69a871}{Generate\+Set\+To\+Table\+Command}} (Type table\+Type, object data, out string error)
@@ -58,9 +58,9 @@ Db\+Command \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_
 \begin{DoxyCompactList}\small\item\em Add code that disabling S\+QL checks during executing command. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a3e80f9136c9fef46a443901a15f1e289}{Disable\+Sql\+Checks}} (string command)
 \begin{DoxyCompactList}\small\item\em Add code that disabling S\+QL checks during executing command. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a233ab791c68b93aded97bfd9986767e8}{Validate\+Table\+Member}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table}{Table}} table\+Descriptor, Member\+Info column\+Member)
+bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a233ab791c68b93aded97bfd9986767e8}{Validate\+Table\+Member}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Table}} table\+Descriptor, Member\+Info column\+Member)
 \begin{DoxyCompactList}\small\item\em Validate data base table column acording to member attributes. \end{DoxyCompactList}\item 
-Db\+Parameter \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7d10fc1dfc16ece78ad066f596523782}{Member\+To\+Parameter}} (object data, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column}{Column}} column)
+Db\+Parameter \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7d10fc1dfc16ece78ad066f596523782}{Member\+To\+Parameter}} (object data, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} column)
 \begin{DoxyCompactList}\small\item\em Convert value of member to data base parameter that can be used in command. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7b854ebbcdf31c67716d8c365c321a31}{Db\+Type\+To\+String}} (Db\+Type type)
 \begin{DoxyCompactList}\small\item\em Trying to convert D\+B\+Type to specified type in string format that suitable to this database. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -113,7 +113,7 @@ Operator that provides possibility to operate data on My\+S\+QL data base server
 
 
 
-Trying to set schema to databases server in case if shema not exist. 
+Trying to set schema to databases server in case if schema not exist. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -353,17 +353,15 @@ Detect common collection of members that can be included to query.
 \hline
 {\em error} & Error faces during operation.\\
 \hline
-{\em table\+Descriptor} & Table descriptor recived during validation process.\\
-\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+List with members that valid to using in set queries.
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7d10fc1dfc16ece78ad066f596523782}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7d10fc1dfc16ece78ad066f596523782}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Member\+To\+Parameter@{Member\+To\+Parameter}}
 \index{Member\+To\+Parameter@{Member\+To\+Parameter}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
 \subsubsection{\texorpdfstring{Member\+To\+Parameter()}{MemberToParameter()}}
-{\footnotesize\ttfamily Db\+Parameter Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Member\+To\+Parameter (\begin{DoxyParamCaption}\item[{object}]{data,  }\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column}{Column}}}]{column }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Db\+Parameter Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Member\+To\+Parameter (\begin{DoxyParamCaption}\item[{object}]{data,  }\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}}}]{column }\end{DoxyParamCaption})}
 
 
 
@@ -379,6 +377,10 @@ Convert value of member to data base parameter that can be used in command.
 \begin{DoxyReturn}{Returns}
 Parameter that could by used in commands to data base.
 \end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_aa122fe55f022891be5a888ff49e6eddd}{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}.
+
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af5850bfb38f7dfcd5acd5157458ef4bd}\label{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_af5850bfb38f7dfcd5acd5157458ef4bd}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!New\+Command@{New\+Command}}
 \index{New\+Command@{New\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
@@ -632,11 +634,11 @@ Implements \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_op
 
 Creating request that setting up data from object to data base server acording to attributes. 
 
-$<$type name=\char`\"{}table\+Type\char`\"{}$>$Type that has defined Table attribute. Would be used as table descriptor during query building.
-
 
 \begin{DoxyParams}{Parameters}
-{\em data} & Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.\\
+{\em table\+Type} & Type that has defined Table attribute. Would be used as table descriptor during queri building.\\
+\hline
+{\em data} & Object that contain\textquotesingle{}s fields that would be writed to data base. Affected only fields and properties with defined Column attribute.\\
 \hline
 {\em error} & Error faces during operation.\\
 \hline
@@ -747,7 +749,7 @@ Result of validation.
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}!Validate\+Table\+Member@{Validate\+Table\+Member}}
 \index{Validate\+Table\+Member@{Validate\+Table\+Member}!Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+My\+Sql\+::\+My\+Sql\+Data\+Operator}}
 \subsubsection{\texorpdfstring{Validate\+Table\+Member()}{ValidateTableMember()}}
-{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Validate\+Table\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table}{Table}}}]{table\+Descriptor,  }\item[{Member\+Info}]{column\+Member }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator.\+Validate\+Table\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Table}}}]{table\+Descriptor,  }\item[{Member\+Info}]{column\+Member }\end{DoxyParamCaption})}
 
 
 
@@ -858,7 +860,7 @@ User for connection.
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+S\+Q\+L\+Data\+Operator\+Backup.\+cs\item 
-D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+Sql\+Data\+Operator\+Params.\+cs\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+S\+Q\+L\+Data\+Operator\+Params.\+cs\item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+Sql\+Data\+Operator\+Commands.\+cs\item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+S\+Q\+L\+Data\+Operator\+Connection.\+cs\item 
 D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+My\+S\+Q\+L/My\+Sql\+Data\+Operator\+Db\+Read.\+cs\item 

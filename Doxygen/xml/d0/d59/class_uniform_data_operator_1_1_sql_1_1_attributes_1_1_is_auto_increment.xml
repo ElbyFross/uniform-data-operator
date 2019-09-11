@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Attributes::IsAutoIncrement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1a3d14551782db0a2825335c02058c4735" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UniformDataOperator.Sql.Attributes.IsAutoIncrement.ignoreValue</definition>
+        <argsstring></argsstring>
+        <name>ignoreValue</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" line="45" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1a738141c99b028f95fa9943dc385dd896" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Attributes.IsAutoIncrement.IsAutoIncrement</definition>
+        <argsstring>()</argsstring>
+        <name>IsAutoIncrement</name>
+        <briefdescription>
+<para>Mark column as auto increament. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" line="50" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ad3e160ed18c83920560794d457cb9f97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Attributes.IsAutoIncrement.IsAutoIncrement</definition>
+        <argsstring>(int ignoreValue)</argsstring>
+        <name>IsAutoIncrement</name>
+        <param>
+          <type>int</type>
+          <declname>ignoreValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" line="60" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" bodystart="60" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ac254039f081903e685e116ec6993f9db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MemberInfo</type>
+        <definition>static MemberInfo UniformDataOperator.Sql.Attributes.IsAutoIncrement.GetIgnorable</definition>
+        <argsstring>(ref object data)</argsstring>
+        <name>GetIgnorable</name>
+        <param>
+          <type>ref object</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Trying to find member with defined <ref refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment" kindref="compound">IsAutoIncrement</ref> attribute in collection. If found, comparing it&apos;s value with ignorable one. </para>        </briefdescription>
+        <detaileddescription>
+<para>Scaning all members that has defined <ref refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kindref="compound">Column</ref> attribute. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that contain member.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return member if value equal defined ignorable. Null if <ref refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment" kindref="compound">IsAutoIncrement</ref> not defined or object has not defaul value.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" line="74" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ac662ab14322c8114855cb22e5395ab56" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MemberInfo</type>
+        <definition>static MemberInfo UniformDataOperator.Sql.Attributes.IsAutoIncrement.GetIgnorable</definition>
+        <argsstring>(ref object data, IEnumerable&lt; MemberInfo &gt; members)</argsstring>
+        <name>GetIgnorable</name>
+        <param>
+          <type>ref object</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; MemberInfo &gt;</type>
+          <declname>members</declname>
+        </param>
+        <briefdescription>
+<para>Trying to find member with defined <ref refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment" kindref="compound">IsAutoIncrement</ref> attribute in collection. If found, comparing it&apos;s value with ignorable one. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that contain member.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>members</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of members that would be checked for this object.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return member if value equal defined ignorable. Null if <ref refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment" kindref="compound">IsAutoIncrement</ref> not defined or object has not defaul value.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" line="87" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" bodystart="87" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1acea9a992c39c789aa6ac336d7240a7bc" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UniformDataOperator.Sql.Attributes.IsAutoIncrement.IsIntLike</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>IsIntLike</name>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Cheing does the type is seems like int. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that would be comparet to ints.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of types commpession.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" line="150" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" bodystart="150" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Is value of this column would incremented relative to previous one during init. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="26">
+        <label>Attribute</label>
+      </node>
+      <node id="25">
+        <label>UniformDataOperator.Sql.Attributes.IsAutoIncrement</label>
+        <link refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="28">
+        <label>Attribute</label>
+      </node>
+      <node id="27">
+        <label>UniformDataOperator.Sql.Attributes.IsAutoIncrement</label>
+        <link refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" line="37" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsAutoIncrement.cs" bodystart="36" bodyend="165"/>
+    <listofallmembers>
+      <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ac254039f081903e685e116ec6993f9db" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsAutoIncrement</scope><name>GetIgnorable</name></member>
+      <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ac662ab14322c8114855cb22e5395ab56" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsAutoIncrement</scope><name>GetIgnorable</name></member>
+      <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1a3d14551782db0a2825335c02058c4735" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsAutoIncrement</scope><name>ignoreValue</name></member>
+      <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1a738141c99b028f95fa9943dc385dd896" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsAutoIncrement</scope><name>IsAutoIncrement</name></member>
+      <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ad3e160ed18c83920560794d457cb9f97" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsAutoIncrement</scope><name>IsAutoIncrement</name></member>
+      <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1acea9a992c39c789aa6ac336d7240a7bc" prot="protected" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsAutoIncrement</scope><name>IsIntLike</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

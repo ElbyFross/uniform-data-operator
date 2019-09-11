@@ -136,12 +136,19 @@
 <parameterdescription>
 <para>Type the would by used as source of fields.</para></parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate that would be called to compare member by custom way.</para></parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>Collection of found attributes.</para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="72" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="72" bodyend="75"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="73" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="73" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a0a4cca8daa161032ea820531b35695d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerable&lt; MemberInfo &gt;</type>
@@ -175,7 +182,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="82" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="82" bodyend="85"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="84" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="84" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a83786a45a828f4c0584dc3e48dba9dfd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -209,7 +216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="93" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="93" bodyend="97"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="95" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="95" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a95972193f6a4743f588dc1e00e646ce7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -254,7 +261,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="106" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="106" bodyend="116"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="108" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="108" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1aadbc72ffe71063da1ecd611925f26e16" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerable&lt; PropertyInfo &gt;</type>
@@ -288,7 +295,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="124" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="124" bodyend="127"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="126" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="126" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1aca737c7e65bf12379f107fb1b77cf8e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>object</type>
@@ -325,7 +332,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="135" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="135" bodyend="148"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="137" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="137" bodyend="150"/>
       </memberdef>
       <memberdef kind="function" id="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a2619c62d9978b033619e4bfd248f5290" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -373,7 +380,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="157" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="157" bodyend="172"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="159" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="159" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a3c0dc5fda5e0397bf6b284392236c46e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>object</type>
@@ -410,14 +417,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="180" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="180" bodyend="210"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="182" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="182" bodyend="212"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Provides API to handle attributes. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="28" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="27" bodyend="211"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="28" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" bodystart="27" bodyend="213"/>
     <listofallmembers>
       <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a3c0dc5fda5e0397bf6b284392236c46e" prot="public" virt="non-virtual"><scope>UniformDataOperator::AttributesHandler</scope><name>Converter</name></member>
       <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a075ceb8dabe05f15f7bd0bd4b1517c80" prot="public" virt="non-virtual"><scope>UniformDataOperator::AttributesHandler</scope><name>FindFieldsWithAttribute&lt; T &gt;</name></member>

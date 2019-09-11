@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="d5/de4/_is_primary_key_8cs" kind="file" language="C#">
     <compoundname>IsPrimaryKey.cs</compoundname>
-    <innerclass refid="d9/dad/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_primary_key" prot="public">UniformDataOperator::Sql::Tables::Attributes::IsPrimaryKey</innerclass>
-    <innernamespace refid="d1/dc4/namespace_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes">UniformDataOperator::Sql::Tables::Attributes</innernamespace>
+    <innerclass refid="d4/da1/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_primary_key" prot="public">UniformDataOperator::Sql::Attributes::IsPrimaryKey</innerclass>
+    <innernamespace refid="d4/de9/namespace_uniform_data_operator_1_1_sql_1_1_attributes">UniformDataOperator::Sql::Attributes</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -25,14 +25,14 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d8/dd0/namespace_system" kindref="compound">System</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Tables.Attributes</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Attributes</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>[AttributeUsage(AttributeTargets.Field<sp/>|<sp/>AttributeTargets.Property,<sp/>Inherited<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="23" refid="d9/dad/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_primary_key" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/dad/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_primary_key" kindref="compound">IsPrimaryKey</ref><sp/>:<sp/>Attribute</highlight></codeline>
+<codeline lineno="23" refid="d4/da1/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_primary_key" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/da1/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_primary_key" kindref="compound">IsPrimaryKey</ref><sp/>:<sp/>Attribute</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsPrimaryKey.cs"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsPrimaryKey.cs"/>
   </compounddef>
 </doxygen>

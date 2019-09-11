@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="dd/d74/_set_query_ignore_8cs" kind="file" language="C#">
     <compoundname>SetQueryIgnore.cs</compoundname>
-    <innerclass refid="d2/d13/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" prot="public">UniformDataOperator::Sql::Tables::Attributes::Modifiers::SetQueryIgnore</innerclass>
-    <innernamespace refid="dd/d67/namespace_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers">UniformDataOperator::Sql::Tables::Attributes::Modifiers</innernamespace>
+    <innerclass refid="db/ddc/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" prot="public">UniformDataOperator::Sql::Attributes::Modifiers::SetQueryIgnore</innerclass>
+    <innernamespace refid="d4/d8c/namespace_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers">UniformDataOperator::Sql::Attributes::Modifiers</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -25,14 +25,14 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d8/dd0/namespace_system" kindref="compound">System</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="dd/d67/namespace_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Tables.Attributes.Modifiers</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Attributes.Modifiers</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>[AttributeUsage(AttributeTargets.Field<sp/>|<sp/>AttributeTargets.Property,<sp/>Inherited<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="23" refid="d2/d13/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d2/d13/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" kindref="compound">SetQueryIgnore</ref><sp/>:<sp/>Attribute</highlight></codeline>
+<codeline lineno="23" refid="db/ddc/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/ddc/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" kindref="compound">SetQueryIgnore</ref><sp/>:<sp/>Attribute</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Modifiers/SetQueryIgnore.cs"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Modifiers/SetQueryIgnore.cs"/>
   </compounddef>
 </doxygen>

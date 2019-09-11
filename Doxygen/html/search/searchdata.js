@@ -5,9 +5,11 @@ var indexSectionsWithContent =
   2: "bmu",
   3: "abcdfghimnorstuv",
   4: "cdemost",
-  5: "acdpsu",
-  6: "s",
-  7: "u"
+  5: "am",
+  6: "cnrsv",
+  7: "acdpsu",
+  8: "s",
+  9: "u"
 };
 
 var indexSectionNames =
@@ -17,9 +19,11 @@ var indexSectionNames =
   2: "namespaces",
   3: "functions",
   4: "variables",
-  5: "properties",
-  6: "events",
-  7: "pages"
+  5: "enums",
+  6: "enumvalues",
+  7: "properties",
+  8: "events",
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -29,8 +33,10 @@ var indexSectionLabels =
   2: "Namespaces",
   3: "Functions",
   4: "Variables",
-  5: "Properties",
-  6: "Events",
-  7: "Pages"
+  5: "Enumerations",
+  6: "Enumerator",
+  7: "Properties",
+  8: "Events",
+  9: "Pages"
 };
 

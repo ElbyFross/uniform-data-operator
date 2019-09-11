@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Attributes::Table</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a8390d02fa5d0b96ffd6e8f40cafefb7d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.Table.schema</definition>
+        <argsstring></argsstring>
+        <name>schema</name>
+        <briefdescription>
+<para>Name of the holding schema. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="33" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1ab413ed3bf0c1b110cf4b05cdea966de5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.Table.table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+<para>Name of the table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="38" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1afe0c2479401391900b1b16055a090e07" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.Table.engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <initializer>= &quot;InnoDB&quot;</initializer>
+        <briefdescription>
+<para>Name of the database engine. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="43" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1ad56af3278ca73f930b84b9dcbe777d5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Attributes.Table.Table</definition>
+        <argsstring>(string schema, string table)</argsstring>
+        <name>Table</name>
+        <param>
+          <type>string</type>
+          <declname>schema</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+<para>Configurate SQL table. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>schema</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign schema.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign table.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="50" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a5c66b02de1ddfe8cd11ee4585ec77d82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Attributes.Table.Table</definition>
+        <argsstring>(string schema, string table, string engine)</argsstring>
+        <name>Table</name>
+        <param>
+          <type>string</type>
+          <declname>schema</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+<para>Configurate SQL table. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>schema</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign schema.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign table.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the database engine.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="62" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="62" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a4a18e92f3ee33003a7da468a9d5ab696" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.Attributes.Table.GenerateCreateTableCommand</definition>
+        <argsstring>(Type sourceType)</argsstring>
+        <name>GenerateCreateTableCommand</name>
+        <param>
+          <type>Type</type>
+          <declname>sourceType</declname>
+        </param>
+        <briefdescription>
+<para>Return command that would allow to create table by descriptor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceType</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="75" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="75" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a0b905b5fd9ab2e381ce6cf81c3324a22" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UniformDataOperator.Sql.Attributes.Table.TrySetTables</definition>
+        <argsstring>(bool disableSQLChecks, out string error, params Type[] tableDescriptors)</argsstring>
+        <name>TrySetTables</name>
+        <param>
+          <type>bool</type>
+          <declname>disableSQLChecks</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>params Type []</type>
+          <declname>tableDescriptors</declname>
+        </param>
+        <briefdescription>
+<para>Trying to set some tables to SQL server. Existed ones would be skiped. Not updating alter columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disableSQLChecks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Disable check of data itegrity during command.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error cased during operation. Null if al passed without exceptions.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tableDescriptors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Types with defined &quot;Table&quot; attribute.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of operation.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="173" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="173" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a80d799a2ba3419b489b9840f624880ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UniformDataOperator.Sql.Attributes.Table.TrySetTable</definition>
+        <argsstring>(bool disableSQLChecks, Type tableDescriptor, out string error)</argsstring>
+        <name>TrySetTable</name>
+        <param>
+          <type>bool</type>
+          <declname>disableSQLChecks</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>tableDescriptor</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Trying to set table if required. Not updating alter columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disableSQLChecks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Disable check of data itegrity during command.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tableDescriptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that would be trying to recreate on your SQL server. Must has defined <ref refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kindref="compound">UniformDataOperator.Sql.Attributes.Table</ref> attribute.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error faces during operation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of operation.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="242" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="242" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a7808fc23fc487fc878bd8d7869304ed1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; MemberInfo &gt;</type>
+        <definition>static List&lt;MemberInfo&gt; UniformDataOperator.Sql.Attributes.Table.FindMembersByColumns</definition>
+        <argsstring>(IEnumerable&lt; MemberInfo &gt; members, params string[] columnTitles)</argsstring>
+        <name>FindMembersByColumns</name>
+        <param>
+          <type>IEnumerable&lt; MemberInfo &gt;</type>
+          <declname>members</declname>
+        </param>
+        <param>
+          <type>params string []</type>
+          <declname>columnTitles</declname>
+        </param>
+        <briefdescription>
+<para>Looking for members that&apos;s column&apos;s titles included to array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>members</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of members that will be used for columns search.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>columnTitles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array that contais column&apos;s titles that would be looking among members.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List with suitable members.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="300" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="300" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a8de48462eb10c4eddc660a2f19e96d0e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UniformDataOperator.Sql.Attributes.Table.TryToGetTableAttribute</definition>
+        <argsstring>(Type tableType, out Table tableDescriptor, out string error)</argsstring>
+        <name>TryToGetTableAttribute</name>
+        <param>
+          <type>Type</type>
+          <declname>tableType</declname>
+        </param>
+        <param>
+          <type>out <ref refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kindref="compound">Table</ref></type>
+          <declname>tableDescriptor</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Looking for valid <ref refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kindref="compound">Table</ref> attribute. Chack all overridings and return correct descriptor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that contains defined <ref refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kindref="compound">Table</ref> attribute.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tableDescriptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output table descriptor.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error message in cvase if occured. Null in other case.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="338" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="338" bodyend="359"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attribute that would force to automatic generation of table on your SQL server suitable for declered members in class or structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="83">
+        <label>Attribute</label>
+      </node>
+      <node id="82">
+        <label>UniformDataOperator.Sql.Attributes.Table</label>
+        <link refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="85">
+        <label>Attribute</label>
+      </node>
+      <node id="84">
+        <label>UniformDataOperator.Sql.Attributes.Table</label>
+        <link refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="28" bodyend="360"/>
+    <listofallmembers>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1afe0c2479401391900b1b16055a090e07" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>engine</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a7808fc23fc487fc878bd8d7869304ed1" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>FindMembersByColumns</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a4a18e92f3ee33003a7da468a9d5ab696" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>GenerateCreateTableCommand</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a8390d02fa5d0b96ffd6e8f40cafefb7d" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>schema</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1ad56af3278ca73f930b84b9dcbe777d5d" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>Table</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a5c66b02de1ddfe8cd11ee4585ec77d82" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>Table</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1ab413ed3bf0c1b110cf4b05cdea966de5" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>table</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a80d799a2ba3419b489b9840f624880ff" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>TrySetTable</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a0b905b5fd9ab2e381ce6cf81c3324a22" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>TrySetTables</name></member>
+      <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a8de48462eb10c4eddc660a2f19e96d0e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>TryToGetTableAttribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

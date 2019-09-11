@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="38" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="39" bodyend="49"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="38" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="39" bodyend="49"/>
       </memberdef>
       <memberdef kind="property" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2154fef9e522ef26cf08642483fed223" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="56" bodyend="56"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="56" bodyend="56"/>
       </memberdef>
       <memberdef kind="property" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a2cfc65d2842491734270dfe114d9eec5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="61" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="61" bodyend="61"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="61" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="61" bodyend="61"/>
       </memberdef>
       <memberdef kind="property" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a144616e12acb2b55c7046af0c9af989d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="66" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="66" bodyend="66"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="66" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="66" bodyend="66"/>
       </memberdef>
       <memberdef kind="property" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae5e119508a6d9807b9e138c628a6e18f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="71" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="71" bodyend="71"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="71" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="71" bodyend="71"/>
       </memberdef>
       <memberdef kind="property" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1aa080c79169d2bf29ac2249436ef2471c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="76" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="76" bodyend="76"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="76" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="76" bodyend="76"/>
       </memberdef>
       <memberdef kind="property" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5c5d34c3f7b7d95773ba44ede46409a0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>DbConnection</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="81" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="81" bodyend="91"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="81" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="81" bodyend="91"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" line="98" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorParams.cs" bodystart="98" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" line="98" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySQLDataOperatorParams.cs" bodystart="98" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -186,7 +186,7 @@
           <declname>error</declname>
         </param>
         <briefdescription>
-<para>Trying to set schema to databases server in case if shema not exist. </para>        </briefdescription>
+<para>Trying to set schema to databases server in case if schema not exist. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -282,7 +282,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="205" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="205" bodyend="282"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="205" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="205" bodyend="281"/>
       </memberdef>
       <memberdef kind="function" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ac1bee965fd57e9b2949c09a6b72a9e3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -327,7 +327,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="292" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="292" bodyend="296"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="291" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="291" bodyend="295"/>
       </memberdef>
       <memberdef kind="function" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5a12c84883a7e4945b4fb3787a39b302" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -350,12 +350,19 @@
         <briefdescription>
 <para>Creating request that setting up data from object to data base server acording to attributes. </para>        </briefdescription>
         <detaileddescription>
-<para>&lt;type name=&quot;tableType&quot;&gt;Type that has defined Table attribute. Would be used as table descriptor during query building.</para><para><parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute. Would be used as table descriptor during queri building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
 <parameternamelist>
 <parametername>data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Object that contains fields that would be writed to data base. Affected only fields and properties with defined Column attribute.</para></parameterdescription>
+<para>Object that contain&apos;s fields that would be writed to data base. Affected only fields and properties with defined Column attribute.</para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -369,7 +376,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="298" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="298" bodyend="335"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="305" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="305" bodyend="342"/>
       </memberdef>
       <memberdef kind="function" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ac615a17b6330b292dcf3fd912e1f4fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async Task</type>
@@ -414,7 +421,7 @@ Would be used as table descriptor during queri building.</para></parameterdescri
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="345" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="345" bodyend="348"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="352" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="352" bodyend="355"/>
       </memberdef>
       <memberdef kind="function" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a036b234868363f2f680e5157ee459439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async Task</type>
@@ -462,7 +469,7 @@ Would be used as table descriptor during queri building.</para></parameterdescri
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="350" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="350" bodyend="392"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" line="365" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorCommands.cs" bodystart="365" bodyend="407"/>
       </memberdef>
       <memberdef kind="function" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae7ad4f4d29d927fa8551b087a6e596b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -973,7 +980,7 @@ Would be used as table descriptor during queri building.</para></parameterdescri
         <name>ValidateTableMember</name>
         <reimplements refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3b5fbe97e664e1ef689576ab8757f957">ValidateTableMember</reimplements>
         <param>
-          <type><ref refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table" kindref="compound">Table</ref></type>
+          <type><ref refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kindref="compound">Table</ref></type>
           <declname>tableDescriptor</declname>
         </param>
         <param>
@@ -1009,12 +1016,13 @@ W </para>        </detaileddescription>
         <definition>DbParameter UniformDataOperator.Sql.MySql.MySqlDataOperator.MemberToParameter</definition>
         <argsstring>(object data, Column column)</argsstring>
         <name>MemberToParameter</name>
+        <reimplements refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aa122fe55f022891be5a888ff49e6eddd">MemberToParameter</reimplements>
         <param>
           <type>object</type>
           <declname>data</declname>
         </param>
         <param>
-          <type><ref refid="d2/da8/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column" kindref="compound">Column</ref></type>
+          <type><ref refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kindref="compound">Column</ref></type>
           <declname>column</declname>
         </param>
         <briefdescription>
@@ -1159,19 +1167,12 @@ W </para>        </detaileddescription>
 <parameterdescription>
 <para>Error faces during operation.</para></parameterdescription>
 </parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>tableDescriptor</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Table descriptor recived during validation process.</para></parameterdescription>
-</parameteritem>
 </parameterlist>
-<simplesect kind="return"><para></para></simplesect>
+<simplesect kind="return"><para>List with members that valid to using in set queries.</para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" line="325" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" bodystart="325" bodyend="356"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" line="324" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" bodystart="324" bodyend="355"/>
       </memberdef>
       <memberdef kind="function" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a0d3153822bac0ad760aed9f37e58d69b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>DbCommand</type>
@@ -1230,7 +1231,7 @@ W </para>        </detaileddescription>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" line="369" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" bodystart="369" bodyend="414"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" line="368" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" bodystart="368" bodyend="418"/>
       </memberdef>
       <memberdef kind="function" id="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a30fd1063d13dae2c7833aed7c405554c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1278,7 +1279,7 @@ W </para>        </detaileddescription>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" line="423" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" bodystart="423" bodyend="444"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" line="427" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/MySQL/MySqlDataOperatorDbRead.cs" bodystart="427" bodyend="448"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1286,45 +1287,45 @@ W </para>        </detaileddescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="64">
+      <node id="68">
         <label>UniformDataOperator.Sql.MySql.MySqlDataOperator</label>
         <link refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator"/>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="65">
+      <node id="69">
         <label>ISqlOperator</label>
         <link refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="66">
+      <node id="70">
         <label>UniformDataOperator.Sql.MySql.MySqlDataOperator</label>
         <link refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="67">
+      <node id="71">
         <label>ISqlOperator</label>
         <link refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator"/>
       </node>
@@ -1348,7 +1349,6 @@ W </para>        </detaileddescription>
       <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a5aad834d2ceba598037b6ed19b27db6d" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::MySqlDataOperator</scope><name>Initialize</name></member>
       <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ad6b8397c665d57eac1a2680c7b5f44e9" prot="private" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::MySqlDataOperator</scope><name>MembersAllowedToSet</name></member>
       <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7d10fc1dfc16ece78ad066f596523782" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::MySqlDataOperator</scope><name>MemberToParameter</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab43375e7f5d9dcce2adfef2f19a2078f" prot="public" virt="non-virtual" ambiguityscope="UniformDataOperator::Sql::ISqlOperator."><scope>UniformDataOperator::Sql::MySql::MySqlDataOperator</scope><name>MemberToParameter</name></member>
       <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1af5850bfb38f7dfcd5acd5157458ef4bd" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::MySqlDataOperator</scope><name>NewCommand</name></member>
       <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a6c2e2d374072c275953a515379963881" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::MySqlDataOperator</scope><name>NewCommand</name></member>
       <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ae7ad4f4d29d927fa8551b087a6e596b5" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::MySql::MySqlDataOperator</scope><name>OpenConnection</name></member>

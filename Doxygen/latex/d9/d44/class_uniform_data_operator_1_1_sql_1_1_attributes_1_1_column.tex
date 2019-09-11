@@ -1,0 +1,158 @@
+\hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{}\section{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column Class Reference}
+\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}\index{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column@{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column}}
+
+
+Descriptro of data base table\textquotesingle{}s column.  
+
+
+Inheritance diagram for Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a8ff9ad5c1502f9e64f08273d7d4a50f6}{Column}} (string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_af17925ba835ca424a854689016526e93}{title}}, Db\+Type \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_ad42f01b863fcea9172fc5efe2b8a0834}{type}})
+\begin{DoxyCompactList}\small\item\em Init column. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a20c1639a185fb8f5c3cd09927e79d672}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Converting column to string view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static implicit \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a2f2533d559fba4736f749a5eba9852f6}{operator string}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} column)
+\begin{DoxyCompactList}\small\item\em Converting column to string view. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_aa3e174a477fdbeaa14aff1c783c2b1f9}{Members\+Data\+To\+Command}} (ref object data, ref Db\+Command command, I\+Enumerable$<$ Member\+Info $>$ members)
+\begin{DoxyCompactList}\small\item\em Adding members columns data to params. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a7b8f106a53f21e586ef1f8f2ac5a43eb}{Members\+To\+Meta\+Lists}} (I\+Enumerable$<$ Member\+Info $>$ members, out List$<$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} $>$ columns, out List$<$ string $>$ variables)
+\begin{DoxyCompactList}\small\item\em Converting collection of members to lists that contain\textquotesingle{}s splited meta data suitable for queries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_af17925ba835ca424a854689016526e93}{title}}
+\begin{DoxyCompactList}\small\item\em Title of column in table. \end{DoxyCompactList}\item 
+Db\+Type \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_ad42f01b863fcea9172fc5efe2b8a0834}{type}}
+\begin{DoxyCompactList}\small\item\em Type of column in table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Descriptro of data base table\textquotesingle{}s column. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a8ff9ad5c1502f9e64f08273d7d4a50f6}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a8ff9ad5c1502f9e64f08273d7d4a50f6}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}!Column@{Column}}
+\index{Column@{Column}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}}
+\subsubsection{\texorpdfstring{Column()}{Column()}}
+{\footnotesize\ttfamily Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column.\+Column (\begin{DoxyParamCaption}\item[{string}]{title,  }\item[{Db\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Init column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of column in table.\\
+\hline
+{\em type} & Type of column in table.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_aa3e174a477fdbeaa14aff1c783c2b1f9}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_aa3e174a477fdbeaa14aff1c783c2b1f9}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}!Members\+Data\+To\+Command@{Members\+Data\+To\+Command}}
+\index{Members\+Data\+To\+Command@{Members\+Data\+To\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}}
+\subsubsection{\texorpdfstring{Members\+Data\+To\+Command()}{MembersDataToCommand()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column.\+Members\+Data\+To\+Command (\begin{DoxyParamCaption}\item[{ref object}]{data,  }\item[{ref Db\+Command}]{command,  }\item[{I\+Enumerable$<$ Member\+Info $>$}]{members }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adding members columns data to params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Object that contains values relative to members.\\
+\hline
+{\em command} & Command objects that would share values.\\
+\hline
+{\em members} & Members that with defined \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} attribute that would be stored to command.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a7b8f106a53f21e586ef1f8f2ac5a43eb}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a7b8f106a53f21e586ef1f8f2ac5a43eb}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}!Members\+To\+Meta\+Lists@{Members\+To\+Meta\+Lists}}
+\index{Members\+To\+Meta\+Lists@{Members\+To\+Meta\+Lists}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}}
+\subsubsection{\texorpdfstring{Members\+To\+Meta\+Lists()}{MembersToMetaLists()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column.\+Members\+To\+Meta\+Lists (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ Member\+Info $>$}]{members,  }\item[{out List$<$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} $>$}]{columns,  }\item[{out List$<$ string $>$}]{variables }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converting collection of members to lists that contain\textquotesingle{}s splited meta data suitable for queries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em members} & Source collection of memers.\\
+\hline
+{\em columns} & List that contains all detected columns descriptors.\\
+\hline
+{\em variables} & List that contains names of local variables in format allowed to internal queries generators.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a2f2533d559fba4736f749a5eba9852f6}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a2f2533d559fba4736f749a5eba9852f6}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}!operator string@{operator string}}
+\index{operator string@{operator string}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}}
+\subsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily static implicit Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column.\+operator string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}}}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converting column to string view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & Input column.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a20c1639a185fb8f5c3cd09927e79d672}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_a20c1639a185fb8f5c3cd09927e79d672}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Converting column to string view. 
+
+\begin{DoxyReturn}{Returns}
+Tielt of column.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_af17925ba835ca424a854689016526e93}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_af17925ba835ca424a854689016526e93}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}!title@{title}}
+\index{title@{title}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}}
+\subsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column.\+title}
+
+
+
+Title of column in table. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_ad42f01b863fcea9172fc5efe2b8a0834}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_ad42f01b863fcea9172fc5efe2b8a0834}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}!type@{type}}
+\index{type@{type}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Column}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily Db\+Type Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Column.\+type}
+
+
+
+Type of column in table. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+Attributes/Column.\+cs\end{DoxyCompactItemize}

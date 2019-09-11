@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_fa4265bae3af2b5d4ba073a282ef7ec8" kind="dir">
+    <compoundname>D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Modifiers</compoundname>
+    <innerfile refid="d4/ded/_d_b_path_override_8cs">DBPathOverride.cs</innerfile>
+    <innerfile refid="dd/d74/_set_query_ignore_8cs">SetQueryIgnore.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Modifiers/"/>
+  </compounddef>
+</doxygen>

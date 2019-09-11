@@ -4,7 +4,6 @@
     <compoundname>MySqlDBTypeOverride.cs</compoundname>
     <innerclass refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override" prot="public">UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</innerclass>
     <innernamespace refid="dc/d4b/namespace_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes">UniformDataOperator::Sql::MySql::Attributes</innernamespace>
-    <innernamespace refid="de/df3/namespace_my_sql_1_1_data_1_1_my_sql_client">MySql::Data::MySqlClient</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
