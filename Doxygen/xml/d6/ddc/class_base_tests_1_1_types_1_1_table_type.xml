@@ -118,14 +118,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="94">
+      <node id="98">
         <label>BaseTests.Types.BlobType</label>
         <link refid="dd/dac/class_base_tests_1_1_types_1_1_blob_type"/>
       </node>
-      <node id="93">
+      <node id="97">
         <label>BaseTests.Types.TableType</label>
         <link refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type"/>
-        <childnode refid="94" relation="usage">
+        <childnode refid="98" relation="usage">
           <edgelabel>blob</edgelabel>
         </childnode>
       </node>

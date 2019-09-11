@@ -21,7 +21,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Reflection;
-using UniformDataOperator.Sql.Tables.Attributes;
+using UniformDataOperator.Sql.Attributes;
 
 namespace UniformDataOperator.Sql
 {
@@ -84,7 +84,7 @@ namespace UniformDataOperator.Sql
         /// <param name="data">Value of the object that would applied to parameter.</param>
         /// <param name="column">Column attribute relative to member of data.</param>
         /// <returns>Parameter that could by used in commands to data base.</returns>
-        DbParameter MemberToParameter(object data, Tables.Attributes.Column column);
+        DbParameter MemberToParameter(object data, Column column);
 
         /// <summary>
         /// Add code that disabling SQL checks during executing command.
@@ -149,7 +149,7 @@ namespace UniformDataOperator.Sql
         
         #region Base commands
         /// <summary>
-        /// Trying to set schema to databases server in case if shema not exist.
+        /// Trying to set schema to databases server in case if schema not exist.
         /// </summary>
         /// <param name="schemaName">Name of the schema that would be used\created.</param>
         /// <param name="error">Error faces during operation.</param>
@@ -168,8 +168,8 @@ namespace UniformDataOperator.Sql
         /// <summary>
         /// Creating request that setting up data from object to data base server acording to attributes.
         /// </summary>
-        /// <type name="tableType">Type that has defined Table attribute.
-        /// Would be used as table descriptor during query building.</typeparam>
+        /// <param name="tableType">Type that has defined Table attribute.
+        /// Would be used as table descriptor during query building.</param>
         /// <param name="data">Object that contains fields that would be writed to data base. 
         /// Affected only fields and properties with defined Column attribute.</param>
         /// <param name="error">Error faces during operation.</param>

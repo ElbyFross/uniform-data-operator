@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/d8c/namespace_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers" kind="namespace" language="C#">
+    <compoundname>UniformDataOperator::Sql::Attributes::Modifiers</compoundname>
+    <innerclass refid="d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override" prot="public">UniformDataOperator::Sql::Attributes::Modifiers::DBPathOverride</innerclass>
+    <innerclass refid="db/ddc/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" prot="public">UniformDataOperator::Sql::Attributes::Modifiers::SetQueryIgnore</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Modifiers/DBPathOverride.cs" line="23" column="1"/>
+  </compounddef>
+</doxygen>

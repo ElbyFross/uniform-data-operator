@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="db/dfd/_commentary_8cs" kind="file" language="C#">
     <compoundname>Commentary.cs</compoundname>
-    <innerclass refid="df/da1/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_commentary" prot="public">UniformDataOperator::Sql::Tables::Attributes::Commentary</innerclass>
-    <innernamespace refid="d1/dc4/namespace_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes">UniformDataOperator::Sql::Tables::Attributes</innernamespace>
+    <innerclass refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary" prot="public">UniformDataOperator::Sql::Attributes::Commentary</innerclass>
+    <innernamespace refid="d4/de9/namespace_uniform_data_operator_1_1_sql_1_1_attributes">UniformDataOperator::Sql::Attributes</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -25,30 +25,30 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d8/dd0/namespace_system" kindref="compound">System</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Tables.Attributes</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Attributes</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>[AttributeUsage(AttributeTargets.Field<sp/>|<sp/>AttributeTargets.Property<sp/>|<sp/>AttributeTargets.Class<sp/>|<sp/>AttributeTargets.Struct,<sp/>Inherited<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="23" refid="df/da1/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_commentary" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/da1/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_commentary" kindref="compound">Commentary</ref><sp/>:<sp/>Attribute</highlight></codeline>
+<codeline lineno="23" refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary" kindref="compound">Commentary</ref><sp/>:<sp/>Attribute</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>commentary;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/da1/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_commentary" kindref="compound">Commentary</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>commentary)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary" kindref="compound">Commentary</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>commentary)</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.commentary<sp/>=<sp/>commentary;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ToString()</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>commentary;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>implicit<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>string(<ref refid="df/da1/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_commentary" kindref="compound">Commentary</ref><sp/>commentary)</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>commentary.<ref refid="df/da1/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_commentary_1ae5b1dba615a813beddea425d35297e54" kindref="member">commentary</ref>;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ToString()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>commentary;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>implicit<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>string(<ref refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary" kindref="compound">Commentary</ref><sp/>commentary)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>commentary.<ref refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary_1a5cb463ba92cc10199d1a8ffb8c8729fd" kindref="member">commentary</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/Commentary.cs"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Commentary.cs"/>
   </compounddef>
 </doxygen>

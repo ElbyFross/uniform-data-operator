@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="d0/d2d/_is_generated_8cs" kind="file" language="C#">
     <compoundname>IsGenerated.cs</compoundname>
-    <innerclass refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated" prot="public">UniformDataOperator::Sql::Tables::Attributes::IsGenerated</innerclass>
-    <innernamespace refid="d1/dc4/namespace_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes">UniformDataOperator::Sql::Tables::Attributes</innernamespace>
+    <innerclass refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated" prot="public">UniformDataOperator::Sql::Attributes::IsGenerated</innerclass>
+    <innernamespace refid="d4/de9/namespace_uniform_data_operator_1_1_sql_1_1_attributes">UniformDataOperator::Sql::Attributes</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -25,26 +25,26 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d8/dd0/namespace_system" kindref="compound">System</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Tables.Attributes</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d66/namespace_uniform_data_operator" kindref="compound">UniformDataOperator</ref>.Sql.Attributes</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>[AttributeUsage(AttributeTargets.Field<sp/>|<sp/>AttributeTargets.Property)]</highlight></codeline>
-<codeline lineno="23" refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated" kindref="compound">IsGenerated</ref><sp/>:<sp/><ref refid="d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default" kindref="compound">Default</ref></highlight></codeline>
+<codeline lineno="23" refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated" kindref="compound">IsGenerated</ref><sp/>:<sp/><ref refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default" kindref="compound">Default</ref></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Mode</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stored,</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Virual</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Mode<sp/>mode<sp/>=<sp/>Mode.Virual;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated" kindref="compound">IsGenerated</ref>(Mode<sp/>mode,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>defExp)<sp/>:<sp/>base(defExp)</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.mode<sp/>=<sp/>mode;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1aa8286a355a1ac86ccd56cf5b44f5ed59" kindref="member">Mode</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stored,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Virual</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1aa8286a355a1ac86ccd56cf5b44f5ed59" kindref="member">Mode</ref><sp/>mode<sp/>=<sp/><ref refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1aa8286a355a1ac86ccd56cf5b44f5ed59" kindref="member">Mode</ref>.Virual;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated" kindref="compound">IsGenerated</ref>(<ref refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1aa8286a355a1ac86ccd56cf5b44f5ed59" kindref="member">Mode</ref><sp/>mode,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>defExp)<sp/>:<sp/>base(defExp)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.mode<sp/>=<sp/>mode;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Tables/Attributes/IsGenerated.cs"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsGenerated.cs"/>
   </compounddef>
 </doxygen>

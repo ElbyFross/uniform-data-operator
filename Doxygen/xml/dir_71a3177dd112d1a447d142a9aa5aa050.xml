@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_71a3177dd112d1a447d142a9aa5aa050" kind="dir">
+    <compoundname>D:/Work/GitHub/uniform-data-operator/SQL/Attributes</compoundname>
+    <innerdir refid="dir_fa4265bae3af2b5d4ba073a282ef7ec8">D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Modifiers</innerdir>
+    <innerfile refid="d3/daa/_column_8cs">Column.cs</innerfile>
+    <innerfile refid="db/dfd/_commentary_8cs">Commentary.cs</innerfile>
+    <innerfile refid="dd/dc9/_default_8cs">Default.cs</innerfile>
+    <innerfile refid="d9/d9a/_is_auto_increment_8cs">IsAutoIncrement.cs</innerfile>
+    <innerfile refid="dd/d99/_is_binary_8cs">IsBinary.cs</innerfile>
+    <innerfile refid="de/d3c/_is_foreign_key_8cs">IsForeignKey.cs</innerfile>
+    <innerfile refid="d0/d2d/_is_generated_8cs">IsGenerated.cs</innerfile>
+    <innerfile refid="d0/db6/_is_not_null_8cs">IsNotNull.cs</innerfile>
+    <innerfile refid="d5/de4/_is_primary_key_8cs">IsPrimaryKey.cs</innerfile>
+    <innerfile refid="da/d47/_is_unique_8cs">IsUnique.cs</innerfile>
+    <innerfile refid="dc/db3/_is_unsigned_8cs">IsUnsigned.cs</innerfile>
+    <innerfile refid="da/d47/_is_zero_fill_8cs">IsZeroFill.cs</innerfile>
+    <innerfile refid="d6/ddb/_table_8cs">Table.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/"/>
+  </compounddef>
+</doxygen>

@@ -4,7 +4,6 @@
     <compoundname>SqlOperatorHandler.cs</compoundname>
     <innerclass refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler" prot="public">UniformDataOperator::Sql::SqlOperatorHandler</innerclass>
     <innernamespace refid="da/dc4/namespace_uniform_data_operator_1_1_sql">UniformDataOperator::Sql</innernamespace>
-    <innernamespace refid="d0/d23/namespace_system_1_1_data_1_1_sql_client">System::Data::SqlClient</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -113,7 +112,7 @@
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Try<sp/>to<sp/>init<sp/>all<sp/>maped<sp/>memvers.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(MemberInfo<sp/>member<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>members)</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tables.Attributes.Column<sp/>column<sp/>=<sp/>member.GetCustomAttribute&lt;Tables.Attributes.Column&gt;();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Attributes.Column<sp/>column<sp/>=<sp/>member.GetCustomAttribute&lt;Attributes.Column&gt;();</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Trying<sp/>to<sp/>get<sp/>value<sp/>from<sp/>reader<sp/>relative<sp/>to<sp/>this<sp/>member.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>receivedValue<sp/>=<sp/>null;</highlight></codeline>

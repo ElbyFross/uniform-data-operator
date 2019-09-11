@@ -1,0 +1,231 @@
+\hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{}\section{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table Class Reference}
+\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}\index{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table@{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table}}
+
+
+Attribute that would force to automatic generation of table on your S\+QL server suitable for declered members in class or structure.  
+
+
+Inheritance diagram for Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ad56af3278ca73f930b84b9dcbe777d5d}{Table}} (string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8390d02fa5d0b96ffd6e8f40cafefb7d}{schema}}, string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ab413ed3bf0c1b110cf4b05cdea966de5}{table}})
+\begin{DoxyCompactList}\small\item\em Configurate S\+QL table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a5c66b02de1ddfe8cd11ee4585ec77d82}{Table}} (string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8390d02fa5d0b96ffd6e8f40cafefb7d}{schema}}, string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ab413ed3bf0c1b110cf4b05cdea966de5}{table}}, string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_afe0c2479401391900b1b16055a090e07}{engine}})
+\begin{DoxyCompactList}\small\item\em Configurate S\+QL table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a4a18e92f3ee33003a7da468a9d5ab696}{Generate\+Create\+Table\+Command}} (Type source\+Type)
+\begin{DoxyCompactList}\small\item\em Return command that would allow to create table by descriptor. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a0b905b5fd9ab2e381ce6cf81c3324a22}{Try\+Set\+Tables}} (bool disable\+S\+Q\+L\+Checks, out string error, params Type\mbox{[}$\,$\mbox{]} table\+Descriptors)
+\begin{DoxyCompactList}\small\item\em Trying to set some tables to S\+QL server. Existed ones would be skiped. Not updating alter columns. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a80d799a2ba3419b489b9840f624880ff}{Try\+Set\+Table}} (bool disable\+S\+Q\+L\+Checks, Type table\+Descriptor, out string error)
+\begin{DoxyCompactList}\small\item\em Trying to set table if required. Not updating alter columns. \end{DoxyCompactList}\item 
+static List$<$ Member\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a7808fc23fc487fc878bd8d7869304ed1}{Find\+Members\+By\+Columns}} (I\+Enumerable$<$ Member\+Info $>$ members, params string\mbox{[}$\,$\mbox{]} column\+Titles)
+\begin{DoxyCompactList}\small\item\em Looking for members that\textquotesingle{}s column\textquotesingle{}s titles included to array. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8de48462eb10c4eddc660a2f19e96d0e}{Try\+To\+Get\+Table\+Attribute}} (Type table\+Type, out \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Table}} table\+Descriptor, out string error)
+\begin{DoxyCompactList}\small\item\em Looking for valid \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Table}} attribute. Chack all overridings and return correct descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8390d02fa5d0b96ffd6e8f40cafefb7d}{schema}}
+\begin{DoxyCompactList}\small\item\em Name of the holding schema. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ab413ed3bf0c1b110cf4b05cdea966de5}{table}}
+\begin{DoxyCompactList}\small\item\em Name of the table. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_afe0c2479401391900b1b16055a090e07}{engine}} = \char`\"{}Inno\+DB\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the database engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Attribute that would force to automatic generation of table on your S\+QL server suitable for declered members in class or structure. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ad56af3278ca73f930b84b9dcbe777d5d}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ad56af3278ca73f930b84b9dcbe777d5d}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!Table@{Table}}
+\index{Table@{Table}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Table()}{Table()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+Table (\begin{DoxyParamCaption}\item[{string}]{schema,  }\item[{string}]{table }\end{DoxyParamCaption})}
+
+
+
+Configurate S\+QL table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema} & Name of foreign schema.\\
+\hline
+{\em table} & Name of foreign table.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a5c66b02de1ddfe8cd11ee4585ec77d82}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a5c66b02de1ddfe8cd11ee4585ec77d82}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!Table@{Table}}
+\index{Table@{Table}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Table()}{Table()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+Table (\begin{DoxyParamCaption}\item[{string}]{schema,  }\item[{string}]{table,  }\item[{string}]{engine }\end{DoxyParamCaption})}
+
+
+
+Configurate S\+QL table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema} & Name of foreign schema.\\
+\hline
+{\em table} & Name of foreign table.\\
+\hline
+{\em engine} & Name of the database engine.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a7808fc23fc487fc878bd8d7869304ed1}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a7808fc23fc487fc878bd8d7869304ed1}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!Find\+Members\+By\+Columns@{Find\+Members\+By\+Columns}}
+\index{Find\+Members\+By\+Columns@{Find\+Members\+By\+Columns}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Find\+Members\+By\+Columns()}{FindMembersByColumns()}}
+{\footnotesize\ttfamily static List$<$Member\+Info$>$ Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+Find\+Members\+By\+Columns (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ Member\+Info $>$}]{members,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{column\+Titles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for members that\textquotesingle{}s column\textquotesingle{}s titles included to array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em members} & List of members that will be used for columns search.\\
+\hline
+{\em column\+Titles} & Array that contais column\textquotesingle{}s titles that would be looking among members.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List with suitable members.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a4a18e92f3ee33003a7da468a9d5ab696}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a4a18e92f3ee33003a7da468a9d5ab696}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!Generate\+Create\+Table\+Command@{Generate\+Create\+Table\+Command}}
+\index{Generate\+Create\+Table\+Command@{Generate\+Create\+Table\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Generate\+Create\+Table\+Command()}{GenerateCreateTableCommand()}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+Generate\+Create\+Table\+Command (\begin{DoxyParamCaption}\item[{Type}]{source\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return command that would allow to create table by descriptor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a80d799a2ba3419b489b9840f624880ff}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a80d799a2ba3419b489b9840f624880ff}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!Try\+Set\+Table@{Try\+Set\+Table}}
+\index{Try\+Set\+Table@{Try\+Set\+Table}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Try\+Set\+Table()}{TrySetTable()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+Try\+Set\+Table (\begin{DoxyParamCaption}\item[{bool}]{disable\+S\+Q\+L\+Checks,  }\item[{Type}]{table\+Descriptor,  }\item[{out string}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trying to set table if required. Not updating alter columns. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disable\+S\+Q\+L\+Checks} & Disable check of data itegrity during command.\\
+\hline
+{\em table\+Descriptor} & Type that would be trying to recreate on your S\+QL server. Must has defined \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table}} attribute.\\
+\hline
+{\em error} & Error faces during operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a0b905b5fd9ab2e381ce6cf81c3324a22}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a0b905b5fd9ab2e381ce6cf81c3324a22}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!Try\+Set\+Tables@{Try\+Set\+Tables}}
+\index{Try\+Set\+Tables@{Try\+Set\+Tables}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Try\+Set\+Tables()}{TrySetTables()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+Try\+Set\+Tables (\begin{DoxyParamCaption}\item[{bool}]{disable\+S\+Q\+L\+Checks,  }\item[{out string}]{error,  }\item[{params Type \mbox{[}$\,$\mbox{]}}]{table\+Descriptors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trying to set some tables to S\+QL server. Existed ones would be skiped. Not updating alter columns. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disable\+S\+Q\+L\+Checks} & Disable check of data itegrity during command.\\
+\hline
+{\em error} & Error cased during operation. Null if al passed without exceptions.\\
+\hline
+{\em table\+Descriptors} & Types with defined \char`\"{}\+Table\char`\"{} attribute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8de48462eb10c4eddc660a2f19e96d0e}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8de48462eb10c4eddc660a2f19e96d0e}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!Try\+To\+Get\+Table\+Attribute@{Try\+To\+Get\+Table\+Attribute}}
+\index{Try\+To\+Get\+Table\+Attribute@{Try\+To\+Get\+Table\+Attribute}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{Try\+To\+Get\+Table\+Attribute()}{TryToGetTableAttribute()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+Try\+To\+Get\+Table\+Attribute (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{out \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Table}}}]{table\+Descriptor,  }\item[{out string}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for valid \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Table}} attribute. Chack all overridings and return correct descriptor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Type} & Type that contains defined \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table}{Table}} attribute.\\
+\hline
+{\em table\+Descriptor} & Output table descriptor.\\
+\hline
+{\em error} & Error message in cvase if occured. Null in other case.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_afe0c2479401391900b1b16055a090e07}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_afe0c2479401391900b1b16055a090e07}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!engine@{engine}}
+\index{engine@{engine}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{engine}{engine}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+engine = \char`\"{}Inno\+DB\char`\"{}}
+
+
+
+Name of the database engine. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8390d02fa5d0b96ffd6e8f40cafefb7d}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_a8390d02fa5d0b96ffd6e8f40cafefb7d}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!schema@{schema}}
+\index{schema@{schema}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+schema}
+
+
+
+Name of the holding schema. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ab413ed3bf0c1b110cf4b05cdea966de5}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_ab413ed3bf0c1b110cf4b05cdea966de5}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}!table@{table}}
+\index{table@{table}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Table}}
+\subsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Table.\+table}
+
+
+
+Name of the table. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+Attributes/Table.\+cs\end{DoxyCompactItemize}

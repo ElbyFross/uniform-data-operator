@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Attributes::Default</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+    <derivedcompoundref refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated" prot="public" virt="non-virtual">UniformDataOperator.Sql.Attributes.IsGenerated</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default_1a1ba564b7f35af4395bafa39d6f5f69dc" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.Default.defExp</definition>
+        <argsstring></argsstring>
+        <name>defExp</name>
+        <briefdescription>
+<para><ref refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default" kindref="compound">Default</ref> or Expression value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Default.cs" line="28" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Default.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default_1a9b6f3f42eccfc683466b3b8740e57212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Attributes.Default.Default</definition>
+        <argsstring>(string defExp)</argsstring>
+        <name>Default</name>
+        <param>
+          <type>string</type>
+          <declname>defExp</declname>
+        </param>
+        <briefdescription>
+<para>Init default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>defExp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default" kindref="compound">Default</ref> or Expression value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Default.cs" line="34" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Default.cs" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Add default valu to the field. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>UniformDataOperator.Sql.Attributes.Default</label>
+        <link refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Attribute</label>
+      </node>
+      <node id="22">
+        <label>UniformDataOperator.Sql.Attributes.IsGenerated</label>
+        <link refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>UniformDataOperator.Sql.Attributes.Default</label>
+        <link refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Attribute</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Default.cs" line="24" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Default.cs" bodystart="23" bodyend="38"/>
+    <listofallmembers>
+      <member refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default_1a9b6f3f42eccfc683466b3b8740e57212" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Default</scope><name>Default</name></member>
+      <member refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default_1a1ba564b7f35af4395bafa39d6f5f69dc" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Default</scope><name>defExp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

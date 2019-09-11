@@ -1,22 +1,23 @@
 var hierarchy =
 [
     [ "Attribute", null, [
-      [ "UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride", "dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.Column", "d2/da8/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.Commentary", "df/da1/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_commentary.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.Default", "d1/d7d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_default.html", [
-        [ "UniformDataOperator.Sql.Tables.Attributes.IsGenerated", "dd/db4/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_generated.html", null ]
+      [ "UniformDataOperator.Sql.Attributes.Column", "d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.Commentary", "d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.Default", "d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default.html", [
+        [ "UniformDataOperator.Sql.Attributes.IsGenerated", "d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated.html", null ]
       ] ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsAutoIncrement", "df/d8d/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_auto_increment.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsBinary", "d2/da0/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_binary.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsForeignKey", "d8/d77/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_foreign_key.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsNotNull", "d8/de9/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_not_null.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsPrimaryKey", "d9/dad/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_primary_key.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsUnique", "dd/d9c/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_unique.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsUnsigned", "df/ddb/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_unsigned.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.IsZeroFill", "dd/d00/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_is_zero_fill.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.Modifiers.SetQueryIgnore", "d2/d13/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_modifiers_1_1_set_query_ignore.html", null ],
-      [ "UniformDataOperator.Sql.Tables.Attributes.Table", "d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table.html", null ]
+      [ "UniformDataOperator.Sql.Attributes.IsAutoIncrement", "d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.IsBinary", "d7/d13/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_binary.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.IsForeignKey", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.IsNotNull", "d4/d02/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_not_null.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.IsPrimaryKey", "d4/da1/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_primary_key.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.IsUnique", "d0/d90/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_unique.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.IsUnsigned", "d5/d70/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_unsigned.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.IsZeroFill", "d5/d8d/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_zero_fill.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.Modifiers.DBPathOverride", "d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.Modifiers.SetQueryIgnore", "db/ddc/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_set_query_ignore.html", null ],
+      [ "UniformDataOperator.Sql.Attributes.Table", "dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table.html", null ],
+      [ "UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride", "dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override.html", null ]
     ] ],
     [ "UniformDataOperator.AttributesHandler", "da/dcd/class_uniform_data_operator_1_1_attributes_handler.html", null ],
     [ "UniformDataOperator.Binary.BinaryHandler", "d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html", null ],

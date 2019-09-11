@@ -78,7 +78,7 @@ namespace MySQLTests
 
             #region Table set test
             // Generate tables.
-            bool tableResult = UniformDataOperator.Sql.Tables.Attributes.Table.TrySetTables(
+            bool tableResult = UniformDataOperator.Sql.Attributes.Table.TrySetTables(
                 true, out error, 
                 typeof(TableType), 
                 typeof(Table2Type),

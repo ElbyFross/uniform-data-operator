@@ -25,8 +25,8 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 using System.Reflection;
-using UniformDataOperator.Sql.Tables.Attributes;
-using UniformDataOperator.Sql.Tables.Attributes.Modifiers;
+using UniformDataOperator.Sql.Attributes;
+using UniformDataOperator.Sql.Attributes.Modifiers;
 
 namespace UniformDataOperator.Sql.MySql
 {
@@ -320,8 +320,7 @@ namespace UniformDataOperator.Sql.MySql
         /// <param name="obj">Target object that cantains described primary keys, 
         /// that would be used during query generation.</param>
         /// <param name="error">Error faces during operation.</param>
-        /// <param name="tableDescriptor">Table descriptor recived during validation process.</param>
-        /// <returns></returns>
+        /// <returns>List with members that valid to using in set queries.</returns>
         private static List<MemberInfo> MembersAllowedToSet(
             Type tableType,
             object obj,
@@ -372,7 +371,12 @@ namespace UniformDataOperator.Sql.MySql
             IEnumerable<MemberInfo> where,
             IEnumerable<MemberInfo> select)
         {
-            Table tableDescriptor = tableType.GetCustomAttribute<Table>();
+            // Loking for table descriptor.
+            if (!Table.TryToGetTableAttribute(tableType, out Table tableDescriptor, out string error))
+            {
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
+                return null;
+            }
 
             // Looking for primary keys.
             Column.MembersToMetaLists(
@@ -391,7 +395,7 @@ namespace UniformDataOperator.Sql.MySql
             // Init query.
             string query = "SELECT ";
             query += (membersSelectColumns.Count == 0 ? "*" : SqlOperatorHandler.CollectionToString(membersSelectColumns)) + "\n";
-            query += "FROM " + tableDescriptor.shema + "." + tableDescriptor.table + "\n";
+            query += "FROM " + tableDescriptor.schema + "." + tableDescriptor.table + "\n";
             query += "WHERE " + SqlOperatorHandler.ConcatFormatedCollections(membersWhereColumns, membersWhereVars) + "\n";
             query += "LIMIT 1;\n";
 

@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Attributes::IsForeignKey</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Action</name>
+        <enumvalue id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe" prot="public">
+          <name>NoAction</name>
+          <briefdescription>
+<para>Don&apos;t do anything. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a2dc2b15e8b0ee7ed3fdd4cf53ad0a8c3" prot="public">
+          <name>Cascade</name>
+          <briefdescription>
+<para>Goins down by member and react all members in relative tables. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a034d70b46e41ec9d0306b0001e04cae7" prot="public">
+          <name>Restrict</name>
+          <briefdescription>
+<para>Don&apos;t do anything. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a2ac481dd701d4f580b6b01eb34442e71" prot="public">
+          <name>SetNull</name>
+          <briefdescription>
+<para>Setting null to coulmn value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Action&apos;s mode that would be used as reaction on event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="29" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3adbb93b1e9ebb988b6fabf24e10991e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.IsForeignKey.schema</definition>
+        <argsstring></argsstring>
+        <name>schema</name>
+        <briefdescription>
+<para>Name of foreign schema. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="52" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ac480fc5f3f8ff86e0bb5877bab793e19" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.IsForeignKey.table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+<para>Name of foreign table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d14eef86991a9e1a187876626cbb70b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.IsForeignKey.column</definition>
+        <argsstring></argsstring>
+        <name>column</name>
+        <briefdescription>
+<para>Name of foreign column. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="62" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1af70b31f4805f136d6a32b1fa33d9bbf6" prot="public" static="no" mutable="no">
+        <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kindref="member">Action</ref></type>
+        <definition>Action UniformDataOperator.Sql.Attributes.IsForeignKey.onDeleteCommand</definition>
+        <argsstring></argsstring>
+        <name>onDeleteCommand</name>
+        <initializer>= <ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe" kindref="member">Action.NoAction</ref></initializer>
+        <briefdescription>
+<para>Command that would be applied in case of deleting. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="67" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3a45eb5c4419a10aafcc097c227bb794" prot="public" static="no" mutable="no">
+        <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kindref="member">Action</ref></type>
+        <definition>Action UniformDataOperator.Sql.Attributes.IsForeignKey.onUpdateCommand</definition>
+        <argsstring></argsstring>
+        <name>onUpdateCommand</name>
+        <initializer>= <ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe" kindref="member">Action.NoAction</ref></initializer>
+        <briefdescription>
+<para>Command that would be applied in case of updating. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="72" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a9c18736fa9035fb89c30cd5269d3ccc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Attributes.IsForeignKey.IsForeignKey</definition>
+        <argsstring>(string schema, string table, string column)</argsstring>
+        <name>IsForeignKey</name>
+        <param>
+          <type>string</type>
+          <declname>schema</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Configurate forgeign column reference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>schema</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign schema.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign table.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign column.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="80" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a9075c37e69d16608cd912c53726a683e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Attributes.IsForeignKey.IsForeignKey</definition>
+        <argsstring>(string schema, string table, string column, Action onDeleteCommand, Action onUpdateCommand)</argsstring>
+        <name>IsForeignKey</name>
+        <param>
+          <type>string</type>
+          <declname>schema</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kindref="member">Action</ref></type>
+          <declname>onDeleteCommand</declname>
+        </param>
+        <param>
+          <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kindref="member">Action</ref></type>
+          <declname>onUpdateCommand</declname>
+        </param>
+        <briefdescription>
+<para>Configurate forgeign column reference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>schema</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign schema.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign table.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of foreign column.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onDeleteCommand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command that would be applied in case of deleting.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onUpdateCommand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command that would be applied in case of updating.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="95" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="95" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a0e272caef16165a57fee1499c7a94c8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Attributes.IsForeignKey.FKName</definition>
+        <argsstring>(string selfTableName)</argsstring>
+        <name>FKName</name>
+        <param>
+          <type>string</type>
+          <declname>selfTableName</declname>
+        </param>
+        <briefdescription>
+<para>Generate fk key name related to this column. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selfTableName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table that contain column.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return FK suitable name</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="185" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="185" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a2673778ee437ef079b99d58636f7617b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.Attributes.IsForeignKey.ActionToCommand</definition>
+        <argsstring>(Action action)</argsstring>
+        <name>ActionToCommand</name>
+        <param>
+          <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kindref="member">Action</ref></type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Convert action to string format. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target action.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Command format action.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="110" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="110" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d5c79de848dd87916ab946972db0188" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.Attributes.IsForeignKey.FKIndexDeclarationCommand</definition>
+        <argsstring>(MemberInfo member, string selfTableName)</argsstring>
+        <name>FKIndexDeclarationCommand</name>
+        <param>
+          <type>MemberInfo</type>
+          <declname>member</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>selfTableName</declname>
+        </param>
+        <briefdescription>
+<para>Return index init string suitable from forgeign key suitable for this column. Can auto detect modifers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Member that would be used to looking for descriptors.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selfTableName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table that contain column.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return SQL command that wold generate FK index.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="129" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="129" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6becd6dc4bd6df070252b152a57f0152" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.Attributes.IsForeignKey.FKIndexDeclarationCommand</definition>
+        <argsstring>(Column column, IsForeignKey isForeignKey, string selfTableName)</argsstring>
+        <name>FKIndexDeclarationCommand</name>
+        <param>
+          <type><ref refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kindref="compound">Column</ref></type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key" kindref="compound">IsForeignKey</ref></type>
+          <declname>isForeignKey</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>selfTableName</declname>
+        </param>
+        <briefdescription>
+<para>Return index init string suitable from forgeign key suitable for this column. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kindref="compound">Column</ref> attribute.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isForeignKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FL attribute</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selfTableName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of holding table.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Generated SQL command.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="168" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="168" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a795f460cb328bfe6d471134b4d48bedf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.Attributes.IsForeignKey.ConstrainDeclarationCommand</definition>
+        <argsstring>(Column column, IsForeignKey isForeignKey, string selfTableName)</argsstring>
+        <name>ConstrainDeclarationCommand</name>
+        <param>
+          <type><ref refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kindref="compound">Column</ref></type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key" kindref="compound">IsForeignKey</ref></type>
+          <declname>isForeignKey</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>selfTableName</declname>
+        </param>
+        <briefdescription>
+<para>Generate init string from contrains related to this column. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kindref="compound">Column</ref> attribute.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isForeignKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FK attribute.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selfTableName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of holding table.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Generated SQL command.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="197" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="197" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ae1dae3d2e36c2c38fe5306b42209ef74" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UniformDataOperator.Sql.Attributes.IsForeignKey.ConstrainDeclarationCommand</definition>
+        <argsstring>(MemberInfo member, string selfTableName)</argsstring>
+        <name>ConstrainDeclarationCommand</name>
+        <param>
+          <type>MemberInfo</type>
+          <declname>member</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>selfTableName</declname>
+        </param>
+        <briefdescription>
+<para>Generate init string from contrains related to this column. Can auto detect modifers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Member that would be used to looking for descriptors.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selfTableName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of holding table.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Generated SQL command.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="215" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="215" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mark fireld as foreign key to other column. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="34">
+        <label>Attribute</label>
+      </node>
+      <node id="33">
+        <label>UniformDataOperator.Sql.Attributes.IsForeignKey</label>
+        <link refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>Attribute</label>
+      </node>
+      <node id="35">
+        <label>UniformDataOperator.Sql.Attributes.IsForeignKey</label>
+        <link refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="24" bodyend="246"/>
+    <listofallmembers>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>Action</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a2673778ee437ef079b99d58636f7617b" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>ActionToCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d14eef86991a9e1a187876626cbb70b" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>column</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a795f460cb328bfe6d471134b4d48bedf" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>ConstrainDeclarationCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ae1dae3d2e36c2c38fe5306b42209ef74" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>ConstrainDeclarationCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d5c79de848dd87916ab946972db0188" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>FKIndexDeclarationCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6becd6dc4bd6df070252b152a57f0152" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>FKIndexDeclarationCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a0e272caef16165a57fee1499c7a94c8d" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>FKName</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a9c18736fa9035fb89c30cd5269d3ccc7" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>IsForeignKey</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a9075c37e69d16608cd912c53726a683e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>IsForeignKey</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1af70b31f4805f136d6a32b1fa33d9bbf6" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>onDeleteCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3a45eb5c4419a10aafcc097c227bb794" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>onUpdateCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3adbb93b1e9ebb988b6fabf24e10991e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>schema</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ac480fc5f3f8ff86e0bb5877bab793e19" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>table</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

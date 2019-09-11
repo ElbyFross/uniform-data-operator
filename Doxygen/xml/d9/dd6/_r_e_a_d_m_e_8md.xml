@@ -36,7 +36,7 @@
 <codeline><highlight class="normal">This<sp/>class/structure<sp/>would<sp/>be<sp/>a<sp/>bridge<sp/>betwee<sp/>your<sp/>local<sp/>data<sp/>and<sp/>server<sp/>representation.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Describing</highlight></codeline>
-<codeline><highlight class="normal">Describing<sp/>of<sp/>data<sp/>making<sp/>by<sp/>using<sp/>of<sp/>attributs<sp/>from<sp/>`UniformDataOperator.Sql.Tables.Attributes`<sp/>namespace.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Describing<sp/>of<sp/>data<sp/>making<sp/>by<sp/>using<sp/>of<sp/>attributs<sp/>from<sp/>`UniformDataOperator.Sql.Attributes`<sp/>namespace.<sp/></highlight></codeline>
 <codeline><highlight class="normal">(Custom<sp/>attributes<sp/>and<sp/>modifiers<sp/>can<sp/>has<sp/>other<sp/>namespace).</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">1.<sp/>Define<sp/>`Table`<sp/>attribute<sp/>for<sp/>your<sp/>class/structure.<sp/>Describe<sp/>correct<sp/>scheme<sp/>and<sp/>table<sp/>name.</highlight></codeline>

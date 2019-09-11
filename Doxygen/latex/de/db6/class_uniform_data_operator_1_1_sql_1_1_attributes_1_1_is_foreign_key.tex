@@ -1,0 +1,319 @@
+\hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}{}\section{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key Class Reference}
+\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}\index{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key@{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key}}
+
+
+Mark fireld as foreign key to other column.  
+
+
+Inheritance diagram for Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} \{ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}{Action.\+No\+Action}}, 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a2dc2b15e8b0ee7ed3fdd4cf53ad0a8c3}{Action.\+Cascade}}, 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a034d70b46e41ec9d0306b0001e04cae7}{Action.\+Restrict}}, 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a2ac481dd701d4f580b6b01eb34442e71}{Action.\+Set\+Null}}
+ \}
+\begin{DoxyCompactList}\small\item\em Action\textquotesingle{}s mode that would be used as reaction on event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a9c18736fa9035fb89c30cd5269d3ccc7}{Is\+Foreign\+Key}} (string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3adbb93b1e9ebb988b6fabf24e10991e}{schema}}, string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ac480fc5f3f8ff86e0bb5877bab793e19}{table}}, string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}{column}})
+\begin{DoxyCompactList}\small\item\em Configurate forgeign column reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a9075c37e69d16608cd912c53726a683e}{Is\+Foreign\+Key}} (string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3adbb93b1e9ebb988b6fabf24e10991e}{schema}}, string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ac480fc5f3f8ff86e0bb5877bab793e19}{table}}, string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}{column}}, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_af70b31f4805f136d6a32b1fa33d9bbf6}{on\+Delete\+Command}}, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3a45eb5c4419a10aafcc097c227bb794}{on\+Update\+Command}})
+\begin{DoxyCompactList}\small\item\em Configurate forgeign column reference. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a0e272caef16165a57fee1499c7a94c8d}{F\+K\+Name}} (string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Generate fk key name related to this column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a2673778ee437ef079b99d58636f7617b}{Action\+To\+Command}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} action)
+\begin{DoxyCompactList}\small\item\em Convert action to string format. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d5c79de848dd87916ab946972db0188}{F\+K\+Index\+Declaration\+Command}} (Member\+Info member, string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Return index init string suitable from forgeign key suitable for this column. Can auto detect modifers. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6becd6dc4bd6df070252b152a57f0152}{F\+K\+Index\+Declaration\+Command}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}{column}}, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}{Is\+Foreign\+Key}} is\+Foreign\+Key, string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Return index init string suitable from forgeign key suitable for this column. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a795f460cb328bfe6d471134b4d48bedf}{Constrain\+Declaration\+Command}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}{column}}, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}{Is\+Foreign\+Key}} is\+Foreign\+Key, string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Generate init string from contrains related to this column. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ae1dae3d2e36c2c38fe5306b42209ef74}{Constrain\+Declaration\+Command}} (Member\+Info member, string self\+Table\+Name)
+\begin{DoxyCompactList}\small\item\em Generate init string from contrains related to this column. Can auto detect modifers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3adbb93b1e9ebb988b6fabf24e10991e}{schema}}
+\begin{DoxyCompactList}\small\item\em Name of foreign schema. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ac480fc5f3f8ff86e0bb5877bab793e19}{table}}
+\begin{DoxyCompactList}\small\item\em Name of foreign table. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}{column}}
+\begin{DoxyCompactList}\small\item\em Name of foreign column. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_af70b31f4805f136d6a32b1fa33d9bbf6}{on\+Delete\+Command}} = \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}{Action.\+No\+Action}}
+\begin{DoxyCompactList}\small\item\em Command that would be applied in case of deleting. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3a45eb5c4419a10aafcc097c227bb794}{on\+Update\+Command}} = \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}{Action.\+No\+Action}}
+\begin{DoxyCompactList}\small\item\em Command that would be applied in case of updating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mark fireld as foreign key to other column. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Action@{Action}}
+\index{Action@{Action}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{Action}{Action}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+Action}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Action\textquotesingle{}s mode that would be used as reaction on event. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{No\+Action@{No\+Action}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!No\+Action@{No\+Action}}}\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}} 
+No\+Action&Don\textquotesingle{}t do anything. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Cascade@{Cascade}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Cascade@{Cascade}}}\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a2dc2b15e8b0ee7ed3fdd4cf53ad0a8c3}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a2dc2b15e8b0ee7ed3fdd4cf53ad0a8c3}} 
+Cascade&Goins down by member and react all members in relative tables. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Restrict@{Restrict}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Restrict@{Restrict}}}\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a034d70b46e41ec9d0306b0001e04cae7}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a034d70b46e41ec9d0306b0001e04cae7}} 
+Restrict&Don\textquotesingle{}t do anything. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Set\+Null@{Set\+Null}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Set\+Null@{Set\+Null}}}\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a2ac481dd701d4f580b6b01eb34442e71}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a2ac481dd701d4f580b6b01eb34442e71}} 
+Set\+Null&Setting null to coulmn value. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a9c18736fa9035fb89c30cd5269d3ccc7}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a9c18736fa9035fb89c30cd5269d3ccc7}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Is\+Foreign\+Key@{Is\+Foreign\+Key}}
+\index{Is\+Foreign\+Key@{Is\+Foreign\+Key}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{Is\+Foreign\+Key()}{IsForeignKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+Is\+Foreign\+Key (\begin{DoxyParamCaption}\item[{string}]{schema,  }\item[{string}]{table,  }\item[{string}]{column }\end{DoxyParamCaption})}
+
+
+
+Configurate forgeign column reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema} & Name of foreign schema.\\
+\hline
+{\em table} & Name of foreign table.\\
+\hline
+{\em column} & Name of foreign column.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a9075c37e69d16608cd912c53726a683e}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a9075c37e69d16608cd912c53726a683e}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Is\+Foreign\+Key@{Is\+Foreign\+Key}}
+\index{Is\+Foreign\+Key@{Is\+Foreign\+Key}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{Is\+Foreign\+Key()}{IsForeignKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+Is\+Foreign\+Key (\begin{DoxyParamCaption}\item[{string}]{schema,  }\item[{string}]{table,  }\item[{string}]{column,  }\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}}}]{on\+Delete\+Command,  }\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}}}]{on\+Update\+Command }\end{DoxyParamCaption})}
+
+
+
+Configurate forgeign column reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema} & Name of foreign schema.\\
+\hline
+{\em table} & Name of foreign table.\\
+\hline
+{\em column} & Name of foreign column.\\
+\hline
+{\em on\+Delete\+Command} & Command that would be applied in case of deleting.\\
+\hline
+{\em on\+Update\+Command} & Command that would be applied in case of updating.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a2673778ee437ef079b99d58636f7617b}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a2673778ee437ef079b99d58636f7617b}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Action\+To\+Command@{Action\+To\+Command}}
+\index{Action\+To\+Command@{Action\+To\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{Action\+To\+Command()}{ActionToCommand()}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+Action\+To\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}}}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert action to string format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Target action.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Command format action.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a795f460cb328bfe6d471134b4d48bedf}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a795f460cb328bfe6d471134b4d48bedf}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Constrain\+Declaration\+Command@{Constrain\+Declaration\+Command}}
+\index{Constrain\+Declaration\+Command@{Constrain\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{Constrain\+Declaration\+Command()}{ConstrainDeclarationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+Constrain\+Declaration\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}}}]{column,  }\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}{Is\+Foreign\+Key}}}]{is\+Foreign\+Key,  }\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate init string from contrains related to this column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} attribute.\\
+\hline
+{\em is\+Foreign\+Key} & FK attribute.\\
+\hline
+{\em self\+Table\+Name} & Name of holding table.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated S\+QL command.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ae1dae3d2e36c2c38fe5306b42209ef74}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ae1dae3d2e36c2c38fe5306b42209ef74}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Constrain\+Declaration\+Command@{Constrain\+Declaration\+Command}}
+\index{Constrain\+Declaration\+Command@{Constrain\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{Constrain\+Declaration\+Command()}{ConstrainDeclarationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+Constrain\+Declaration\+Command (\begin{DoxyParamCaption}\item[{Member\+Info}]{member,  }\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate init string from contrains related to this column. Can auto detect modifers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em member} & Member that would be used to looking for descriptors.\\
+\hline
+{\em self\+Table\+Name} & Name of holding table.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated S\+QL command.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d5c79de848dd87916ab946972db0188}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d5c79de848dd87916ab946972db0188}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}}
+\index{F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{F\+K\+Index\+Declaration\+Command()}{FKIndexDeclarationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+F\+K\+Index\+Declaration\+Command (\begin{DoxyParamCaption}\item[{Member\+Info}]{member,  }\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return index init string suitable from forgeign key suitable for this column. Can auto detect modifers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em member} & Member that would be used to looking for descriptors.\\
+\hline
+{\em self\+Table\+Name} & Name of the table that contain column.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return S\+QL command that wold generate FK index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6becd6dc4bd6df070252b152a57f0152}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6becd6dc4bd6df070252b152a57f0152}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}}
+\index{F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{F\+K\+Index\+Declaration\+Command()}{FKIndexDeclarationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+F\+K\+Index\+Declaration\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}}}]{column,  }\item[{\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}{Is\+Foreign\+Key}}}]{is\+Foreign\+Key,  }\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return index init string suitable from forgeign key suitable for this column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} attribute.\\
+\hline
+{\em is\+Foreign\+Key} & FL attribute\\
+\hline
+{\em self\+Table\+Name} & Name of holding table.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated S\+QL command.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a0e272caef16165a57fee1499c7a94c8d}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a0e272caef16165a57fee1499c7a94c8d}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!F\+K\+Name@{F\+K\+Name}}
+\index{F\+K\+Name@{F\+K\+Name}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{F\+K\+Name()}{FKName()}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+F\+K\+Name (\begin{DoxyParamCaption}\item[{string}]{self\+Table\+Name }\end{DoxyParamCaption})}
+
+
+
+Generate fk key name related to this column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\+Table\+Name} & Name of the table that contain column.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return FK suitable name
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!column@{column}}
+\index{column@{column}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+column}
+
+
+
+Name of foreign column. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_af70b31f4805f136d6a32b1fa33d9bbf6}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_af70b31f4805f136d6a32b1fa33d9bbf6}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!on\+Delete\+Command@{on\+Delete\+Command}}
+\index{on\+Delete\+Command@{on\+Delete\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{on\+Delete\+Command}{onDeleteCommand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+on\+Delete\+Command = \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}{Action.\+No\+Action}}}
+
+
+
+Command that would be applied in case of deleting. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3a45eb5c4419a10aafcc097c227bb794}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3a45eb5c4419a10aafcc097c227bb794}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!on\+Update\+Command@{on\+Update\+Command}}
+\index{on\+Update\+Command@{on\+Update\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{on\+Update\+Command}{onUpdateCommand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+on\+Update\+Command = \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}{Action.\+No\+Action}}}
+
+
+
+Command that would be applied in case of updating. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3adbb93b1e9ebb988b6fabf24e10991e}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3adbb93b1e9ebb988b6fabf24e10991e}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!schema@{schema}}
+\index{schema@{schema}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+schema}
+
+
+
+Name of foreign schema. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ac480fc5f3f8ff86e0bb5877bab793e19}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ac480fc5f3f8ff86e0bb5877bab793e19}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!table@{table}}
+\index{table@{table}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily string Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+table}
+
+
+
+Name of foreign table. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+S\+Q\+L/\+Attributes/Is\+Foreign\+Key.\+cs\end{DoxyCompactItemize}

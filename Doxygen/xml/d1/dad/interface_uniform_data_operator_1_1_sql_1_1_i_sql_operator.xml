@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="37" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="37" bodyend="37"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="37" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" bodystart="37" bodyend="37"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2d0ac2538fa196b181f6e0ab523db137" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="42" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="42" bodyend="42"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="42" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a55b7f28ed4ab20f124e67e2d447f8b40" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="47" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="47" bodyend="47"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="47" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1abf0c3a32c8161030b37ccf960c395d4f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="52" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="52" bodyend="52"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="52" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a90f63ab37347ec080b37dc3256ead7a4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="57" bodyend="57"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" bodystart="57" bodyend="57"/>
       </memberdef>
       <memberdef kind="property" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a99f034a986828e96955e3187cdfb28da" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>DbConnection</type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="62" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="62" bodyend="62"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="62" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" bodystart="62" bodyend="62"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="69" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="69" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1afc0fd8b8c82515c498a6959453f331f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>DbCommand</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="74" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="74" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a10c43a3bfb6e8c88b692488c3341f297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>DbCommand</type>
@@ -133,19 +133,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="79" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="79" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab43375e7f5d9dcce2adfef2f19a2078f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aa122fe55f022891be5a888ff49e6eddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>DbParameter</type>
         <definition>DbParameter UniformDataOperator.Sql.ISqlOperator.MemberToParameter</definition>
-        <argsstring>(object data, Tables.Attributes.Column column)</argsstring>
+        <argsstring>(object data, Column column)</argsstring>
         <name>MemberToParameter</name>
+        <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7d10fc1dfc16ece78ad066f596523782">MemberToParameter</reimplementedby>
         <param>
           <type>object</type>
           <declname>data</declname>
         </param>
         <param>
-          <type><ref refid="d2/da8/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_column" kindref="compound">Tables.Attributes.Column</ref></type>
+          <type><ref refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kindref="compound">Column</ref></type>
           <declname>column</declname>
         </param>
         <briefdescription>
@@ -170,7 +171,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="87" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="87" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a12d464e0532a3e194b1221eee0c32d34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>DbCommand</type>
@@ -197,7 +198,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="94" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="94" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0757f304a24ffaa743e23e8bdd210950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -224,7 +225,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="101" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="101" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a51af40df39808d53cdcc81852b836634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -251,7 +252,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="109" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="109" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3b5fbe97e664e1ef689576ab8757f957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -260,7 +261,7 @@
         <name>ValidateTableMember</name>
         <reimplementedby refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a233ab791c68b93aded97bfd9986767e8">ValidateTableMember</reimplementedby>
         <param>
-          <type><ref refid="d4/db5/class_uniform_data_operator_1_1_sql_1_1_tables_1_1_attributes_1_1_table" kindref="compound">Table</ref></type>
+          <type><ref refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kindref="compound">Table</ref></type>
           <declname>tableDescriptor</declname>
         </param>
         <param>
@@ -289,7 +290,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="117" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="117" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -316,7 +317,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="126" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="126" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a6429996e1bbb452f4e034fd634e640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -331,7 +332,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="132" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="132" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -357,7 +358,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="141" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="141" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1acf6fdbfc57a21efc371e0772244defd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -383,7 +384,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="147" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="147" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5ae8328a464ef80f1ae1bd46a573c265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -400,7 +401,7 @@
           <declname>error</declname>
         </param>
         <briefdescription>
-<para>Trying to set schema to databases server in case if shema not exist. </para>        </briefdescription>
+<para>Trying to set schema to databases server in case if schema not exist. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -421,7 +422,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="157" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="157" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aac9c3ed1e73af66e383340a154786ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -448,7 +449,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="164" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="164" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad05106eb6bd1a50f35b476a42821dfa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -471,7 +472,14 @@
         <briefdescription>
 <para>Creating request that setting up data from object to data base server acording to attributes. </para>        </briefdescription>
         <detaileddescription>
-<para>&lt;type name=&quot;tableType&quot;&gt;Type that has defined Table attribute. Would be used as table descriptor during query building.</para><para><parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that has defined Table attribute. Would be used as table descriptor during query building.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
 <parameternamelist>
 <parametername>data</parametername>
 </parameternamelist>
@@ -490,7 +498,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="177" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="177" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a35ef3899954f213e391751e9cda09322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Task</type>
@@ -538,7 +546,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="187" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="187" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a9a1822fcafcb1a3abd59b40f2cef7930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -609,7 +617,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="203" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="203" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ae1053edf9aa3d9385ef3591e7ee863c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -669,7 +677,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="216" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="216" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac170526dd0fa31f2848ece5f5c5bb9d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -718,7 +726,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="228" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="228" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a16e1513f43f3b9d76c687ba3b026573d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Task</type>
@@ -788,7 +796,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="244" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="244" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3a973b49f190dabe6bcd0bf3e79b3c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Task</type>
@@ -847,7 +855,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="258" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="258" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a497325acf359d4f8444ee0c2ff858e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Task</type>
@@ -895,7 +903,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="270" column="1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="270" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -903,28 +911,28 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="48">
+      <node id="52">
         <label>UniformDataOperator.Sql.MySql.MySqlDataOperator</label>
         <link refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator"/>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="47">
+      <node id="51">
         <label>UniformDataOperator.Sql.ISqlOperator</label>
         <link refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator"/>
       </node>
     </inheritancegraph>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" line="32" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISqlOperator.cs" bodystart="31" bodyend="272"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="32" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" bodystart="31" bodyend="272"/>
     <listofallmembers>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5ae8328a464ef80f1ae1bd46a573c265" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>ActivateSchema</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Backup</name></member>
@@ -936,7 +944,7 @@
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a12d464e0532a3e194b1221eee0c32d34" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>DisableSqlChecks</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0757f304a24ffaa743e23e8bdd210950" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>DisableSqlChecks</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a590fa080f8c35ebf5ee6ac535545e2a8" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>Initialize</name></member>
-      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab43375e7f5d9dcce2adfef2f19a2078f" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>MemberToParameter</name></member>
+      <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aa122fe55f022891be5a888ff49e6eddd" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>MemberToParameter</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1afc0fd8b8c82515c498a6959453f331f1" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>NewCommand</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a10c43a3bfb6e8c88b692488c3341f297" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>NewCommand</name></member>
       <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::ISqlOperator</scope><name>OpenConnection</name></member>

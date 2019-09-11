@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/de9/namespace_uniform_data_operator_1_1_sql_1_1_attributes" kind="namespace" language="C#">
+    <compoundname>UniformDataOperator::Sql::Attributes</compoundname>
+    <innerclass refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" prot="public">UniformDataOperator::Sql::Attributes::Column</innerclass>
+    <innerclass refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary" prot="public">UniformDataOperator::Sql::Attributes::Commentary</innerclass>
+    <innerclass refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default" prot="public">UniformDataOperator::Sql::Attributes::Default</innerclass>
+    <innerclass refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment" prot="public">UniformDataOperator::Sql::Attributes::IsAutoIncrement</innerclass>
+    <innerclass refid="d7/d13/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_binary" prot="public">UniformDataOperator::Sql::Attributes::IsBinary</innerclass>
+    <innerclass refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key" prot="public">UniformDataOperator::Sql::Attributes::IsForeignKey</innerclass>
+    <innerclass refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated" prot="public">UniformDataOperator::Sql::Attributes::IsGenerated</innerclass>
+    <innerclass refid="d4/d02/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_not_null" prot="public">UniformDataOperator::Sql::Attributes::IsNotNull</innerclass>
+    <innerclass refid="d4/da1/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_primary_key" prot="public">UniformDataOperator::Sql::Attributes::IsPrimaryKey</innerclass>
+    <innerclass refid="d0/d90/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_unique" prot="public">UniformDataOperator::Sql::Attributes::IsUnique</innerclass>
+    <innerclass refid="d5/d70/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_unsigned" prot="public">UniformDataOperator::Sql::Attributes::IsUnsigned</innerclass>
+    <innerclass refid="d5/d8d/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_zero_fill" prot="public">UniformDataOperator::Sql::Attributes::IsZeroFill</innerclass>
+    <innerclass refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" prot="public">UniformDataOperator::Sql::Attributes::Table</innerclass>
+    <innernamespace refid="d4/d8c/namespace_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers">UniformDataOperator::Sql::Attributes::Modifiers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Column.cs" line="22" column="1"/>
+  </compounddef>
+</doxygen>

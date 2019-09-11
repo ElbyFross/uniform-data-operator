@@ -27,7 +27,7 @@ class/structure with compatible and correct described fields/properties.
 This class/structure would be a bridge betwee your local data and server representation.
 
 ### Describing
-Describing of data making by using of attributs from `UniformDataOperator.Sql.Tables.Attributes` namespace. 
+Describing of data making by using of attributs from `UniformDataOperator.Sql.Attributes` namespace. 
 (Custom attributes and modifiers can has other namespace).
 
 1. Define `Table` attribute for your class/structure. Describe correct scheme and table name.

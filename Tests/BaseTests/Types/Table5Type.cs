@@ -19,7 +19,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UniformDataOperator.Sql.MySql.Attributes;
-using UniformDataOperator.Sql.Tables.Attributes;
+using UniformDataOperator.Sql.Attributes;
 using UniformDataOperator.Binary;
 using MySql.Data.MySqlClient;
 
