@@ -133,6 +133,7 @@ namespace UniformDataOperator.Sql.Attributes
             #endregion
 
             #region FK indexes
+            IsForeignKey.DropIndexator();
             foreach (MemberInfo cMeta in columns)
             {
                 string decleration = IsForeignKey.FKIndexDeclarationCommand(cMeta, tableDescriptor.table);
@@ -144,6 +145,7 @@ namespace UniformDataOperator.Sql.Attributes
             #endregion
 
             #region Constraints
+            IsForeignKey.DropIndexator();
             foreach (MemberInfo cMeta in columns)
             {
                 string decleration = IsForeignKey.ConstrainDeclarationCommand(cMeta, tableDescriptor.table);
@@ -219,12 +221,24 @@ namespace UniformDataOperator.Sql.Attributes
                 command = SqlOperatorHandler.Active.DisableSqlChecks(command);
             }
 
-            // Execute command
-            SqlOperatorHandler.Active.NewCommand(command)?.ExecuteNonQuery();
+            try
+            {
+                // Execute command
+                SqlOperatorHandler.Active.NewCommand(command)?.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message + "\n\nSQL query:\n" + command;
 
+                // Close connection after finish.
+                SqlOperatorHandler.Active.CloseConnection();
+
+                return false;
+            }
+            
             // Close connection after finish.
             SqlOperatorHandler.Active.CloseConnection();
-
+            
             // Confirm success.
             return true;
             #endregion
