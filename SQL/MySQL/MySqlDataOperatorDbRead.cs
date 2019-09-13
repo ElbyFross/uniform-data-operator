@@ -15,6 +15,7 @@
 using System;
 using System.IO;
 using System.Diagnostics;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
@@ -54,13 +55,26 @@ namespace UniformDataOperator.Sql.MySql
             string[] select, 
             params string[] where)
         {
+            // Detect object that contains querie's data.
+            object internalObj;
+            if (obj is IList objList)
+            {
+                // Set first element of list as target;
+                internalObj = objList[0];
+            }
+            else
+            {
+                // Set input object as target.
+                internalObj = obj;
+            }
+
             // Get coommon list of available members.
-            List<MemberInfo> members = MembersAllowedToSet(tableType, obj, out error);
+            List<MemberInfo> members = MembersAllowedToSet(tableType, internalObj, out error);
 
             // Generate command.
             DbCommand command = GenerateSetToObjectCommand(
                 tableType,
-                obj,
+                internalObj,
                 Table.FindMembersByColumns(members, where),
                 Table.FindMembersByColumns(members, select));
 
@@ -90,8 +104,32 @@ namespace UniformDataOperator.Sql.MySql
                 return false;
             }
 
-            // Try to apply data from reader to object.
-            bool result = SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error);
+            bool result = true;
+            // If collection.
+            if (obj is IList)
+            {
+                bool readed;
+                ((IList)obj).Clear();
+
+                // Read stream till possible.
+                do
+                {
+                    /// Instiniate obect for receving.
+                    object instance = Activator.CreateInstance(tableType);
+                    readed = SqlOperatorHandler.DatabaseDataToObject(reader, members, instance, out _);
+                    // If readed then add to output.
+                    if (readed)
+                    {
+                        ((IList)obj).Add(instance);
+                    }
+                }
+                while (readed);
+            }
+            else
+            {
+                // Try to apply data from reader to object.
+                result = SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error);
+            }
 
             // Closing connection.
             Active.CloseConnection();
@@ -174,13 +212,26 @@ namespace UniformDataOperator.Sql.MySql
             string[] select,
             params string[] where)
         {
+            // Detect object that contains querie's data.
+            object internalObj;
+            if (obj is IList objList)
+            {
+                // Set first element of list as target;
+                internalObj = objList[0]; 
+            }
+            else
+            {
+                // Set input object as target.
+                internalObj = obj;
+            }
+
             // Get coommon list of available members.
-            List<MemberInfo> members = MembersAllowedToSet(tableType, obj, out string error);
+            List<MemberInfo> members = MembersAllowedToSet(tableType, internalObj, out string error);
 
             // Generate command.
             DbCommand command = GenerateSetToObjectCommand(
                 tableType,
-                obj,
+                internalObj,
                 Table.FindMembersByColumns(members, where),
                 Table.FindMembersByColumns(members, select));
 
@@ -211,11 +262,35 @@ namespace UniformDataOperator.Sql.MySql
                 return;
             }
 
-            // Try to apply data from reader to object.
-            if (!SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error))
+            // If collection.
+            if (obj is IList)
             {
-                // Log error.
-                SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
+                bool readed;
+                ((IList)obj).Clear();
+
+                // Read stream till possible.
+                do
+                {
+                    /// Instiniate obect for receving.
+                    object instance = Activator.CreateInstance(tableType);
+                    readed = SqlOperatorHandler.DatabaseDataToObject(reader, members, instance, out _);
+                    // If readed then add to output.
+                    if (readed)
+                    {
+                        ((IList)obj).Add(instance);
+                    }
+                }
+                while (readed);
+            }
+            // If single object.
+            else
+            { 
+                // Try to apply data from reader to object.
+                if (!SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error))
+                {
+                    // Log error.
+                    SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
+                }
             }
 
             // Closing connection.
@@ -397,7 +472,15 @@ namespace UniformDataOperator.Sql.MySql
             query += (membersSelectColumns.Count == 0 ? "*" : SqlOperatorHandler.CollectionToString(membersSelectColumns)) + "\n";
             query += "FROM " + tableDescriptor.schema + "." + tableDescriptor.table + "\n";
             query += "WHERE " + SqlOperatorHandler.ConcatFormatedCollections(membersWhereColumns, membersWhereVars) + "\n";
-            query += "LIMIT 1;\n";
+            if (obj is IList objList)
+            {
+                query += ";\n";
+                obj = objList[0]; // Override object to first member that contains data.
+            }
+            else
+            {
+                query += "LIMIT 1;\n";
+            }
 
             // Sign query to commandd.
             DbCommand command = SqlOperatorHandler.Active.NewCommand(query);
