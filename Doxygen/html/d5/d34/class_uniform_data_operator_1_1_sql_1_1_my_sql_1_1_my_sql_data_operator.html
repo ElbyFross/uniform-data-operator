@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Uniform Data Operator
-   &#160;<span id="projectnumber">1.0.0 alpha 4</span>
+   &#160;<span id="projectnumber">1.0.0 alpha 5</span>
    </div>
    <div id="projectbrief">Easy | Fast | Protected</div>
   </td>
@@ -159,6 +159,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5da5cc531c8c953f73e7fc50513790e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5da5cc531c8c953f73e7fc50513790e9">SetToObject</a> (Type tableType, object obj, out string error)</td></tr>
 <tr class="memdesc:a5da5cc531c8c953f73e7fc50513790e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trying to set object data to database. Automaticly build where block with primary keys. Select all available columns.  <a href="#a5da5cc531c8c953f73e7fc50513790e9">More...</a><br /></td></tr>
 <tr class="separator:a5da5cc531c8c953f73e7fc50513790e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d9367d43538c2afc77331fe18ab666"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a38d9367d43538c2afc77331fe18ab666">SetToObjects</a> (Type tableType, object obj, out IList collection, out string error, string[] select, params string[] where)</td></tr>
+<tr class="memdesc:a38d9367d43538c2afc77331fe18ab666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object.  <a href="#a38d9367d43538c2afc77331fe18ab666">More...</a><br /></td></tr>
+<tr class="separator:a38d9367d43538c2afc77331fe18ab666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b72128803de85e9c44ac6deecc78c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a26b72128803de85e9c44ac6deecc78c4">SetToObjects</a> (Type tableType, object obj, out IList collection, out string error, params string[] select)</td></tr>
+<tr class="memdesc:a26b72128803de85e9c44ac6deecc78c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object.  <a href="#a26b72128803de85e9c44ac6deecc78c4">More...</a><br /></td></tr>
+<tr class="separator:a26b72128803de85e9c44ac6deecc78c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4079de461f0a37c0b69754a0e93dc05b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a4079de461f0a37c0b69754a0e93dc05b">SetToObjects</a> (Type tableType, object obj, out IList collection, out string error)</td></tr>
+<tr class="memdesc:a4079de461f0a37c0b69754a0e93dc05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object.  <a href="#a4079de461f0a37c0b69754a0e93dc05b">More...</a><br /></td></tr>
+<tr class="separator:a4079de461f0a37c0b69754a0e93dc05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b579ed4a87c3f9dbdb90ffc28bf15c"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a98b579ed4a87c3f9dbdb90ffc28bf15c">SetToObjectAsync</a> (Type tableType, CancellationToken cancellationToken, object obj, string[] select, params string[] where)</td></tr>
 <tr class="memdesc:a98b579ed4a87c3f9dbdb90ffc28bf15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trying to set object data to database.  <a href="#a98b579ed4a87c3f9dbdb90ffc28bf15c">More...</a><br /></td></tr>
 <tr class="separator:a98b579ed4a87c3f9dbdb90ffc28bf15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +177,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3be9aeb9ce11e3fd536449843a585490"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a3be9aeb9ce11e3fd536449843a585490">SetToObjectAsync</a> (Type tableType, CancellationToken cancellationToken, object obj)</td></tr>
 <tr class="memdesc:a3be9aeb9ce11e3fd536449843a585490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trying to set object data to database.  <a href="#a3be9aeb9ce11e3fd536449843a585490">More...</a><br /></td></tr>
 <tr class="separator:a3be9aeb9ce11e3fd536449843a585490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc9ae81932a2d5259dd817e91593988"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5fc9ae81932a2d5259dd817e91593988">SetToObjectsAsync</a> (Type tableType, CancellationToken cancellationToken, object obj, System.Action&lt; IList &gt; callback, string[] select, params string[] where)</td></tr>
+<tr class="memdesc:a5fc9ae81932a2d5259dd817e91593988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object.  <a href="#a5fc9ae81932a2d5259dd817e91593988">More...</a><br /></td></tr>
+<tr class="separator:a5fc9ae81932a2d5259dd817e91593988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca50c33ecedb751642e77668da5229f"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a1ca50c33ecedb751642e77668da5229f">SetToObjectsAsync</a> (Type tableType, CancellationToken cancellationToken, object obj, System.Action&lt; IList &gt; callback, params string[] select)</td></tr>
+<tr class="memdesc:a1ca50c33ecedb751642e77668da5229f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object.  <a href="#a1ca50c33ecedb751642e77668da5229f">More...</a><br /></td></tr>
+<tr class="separator:a1ca50c33ecedb751642e77668da5229f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cf5d9cf061019b0e7da5d966c8db63"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a28cf5d9cf061019b0e7da5d966c8db63">SetToObjectsAsync</a> (Type tableType, CancellationToken cancellationToken, object obj, System.Action&lt; IList &gt; callback)</td></tr>
+<tr class="memdesc:a28cf5d9cf061019b0e7da5d966c8db63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object.  <a href="#a28cf5d9cf061019b0e7da5d966c8db63">More...</a><br /></td></tr>
+<tr class="separator:a28cf5d9cf061019b0e7da5d966c8db63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aad834d2ceba598037b6ed19b27db6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator.html#a5aad834d2ceba598037b6ed19b27db6d">Initialize</a> ()</td></tr>
 <tr class="memdesc:a5aad834d2ceba598037b6ed19b27db6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize MySqlConnection.  <a href="#a5aad834d2ceba598037b6ed19b27db6d">More...</a><br /></td></tr>
 <tr class="separator:a5aad834d2ceba598037b6ed19b27db6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -894,6 +912,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Result of operation.</dd></dl>
+<p>Instiniate obect for receving. </p>
 
 <p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a9a1822fcafcb1a3abd59b40f2cef7930">UniformDataOperator.Sql.ISqlOperator</a>.</p>
 
@@ -1057,6 +1076,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Awaitable task.</dd></dl>
+<p>Instiniate obect for receving. </p>
 
 <p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a16e1513f43f3b9d76c687ba3b026573d">UniformDataOperator.Sql.ISqlOperator</a>.</p>
 
@@ -1162,6 +1182,372 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Awaitable task.</dd></dl>
 
 <p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a497325acf359d4f8444ee0c2ff858e6e">UniformDataOperator.Sql.ISqlOperator</a>.</p>
+
+</div>
+</div>
+<a id="a38d9367d43538c2afc77331fe18ab666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d9367d43538c2afc77331fe18ab666">&#9670;&nbsp;</a></span>SetToObjects() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UniformDataOperator.Sql.MySql.MySqlDataOperator.SetToObjects </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>tableType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out IList&#160;</td>
+          <td class="paramname"><em>collection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string []&#160;</td>
+          <td class="paramname"><em>select</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params string []&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tableType</td><td>Type that has defined Table attribute Would be used as table descriptor during query building.</td></tr>
+    <tr><td class="paramname">obj</td><td>Target object that cantains described primary keys, that would be used during query generation.</td></tr>
+    <tr><td class="paramname">collection</td><td>Output collection that would contains recived object with the same Type like obj.</td></tr>
+    <tr><td class="paramname">error</td><td>Error faces during operation.</td></tr>
+    <tr><td class="paramname">select</td><td>List of requested columns that would included to SQL query.</td></tr>
+    <tr><td class="paramname">where</td><td>List of requested columns that would included to <code>WHERE</code> part of SQL query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result of operation.</dd></dl>
+
+<p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ae5c6fb9c7448e7171414b7d20095cc08">UniformDataOperator.Sql.ISqlOperator</a>.</p>
+
+</div>
+</div>
+<a id="a26b72128803de85e9c44ac6deecc78c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b72128803de85e9c44ac6deecc78c4">&#9670;&nbsp;</a></span>SetToObjects() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UniformDataOperator.Sql.MySql.MySqlDataOperator.SetToObjects </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>tableType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out IList&#160;</td>
+          <td class="paramname"><em>collection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params string []&#160;</td>
+          <td class="paramname"><em>select</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tableType</td><td>Type that has defined Table attribute Would be used as table descriptor during query building.</td></tr>
+    <tr><td class="paramname">obj</td><td>Target object that cantains described primary keys, that would be used during query generation.</td></tr>
+    <tr><td class="paramname">collection</td><td>Output collection that would contains recived object with the same Type like obj.</td></tr>
+    <tr><td class="paramname">error</td><td>Error faces during operation.</td></tr>
+    <tr><td class="paramname">select</td><td>List of requested columns that would included to SQL query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result of operation.</dd></dl>
+
+<p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ac75ce5e3b29a8d2d94f96d4a9ff47820">UniformDataOperator.Sql.ISqlOperator</a>.</p>
+
+</div>
+</div>
+<a id="a4079de461f0a37c0b69754a0e93dc05b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4079de461f0a37c0b69754a0e93dc05b">&#9670;&nbsp;</a></span>SetToObjects() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UniformDataOperator.Sql.MySql.MySqlDataOperator.SetToObjects </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>tableType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out IList&#160;</td>
+          <td class="paramname"><em>collection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tableType</td><td>Type that has defined Table attribute Would be used as table descriptor during query building.</td></tr>
+    <tr><td class="paramname">obj</td><td>Target object that cantains described primary keys, that would be used during query generation.</td></tr>
+    <tr><td class="paramname">collection</td><td>Output collection that would contains recived object with the same Type like obj.</td></tr>
+    <tr><td class="paramname">error</td><td>Error faces during operation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result of operation.</dd></dl>
+
+<p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a6bde25bff76c7b2105aa4e14740eb07d">UniformDataOperator.Sql.ISqlOperator</a>.</p>
+
+</div>
+</div>
+<a id="a5fc9ae81932a2d5259dd817e91593988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc9ae81932a2d5259dd817e91593988">&#9670;&nbsp;</a></span>SetToObjectsAsync() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task UniformDataOperator.Sql.MySql.MySqlDataOperator.SetToObjectsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>tableType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken&#160;</td>
+          <td class="paramname"><em>cancellationToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Action&lt; IList &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string []&#160;</td>
+          <td class="paramname"><em>select</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params string []&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </p>
+<p>Add to WHERE block only requested columns. Request data only for required columns. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tableType</td><td>Type that has defined Table attribute Would be used as table descriptor during query building.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>Token that can terminate operation.</td></tr>
+    <tr><td class="paramname">obj</td><td>Target object that cantains described primary keys, that would be used during query generation.</td></tr>
+    <tr><td class="paramname">callback</td><td>Delegate that would be called and return retcived collection of objects.</td></tr>
+    <tr><td class="paramname">select</td><td>List of requested columns that would included to SQL query.</td></tr>
+    <tr><td class="paramname">where</td><td>List of requested columns that would included to <code>WHERE</code> part of SQL query.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a1a913ae60feb71cdf262e4e42e79bceb">UniformDataOperator.Sql.ISqlOperator</a>.</p>
+
+</div>
+</div>
+<a id="a1ca50c33ecedb751642e77668da5229f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca50c33ecedb751642e77668da5229f">&#9670;&nbsp;</a></span>SetToObjectsAsync() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task UniformDataOperator.Sql.MySql.MySqlDataOperator.SetToObjectsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>tableType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken&#160;</td>
+          <td class="paramname"><em>cancellationToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Action&lt; IList &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params string []&#160;</td>
+          <td class="paramname"><em>select</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </p>
+<p>Add to WHERE block only requested columns. Request data only for required columns. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tableType</td><td>Type that has defined Table attribute Would be used as table descriptor during query building.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>Token that can terminate operation.</td></tr>
+    <tr><td class="paramname">obj</td><td>Target object that cantains described primary keys, that would be used during query generation.</td></tr>
+    <tr><td class="paramname">callback</td><td>Delegate that would be called and return retcived collection of objects.</td></tr>
+    <tr><td class="paramname">select</td><td>List of requested columns that would included to SQL query.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#ab2b82841cfb00ba1b8b46de5edf15e77">UniformDataOperator.Sql.ISqlOperator</a>.</p>
+
+</div>
+</div>
+<a id="a28cf5d9cf061019b0e7da5d966c8db63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cf5d9cf061019b0e7da5d966c8db63">&#9670;&nbsp;</a></span>SetToObjectsAsync() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task UniformDataOperator.Sql.MySql.MySqlDataOperator.SetToObjectsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>tableType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken&#160;</td>
+          <td class="paramname"><em>cancellationToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Action&lt; IList &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setting data from DB Data reader to object by using column map described at object Type. Auto-generate SQL query and request coluns data relative to privary keys described in object. </p>
+<p>Add to WHERE block only requested columns. Request data only for required columns. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tableType</td><td>Type that has defined Table attribute Would be used as table descriptor during query building.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>Token that can terminate operation.</td></tr>
+    <tr><td class="paramname">obj</td><td>Target object that cantains described primary keys, that would be used during query generation.</td></tr>
+    <tr><td class="paramname">callback</td><td>Delegate that would be called and return retcived collection of objects.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator.html#a2844a6839130dfab7cbe7541787f7dfe">UniformDataOperator.Sql.ISqlOperator</a>.</p>
 
 </div>
 </div>

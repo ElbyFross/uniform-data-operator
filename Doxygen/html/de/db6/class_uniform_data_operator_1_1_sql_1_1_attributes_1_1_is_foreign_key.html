@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Uniform Data Operator
-   &#160;<span id="projectnumber">1.0.0 alpha 4</span>
+   &#160;<span id="projectnumber">1.0.0 alpha 5</span>
    </div>
    <div id="projectbrief">Easy | Fast | Protected</div>
   </td>
@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('de/db6/class_uniform_data_operator_1_1
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="../../d6/df5/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">UniformDataOperator.Sql.Attributes.IsForeignKey Class Reference</div>  </div>
@@ -142,6 +143,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6becd6dc4bd6df070252b152a57f0152"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a6becd6dc4bd6df070252b152a57f0152">FKIndexDeclarationCommand</a> (<a class="el" href="../../d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column.html">Column</a> <a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a8d14eef86991a9e1a187876626cbb70b">column</a>, <a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html">IsForeignKey</a> isForeignKey, string selfTableName)</td></tr>
 <tr class="memdesc:a6becd6dc4bd6df070252b152a57f0152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index init string suitable from forgeign key suitable for this column.  <a href="#a6becd6dc4bd6df070252b152a57f0152">More...</a><br /></td></tr>
 <tr class="separator:a6becd6dc4bd6df070252b152a57f0152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba50c9adf8e4fac95010d26a17b54644"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#aba50c9adf8e4fac95010d26a17b54644">DropIndexator</a> ()</td></tr>
+<tr class="memdesc:aba50c9adf8e4fac95010d26a17b54644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clearing current index history.  <a href="#aba50c9adf8e4fac95010d26a17b54644">More...</a><br /></td></tr>
+<tr class="separator:aba50c9adf8e4fac95010d26a17b54644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795f460cb328bfe6d471134b4d48bedf"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a795f460cb328bfe6d471134b4d48bedf">ConstrainDeclarationCommand</a> (<a class="el" href="../../d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column.html">Column</a> <a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a8d14eef86991a9e1a187876626cbb70b">column</a>, <a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html">IsForeignKey</a> isForeignKey, string selfTableName)</td></tr>
 <tr class="memdesc:a795f460cb328bfe6d471134b4d48bedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate init string from contrains related to this column.  <a href="#a795f460cb328bfe6d471134b4d48bedf">More...</a><br /></td></tr>
 <tr class="separator:a795f460cb328bfe6d471134b4d48bedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +170,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3a45eb5c4419a10aafcc097c227bb794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a6039622384e2bbd1aa386e326ee0f850">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a3a45eb5c4419a10aafcc097c227bb794">onUpdateCommand</a> = <a class="el" href="../../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe">Action.NoAction</a></td></tr>
 <tr class="memdesc:a3a45eb5c4419a10aafcc097c227bb794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command that would be applied in case of updating.  <a href="#a3a45eb5c4419a10aafcc097c227bb794">More...</a><br /></td></tr>
 <tr class="separator:a3a45eb5c4419a10aafcc097c227bb794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a30ca24c3d7b8c38c36a112c6d3d9db55"><td class="memItemLeft" align="right" valign="top"><a id="a30ca24c3d7b8c38c36a112c6d3d9db55"></a>
+static readonly HashSet&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>usedIndexes</b> = new HashSet&lt;string&gt;()</td></tr>
+<tr class="separator:a30ca24c3d7b8c38c36a112c6d3d9db55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mark fireld as foreign key to other column. </p>
@@ -439,6 +449,33 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated SQL command.</dd></dl>
+
+</div>
+</div>
+<a id="aba50c9adf8e4fac95010d26a17b54644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba50c9adf8e4fac95010d26a17b54644">&#9670;&nbsp;</a></span>DropIndexator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void UniformDataOperator.Sql.Attributes.IsForeignKey.DropIndexator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clearing current index history. </p>
 
 </div>
 </div>

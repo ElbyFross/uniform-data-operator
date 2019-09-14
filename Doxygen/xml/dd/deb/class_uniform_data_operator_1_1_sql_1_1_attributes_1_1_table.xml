@@ -155,7 +155,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="75" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="75" bodyend="162"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="75" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="75" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a0b905b5fd9ab2e381ce6cf81c3324a22" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -203,7 +203,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="173" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="173" bodyend="231"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="175" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="175" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a80d799a2ba3419b489b9840f624880ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -251,7 +251,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="242" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="242" bodyend="292"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="256" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="256" bodyend="306"/>
       </memberdef>
       <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a7808fc23fc487fc878bd8d7869304ed1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>List&lt; MemberInfo &gt;</type>
@@ -288,7 +288,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="300" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="300" bodyend="329"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="314" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="314" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a8de48462eb10c4eddc660a2f19e96d0e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -336,7 +336,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="338" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="338" bodyend="359"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="352" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="352" bodyend="373"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -365,7 +365,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="28" bodyend="360"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Table.cs" bodystart="28" bodyend="374"/>
     <listofallmembers>
       <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1afe0c2479401391900b1b16055a090e07" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>engine</name></member>
       <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a7808fc23fc487fc878bd8d7869304ed1" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::Table</scope><name>FindMembersByColumns</name></member>

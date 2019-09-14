@@ -11,6 +11,7 @@ var class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key =
     [ "ActionToCommand", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a2673778ee437ef079b99d58636f7617b", null ],
     [ "ConstrainDeclarationCommand", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a795f460cb328bfe6d471134b4d48bedf", null ],
     [ "ConstrainDeclarationCommand", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#ae1dae3d2e36c2c38fe5306b42209ef74", null ],
+    [ "DropIndexator", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#aba50c9adf8e4fac95010d26a17b54644", null ],
     [ "FKIndexDeclarationCommand", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a8d5c79de848dd87916ab946972db0188", null ],
     [ "FKIndexDeclarationCommand", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a6becd6dc4bd6df070252b152a57f0152", null ],
     [ "FKName", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a0e272caef16165a57fee1499c7a94c8d", null ],
@@ -18,5 +19,6 @@ var class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key =
     [ "onDeleteCommand", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#af70b31f4805f136d6a32b1fa33d9bbf6", null ],
     [ "onUpdateCommand", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a3a45eb5c4419a10aafcc097c227bb794", null ],
     [ "schema", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a3adbb93b1e9ebb988b6fabf24e10991e", null ],
-    [ "table", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#ac480fc5f3f8ff86e0bb5877bab793e19", null ]
+    [ "table", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#ac480fc5f3f8ff86e0bb5877bab793e19", null ],
+    [ "usedIndexes", "de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a30ca24c3d7b8c38c36a112c6d3d9db55", null ]
 ];

@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="34" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="34" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="34" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="property">
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="47" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="47" bodyend="47"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="47" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="47" bodyend="47"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="39" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="39" bodyend="42"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="39" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="39" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab2de5b9d7f8e8e67b518cf39c7e6f7a5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -78,7 +78,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="56" bodyend="71"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="56" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a6973169901301adaecd52fab70df280e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -115,7 +115,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="82" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="82" bodyend="87"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="82" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="82" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ac17e36b29fe5a17281927ab04dbeab26" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -163,7 +163,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="99" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="99" bodyend="124"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="99" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="99" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a97954b0bb1559fbe600c12aa5e2c53ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -222,14 +222,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="134" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="134" bodyend="179"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="134" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="134" bodyend="179"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Contains base catalog of uniform queries that strongly simplify managing of the data base. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SqlOperatorHandler.cs" bodystart="29" bodyend="180"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="29" bodyend="180"/>
     <listofallmembers>
       <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1aa96eb9fd201700acbf53954599fec534" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>Active</name></member>
       <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab2de5b9d7f8e8e67b518cf39c7e6f7a5" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>CollectionToString</name></member>

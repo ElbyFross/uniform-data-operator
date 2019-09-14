@@ -13,6 +13,7 @@
 //limitations under the License.
 
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace UniformDataOperator.Sql.Attributes
@@ -23,6 +24,9 @@ namespace UniformDataOperator.Sql.Attributes
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class IsForeignKey : Attribute
     {
+        // Set that contains used indexes.
+        private static readonly HashSet<string> usedIndexes = new HashSet<string>();
+
         /// <summary>
         /// Action's mode that would be used as reaction on event.
         /// </summary>
@@ -184,7 +188,26 @@ namespace UniformDataOperator.Sql.Attributes
         /// <returns>Return FK suitable name</returns>
         public string FKName(string selfTableName)
         {
-            return "fk_" + selfTableName + "_" + table + "1";
+            int index = 0;
+            string name;
+
+            // Looking for free index.
+            do
+            {
+                index++;
+                name = "fk_" + selfTableName + "_" + table + index;
+            }
+            while (usedIndexes.Contains(name));
+            usedIndexes.Add(name);
+            return name;
+        }
+
+        /// <summary>
+        /// Clearing current index history.
+        /// </summary>
+        public static void DropIndexator()
+        {
+            usedIndexes.Clear();
         }
 
         /// <summary>
