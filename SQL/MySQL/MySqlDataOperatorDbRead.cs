@@ -49,12 +49,13 @@ namespace UniformDataOperator.Sql.MySql
         /// <param name="where">Array that contains columns' names taht wouyld be added to Where block.</param>
         /// <returns>Result of operation.</returns>
         public bool SetToObject(
-            Type tableType, 
-            object obj, 
+            Type tableType,
+            object obj,
             out string error,
-            string[] select, 
+            string[] select,
             params string[] where)
         {
+            #region Detecting target object
             // Detect object that contains querie's data.
             object internalObj;
             if (obj is IList objList)
@@ -67,7 +68,9 @@ namespace UniformDataOperator.Sql.MySql
                 // Set input object as target.
                 internalObj = obj;
             }
+            #endregion
 
+            #region Building command
             // Get coommon list of available members.
             List<MemberInfo> members = MembersAllowedToSet(tableType, internalObj, out error);
 
@@ -84,8 +87,9 @@ namespace UniformDataOperator.Sql.MySql
                 error = "Commnad generation failed. Details:\n" + error;
                 return false;
             }
+            #endregion
 
-            #region Execute query
+            #region Execute command
             // Opening connection to DB srver.
             if (!Active.OpenConnection(out error))
             {
@@ -104,6 +108,7 @@ namespace UniformDataOperator.Sql.MySql
                 return false;
             }
 
+            #region Reading data
             bool result = true;
             // If collection.
             if (obj is IList)
@@ -130,6 +135,7 @@ namespace UniformDataOperator.Sql.MySql
                 // Try to apply data from reader to object.
                 result = SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error);
             }
+            #endregion
 
             // Closing connection.
             Active.CloseConnection();
@@ -150,9 +156,9 @@ namespace UniformDataOperator.Sql.MySql
         /// If empty then would auto select all columns.</param>
         /// <returns>Result of operation.</returns>
         public bool SetToObject(
-            Type tableType, 
+            Type tableType,
             object obj,
-            out string error, 
+            out string error,
             params string[] select)
         {
             // Collect pk keys as where expression.
@@ -176,8 +182,8 @@ namespace UniformDataOperator.Sql.MySql
         /// <param name="error">Occurred error. Null if operation passed success.</param>
         /// <returns>Result of operation.</returns>
         public bool SetToObject(
-            Type tableType, 
-            object obj, 
+            Type tableType,
+            object obj,
             out string error)
         {
             // Collect pk keys as where expression.
@@ -188,6 +194,74 @@ namespace UniformDataOperator.Sql.MySql
 
             string[] select = new string[0];
             return SetToObject(tableType, obj, out error, select, where);
+        }
+
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute
+        /// Would be used as table descriptor during query building.</param>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="collection">Output collection that would contains recived object with the same Type like obj.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <param name="select">List of requested columns that would included to SQL query.</param>
+        /// <param name="where">List of requested columns that would included to `WHERE` part of SQL query.</param>
+        /// <returns>Result of operation.</returns>
+        public bool SetToObjects(Type tableType, object obj, out IList collection, out string error, string[] select, params string[] where)
+        {
+            // Cinstiniate output collection.
+            collection = (IList)Activator.CreateInstance((typeof(List<>).MakeGenericType(obj.GetType())));
+            collection.Add(obj);
+
+            // Call set.
+            return SetToObject(tableType, collection, out error, select, where);
+        }
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute
+        /// Would be used as table descriptor during query building.</param>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="collection">Output collection that would contains recived object with the same Type like obj.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <param name="select">List of requested columns that would included to SQL query.</param>
+        /// <returns>Result of operation.</returns>
+        public bool SetToObjects(Type tableType, object obj, out IList collection, out string error, params string[] select)
+        {
+            // Cinstiniate output collection.
+            collection = (IList)Activator.CreateInstance((typeof(List<>).MakeGenericType(obj.GetType())));
+            collection.Add(obj);
+
+            // Call set.
+            return SetToObject(tableType, collection, out error, select);
+        }
+
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute
+        /// Would be used as table descriptor during query building.</param>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="collection">Output collection that would contains recived object with the same Type like obj.</param>
+        /// <param name="error">Error faces during operation.</param>
+        /// <returns>Result of operation.</returns>
+        public bool SetToObjects(Type tableType, object obj, out IList collection, out string error)
+        {
+            // Cinstiniate output collection.
+            collection = (IList)Activator.CreateInstance((typeof(List<>).MakeGenericType(obj.GetType())));
+            collection.Add(obj);
+
+            // Call set.
+            return SetToObject(tableType, collection, out error);
         }
         #endregion
 
@@ -208,7 +282,7 @@ namespace UniformDataOperator.Sql.MySql
         public async Task SetToObjectAsync(
             Type tableType,
             CancellationToken cancellationToken,
-            object obj, 
+            object obj,
             string[] select,
             params string[] where)
         {
@@ -217,7 +291,7 @@ namespace UniformDataOperator.Sql.MySql
             if (obj is IList objList)
             {
                 // Set first element of list as target;
-                internalObj = objList[0]; 
+                internalObj = objList[0];
             }
             else
             {
@@ -284,7 +358,7 @@ namespace UniformDataOperator.Sql.MySql
             }
             // If single object.
             else
-            { 
+            {
                 // Try to apply data from reader to object.
                 if (!SqlOperatorHandler.DatabaseDataToObject(reader, members, obj, out error))
                 {
@@ -337,7 +411,7 @@ namespace UniformDataOperator.Sql.MySql
         /// <returns>Awaitable task.</returns>
         public async Task SetToObjectAsync(
             Type tableType,
-            CancellationToken cancellationToken, 
+            CancellationToken cancellationToken,
             object obj)
         {
             // Collect pk keys as where expression.
@@ -348,6 +422,103 @@ namespace UniformDataOperator.Sql.MySql
 
             string[] select = new string[0];
             await SetToObjectAsync(tableType, cancellationToken, obj, select, where);
+        }
+
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// 
+        /// Add to WHERE block only requested columns.
+        /// Request data only for required columns.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute
+        /// Would be used as table descriptor during query building.</param>
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="callback">Delegate that would be called and return retcived collection of objects.</param>
+        /// <param name="select">List of requested columns that would included to SQL query.</param>
+        /// <param name="where">List of requested columns that would included to `WHERE` part of SQL query.</param>
+        public async Task SetToObjectsAsync(
+            Type tableType,
+            CancellationToken cancellationToken,
+            object obj,
+            System.Action<IList> callback,
+            string[] select,
+            params string[] where)
+        {
+            // Cinstiniate output collection.
+            IList collection = (IList)Activator.CreateInstance((typeof(List<>).MakeGenericType(obj.GetType())));
+            collection.Add(obj);
+
+            // Call set.
+            await SetToObjectAsync(tableType, cancellationToken, collection, select, where);
+
+            // Inform subscribers.
+            callback?.Invoke(collection);
+        }
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// 
+        /// Add to WHERE block only requested columns.
+        /// Request data only for required columns.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute
+        /// Would be used as table descriptor during query building.</param>
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="callback">Delegate that would be called and return retcived collection of objects.</param>
+        /// <param name="select">List of requested columns that would included to SQL query.</param>
+        public async Task SetToObjectsAsync(
+            Type tableType,
+            CancellationToken cancellationToken,
+            object obj,
+            System.Action<IList> callback,
+            params string[] select)
+        {
+            // Cinstiniate output collection.
+            IList collection = (IList)Activator.CreateInstance((typeof(List<>).MakeGenericType(obj.GetType())));
+            collection.Add(obj);
+
+            // Call set.
+            await SetToObjectAsync(tableType, cancellationToken, collection, select);
+
+            // Inform subscribers.
+            callback?.Invoke(collection);
+        }
+
+        /// <summary>
+        /// Setting data from DB Data reader to object by using column map described at object Type.
+        /// Auto-generate SQL query and request coluns data relative to privary keys described in object.
+        /// 
+        /// Add to WHERE block only requested columns.
+        /// Request data only for required columns.
+        /// </summary>
+        /// <param name="tableType">Type that has defined Table attribute
+        /// Would be used as table descriptor during query building.</param>
+        /// <param name="cancellationToken">Token that can terminate operation.</param>
+        /// <param name="obj">Target object that cantains described primary keys, 
+        /// that would be used during query generation.</param>
+        /// <param name="callback">Delegate that would be called and return retcived collection of objects.</param>
+        public async Task SetToObjectsAsync(
+            Type tableType,
+            CancellationToken cancellationToken,
+            object obj,
+            System.Action<IList> callback)
+        {
+            // Cinstiniate output collection.
+            IList collection = (IList)Activator.CreateInstance((typeof(List<>).MakeGenericType(obj.GetType())));
+            collection.Add(obj);
+
+            // Call set.
+            await SetToObjectAsync(tableType, cancellationToken, collection);
+
+            // Inform subscribers.
+            callback?.Invoke(collection);
         }
         #endregion
 
