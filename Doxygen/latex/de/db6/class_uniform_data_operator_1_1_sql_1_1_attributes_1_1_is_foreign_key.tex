@@ -38,6 +38,8 @@ static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attribute
 \begin{DoxyCompactList}\small\item\em Return index init string suitable from forgeign key suitable for this column. Can auto detect modifers. \end{DoxyCompactList}\item 
 static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6becd6dc4bd6df070252b152a57f0152}{F\+K\+Index\+Declaration\+Command}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}{column}}, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}{Is\+Foreign\+Key}} is\+Foreign\+Key, string self\+Table\+Name)
 \begin{DoxyCompactList}\small\item\em Return index init string suitable from forgeign key suitable for this column. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_aba50c9adf8e4fac95010d26a17b54644}{Drop\+Indexator}} ()
+\begin{DoxyCompactList}\small\item\em Clearing current index history. \end{DoxyCompactList}\item 
 static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a795f460cb328bfe6d471134b4d48bedf}{Constrain\+Declaration\+Command}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column}{Column}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d14eef86991a9e1a187876626cbb70b}{column}}, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key}{Is\+Foreign\+Key}} is\+Foreign\+Key, string self\+Table\+Name)
 \begin{DoxyCompactList}\small\item\em Generate init string from contrains related to this column. \end{DoxyCompactList}\item 
 static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_ae1dae3d2e36c2c38fe5306b42209ef74}{Constrain\+Declaration\+Command}} (Member\+Info member, string self\+Table\+Name)
@@ -55,6 +57,12 @@ string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_i
 \begin{DoxyCompactList}\small\item\em Command that would be applied in case of deleting. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850}{Action}} \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a3a45eb5c4419a10aafcc097c227bb794}{on\+Update\+Command}} = \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe}{Action.\+No\+Action}}
 \begin{DoxyCompactList}\small\item\em Command that would be applied in case of updating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a30ca24c3d7b8c38c36a112c6d3d9db55}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a30ca24c3d7b8c38c36a112c6d3d9db55}} 
+static readonly Hash\+Set$<$ string $>$ {\bfseries used\+Indexes} = new Hash\+Set$<$string$>$()
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -199,6 +207,16 @@ Generate init string from contrains related to this column. Can auto detect modi
 \begin{DoxyReturn}{Returns}
 Generated S\+QL command.
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_aba50c9adf8e4fac95010d26a17b54644}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_aba50c9adf8e4fac95010d26a17b54644}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!Drop\+Indexator@{Drop\+Indexator}}
+\index{Drop\+Indexator@{Drop\+Indexator}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}
+\subsubsection{\texorpdfstring{Drop\+Indexator()}{DropIndexator()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Sql.\+Attributes.\+Is\+Foreign\+Key.\+Drop\+Indexator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clearing current index history. 
+
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d5c79de848dd87916ab946972db0188}\label{class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_a8d5c79de848dd87916ab946972db0188}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}!F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}}
 \index{F\+K\+Index\+Declaration\+Command@{F\+K\+Index\+Declaration\+Command}!Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key@{Uniform\+Data\+Operator\+::\+Sql\+::\+Attributes\+::\+Is\+Foreign\+Key}}

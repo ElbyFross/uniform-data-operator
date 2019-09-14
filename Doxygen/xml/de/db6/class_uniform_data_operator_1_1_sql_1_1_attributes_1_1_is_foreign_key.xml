@@ -41,7 +41,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="29" bodyend="47"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="34" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="33" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a30ca24c3d7b8c38c36a112c6d3d9db55" prot="private" static="yes" mutable="no">
+        <type>readonly HashSet&lt; string &gt;</type>
+        <definition>readonly HashSet&lt;string&gt; UniformDataOperator.Sql.Attributes.IsForeignKey.usedIndexes</definition>
+        <argsstring></argsstring>
+        <name>usedIndexes</name>
+        <initializer>= new HashSet&lt;string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="28" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -56,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="52" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="52" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ac480fc5f3f8ff86e0bb5877bab793e19" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -69,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="57" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="61" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d14eef86991a9e1a187876626cbb70b" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -82,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="62" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="62" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="66" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1af70b31f4805f136d6a32b1fa33d9bbf6" prot="public" static="no" mutable="no">
         <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kindref="member">Action</ref></type>
@@ -96,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="67" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="67" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="71" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3a45eb5c4419a10aafcc097c227bb794" prot="public" static="no" mutable="no">
         <type><ref refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kindref="member">Action</ref></type>
@@ -110,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="72" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="72" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="76" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="76" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -159,7 +175,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="80" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="80" bodyend="85"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="84" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="84" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a9075c37e69d16608cd912c53726a683e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -228,7 +244,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="95" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="95" bodyend="103"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="99" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="99" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a0e272caef16165a57fee1499c7a94c8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -254,7 +270,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="185" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="185" bodyend="188"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="189" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="189" bodyend="203"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -282,7 +298,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="110" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="110" bodyend="120"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="114" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="114" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d5c79de848dd87916ab946972db0188" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -319,7 +335,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="129" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="129" bodyend="159"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="133" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="133" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6becd6dc4bd6df070252b152a57f0152" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -367,7 +383,20 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="168" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="168" bodyend="178"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="172" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="172" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1aba50c9adf8e4fac95010d26a17b54644" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UniformDataOperator.Sql.Attributes.IsForeignKey.DropIndexator</definition>
+        <argsstring>()</argsstring>
+        <name>DropIndexator</name>
+        <briefdescription>
+<para>Clearing current index history. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="208" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="208" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a795f460cb328bfe6d471134b4d48bedf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -415,7 +444,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="197" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="197" bodyend="206"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="220" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="220" bodyend="229"/>
       </memberdef>
       <memberdef kind="function" id="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ae1dae3d2e36c2c38fe5306b42209ef74" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -452,7 +481,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="215" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="215" bodyend="245"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="238" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="238" bodyend="268"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -481,13 +510,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="25" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="24" bodyend="246"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" line="26" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Attributes/IsForeignKey.cs" bodystart="25" bodyend="269"/>
     <listofallmembers>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>Action</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a2673778ee437ef079b99d58636f7617b" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>ActionToCommand</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d14eef86991a9e1a187876626cbb70b" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>column</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a795f460cb328bfe6d471134b4d48bedf" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>ConstrainDeclarationCommand</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ae1dae3d2e36c2c38fe5306b42209ef74" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>ConstrainDeclarationCommand</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1aba50c9adf8e4fac95010d26a17b54644" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>DropIndexator</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d5c79de848dd87916ab946972db0188" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>FKIndexDeclarationCommand</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6becd6dc4bd6df070252b152a57f0152" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>FKIndexDeclarationCommand</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a0e272caef16165a57fee1499c7a94c8d" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>FKName</name></member>
@@ -497,6 +527,7 @@
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3a45eb5c4419a10aafcc097c227bb794" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>onUpdateCommand</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3adbb93b1e9ebb988b6fabf24e10991e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>schema</name></member>
       <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ac480fc5f3f8ff86e0bb5877bab793e19" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>table</name></member>
+      <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a30ca24c3d7b8c38c36a112c6d3d9db55" prot="private" virt="non-virtual"><scope>UniformDataOperator::Sql::Attributes::IsForeignKey</scope><name>usedIndexes</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
