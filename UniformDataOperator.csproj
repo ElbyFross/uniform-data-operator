@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Binary\BinaryHandler.cs" />
+    <Compile Include="Binary\BoyerMoore.cs" />
     <Compile Include="SQL\ISqlOperator.cs" />
     <Compile Include="SQL\MySQL\Attributes\MySqlDBTypeOverride.cs" />
     <Compile Include="SQL\MySQL\MySqlDataOperatorDbRead.cs" />

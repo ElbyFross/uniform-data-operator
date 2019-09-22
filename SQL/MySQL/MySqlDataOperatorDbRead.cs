@@ -119,7 +119,7 @@ namespace UniformDataOperator.Sql.MySql
                 // Read stream till possible.
                 do
                 {
-                    /// Instiniate obect for receving.
+                    // Instiniate obect for receving.
                     object instance = Activator.CreateInstance(tableType);
                     readed = SqlOperatorHandler.DatabaseDataToObject(reader, members, instance, out _);
                     // If readed then add to output.
@@ -345,7 +345,7 @@ namespace UniformDataOperator.Sql.MySql
                 // Read stream till possible.
                 do
                 {
-                    /// Instiniate obect for receving.
+                    // Instiniate obect for receving.
                     object instance = Activator.CreateInstance(tableType);
                     readed = SqlOperatorHandler.DatabaseDataToObject(reader, members, instance, out _);
                     // If readed then add to output.

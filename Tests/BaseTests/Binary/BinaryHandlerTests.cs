@@ -57,5 +57,16 @@ namespace BaseTests.Binary
 
             Assert.IsTrue(blob != null && blob.s.Equals("DeserTest"));
         }
+
+        [TestMethod]
+        public void BoyerMooreSearch()
+        {
+            string input = "That the string for scan that would be converted to binary format.";
+            string fragment = "the string for scan";
+
+            int index = BoyerMoore.IndexOf(input, fragment);
+
+            Assert.IsTrue(index == 5, index.ToString());
+        }
     }
 }
