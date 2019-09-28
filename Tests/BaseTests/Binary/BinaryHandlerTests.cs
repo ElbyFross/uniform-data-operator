@@ -13,6 +13,10 @@
 //limitations under the License.
 
 using System;
+using System.Linq;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BaseTests.Types;
 using UniformDataOperator.Binary;
@@ -67,6 +71,58 @@ namespace BaseTests.Binary
             int index = BoyerMoore.IndexOf(input, fragment);
 
             Assert.IsTrue(index == 5, index.ToString());
+        }
+        
+        [TestMethod]
+        public void StreamDataExchange()
+        {
+            bool success = false;
+            bool completed = false;
+
+            Random random = new Random();
+            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            string message = new string(Enumerable.Repeat(chars, 10000/*000*/)
+                            .Select(s => s[random.Next(s.Length)]).ToArray());
+
+            MemoryStream stream = new MemoryStream();
+            
+            var reading = new Task(async delegate ()
+            {
+                try
+                {
+                    byte[] data = null;
+                    while (data == null)
+                    {
+                        data = await BinaryHandler.StreamReaderAsync(stream);
+                        Thread.Sleep(5);
+                    }
+                    string receivedMessage = BinaryHandler.FromByteArray<string>(data);
+
+                    success = receivedMessage.Equals(message);
+                    completed = true;
+                }
+                catch (Exception ex)
+                {
+                    Assert.Fail(ex.Message);
+                    return;
+                }
+            });
+            
+            var writing = new Task(async delegate ()
+            {
+                await BinaryHandler.StreamWriterAsync(stream, BinaryHandler.ToByteArray(message), 8196*70);
+            });
+
+
+            reading.Start();
+            writing.Start();
+
+            while (!completed)
+            {
+                Thread.Sleep(5);
+            }
+
+            Assert.IsTrue(success);
         }
     }
 }

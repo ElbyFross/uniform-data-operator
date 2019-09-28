@@ -25,7 +25,6 @@ namespace UniformDataOperator.Binary
     /// </summary>
     public static class BoyerMoore
     {
-
         /// <summary> 
         /// Returns the index within this string of the first occurrence of the
         /// specified substring.If it is not a substring, return -1.
