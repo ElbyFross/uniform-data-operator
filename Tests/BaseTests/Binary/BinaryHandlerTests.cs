@@ -74,15 +74,12 @@ namespace BaseTests.Binary
         }
         
         [TestMethod]
-        public void StreamDataExchange()
+        public void StreamDataExchange_OneWayStream()
         {
             bool success = false;
             bool completed = false;
 
-            Random random = new Random();
-            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            string message = new string(Enumerable.Repeat(chars, 10000/*000*/)
-                            .Select(s => s[random.Next(s.Length)]).ToArray());
+            string message = GenerateMessage();
 
             MemoryStream stream = new MemoryStream();
             
@@ -93,7 +90,7 @@ namespace BaseTests.Binary
                     byte[] data = null;
                     while (data == null)
                     {
-                        data = await BinaryHandler.StreamReaderAsync(stream);
+                        data = await UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync(stream);
                         Thread.Sleep(5);
                     }
                     string receivedMessage = BinaryHandler.FromByteArray<string>(data);
@@ -110,7 +107,10 @@ namespace BaseTests.Binary
             
             var writing = new Task(async delegate ()
             {
-                await BinaryHandler.StreamWriterAsync(stream, BinaryHandler.ToByteArray(message), 8196*70);
+                await UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync(
+                    stream,
+                    UniformDataOperator.Binary.IO.StreamChanelMode.Oneway,
+                    BinaryHandler.ToByteArray(message));
             });
 
 
@@ -123,6 +123,141 @@ namespace BaseTests.Binary
             }
 
             Assert.IsTrue(success);
+        }
+
+        [TestMethod]
+        public void StreamDataExchange_DuplexStream()
+        {
+            bool success = false;
+            bool completed = false;
+
+            string message = GenerateMessage();
+
+            MemoryStream stream = new MemoryStream();
+
+            var reading = new Task(async delegate ()
+            {
+                try
+                {
+                    byte[] data = null;
+                    while (data == null)
+                    {
+                        data = await UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync(stream);
+                        Thread.Sleep(5);
+                    }
+                    string receivedMessage = BinaryHandler.FromByteArray<string>(data);
+
+                    success = receivedMessage.Equals(message);
+                    completed = true;
+                }
+                catch (Exception ex)
+                {
+                    Assert.Fail(ex.Message);
+                    return;
+                }
+            });
+
+            var writing = new Task(async delegate ()
+            {
+                await UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync(
+                    stream,
+                    UniformDataOperator.Binary.IO.StreamChanelMode.Duplex,
+                    BinaryHandler.ToByteArray(message));
+            });
+
+
+            reading.Start();
+            writing.Start();
+
+            while (!completed)
+            {
+                Thread.Sleep(5);
+            }
+
+            Assert.IsTrue(success);
+        }
+
+        [TestMethod]
+        public void StreamDataExchange_Pipes()
+        {
+            bool success = false;
+            bool completed = false;
+
+            string message = GenerateMessage();
+
+            var client = new System.IO.Pipes.NamedPipeClientStream("TESTPIPE");
+            var server = new System.IO.Pipes.NamedPipeServerStream("TESTPIPE");
+
+            var reading = new Task(async delegate ()
+            {
+                await client.ConnectAsync();
+
+                try
+                {
+                    byte[] dataSizeBufer = new byte[4];
+
+                    // Receive header.
+                    await client.ReadAsync(dataSizeBufer, 0, 4);
+
+                    // Receive data.
+                    int dataSize = BitConverter.ToInt32(dataSizeBufer, 0);
+                    byte[] data = new byte[dataSize];
+                    await client.ReadAsync(data, 0, dataSize);
+
+                    string receivedMessage = BinaryHandler.FromByteArray<string>(data);
+
+                    success = receivedMessage.Equals(message);
+                    completed = true;
+                }
+                catch (Exception ex)
+                {
+                    Assert.Fail(ex.Message);
+                    return;
+                }
+            });
+
+            var writing = new Task(async delegate ()
+            {
+                // Wait client connection.
+                await server.WaitForConnectionAsync();
+
+                // Get data in binary format.
+                byte[] data = BinaryHandler.ToByteArray(message);
+
+                // Write header.
+                await server.WriteAsync(BitConverter.GetBytes(data.Length), 0, 4);
+
+                // Write data.
+                await server.WriteAsync(data, 0, data.Length);
+
+                // Send data to device.
+                await server.FlushAsync();
+            });
+
+
+            reading.Start();
+            writing.Start();
+
+            while (!completed)
+            {
+                Thread.Sleep(5);
+            }
+
+            Assert.IsTrue(success);
+        }
+
+
+        /// <summary>
+        /// Generating random message with requested length.
+        /// </summary>
+        /// <param name="lenght">Length of message.</param>
+        /// <returns>Generated message.</returns>
+        public string GenerateMessage(int lenght = 10000000)
+        {
+            Random random = new Random();
+            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, lenght)
+                            .Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }
