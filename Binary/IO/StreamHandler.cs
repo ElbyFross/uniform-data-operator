@@ -49,6 +49,45 @@ namespace UniformDataOperator.Binary.IO
         #endregion
 
         #region Streaming server
+
+        /// <summary>
+        /// Writing asynchronicly binary data to stream.
+        /// </summary>
+        /// <param name="stream">Target stream.</param>
+        /// <param name="data">Binary data that would be sent to stream.</param>
+        /// <returns>Asynchronous operation of data writing.</returns>
+        public static async Task StreamWriterAsync(PipeStream stream, byte[] data)
+        { 
+            // Write header.
+            await stream.WriteAsync(BitConverter.GetBytes(data.Length), 0, 4);
+
+            // Write data.
+            await stream.WriteAsync(data, 0, data.Length);
+
+            // Send data to device.
+            await stream.FlushAsync();
+        }
+
+        /// <summary>
+        /// Writing asynchronicly binary data to stream.
+        /// </summary>
+        /// <param name="stream">Target stream.</param>
+        /// <returns>Asynchronous operation of data writing.</returns>
+        public static async Task StreamWriterAsync(PipeStream stream, object nonBinaryData)
+        {
+            // Convert data to binary format.
+            byte[] data = BinaryHandler.ToByteArray(nonBinaryData);
+
+            // Write header.
+            await stream.WriteAsync(BitConverter.GetBytes(data.Length), 0, 4);
+
+            //// Write data.
+            await stream.WriteAsync(data, 0, data.Length);
+
+            // Send data to device.
+            await stream.FlushAsync();
+        }
+
         /// <summary>
         /// Writing asynchronicly binary data to stream.
         /// </summary>
@@ -287,6 +326,45 @@ namespace UniformDataOperator.Binary.IO
         #endregion
 
         #region Stream client
+        /// <summary>
+        /// Asynchronous reading formated data from stream.
+        /// </summary>
+        /// <param name="stream">Target stream.</param>
+        /// <returns>Readed binary data.</returns>
+        public static async Task<byte[]> StreamReaderAsync(PipeStream stream)
+        {
+            // Receiving header.
+            byte[] dataSizeBufer = new byte[4];
+            await stream.ReadAsync(dataSizeBufer, 0, 4);
+
+            // Receive data.
+            int dataSize = BitConverter.ToInt32(dataSizeBufer, 0);
+            byte[] data = new byte[dataSize];
+            await stream.ReadAsync(data, 0, dataSize);
+
+            return data;
+        }
+
+        /// <summary>
+        /// Asynchronous reading formated data from stream.
+        /// </summary>
+        /// <typeparam name="T">Type of data after binary decoding.</typeparam>
+        /// <param name="stream">Target stream.</param>
+        /// <returns>Readed binary data.</returns>
+        public static async Task<T> StreamReaderAsync<T>(PipeStream stream)
+        {
+            // Receiving header.
+            byte[] dataSizeBufer = new byte[4];
+            await stream.ReadAsync(dataSizeBufer, 0, 4);
+
+            // Receive data.
+            int dataSize = BitConverter.ToInt32(dataSizeBufer, 0);
+            byte[] data = new byte[dataSize];
+            await stream.ReadAsync(data, 0, dataSize);
+
+            return BinaryHandler.FromByteArray<T>(data);
+        }
+
         /// <summary>
         /// Asynchronous reading formated data from stream.
         /// </summary>

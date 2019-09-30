@@ -63,7 +63,7 @@ namespace BaseTests.Types
         {
             get
             {
-                return BinaryHandler.ToByteArray<BlobType>(blob);
+                return BinaryHandler.ToByteArray(blob);
             }
             set
             {

@@ -32,7 +32,7 @@ namespace BaseTests.Binary
             byte[] binary;
             try
             {
-                binary  = BinaryHandler.ToByteArray<BlobType>(new BlobType());
+                binary  = BinaryHandler.ToByteArray(new BlobType());
             }
             catch (Exception ex)
             {
@@ -50,7 +50,7 @@ namespace BaseTests.Binary
             BlobType blob;
             try
             {
-                binary = BinaryHandler.ToByteArray<BlobType>(new BlobType() { s = "DeserTest"});
+                binary = BinaryHandler.ToByteArray(new BlobType() { s = "DeserTest"});
                 blob = BinaryHandler.FromByteArray<BlobType>(binary);
             }
             catch (Exception ex)
@@ -194,18 +194,10 @@ namespace BaseTests.Binary
 
                 try
                 {
-                    byte[] dataSizeBufer = new byte[4];
+                    // Data to message format.
+                    string receivedMessage = await UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync<string>(client);
 
-                    // Receive header.
-                    await client.ReadAsync(dataSizeBufer, 0, 4);
-
-                    // Receive data.
-                    int dataSize = BitConverter.ToInt32(dataSizeBufer, 0);
-                    byte[] data = new byte[dataSize];
-                    await client.ReadAsync(data, 0, dataSize);
-
-                    string receivedMessage = BinaryHandler.FromByteArray<string>(data);
-
+                    // Validate data.
                     success = receivedMessage.Equals(message);
                     completed = true;
                 }
@@ -221,17 +213,16 @@ namespace BaseTests.Binary
                 // Wait client connection.
                 await server.WaitForConnectionAsync();
 
-                // Get data in binary format.
-                byte[] data = BinaryHandler.ToByteArray(message);
-
-                // Write header.
-                await server.WriteAsync(BitConverter.GetBytes(data.Length), 0, 4);
-
-                // Write data.
-                await server.WriteAsync(data, 0, data.Length);
-
-                // Send data to device.
-                await server.FlushAsync();
+                try
+                {
+                    // Sending message to stream.
+                    await UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync(server, message);
+                }
+                catch (Exception ex)
+                {
+                    Assert.Fail(ex.Message);
+                    return;
+                }
             });
 
 

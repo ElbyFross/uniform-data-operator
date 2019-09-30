@@ -34,10 +34,9 @@ namespace UniformDataOperator.Binary
         /// <summary>
         /// Convert object to bytes array.
         /// </summary>
-        /// <typeparam name="T">Type of target object.</typeparam>
         /// <param name="obj">Object for serialization.</param>
         /// <returns>Binary data</returns>
-        public static byte[] ToByteArray<T>(T obj)
+        public static byte[] ToByteArray(object obj)
         {
             if (obj == null)
                 return null;
