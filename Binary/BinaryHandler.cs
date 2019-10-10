@@ -61,8 +61,17 @@ namespace UniformDataOperator.Binary
             BinaryFormatter bf = new BinaryFormatter();
             using (MemoryStream ms = new MemoryStream(data))
             {
-                object obj = bf.Deserialize(ms);
-                return (T)obj;
+                ms.Position = 0;
+                try
+                {
+                    object obj = bf.Deserialize(ms);
+                    return (T)obj;
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("FROM BINARY PARSER ERROR: " + ex.Message);
+                    return default;
+                }
             }
         }
         #endregion

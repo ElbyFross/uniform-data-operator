@@ -72,6 +72,7 @@ namespace UniformDataOperator.Binary.IO
         /// Writing asynchronicly binary data to stream.
         /// </summary>
         /// <param name="stream">Target stream.</param>
+        /// <param name="nonBinaryData">Non binary object that would be shared via stream.</param>
         /// <returns>Asynchronous operation of data writing.</returns>
         public static async Task StreamWriterAsync(PipeStream stream, object nonBinaryData)
         {
@@ -464,6 +465,11 @@ namespace UniformDataOperator.Binary.IO
             return data;
         }
 
+        /// <summary>
+        /// Informing server about receiving message by client.
+        /// </summary>
+        /// <param name="mode">Server mode that decide reaction.</param>
+        /// <param name="stream">Target to server stream.</param>
         public static void InformAboutReceving(StreamChanelMode mode, Stream stream)
         {
             lock (stream)
