@@ -31,7 +31,13 @@ namespace UniformDataOperator.Sql
         /// <summary>
         /// Event that can be called by operator to share errors during sql commands from async methods.
         /// </summary>
-        public static event System.Action<object, string> SqlErrorOccured;
+        public static event Action<object, string> SqlErrorOccured;
+
+        /// <summary>
+        /// Contains las operator that asing itself to handler as active one.
+        /// </summary>
+        public static ISqlOperator Active { get; set; }
+
 
         /// <summary>
         /// Invoke global error event informing about error occuring.
@@ -40,11 +46,6 @@ namespace UniformDataOperator.Sql
         {
             SqlErrorOccured?.Invoke(sender, message);
         }
-
-        /// <summary>
-        /// Contains las operator that asing itself to handler as active one.
-        /// </summary>
-        public static ISqlOperator Active { get; set; }
 
         /// <summary>
         /// Conver collection view to string order.
@@ -176,6 +177,41 @@ namespace UniformDataOperator.Sql
             }
             error = null;
             return true;
+        }
+
+        /// <summary>
+        /// Scaning assemblies and looking for classes and structures with defined Table attribute.
+        /// Trying to create shemas and tables via Active SqlOperator.
+        /// </summary>
+        public static void RescanDatabaseStructure()
+        {
+            // Load query's processors.
+            Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+            foreach (Assembly assembly in assemblies)
+            {
+                // Get all types for assembly.
+                foreach (Type type in assembly.GetTypes())
+                {
+                    // Trying to get table edscriptor.
+                    Attributes.Table tableDescriptor = type.GetCustomAttribute<Attributes.Table>();
+
+                    // Check if this type is subclass of query.
+                    if (tableDescriptor != null)
+                    {
+                        if (!Active.ActivateSchema(tableDescriptor.schema, out string error))
+                        {
+                            Console.WriteLine("SQL ERROR: Schema creation failed. Details: " + error);
+                            continue;
+                        }
+
+                        if (!Attributes.Table.TrySetTables(true, out error, type))
+                        {
+                            Console.WriteLine("SQL ERROR: Table creation failed. Details: " + error);
+                            continue;
+                        }
+                    }
+                }
+            }
         }
     }
 }

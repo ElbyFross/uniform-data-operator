@@ -161,5 +161,21 @@ namespace MySQLTests
             Assert.IsTrue(readingError == null, readingError);
             #endregion
         }
+
+        /// <summary>
+        /// Auto rescan for database structure.
+        /// </summary>
+        [TestMethod]
+        public void Rescan()
+        {
+            // Set default operator.
+            SetDefault();
+
+            // Activate base type to load assembly for tests.
+            Table2Type bufer = new Table2Type();
+
+            // Scan.
+            SqlOperatorHandler.RescanDatabaseStructure();
+        }
     }
 }

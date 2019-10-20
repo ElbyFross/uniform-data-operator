@@ -25,8 +25,8 @@ using MySql.Data.MySqlClient;
 
 namespace BaseTests.Types
 {
-    [System.Serializable]
-    [Table("testSchema", "testTable4")]
+    [Serializable]
+    [Table("testSchema2", "testTable4")]
     public class Table4Type
     {
         [Column("intPKAI", DbType.Int32), IsPrimaryKey, IsAutoIncrement]
