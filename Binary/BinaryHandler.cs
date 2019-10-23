@@ -74,6 +74,33 @@ namespace UniformDataOperator.Binary
                 }
             }
         }
+
+
+        /// <summary>
+        /// Convert bytes array to object.
+        /// </summary>
+        /// <param name="data">Binary data.</param>
+        /// <returns>Deserialized object.</returns>
+        public static object FromByteArray(byte[] data)
+        {
+            if (data == null)
+                return default;
+            BinaryFormatter bf = new BinaryFormatter();
+            using (MemoryStream ms = new MemoryStream(data))
+            {
+                ms.Position = 0;
+                try
+                {
+                    object obj = bf.Deserialize(ms);
+                    return obj;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("FROM BINARY PARSER ERROR: " + ex.Message);
+                    return default;
+                }
+            }
+        }
         #endregion
     }
 }

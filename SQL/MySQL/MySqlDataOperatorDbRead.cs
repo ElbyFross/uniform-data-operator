@@ -312,7 +312,7 @@ namespace UniformDataOperator.Sql.MySql
             // Drop if error has been occured.
             if (!string.IsNullOrEmpty(error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(obj, "Commnad generation failed. Details:\n" + error);
+                SqlOperatorHandler.InvokeSQLErrorOccured(obj, "Command generation failed. Details:\n" + error);
                 return;
             }
 
