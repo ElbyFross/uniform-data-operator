@@ -57,6 +57,26 @@ namespace UniformDataOperator.Sql.Attributes.Modifiers
         public string column;
 
         /// <summary>
+        /// Base constructor.
+        /// </summary>
+        public DBPathOverride() { }
+
+        /// <summary>
+        /// Constructors that allow to initialize fields via reflected methods.
+        /// </summary>
+        /// <param name="schema"></param>
+        /// <param name="table"></param>
+        /// <param name="column"></param>
+        /// <param name="targetAttribute"></param>
+        public DBPathOverride(string schema, string table, string column, Type targetAttribute)
+        {
+            this.schema = schema;
+            this.table = table;
+            this.column = column;
+            this.targetAttribute = targetAttribute;
+        }
+
+        /// <summary>
         /// Looking for path overriding attribute suitable for specified member and assking attribute.
         /// </summary>
         /// <typeparam name="T">Attribute that would be locked as an overriding target</typeparam>

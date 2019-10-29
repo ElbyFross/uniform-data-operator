@@ -326,7 +326,22 @@ namespace UniformDataOperator.Sql.MySql
             command.Connection = SqlOperatorHandler.Active.Connection;
 
             // Await for reader.
-            DbDataReader reader = await command.ExecuteReaderAsync(cancellationToken);
+            DbDataReader reader;
+            try
+            {
+                reader = await command.ExecuteReaderAsync(cancellationToken);
+            }
+            catch(Exception ex)
+            {
+                // Log error.
+                Console.WriteLine("SQL READING ERROR: " + ex.Message + "\nQuery:" + command.CommandText);
+
+                // Closing connection.
+                Active.CloseConnection();
+
+                // Drop operation.
+                return;
+            }
 
             // Drop if DbDataReader is invalid.           
             if (reader == null || reader.IsClosed)
@@ -641,7 +656,7 @@ namespace UniformDataOperator.Sql.MySql
             // Init query.
             string query = "SELECT ";
             query += (membersSelectColumns.Count == 0 ? "*" : SqlOperatorHandler.CollectionToString(membersSelectColumns)) + "\n";
-            query += "FROM " + tableDescriptor.schema + "." + tableDescriptor.table + "\n";
+            query += "FROM `" + tableDescriptor.schema + "`.`" + tableDescriptor.table + "`\n";
             query += "WHERE " + SqlOperatorHandler.ConcatFormatedCollections(membersWhereColumns, membersWhereVars) + "\n";
             if (obj is IList objList)
             {

@@ -266,7 +266,7 @@ namespace UniformDataOperator.Sql.MySql
             Column.MembersToMetaLists(membersNK, out List<Column> membersNKColumns, out List<string> membersNKVars);
 
             string commadText = "";
-            commadText += "INSERT INTO " + tableDescriptor.schema + "." + tableDescriptor.table + "\n";
+            commadText += "INSERT INTO `" + tableDescriptor.schema + "`.`" + tableDescriptor.table + "`\n";
             commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersColumns) + ")\n";
             commadText += "\tVALUES\n";
             commadText += "\t\t(" + SqlOperatorHandler.CollectionToString(membersVars) + ")\n";

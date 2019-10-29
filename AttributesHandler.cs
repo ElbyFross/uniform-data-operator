@@ -18,6 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using System.Reflection.Emit;
 
 namespace UniformDataOperator
 {
@@ -209,6 +210,32 @@ namespace UniformDataOperator
 
                 default: return data;
             }
+        }
+
+        /// <summary>
+        /// Add to assembly the new type based on targetType but with existed new attribute.
+        /// </summary>
+        /// <param name="assembly">Assembly that will contains new the type.</param>
+        /// <param name="targetType">Type that will inherited during creating of new type.</param>
+        /// <param name="attrType">Type of attribute that will added to the type.</param>
+        /// <param name="attrConstructorSignature">Signature of attribute constructor.</param>
+        /// <param name="attrConstructorValues">Values that will be shared in atttribute constructor.</param>
+        public static void AddAttribute(
+            string assembly, 
+            Type targetType,
+            Type attrType, 
+            Type[] attrConstructorSignature,
+            object[] attrConstructorValues)
+        {
+            var aName = new AssemblyName(assembly);
+            var ab = AppDomain.CurrentDomain.DefineDynamicAssembly(aName, AssemblyBuilderAccess.Run);
+            var mb = ab.DefineDynamicModule(aName.Name);
+            var tb = mb.DefineType(targetType.Name, TypeAttributes.Public, targetType);
+
+            var attrCtorInfo = attrType.GetConstructor(attrConstructorSignature);
+            var attrBuilder = new CustomAttributeBuilder(attrCtorInfo, attrConstructorValues);
+            tb.SetCustomAttribute(attrBuilder);
+            tb.CreateType();
         }
     }
 }

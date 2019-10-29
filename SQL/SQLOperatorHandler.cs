@@ -162,6 +162,12 @@ namespace UniformDataOperator.Sql
                     continue;
                 }
 
+                // If value is empty.
+                if (receivedValue is DBNull)
+                {
+                    // Skip
+                    continue;
+                }
 
                 try
                 {
@@ -198,6 +204,13 @@ namespace UniformDataOperator.Sql
                     // Check if this type is subclass of query.
                     if (tableDescriptor != null)
                     {
+                        // Skip if type was replaced by other.
+                        if (Modifiers.TypeReplacer.IsReplaced(type))
+                        {
+                            Console.WriteLine("SQL Table descriptor was skiped: Type `" + type.FullName + "` was marked as replaced.");
+                            continue;
+                        }
+
                         if (!Active.ActivateSchema(tableDescriptor.schema, out string error))
                         {
                             Console.WriteLine("SQL ERROR: Schema creation failed. Details: " + error);

@@ -53,7 +53,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="column">Input column.</param>
         public static implicit operator string(Column column)
         {
-            return column?.title;
+            return column?.ToString();
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// <returns>Tielt of column.</returns>
         public override string ToString()
         {
-            return title;
+            return "`" + title + "`";
         }
 
         /// <summary>
