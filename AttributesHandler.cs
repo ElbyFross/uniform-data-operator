@@ -112,7 +112,15 @@ namespace UniformDataOperator
             where AttributeType : Attribute
         {
             // Requiest attribute.
-            attribute = (AttributeType)member.GetCustomAttribute(typeof(AttributeType));
+            try
+            {
+                attribute = (AttributeType)member.GetCustomAttribute(typeof(AttributeType));
+            }
+            catch(AmbiguousMatchException)
+            {
+                // Return first if found more than one.
+                attribute = (AttributeType)member.GetCustomAttributes(typeof(AttributeType)).First();
+            }
 
             // Detect resutl.
             return attribute != null;
