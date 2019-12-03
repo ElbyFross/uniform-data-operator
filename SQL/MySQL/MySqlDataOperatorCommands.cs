@@ -351,7 +351,7 @@ namespace UniformDataOperator.Sql.MySql
         /// Affected only fields and properties with defined Column attribute.</param>
         public async Task SetToTableAsync<T>(CancellationToken cancellationToken, object data)
         {
-            await SetToObjectAsync(typeof(T), cancellationToken, data);
+            await SetToTableAsync(typeof(T), cancellationToken, data);
         }
 
         /// <summary>

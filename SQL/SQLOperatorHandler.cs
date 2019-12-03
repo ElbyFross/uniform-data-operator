@@ -186,8 +186,8 @@ namespace UniformDataOperator.Sql
         }
 
         /// <summary>
-        /// Scaning assemblies and looking for classes and structures with defined Table attribute.
-        /// Trying to create shemas and tables via Active SqlOperator.
+        /// Scaning assemblies and looking for classes and structures with defined <see cref="Attributes.Table"/> attribute.
+        /// Trying to create shemas and tables via <see cref="Active"/>.
         /// </summary>
         public static void RescanDatabaseStructure()
         {

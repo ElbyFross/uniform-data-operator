@@ -13,6 +13,7 @@
 //limitations under the License.
 
 using System;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
@@ -30,6 +31,43 @@ namespace UniformDataOperator.Binary
     /// </summary>
     public static class BinaryHandler
     {
+        static BinaryHandler()
+        {
+            // Subscribe on assemblies access fail.
+            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+        }
+
+        /// <summary>
+        /// Occurs when assebly access is failed.
+        /// </summary>
+        /// <param name="sender">Object that initiate that event.</param>
+        /// <param name="args">Data about target requested assebly.</param>
+        /// <returns></returns>
+        private static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            // Log.
+            //Console.WriteLine("Assembly error: Tying to find assembly `" + args.Name + "` among loaded.");
+
+            #region Fixing .Net bug when requiested assembly not visible via loaded.
+            // Getting current available assemblies.
+            var assebmliess = AppDomain.CurrentDomain.GetAssemblies();
+            foreach (Assembly assembly in assebmliess)
+            {
+                // Check if assebly with that name is available.
+                if (assembly.FullName.StartsWith(args.Name))
+                {
+                    // Reloding assembly.
+                    var reloaded = Assembly.LoadFrom(assembly.Location);
+                    Console.WriteLine("AssemblyResolve: `" + args.Name + "` reloaded.");
+                    return reloaded;
+                }
+            }
+            #endregion
+
+            Console.WriteLine("AssemblyResolve: `" + args.Name + "` not found.");
+            return null;
+        }
+
         #region Converting
         /// <summary>
         /// Convert object to bytes array.
@@ -70,7 +108,7 @@ namespace UniformDataOperator.Binary
                 catch(Exception ex)
                 {
                     Console.WriteLine("FROM BINARY PARSER ERROR: " + ex.Message);
-                    return default;
+                    throw ex;
                 }
             }
         }
@@ -96,8 +134,17 @@ namespace UniformDataOperator.Binary
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("FROM BINARY PARSER ERROR: " + ex.Message);
-                    return default;
+                    Console.WriteLine("FROM BINARY PARSER ERROR: " + ex.Message + "\n\n STACK TRACE:\n" + ex.StackTrace);
+                    throw ex;
+
+                    //Console.WriteLine("Available asseblies.");
+                    //var asm = AppDomain.CurrentDomain.GetAssemblies();
+                    //foreach(System.Reflection.Assembly asmI in asm)
+                    //{
+                    //    Console.WriteLine(asmI.FullName);
+                    //}
+
+                    //return default;
                 }
             }
         }

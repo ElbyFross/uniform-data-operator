@@ -69,6 +69,8 @@ namespace MySQLTests
             #region Schema test
             // Create schema.
             bool chemaResult = SqlOperatorHandler.Active.ActivateSchema("testSchema", out string error);
+            if(chemaResult)
+                chemaResult = SqlOperatorHandler.Active.ActivateSchema("testSchema2", out error);
             if (!chemaResult)
             {
                 Assert.Fail("Schema not created. " + error);
