@@ -32,7 +32,7 @@ namespace UniformDataOperator.AssembliesManagement
         /// Loads assemblies from a requested path.
         /// </summary>
         /// <param name="path">A folder where will be stored asseblies.</param>
-        public static void LoadAsseblies(string path)
+        public static void LoadAssemblies(string path)
         {
             LoadAssemblies(path, SearchOption.AllDirectories, true);
         }
