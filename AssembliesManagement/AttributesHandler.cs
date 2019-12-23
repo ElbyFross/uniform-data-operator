@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Reflection.Emit;
 
-namespace UniformDataOperator
+namespace UniformDataOperator.AssembliesManagement
 {
     /// <summary>
     /// Provides API to handle attributes.

@@ -14,7 +14,7 @@
 
 using System;
 
-namespace UniformDataOperator.Modifiers
+namespace UniformDataOperator.AssembliesManagement.Modifiers
 {
     /// <summary>
     /// Inmplementing of that interface allow to redefine type that will be used in internal class\structure operations. 

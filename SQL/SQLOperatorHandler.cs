@@ -172,7 +172,7 @@ namespace UniformDataOperator.Sql
                 try
                 {
                     // Try to set value
-                    AttributesHandler.SetValue(obj, member, receivedValue);
+                    AssembliesManagement.AttributesHandler.SetValue(obj, member, receivedValue);
                 }
                 catch (Exception ex)
                 {
@@ -205,7 +205,7 @@ namespace UniformDataOperator.Sql
                     if (tableDescriptor != null)
                     {
                         // Skip if type was replaced by other.
-                        if (Modifiers.TypeReplacer.IsReplaced(type))
+                        if (AssembliesManagement.Modifiers.TypeReplacer.IsReplaced(type))
                         {
                             Console.WriteLine("SQL Table descriptor was skiped: Type `" + type.FullName + "` was marked as replaced.");
                             continue;

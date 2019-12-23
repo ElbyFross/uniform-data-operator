@@ -15,7 +15,7 @@
 using System;
 using System.Collections;
 
-namespace UniformDataOperator.Modifiers
+namespace UniformDataOperator.AssembliesManagement.Modifiers
 {
     /// <summary>
     /// Defining of that attribute automaticly add type to

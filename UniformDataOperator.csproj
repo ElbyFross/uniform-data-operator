@@ -43,12 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssembliesManagement\AssembliesHandler.cs" />
     <Compile Include="Binary\BinaryHandler.cs" />
     <Compile Include="Binary\BoyerMoore.cs" />
     <Compile Include="Binary\IO\StreamChanelMode.cs" />
     <Compile Include="Binary\IO\StreamHandler.cs" />
-    <Compile Include="Modifiers\IBaseTypeChangable.cs" />
-    <Compile Include="Modifiers\TypeReplacer.cs" />
+    <Compile Include="AssembliesManagement\Modifiers\IBaseTypeChangable.cs" />
+    <Compile Include="AssembliesManagement\Modifiers\TypeReplacer.cs" />
     <Compile Include="SQL\ISqlOperator.cs" />
     <Compile Include="SQL\MySQL\Attributes\MySqlDBTypeOverride.cs" />
     <Compile Include="SQL\MySQL\MySqlDataOperatorDbRead.cs" />
@@ -57,7 +58,7 @@
     <Compile Include="SQL\MySQL\MySqlDataOperatorBackup.cs" />
     <Compile Include="SQL\MySQL\MySqlDataOperatorParams.cs" />
     <Compile Include="SQL\SqlOperatorHandler.cs" />
-    <Compile Include="AttributesHandler.cs" />
+    <Compile Include="AssembliesManagement\AttributesHandler.cs" />
     <Compile Include="SQL\Attributes\Default.cs" />
     <Compile Include="SQL\Attributes\Modifiers\SetQueryIgnore.cs" />
     <Compile Include="SQL\Attributes\Table.cs" />
