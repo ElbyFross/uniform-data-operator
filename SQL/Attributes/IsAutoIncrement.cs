@@ -24,6 +24,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 using System.Reflection;
+using UniformDataOperator.AssembliesManagement;
 using UniformDataOperator.Sql.Attributes;
 using UniformDataOperator.Sql.Attributes.Modifiers;
 

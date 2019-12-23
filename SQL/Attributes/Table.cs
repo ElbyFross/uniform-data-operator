@@ -18,6 +18,7 @@ using System.Data.SqlClient;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
+using UniformDataOperator.AssembliesManagement;
 
 namespace UniformDataOperator.Sql.Attributes
 {

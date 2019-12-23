@@ -27,6 +27,7 @@ using MySql.Data.MySqlClient;
 using System.Reflection;
 using UniformDataOperator.Sql.Attributes;
 using UniformDataOperator.Sql.Attributes.Modifiers;
+using UniformDataOperator.AssembliesManagement;
 
 namespace UniformDataOperator.Sql.MySql
 {
@@ -65,11 +66,15 @@ namespace UniformDataOperator.Sql.MySql
                 return false;
             }
 
-            // Execute command
-            Active.NewCommand(command).ExecuteNonQuery();
+            // Instiniating a new command based on the query.
+            using (var dCommand = Active.NewCommand(command))
+            { 
+                // Executing the query.
+                dCommand.ExecuteNonQuery();
 
-            // Close connection after finish.
-            Active.CloseConnection();
+                // Closing the connection after finish executing.
+                Active.CloseConnection();
+            }
 
             // Confirm success.
             return true;
@@ -305,40 +310,41 @@ namespace UniformDataOperator.Sql.MySql
         public bool SetToTable(Type tableType, object data, out string error)
         {
             // Generate command
-            DbCommand command = GenerateSetToTableCommand(tableType, data, out error);
-
-            // Drop if error has been occured.
-            if (!string.IsNullOrEmpty(error))
+            using (DbCommand command = GenerateSetToTableCommand(tableType, data, out error))
             {
-                return false;
+                // Drop if error has been occured.
+                if (!string.IsNullOrEmpty(error))
+                {
+                    return false;
+                }
+
+                #region Execute command
+                // Opening connection to DB srver.
+                if (!Active.OpenConnection(out error))
+                {
+                    return false;
+                }
+
+                // Executing command.
+                command.Connection = Active.Connection;
+
+                int affectedRowsCount;
+                try
+                {
+                    affectedRowsCount = command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
+                }
+
+                // Closing connection.
+                Active.CloseConnection();
+                #endregion
+
+                // Retrun true if query was success, false if rows not affected.
+                return affectedRowsCount > 0;
             }
-
-            #region Execute command
-            // Opening connection to DB srver.
-            if (!Active.OpenConnection(out error))
-            {
-                return false;
-            }
-
-            // Executing command.
-            command.Connection = Active.Connection;
-
-            int affectedRowsCount;
-            try
-            {
-                affectedRowsCount = command.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
-            }
-
-            // Closing connection.
-            Active.CloseConnection();
-            #endregion
-
-            // Retrun true if query was success, false if rows not affected.
-            return affectedRowsCount > 0;
         }
 
         /// <summary>
@@ -365,44 +371,45 @@ namespace UniformDataOperator.Sql.MySql
         public async Task SetToTableAsync(Type tableType, CancellationToken cancellationToken, object data)
         {
             // Generate command
-            DbCommand command = GenerateSetToTableCommand(tableType, data, out string error);
-
-            // Drop if error has been occured.
-            if (!string.IsNullOrEmpty(error))
+            using (DbCommand command = GenerateSetToTableCommand(tableType, data, out string error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Commnad generation failed. Details:\n" + error);
-                return;
-            }
+                // Drop if error has been occured.
+                if (!string.IsNullOrEmpty(error))
+                {
+                    SqlOperatorHandler.InvokeSQLErrorOccured(data, "Commnad generation failed. Details:\n" + error);
+                    return;
+                }
 
-            #region Execute command
-            // Opening connection to DB srver.
-            if (!Active.OpenConnection(out error))
-            {
-                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Connection failed.\n" + error);
-                return;
-            }
+                #region Execute command
+                // Opening connection to DB srver.
+                if (!Active.OpenConnection(out error))
+                {
+                    SqlOperatorHandler.InvokeSQLErrorOccured(data, "Connection failed.\n" + error);
+                    return;
+                }
 
-            // Executing command.
-            command.Connection = Active.Connection;
+                // Executing command.
+                command.Connection = Active.Connection;
 
-            int affectedRowsCount;
-            try
-            {
-                affectedRowsCount = await command.ExecuteNonQueryAsync(cancellationToken);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
-            }
+                int affectedRowsCount;
+                try
+                {
+                    affectedRowsCount = await command.ExecuteNonQueryAsync(cancellationToken);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
+                }
 
-            // Closing connection.
-            Active.CloseConnection();
-            #endregion
+                // Closing connection.
+                Active.CloseConnection();
+                #endregion
 
-            // Log if command failed.
-            if (affectedRowsCount == 0)
-            {
-                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Query not affect any row.\n\n" + command.CommandText);
+                // Log if command failed.
+                if (affectedRowsCount == 0)
+                {
+                    SqlOperatorHandler.InvokeSQLErrorOccured(data, "Query not affect any row.\n\n" + command.CommandText);
+                }
             }
         }
         #endregion

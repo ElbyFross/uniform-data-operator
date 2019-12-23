@@ -28,6 +28,7 @@ using MySql.Data.MySqlClient;
 using System.Reflection;
 using UniformDataOperator.Sql.Attributes;
 using UniformDataOperator.Sql.Attributes.Modifiers;
+using UniformDataOperator.AssembliesManagement;
 
 namespace UniformDataOperator.Sql.MySql
 {

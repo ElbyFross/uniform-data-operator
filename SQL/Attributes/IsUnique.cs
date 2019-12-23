@@ -14,6 +14,7 @@
 
 using System;
 using System.Reflection;
+using UniformDataOperator.AssembliesManagement;
 
 namespace UniformDataOperator.Sql.Attributes
 {
