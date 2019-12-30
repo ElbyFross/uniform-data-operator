@@ -8,7 +8,7 @@
     </detaileddescription>
     <programlisting>
 <codeline><highlight class="normal">#<sp/>Uniform<sp/>Data<sp/>Operator</highlight></codeline>
-<codeline><highlight class="normal">It&apos;s<sp/>a<sp/>framework<sp/>that<sp/>allow<sp/>to<sp/>oparate<sp/>and<sp/>manage<sp/>yours<sp/>data<sp/>by<sp/>unified<sp/>way,<sp/>not<sp/>depending<sp/>from<sp/>your<sp/>data<sp/>base<sp/>or<sp/>prefered<sp/>format.<sp/>Standardize<sp/>your<sp/>data<sp/>structures<sp/>and<sp/>avoid<sp/>adjust<sp/>of<sp/>your<sp/>product<sp/>only<sp/>for<sp/>one<sp/>storage<sp/>type<sp/>that<sp/>could<sp/>be<sp/>not<sp/>suitable<sp/>for<sp/>you<sp/>in<sp/>future.</highlight></codeline>
+<codeline><highlight class="normal">It&apos;s<sp/>a<sp/>framework<sp/>that<sp/>allow<sp/>to<sp/>oparate<sp/>and<sp/>manage<sp/>yours<sp/>data<sp/>by<sp/>unified<sp/>way,<sp/>not<sp/>depending<sp/>from<sp/>your<sp/>database<sp/>or<sp/>prefered<sp/>format.<sp/>Standardize<sp/>your<sp/>data<sp/>structures<sp/>and<sp/>avoid<sp/>adjust<sp/>of<sp/>your<sp/>product<sp/>only<sp/>for<sp/>one<sp/>storage<sp/>type<sp/>that<sp/>could<sp/>be<sp/>not<sp/>suitable<sp/>for<sp/>you<sp/>in<sp/>future.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#<sp/>Modules<sp/></highlight></codeline>
 <codeline><highlight class="normal">##<sp/>Binnary<sp/>Handler</highlight></codeline>

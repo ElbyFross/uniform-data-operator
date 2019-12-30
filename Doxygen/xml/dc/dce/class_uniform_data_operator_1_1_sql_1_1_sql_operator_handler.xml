@@ -3,9 +3,9 @@
   <compounddef id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler" kind="class" language="C#" prot="public">
     <compoundname>UniformDataOperator::Sql::SqlOperatorHandler</compoundname>
       <sectiondef kind="event">
-      <memberdef kind="event" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab6cf915e80cf89b3e6eb14bf48a19185" prot="public" static="yes" add="no" remove="no" raise="no">
-        <type>System.Action&lt; object, string &gt;</type>
-        <definition>System.Action&lt;object, string&gt; UniformDataOperator.Sql.SqlOperatorHandler.SqlErrorOccured</definition>
+      <memberdef kind="event" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a8373486df36ace17ffba1e14bf6a951a" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; object, string &gt;</type>
+        <definition>Action&lt;object, string&gt; UniformDataOperator.Sql.SqlOperatorHandler.SqlErrorOccured</definition>
         <argsstring></argsstring>
         <name>SqlErrorOccured</name>
         <briefdescription>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="47" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="47" bodyend="47"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="39" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="39" bodyend="39"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="39" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="39" bodyend="42"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="45" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="45" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab2de5b9d7f8e8e67b518cf39c7e6f7a5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -78,7 +78,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="56" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="56" bodyend="71"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="57" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a6973169901301adaecd52fab70df280e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -115,7 +115,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="82" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="82" bodyend="87"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="83" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="83" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ac17e36b29fe5a17281927ab04dbeab26" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -163,7 +163,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="99" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="99" bodyend="124"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="100" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="100" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a97954b0bb1559fbe600c12aa5e2c53ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -187,14 +187,14 @@
           <declname>error</declname>
         </param>
         <briefdescription>
-<para>Trying to apply data base data to object by members map. </para>        </briefdescription>
+<para>Trying to apply database data to object by members map. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>reader</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Data base data reader that contains data recived from server.</para></parameterdescription>
+<para>Database data reader that contains data recived from server.</para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -222,14 +222,27 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="134" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="134" bodyend="179"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="135" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="135" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a98735f024767c0551a0a8fccf0957fea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UniformDataOperator.Sql.SqlOperatorHandler.RescanDatabaseStructure</definition>
+        <argsstring>()</argsstring>
+        <name>RescanDatabaseStructure</name>
+        <briefdescription>
+<para>Scaning assemblies and looking for classes and structures with defined <ref refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute" kindref="compound">Markup.TableAttribute</ref> attribute. Trying to create shemas and tables via <ref refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1aa96eb9fd201700acbf53954599fec534" kindref="member">Active</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="192" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="192" bodyend="228"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Contains base catalog of uniform queries that strongly simplify managing of the data base. </para>    </briefdescription>
+<para>Contains base catalog of uniform queries that strongly simplify managing of the database. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="29" bodyend="180"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" line="30" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/SQLOperatorHandler.cs" bodystart="29" bodyend="229"/>
     <listofallmembers>
       <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1aa96eb9fd201700acbf53954599fec534" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>Active</name></member>
       <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab2de5b9d7f8e8e67b518cf39c7e6f7a5" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>CollectionToString</name></member>
@@ -237,7 +250,8 @@
       <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ac17e36b29fe5a17281927ab04dbeab26" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>ConcatFormatedCollections</name></member>
       <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a97954b0bb1559fbe600c12aa5e2c53ef" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>DatabaseDataToObject</name></member>
       <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a898993886fbe98ece762f9f7f2af11fb" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>InvokeSQLErrorOccured</name></member>
-      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab6cf915e80cf89b3e6eb14bf48a19185" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>SqlErrorOccured</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a98735f024767c0551a0a8fccf0957fea" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>RescanDatabaseStructure</name></member>
+      <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a8373486df36ace17ffba1e14bf6a951a" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::SqlOperatorHandler</scope><name>SqlErrorOccured</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,0 +1,320 @@
+\hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler}{}\section{Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler Class Reference}
+\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler}\index{Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler@{Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler}}
+
+
+Class that provides way to operating binary data streams.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a20c247a11a6523790a60e98f5f704fc7}{Stream\+Writer\+Async}} (Pipe\+Stream stream, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Writing asynchronicly binary data to stream. \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a18b5d8b3ab9402ea3b112c7e7bd830be}{Stream\+Writer\+Async}} (Pipe\+Stream stream, object non\+Binary\+Data)
+\begin{DoxyCompactList}\small\item\em Writing asynchronicly binary data to stream. \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a0fc1ed2097c0b9582d4abb366cee82b2}{Stream\+Writer\+Async}} (Stream stream, \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}} mode, byte\mbox{[}$\,$\mbox{]} data, int data\+Block\+Size=610000)
+\begin{DoxyCompactList}\small\item\em Writing asynchronicly binary data to stream. \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a60e2d04b9c5f656e5257ff52951207ce}{Stream\+Writer\+Async}} (Pipe\+Stream stream, \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}} mode, byte\mbox{[}$\,$\mbox{]} data, int data\+Block\+Size=128000)
+\begin{DoxyCompactList}\small\item\em Writing asynchronicly binary data to stream. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a8270ca6e114f289818bd1efabb5048b6}{Wait\+Package\+Receiving}} (Stream stream, \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}} mode)
+\begin{DoxyCompactList}\small\item\em Whaiting for previous package receiving by client. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a779f1ec9fe46ac47fe164e51fac29bca}{Compute\+Required\+Packages}} (int block\+Size, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Computing count of packages required to data transmission. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_ac3b951b7af74e35d8c01f9986d59abbf}{Build\+Package}} (int index, int header\+Index, int block\+Size, byte\mbox{[}$\,$\mbox{]} source, out byte\mbox{[}$\,$\mbox{]} package)
+\begin{DoxyCompactList}\small\item\em Building data package by index. \end{DoxyCompactList}\item 
+static async Task$<$ byte\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a8953608e9eefaff797f3e4ed49f85bcf}{Stream\+Reader\+Async}} (Pipe\+Stream stream)
+\begin{DoxyCompactList}\small\item\em Asynchronous reading formated data from stream. \end{DoxyCompactList}\item 
+static async Task$<$ T $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_ab22ce5f10fb894fff4a675e96917dfbf}{Stream\+Reader\+Async$<$ T $>$}} (Pipe\+Stream stream)
+\begin{DoxyCompactList}\small\item\em Asynchronous reading formated data from stream. \end{DoxyCompactList}\item 
+static async Task$<$ byte\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_aa001d58762b89cb8fdaa729b53b2a9af}{Stream\+Reader\+Async}} (Stream stream)
+\begin{DoxyCompactList}\small\item\em Asynchronous reading formated data from stream. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a3732dec20d216595f8148e91b7aac76a}{Inform\+About\+Receving}} (\mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}} mode, Stream stream)
+\begin{DoxyCompactList}\small\item\em Informing server about receiving message by client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a74670b4bc43b03cbfcb5f222fe731da0}{H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}} = 4
+\begin{DoxyCompactList}\small\item\em Size of package\textquotesingle{}s header in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a1b6540f8d3bf3c455caabc0f007f6702}{One\+Way\+Spins\+Pause}} = 1800000\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How many spins package builder will wait before manage next package. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a9f8d84e7fcc7106e4dfed14d7f574b87}{Miliseconds\+Before\+Drop}} = 5000\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How many miliseconds would wait stream server before drop connection as failed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that provides way to operating binary data streams. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_ac3b951b7af74e35d8c01f9986d59abbf}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_ac3b951b7af74e35d8c01f9986d59abbf}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Build\+Package@{Build\+Package}}
+\index{Build\+Package@{Build\+Package}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Build\+Package()}{BuildPackage()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Build\+Package (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{header\+Index,  }\item[{int}]{block\+Size,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{source,  }\item[{out byte \mbox{[}$\,$\mbox{]}}]{package }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Building data package by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of data block.\\
+\hline
+{\em header\+Index} & Index that would be used as header to determine is a data block received.\\
+\hline
+{\em block\+Size} & Size of block including header.\\
+\hline
+{\em source} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} data devided on packages.\\
+\hline
+{\em package} & Builded binaty package.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a779f1ec9fe46ac47fe164e51fac29bca}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a779f1ec9fe46ac47fe164e51fac29bca}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Compute\+Required\+Packages@{Compute\+Required\+Packages}}
+\index{Compute\+Required\+Packages@{Compute\+Required\+Packages}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Compute\+Required\+Packages()}{ComputeRequiredPackages()}}
+{\footnotesize\ttfamily static int Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Compute\+Required\+Packages (\begin{DoxyParamCaption}\item[{int}]{block\+Size,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Computing count of packages required to data transmission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\+Size} & Size of one transmission package.\\
+\hline
+{\em data\+Bytes} & Linght of data to sharing in bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Count of required packages.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a3732dec20d216595f8148e91b7aac76a}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a3732dec20d216595f8148e91b7aac76a}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Inform\+About\+Receving@{Inform\+About\+Receving}}
+\index{Inform\+About\+Receving@{Inform\+About\+Receving}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Inform\+About\+Receving()}{InformAboutReceving()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Inform\+About\+Receving (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}}}]{mode,  }\item[{Stream}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Informing server about receiving message by client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Server mode that decide reaction.\\
+\hline
+{\em stream} & Target to server stream.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a8953608e9eefaff797f3e4ed49f85bcf}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a8953608e9eefaff797f3e4ed49f85bcf}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Stream\+Reader\+Async@{Stream\+Reader\+Async}}
+\index{Stream\+Reader\+Async@{Stream\+Reader\+Async}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Stream\+Reader\+Async()}{StreamReaderAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static async Task$<$byte\mbox{[}$\,$\mbox{]}$>$ Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Stream\+Reader\+Async (\begin{DoxyParamCaption}\item[{Pipe\+Stream}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Asynchronous reading formated data from stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Target stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Readed binary data.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_aa001d58762b89cb8fdaa729b53b2a9af}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_aa001d58762b89cb8fdaa729b53b2a9af}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Stream\+Reader\+Async@{Stream\+Reader\+Async}}
+\index{Stream\+Reader\+Async@{Stream\+Reader\+Async}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Stream\+Reader\+Async()}{StreamReaderAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static async Task$<$byte\mbox{[}$\,$\mbox{]}$>$ Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Stream\+Reader\+Async (\begin{DoxyParamCaption}\item[{Stream}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Asynchronous reading formated data from stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Target stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Readed binary data.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_ab22ce5f10fb894fff4a675e96917dfbf}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_ab22ce5f10fb894fff4a675e96917dfbf}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Stream\+Reader\+Async$<$ T $>$@{Stream\+Reader\+Async$<$ T $>$}}
+\index{Stream\+Reader\+Async$<$ T $>$@{Stream\+Reader\+Async$<$ T $>$}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Stream\+Reader\+Async$<$ T $>$()}{StreamReaderAsync< T >()}}
+{\footnotesize\ttfamily static async Task$<$T$>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a8953608e9eefaff797f3e4ed49f85bcf}{Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Stream\+Reader\+Async}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{Pipe\+Stream}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Asynchronous reading formated data from stream. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of data after binary decoding.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Target stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Readed binary data.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a20c247a11a6523790a60e98f5f704fc7}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a20c247a11a6523790a60e98f5f704fc7}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Stream\+Writer\+Async@{Stream\+Writer\+Async}}
+\index{Stream\+Writer\+Async@{Stream\+Writer\+Async}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Stream\+Writer\+Async()}{StreamWriterAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static async Task Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Stream\+Writer\+Async (\begin{DoxyParamCaption}\item[{Pipe\+Stream}]{stream,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writing asynchronicly binary data to stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Target stream.\\
+\hline
+{\em data} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} data that would be sent to stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Asynchronous operation of data writing.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a18b5d8b3ab9402ea3b112c7e7bd830be}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a18b5d8b3ab9402ea3b112c7e7bd830be}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Stream\+Writer\+Async@{Stream\+Writer\+Async}}
+\index{Stream\+Writer\+Async@{Stream\+Writer\+Async}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Stream\+Writer\+Async()}{StreamWriterAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static async Task Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Stream\+Writer\+Async (\begin{DoxyParamCaption}\item[{Pipe\+Stream}]{stream,  }\item[{object}]{non\+Binary\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writing asynchronicly binary data to stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Target stream.\\
+\hline
+{\em non\+Binary\+Data} & Non binary object that would be shared via stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Asynchronous operation of data writing.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a0fc1ed2097c0b9582d4abb366cee82b2}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a0fc1ed2097c0b9582d4abb366cee82b2}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Stream\+Writer\+Async@{Stream\+Writer\+Async}}
+\index{Stream\+Writer\+Async@{Stream\+Writer\+Async}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Stream\+Writer\+Async()}{StreamWriterAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static async Task Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Stream\+Writer\+Async (\begin{DoxyParamCaption}\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}}}]{mode,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data,  }\item[{int}]{data\+Block\+Size = {\ttfamily 610000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writing asynchronicly binary data to stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Target stream.\\
+\hline
+{\em mode} & Defines mode of package building. In case of Duplex streaming would droped if  timeout passed without client\textquotesingle{}s confirmation. \\
+\hline
+{\em data} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} data that would be sent to stream.\\
+\hline
+{\em data\+Block\+Size} & Size of block in bytes that would be send to stream per each flush.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Asynchronous operation of data writing.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a60e2d04b9c5f656e5257ff52951207ce}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a60e2d04b9c5f656e5257ff52951207ce}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Stream\+Writer\+Async@{Stream\+Writer\+Async}}
+\index{Stream\+Writer\+Async@{Stream\+Writer\+Async}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Stream\+Writer\+Async()}{StreamWriterAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static async Task Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Stream\+Writer\+Async (\begin{DoxyParamCaption}\item[{Pipe\+Stream}]{stream,  }\item[{\mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}}}]{mode,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data,  }\item[{int}]{data\+Block\+Size = {\ttfamily 128000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writing asynchronicly binary data to stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Target stream.\\
+\hline
+{\em mode} & Defines mode of package building. In case of Duplex streaming would droped if  timeout passed without client\textquotesingle{}s confirmation. \\
+\hline
+{\em data} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} data that would be sent to stream.\\
+\hline
+{\em data\+Block\+Size} & Size of block in bytes that would be send to stream per each flush.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Asynchronous operation of data writing.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a8270ca6e114f289818bd1efabb5048b6}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a8270ca6e114f289818bd1efabb5048b6}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Wait\+Package\+Receiving@{Wait\+Package\+Receiving}}
+\index{Wait\+Package\+Receiving@{Wait\+Package\+Receiving}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Wait\+Package\+Receiving()}{WaitPackageReceiving()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Wait\+Package\+Receiving (\begin{DoxyParamCaption}\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary_1_1_i_o_a3fee9a9bcba25974554ed63395942161}{Stream\+Chanel\+Mode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Whaiting for previous package receiving by client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Stream to client.\\
+\hline
+{\em mode} & Mode of stram managing.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a74670b4bc43b03cbfcb5f222fe731da0}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a74670b4bc43b03cbfcb5f222fe731da0}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}{HEADER\_SIZE}}
+{\footnotesize\ttfamily const int Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE = 4}
+
+
+
+Size of package\textquotesingle{}s header in bytes. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a9f8d84e7fcc7106e4dfed14d7f574b87}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a9f8d84e7fcc7106e4dfed14d7f574b87}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!Miliseconds\+Before\+Drop@{Miliseconds\+Before\+Drop}}
+\index{Miliseconds\+Before\+Drop@{Miliseconds\+Before\+Drop}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{Miliseconds\+Before\+Drop}{MilisecondsBeforeDrop}}
+{\footnotesize\ttfamily int Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+Miliseconds\+Before\+Drop = 5000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How many miliseconds would wait stream server before drop connection as failed. 
+
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a1b6540f8d3bf3c455caabc0f007f6702}\label{class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_a1b6540f8d3bf3c455caabc0f007f6702}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}!One\+Way\+Spins\+Pause@{One\+Way\+Spins\+Pause}}
+\index{One\+Way\+Spins\+Pause@{One\+Way\+Spins\+Pause}!Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+I\+O\+::\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{One\+Way\+Spins\+Pause}{OneWaySpinsPause}}
+{\footnotesize\ttfamily int Uniform\+Data\+Operator.\+Binary.\+I\+O.\+Stream\+Handler.\+One\+Way\+Spins\+Pause = 1800000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How many spins package builder will wait before manage next package. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+Binary/\+I\+O/Stream\+Handler.\+cs\end{DoxyCompactItemize}

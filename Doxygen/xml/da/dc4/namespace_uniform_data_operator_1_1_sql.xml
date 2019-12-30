@@ -4,12 +4,12 @@
     <compoundname>UniformDataOperator::Sql</compoundname>
     <innerclass refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator" prot="public">UniformDataOperator::Sql::ISqlOperator</innerclass>
     <innerclass refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler" prot="public">UniformDataOperator::Sql::SqlOperatorHandler</innerclass>
-    <innernamespace refid="d4/de9/namespace_uniform_data_operator_1_1_sql_1_1_attributes">UniformDataOperator::Sql::Attributes</innernamespace>
+    <innernamespace refid="de/d8b/namespace_uniform_data_operator_1_1_sql_1_1_markup">UniformDataOperator::Sql::Markup</innernamespace>
     <innernamespace refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql">UniformDataOperator::Sql::MySql</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="[generated]" line="1" column="1"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/ISQLOperator.cs" line="27" column="1"/>
   </compounddef>
 </doxygen>

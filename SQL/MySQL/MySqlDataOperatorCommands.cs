@@ -25,13 +25,14 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 using System.Reflection;
-using UniformDataOperator.Sql.Attributes;
-using UniformDataOperator.Sql.Attributes.Modifiers;
+using UniformDataOperator.Sql.Markup;
+using UniformDataOperator.Sql.Markup.Modifiers;
+using UniformDataOperator.AssembliesManagement;
 
 namespace UniformDataOperator.Sql.MySql
 {
     /// <summary>
-    /// Operator that provides possibility to operate data on MySQL data base server.
+    /// Operator that provides possibility to operate data on MySQL database server.
     /// </summary>
     public partial class MySqlDataOperator : ISqlOperator
     { 
@@ -65,11 +66,15 @@ namespace UniformDataOperator.Sql.MySql
                 return false;
             }
 
-            // Execute command
-            Active.NewCommand(command).ExecuteNonQuery();
+            // Instiniating a new command based on the query.
+            using (var dCommand = Active.NewCommand(command))
+            { 
+                // Executing the query.
+                dCommand.ExecuteNonQuery();
 
-            // Close connection after finish.
-            Active.CloseConnection();
+                // Closing the connection after finish executing.
+                Active.CloseConnection();
+            }
 
             // Confirm success.
             return true;
@@ -85,7 +90,7 @@ namespace UniformDataOperator.Sql.MySql
             #region VALIDATION
             string command = "";
             // Get column descriptor.
-            if (!AttributesHandler.TryToGetAttribute<Column>(member, out Column columnDescriptor))
+            if (!MembersHandler.TryToGetAttribute<ColumnAttribute>(member, out ColumnAttribute columnDescriptor))
             {
                 // Drop if not column.
                 return command;
@@ -99,7 +104,7 @@ namespace UniformDataOperator.Sql.MySql
 
             #region TYPE
             // Detect specified overriding.
-            if (AttributesHandler.TryToGetAttribute<Attributes.MySqlDBTypeOverride>(member, out Attributes.MySqlDBTypeOverride mySqlDBType))
+            if (MembersHandler.TryToGetAttribute(member, out Markup.MySqlDBTypeOverrideAttribute mySqlDBType))
             {
                 command += mySqlDBType.stringFormat ?? mySqlDBType.type.ToString();
             }
@@ -111,36 +116,36 @@ namespace UniformDataOperator.Sql.MySql
             #endregion
 
             #region ZERO FILL
-            if (AttributesHandler.HasAttribute<IsZeroFill>(member))
+            if (MembersHandler.HasAttribute<IsZeroFillAttribute>(member))
             {
                 command += " ZEROFILL";
             }
             #endregion
 
             #region BINARY
-            if (AttributesHandler.HasAttribute<IsBinary>(member))
+            if (MembersHandler.HasAttribute<IsBinaryAttribute>(member))
             {
                 command += " BINARY";
             }
             #endregion
 
             #region UNASIGNED
-            if (AttributesHandler.HasAttribute<IsUnsigned>(member))
+            if (MembersHandler.HasAttribute<IsUnsignedAttribute>(member))
             {
                 command += " UNSIGNED";
             }
             #endregion
 
             #region Generated | Default
-            if (AttributesHandler.TryToGetAttribute<Default>(member, out Default hasDefault) &&
+            if (MembersHandler.TryToGetAttribute<DefaultAttribute>(member, out DefaultAttribute hasDefault) &&
                 !string.IsNullOrEmpty(hasDefault.defExp))
             {
                 // If generated
-                if (hasDefault is IsGenerated isGenerated)
+                if (hasDefault is IsGeneratedAttribute isGenerated)
                 {
                     command += " GENERATED ALWAYS AS(";
                     command += isGenerated.defExp + ") ";
-                    command += (isGenerated.mode == IsGenerated.Mode.Stored ? "STORED" : "VIRTUAL");
+                    command += (isGenerated.mode == IsGeneratedAttribute.Mode.Stored ? "STORED" : "VIRTUAL");
                 }
                 // If  has default.
                 else
@@ -152,16 +157,16 @@ namespace UniformDataOperator.Sql.MySql
 
             #region NULL | NOT NULL
             // If not generated.
-            if (hasDefault == null || !(hasDefault is IsGenerated))
+            if (hasDefault == null || !(hasDefault is IsGeneratedAttribute))
             {
-                if (AttributesHandler.HasAttribute<IsPrimaryKey>(member))
+                if (MembersHandler.HasAttribute<IsPrimaryKeyAttribute>(member))
                 {
                     command += " NOT NULL";
                 }
                 else
                 {
                     // If has NotNull attribute.
-                    if (AttributesHandler.HasAttribute<IsNotNull>(member))
+                    if (MembersHandler.HasAttribute<IsNotNullAttribute>(member))
                     {
                         command += " NOT NULL";
                     }
@@ -175,7 +180,7 @@ namespace UniformDataOperator.Sql.MySql
 
             #region AUTO INCREMENT
             // If has AutoIncrement attribute.
-            if (AttributesHandler.HasAttribute<IsAutoIncrement>(member))
+            if (MembersHandler.HasAttribute<IsAutoIncrementAttribute>(member))
             {
                 command += " AUTO_INCREMENT";
             }
@@ -183,7 +188,7 @@ namespace UniformDataOperator.Sql.MySql
 
             #region COMMENT
             // Add commentary.
-            if (AttributesHandler.TryToGetAttribute<Commentary>(member, out Commentary commentary))
+            if (MembersHandler.TryToGetAttribute<CommentaryAttribute>(member, out CommentaryAttribute commentary))
             {
                 command += " COMMENT '" + commentary + "'";
             }
@@ -198,7 +203,7 @@ namespace UniformDataOperator.Sql.MySql
         /// </summary>
         /// <param name="tableType">Type that has defined Table attribute. 
         /// Would be used as table descriptor during queri building.</param>
-        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// <param name="data">Object that contain's fields that would be writed to database. 
         /// Affected only fields and properties with defined Column attribute.</param>
         /// <param name="error">Error faces during operation.</param>
         /// <returns>Generated command or null if failed.</returns>
@@ -212,7 +217,7 @@ namespace UniformDataOperator.Sql.MySql
             }
 
             // Loking for table descriptor.
-            if(!Table.TryToGetTableAttribute(tableType, out Table tableDescriptor, out error))
+            if(!TableAttribute.TryToGetTableAttribute(tableType, out TableAttribute tableDescriptor, out error))
             {
                 return null;
             }
@@ -220,24 +225,24 @@ namespace UniformDataOperator.Sql.MySql
 
             #region Members detection
             // Detect memebers on objects that contain columns definition.
-            List<MemberInfo> members = AttributesHandler.FindMembersWithAttribute<Column>(data.GetType()).ToList();
+            List<MemberInfo> members = MembersHandler.FindMembersWithAttribute<ColumnAttribute>(data.GetType()).ToList();
 
             // Drop set ignore columns.
-            members = AttributesHandler.FindMembersWithoutAttribute<SetQueryIgnore>(members).ToList();
+            members = MembersHandler.FindMembersWithoutAttribute<SetQueryIgnoreAttribute>(members).ToList();
 
             // Drop virtual generated columns.
             bool NotVirtual(MemberInfo member)
             {
-                return !(member.GetCustomAttribute<IsGenerated>() is IsGenerated isGenerated) ||
-                    isGenerated.mode != IsGenerated.Mode.Virual;
+                return !(member.GetCustomAttribute<IsGeneratedAttribute>() is IsGeneratedAttribute isGenerated) ||
+                    isGenerated.mode != IsGeneratedAttribute.Mode.Virual;
             };
-            members = AttributesHandler.FindMembersWithoutAttribute<IsGenerated>(members, NotVirtual).ToList();
+            members = MembersHandler.FindMembersWithoutAttribute<IsGeneratedAttribute>(members, NotVirtual).ToList();
 
             // Trying to detect member with defined isAutoIncrement attribute that has default value.
             MemberInfo autoIncrementMember = null;
             try
             {
-                autoIncrementMember = IsAutoIncrement.GetIgnorable(ref data, members);
+                autoIncrementMember = IsAutoIncrementAttribute.GetIgnorable(ref data, members);
             }
             catch (Exception ex)
             {
@@ -251,7 +256,7 @@ namespace UniformDataOperator.Sql.MySql
             }
 
             // Find our not key elements.
-            IEnumerable<MemberInfo> membersNK = AttributesHandler.FindMembersWithoutAttribute<IsPrimaryKey>(members);
+            IEnumerable<MemberInfo> membersNK = MembersHandler.FindMembersWithoutAttribute<IsPrimaryKeyAttribute>(members);
             #endregion
 
             #region Generating command
@@ -259,11 +264,11 @@ namespace UniformDataOperator.Sql.MySql
             DbCommand command = Active.NewCommand();
 
             // Set values as local params.
-            Column.MembersDataToCommand(ref data, ref command, members);
+            ColumnAttribute.MembersDataToCommand(ref data, ref command, members);
 
             // Getting metas.
-            Column.MembersToMetaLists(members, out List<Column> membersColumns, out List<string> membersVars);
-            Column.MembersToMetaLists(membersNK, out List<Column> membersNKColumns, out List<string> membersNKVars);
+            ColumnAttribute.MembersToMetaLists(members, out List<ColumnAttribute> membersColumns, out List<string> membersVars);
+            ColumnAttribute.MembersToMetaLists(membersNK, out List<ColumnAttribute> membersNKColumns, out List<string> membersNKVars);
 
             string commadText = "";
             commadText += "INSERT INTO `" + tableDescriptor.schema + "`.`" + tableDescriptor.table + "`\n";
@@ -281,10 +286,10 @@ namespace UniformDataOperator.Sql.MySql
         }
 
         /// <summary>
-        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// Creating request that setting up data from object to database server acording to attributes.
         /// </summary>
         /// <typeparam name="T">Type that has defined Table attribute. Would be used as table descriptor during queri building.</typeparam>
-        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// <param name="data">Object that contain's fields that would be writed to database. 
         /// Affected only fields and properties with defined Column attribute.</param>
         /// <param name="error">Error faces during operation.</param>
         /// <returns>Result of operation.</returns>
@@ -295,59 +300,60 @@ namespace UniformDataOperator.Sql.MySql
         }
 
         /// <summary>
-        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// Creating request that setting up data from object to database server acording to attributes.
         /// </summary>
         /// <param name="tableType">Type that has defined Table attribute. Would be used as table descriptor during queri building.</param>
-        /// <param name="data">Object that contain's fields that would be writed to data base. 
+        /// <param name="data">Object that contain's fields that would be writed to database. 
         /// Affected only fields and properties with defined Column attribute.</param>
         /// <param name="error">Error faces during operation.</param>
         /// <returns>Result of operation.</returns>
         public bool SetToTable(Type tableType, object data, out string error)
         {
             // Generate command
-            DbCommand command = GenerateSetToTableCommand(tableType, data, out error);
-
-            // Drop if error has been occured.
-            if (!string.IsNullOrEmpty(error))
+            using (DbCommand command = GenerateSetToTableCommand(tableType, data, out error))
             {
-                return false;
+                // Drop if error has been occured.
+                if (!string.IsNullOrEmpty(error))
+                {
+                    return false;
+                }
+
+                #region Execute command
+                // Opening connection to DB srver.
+                if (!Active.OpenConnection(out error))
+                {
+                    return false;
+                }
+
+                // Executing command.
+                command.Connection = Active.Connection;
+
+                int affectedRowsCount;
+                try
+                {
+                    affectedRowsCount = command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
+                }
+
+                // Closing connection.
+                Active.CloseConnection();
+                #endregion
+
+                // Retrun true if query was success, false if rows not affected.
+                return affectedRowsCount > 0;
             }
-
-            #region Execute command
-            // Opening connection to DB srver.
-            if (!Active.OpenConnection(out error))
-            {
-                return false;
-            }
-
-            // Executing command.
-            command.Connection = Active.Connection;
-
-            int affectedRowsCount;
-            try
-            {
-                affectedRowsCount = command.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
-            }
-
-            // Closing connection.
-            Active.CloseConnection();
-            #endregion
-
-            // Retrun true if query was success, false if rows not affected.
-            return affectedRowsCount > 0;
         }
 
         /// <summary>
-        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// Creating request that setting up data from object to database server acording to attributes.
         /// </summary>
         /// <typeparam name="T">Type that has defined Table attribute. 
         /// <param name="cancellationToken">Token that can terminate operation.</param>
         /// Would be used as table descriptor during queri building.</typeparam>
-        /// <param name="data">Object that contains fields that would be writed to data base. 
+        /// <param name="data">Object that contains fields that would be writed to database. 
         /// Affected only fields and properties with defined Column attribute.</param>
         public async Task SetToTableAsync<T>(CancellationToken cancellationToken, object data)
         {
@@ -355,54 +361,55 @@ namespace UniformDataOperator.Sql.MySql
         }
 
         /// <summary>
-        /// Creating request that setting up data from object to data base server acording to attributes.
+        /// Creating request that setting up data from object to database server acording to attributes.
         /// </summary>
         /// <param name="tableType">Type that has defined Table attribute
         /// Would be used as table descriptor during query building.</param>
         /// <param name="cancellationToken">Token that can terminate operation.</param>
-        /// <param name="data">Object that contains fields that would be writed to data base. 
+        /// <param name="data">Object that contains fields that would be writed to database. 
         /// Affected only fields and properties with defined Column attribute.</param>
         public async Task SetToTableAsync(Type tableType, CancellationToken cancellationToken, object data)
         {
             // Generate command
-            DbCommand command = GenerateSetToTableCommand(tableType, data, out string error);
-
-            // Drop if error has been occured.
-            if (!string.IsNullOrEmpty(error))
+            using (DbCommand command = GenerateSetToTableCommand(tableType, data, out string error))
             {
-                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Commnad generation failed. Details:\n" + error);
-                return;
-            }
+                // Drop if error has been occured.
+                if (!string.IsNullOrEmpty(error))
+                {
+                    SqlOperatorHandler.InvokeSQLErrorOccured(data, "Commnad generation failed. Details:\n" + error);
+                    return;
+                }
 
-            #region Execute command
-            // Opening connection to DB srver.
-            if (!Active.OpenConnection(out error))
-            {
-                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Connection failed.\n" + error);
-                return;
-            }
+                #region Execute command
+                // Opening connection to DB srver.
+                if (!Active.OpenConnection(out error))
+                {
+                    SqlOperatorHandler.InvokeSQLErrorOccured(data, "Connection failed.\n" + error);
+                    return;
+                }
 
-            // Executing command.
-            command.Connection = Active.Connection;
+                // Executing command.
+                command.Connection = Active.Connection;
 
-            int affectedRowsCount;
-            try
-            {
-                affectedRowsCount = await command.ExecuteNonQueryAsync(cancellationToken);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
-            }
+                int affectedRowsCount;
+                try
+                {
+                    affectedRowsCount = await command.ExecuteNonQueryAsync(cancellationToken);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Query not exeuted. Query:\n" + command.CommandText + "\n\nDetails:\n" + ex.Message);
+                }
 
-            // Closing connection.
-            Active.CloseConnection();
-            #endregion
+                // Closing connection.
+                Active.CloseConnection();
+                #endregion
 
-            // Log if command failed.
-            if (affectedRowsCount == 0)
-            {
-                SqlOperatorHandler.InvokeSQLErrorOccured(data, "Query not affect any row.\n\n" + command.CommandText);
+                // Log if command failed.
+                if (affectedRowsCount == 0)
+                {
+                    SqlOperatorHandler.InvokeSQLErrorOccured(data, "Query not affect any row.\n\n" + command.CommandText);
+                }
             }
         }
         #endregion

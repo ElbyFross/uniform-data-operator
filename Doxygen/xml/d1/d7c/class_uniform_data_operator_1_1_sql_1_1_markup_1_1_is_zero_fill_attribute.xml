@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d1/d7c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_zero_fill_attribute" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Markup::IsZeroFillAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+    <briefdescription>
+<para>Is value would be filled by zero by default. Only for numerical columns. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="62">
+        <label>UniformDataOperator.Sql.Markup.IsZeroFillAttribute</label>
+        <link refid="d1/d7c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_zero_fill_attribute"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Attribute</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="64">
+        <label>UniformDataOperator.Sql.Markup.IsZeroFillAttribute</label>
+        <link refid="d1/d7c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_zero_fill_attribute"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>Attribute</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/IsZeroFillAttribute.cs" line="24" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/IsZeroFillAttribute.cs" bodystart="23" bodyend="25"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -2,7 +2,7 @@
 \label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler}\index{Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler}}
 
 
-Contains base catalog of uniform queries that strongly simplify managing of the data base.  
+Contains base catalog of uniform queries that strongly simplify managing of the database.  
 
 
 \subsection*{Static Public Member Functions}
@@ -17,7 +17,9 @@ static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_opera
 static string \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ac17e36b29fe5a17281927ab04dbeab26}{Concat\+Formated\+Collections}} (I\+Enumerable$<$ object $>$ headers, I\+Enumerable$<$ object $>$ values, char brackets\+Symbol)
 \begin{DoxyCompactList}\small\item\em Concat to collections in format\+: headers0 = \mbox{[}braket\mbox{]}values0\mbox{[}braket\mbox{]}, ..., headersN = \mbox{[}braket\mbox{]}valuesN\mbox{[}braket\mbox{]} \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a97954b0bb1559fbe600c12aa5e2c53ef}{Database\+Data\+To\+Object}} (Db\+Data\+Reader reader, I\+Enumerable$<$ Member\+Info $>$ members, object obj, out string error)
-\begin{DoxyCompactList}\small\item\em Trying to apply data base data to object by members map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Trying to apply database data to object by members map. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a98735f024767c0551a0a8fccf0957fea}{Rescan\+Database\+Structure}} ()
+\begin{DoxyCompactList}\small\item\em Scaning assemblies and looking for classes and structures with defined \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute}{Markup.\+Table\+Attribute}} attribute. Trying to create shemas and tables via \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_aa96eb9fd201700acbf53954599fec534}{Active}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,12 +28,12 @@ static \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operat
 \subsection*{Events}
 \begin{DoxyCompactItemize}
 \item 
-static System.\+Action$<$ object, string $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}{Sql\+Error\+Occured}}
+static Action$<$ object, string $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}{Sql\+Error\+Occured}}
 \begin{DoxyCompactList}\small\item\em Event that can be called by operator to share errors during sql commands from async methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Contains base catalog of uniform queries that strongly simplify managing of the data base. 
+Contains base catalog of uniform queries that strongly simplify managing of the database. 
 
 
 
@@ -110,11 +112,11 @@ String that contain collection suitable for S\+QL commands.
 
 
 
-Trying to apply data base data to object by members map. 
+Trying to apply database data to object by members map. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em reader} & Data base data reader that contains data recived from server.\\
+{\em reader} & Database data reader that contains data recived from server.\\
 \hline
 {\em members} & Map of members that would be lokking in reader.\\
 \hline
@@ -136,6 +138,16 @@ Result of operation.
 
 Invoke global error event informing about error occuring. 
 
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a98735f024767c0551a0a8fccf0957fea}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a98735f024767c0551a0a8fccf0957fea}} 
+\index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Rescan\+Database\+Structure@{Rescan\+Database\+Structure}}
+\index{Rescan\+Database\+Structure@{Rescan\+Database\+Structure}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
+\subsubsection{\texorpdfstring{Rescan\+Database\+Structure()}{RescanDatabaseStructure()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Rescan\+Database\+Structure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Scaning assemblies and looking for classes and structures with defined \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute}{Markup.\+Table\+Attribute}} attribute. Trying to create shemas and tables via \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_aa96eb9fd201700acbf53954599fec534}{Active}}. 
+
 
 
 \subsection{Property Documentation}
@@ -152,11 +164,11 @@ Contains las operator that asing itself to handler as active one.
 
 
 \subsection{Event Documentation}
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_ab6cf915e80cf89b3e6eb14bf48a19185}} 
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}\label{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}!Sql\+Error\+Occured@{Sql\+Error\+Occured}}
 \index{Sql\+Error\+Occured@{Sql\+Error\+Occured}!Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler@{Uniform\+Data\+Operator\+::\+Sql\+::\+Sql\+Operator\+Handler}}
 \subsubsection{\texorpdfstring{Sql\+Error\+Occured}{SqlErrorOccured}}
-{\footnotesize\ttfamily System.\+Action$<$object, string$>$ Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Sql\+Error\+Occured\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily Action$<$object, string$>$ Uniform\+Data\+Operator.\+Sql.\+Sql\+Operator\+Handler.\+Sql\+Error\+Occured\hspace{0.3cm}{\ttfamily [static]}}
 
 
 

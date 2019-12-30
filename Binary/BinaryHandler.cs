@@ -112,8 +112,7 @@ namespace UniformDataOperator.Binary
                 }
             }
         }
-
-
+        
         /// <summary>
         /// Convert bytes array to object.
         /// </summary>

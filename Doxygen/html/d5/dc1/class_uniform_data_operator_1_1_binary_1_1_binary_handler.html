@@ -30,9 +30,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Uniform Data Operator
-   &#160;<span id="projectnumber">1.0.0 alpha 5</span>
+   &#160;<span id="projectnumber">1.0.11</span>
    </div>
-   <div id="projectbrief">Easy | Fast | Protected</div>
+   <div id="projectbrief">Simple | Fast | Protected</div>
   </td>
  </tr>
  </tbody>
@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('d5/dc1/class_uniform_data_operator_1_1
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="../../dd/d4c/class_uniform_data_operator_1_1_binary_1_1_binary_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">UniformDataOperator.Binary.BinaryHandler Class Reference</div>  </div>
@@ -100,16 +101,106 @@ $(document).ready(function(){initNavTree('d5/dc1/class_uniform_data_operator_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab02d6e27dd8d96934cc6d08f3970b33d"><td class="memItemLeft" align="right" valign="top">static byte []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#ab02d6e27dd8d96934cc6d08f3970b33d">ToByteArray&lt; T &gt;</a> (T obj)</td></tr>
-<tr class="memdesc:ab02d6e27dd8d96934cc6d08f3970b33d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert object to bytes array.  <a href="#ab02d6e27dd8d96934cc6d08f3970b33d">More...</a><br /></td></tr>
-<tr class="separator:ab02d6e27dd8d96934cc6d08f3970b33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3a726c904b29b5817e0ad39a4e1463"><td class="memItemLeft" align="right" valign="top">static byte []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#abe3a726c904b29b5817e0ad39a4e1463">ToByteArray</a> (object obj)</td></tr>
+<tr class="memdesc:abe3a726c904b29b5817e0ad39a4e1463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert object to bytes array.  <a href="#abe3a726c904b29b5817e0ad39a4e1463">More...</a><br /></td></tr>
+<tr class="separator:abe3a726c904b29b5817e0ad39a4e1463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31772237797bd25f97b204b74289df70"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#a31772237797bd25f97b204b74289df70">FromByteArray&lt; T &gt;</a> (byte[] data)</td></tr>
 <tr class="memdesc:a31772237797bd25f97b204b74289df70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert bytes array to object.  <a href="#a31772237797bd25f97b204b74289df70">More...</a><br /></td></tr>
 <tr class="separator:a31772237797bd25f97b204b74289df70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bd422de667147216fead7602828f3a"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#ac3bd422de667147216fead7602828f3a">FromByteArray</a> (byte[] data)</td></tr>
+<tr class="memdesc:ac3bd422de667147216fead7602828f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert bytes array to object.  <a href="#ac3bd422de667147216fead7602828f3a">More...</a><br /></td></tr>
+<tr class="separator:ac3bd422de667147216fead7602828f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a7fa6cdd576cd1597bc1107186ec1e730"><td class="memItemLeft" align="right" valign="top">static Assembly&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#a7fa6cdd576cd1597bc1107186ec1e730">CurrentDomain_AssemblyResolve</a> (object sender, ResolveEventArgs args)</td></tr>
+<tr class="memdesc:a7fa6cdd576cd1597bc1107186ec1e730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Occurs when assebly access is failed.  <a href="#a7fa6cdd576cd1597bc1107186ec1e730">More...</a><br /></td></tr>
+<tr class="separator:a7fa6cdd576cd1597bc1107186ec1e730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provide API to working with binary files. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7fa6cdd576cd1597bc1107186ec1e730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa6cdd576cd1597bc1107186ec1e730">&#9670;&nbsp;</a></span>CurrentDomain_AssemblyResolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Assembly UniformDataOperator.Binary.BinaryHandler.CurrentDomain_AssemblyResolve </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResolveEventArgs&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Occurs when assebly access is failed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Object that initiate that event.</td></tr>
+    <tr><td class="paramname">args</td><td>Data about target requested assebly.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ac3bd422de667147216fead7602828f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3bd422de667147216fead7602828f3a">&#9670;&nbsp;</a></span>FromByteArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static object UniformDataOperator.Binary.BinaryHandler.FromByteArray </td>
+          <td>(</td>
+          <td class="paramtype">byte []&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert bytes array to object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td><a class="el" href="../../da/d8e/namespace_uniform_data_operator_1_1_binary.html">Binary</a> data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Deserialized object.</dd></dl>
+
+</div>
+</div>
 <a id="a31772237797bd25f97b204b74289df70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31772237797bd25f97b204b74289df70">&#9670;&nbsp;</a></span>FromByteArray&lt; T &gt;()</h2>
 
@@ -120,7 +211,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static T UniformDataOperator.Binary.BinaryHandler.FromByteArray&lt; T &gt; </td>
+          <td class="memname">static T <a class="el" href="../../d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler.html#ac3bd422de667147216fead7602828f3a">UniformDataOperator.Binary.BinaryHandler.FromByteArray</a>&lt; T &gt; </td>
           <td>(</td>
           <td class="paramtype">byte []&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -151,8 +242,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab02d6e27dd8d96934cc6d08f3970b33d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab02d6e27dd8d96934cc6d08f3970b33d">&#9670;&nbsp;</a></span>ToByteArray&lt; T &gt;()</h2>
+<a id="abe3a726c904b29b5817e0ad39a4e1463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3a726c904b29b5817e0ad39a4e1463">&#9670;&nbsp;</a></span>ToByteArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,9 +252,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static byte [] UniformDataOperator.Binary.BinaryHandler.ToByteArray&lt; T &gt; </td>
+          <td class="memname">static byte [] UniformDataOperator.Binary.BinaryHandler.ToByteArray </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
         </tr>
@@ -176,12 +267,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Convert object to bytes array. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Type of target object.</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">obj</td><td>Object for serialization.</td></tr>

@@ -8,10 +8,17 @@ Provide A\+PI to working with binary files.
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_binary_handler_ab02d6e27dd8d96934cc6d08f3970b33d}{To\+Byte\+Array$<$ T $>$}} (T obj)
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_binary_handler_abe3a726c904b29b5817e0ad39a4e1463}{To\+Byte\+Array}} (object obj)
 \begin{DoxyCompactList}\small\item\em Convert object to bytes array. \end{DoxyCompactList}\item 
 static T \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_binary_handler_a31772237797bd25f97b204b74289df70}{From\+Byte\+Array$<$ T $>$}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Convert bytes array to object. \end{DoxyCompactList}\item 
+static object \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_binary_handler_ac3bd422de667147216fead7602828f3a}{From\+Byte\+Array}} (byte\mbox{[}$\,$\mbox{]} data)
 \begin{DoxyCompactList}\small\item\em Convert bytes array to object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Assembly \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_binary_handler_a7fa6cdd576cd1597bc1107186ec1e730}{Current\+Domain\+\_\+\+Assembly\+Resolve}} (object sender, Resolve\+Event\+Args args)
+\begin{DoxyCompactList}\small\item\em Occurs when assebly access is failed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -20,11 +27,49 @@ Provide A\+PI to working with binary files.
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_binary_handler_a7fa6cdd576cd1597bc1107186ec1e730}\label{class_uniform_data_operator_1_1_binary_1_1_binary_handler_a7fa6cdd576cd1597bc1107186ec1e730}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}!Current\+Domain\+\_\+\+Assembly\+Resolve@{Current\+Domain\+\_\+\+Assembly\+Resolve}}
+\index{Current\+Domain\+\_\+\+Assembly\+Resolve@{Current\+Domain\+\_\+\+Assembly\+Resolve}!Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}}
+\subsubsection{\texorpdfstring{Current\+Domain\+\_\+\+Assembly\+Resolve()}{CurrentDomain\_AssemblyResolve()}}
+{\footnotesize\ttfamily static Assembly Uniform\+Data\+Operator.\+Binary.\+Binary\+Handler.\+Current\+Domain\+\_\+\+Assembly\+Resolve (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Resolve\+Event\+Args}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Occurs when assebly access is failed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Object that initiate that event.\\
+\hline
+{\em args} & Data about target requested assebly.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_binary_handler_ac3bd422de667147216fead7602828f3a}\label{class_uniform_data_operator_1_1_binary_1_1_binary_handler_ac3bd422de667147216fead7602828f3a}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}!From\+Byte\+Array@{From\+Byte\+Array}}
+\index{From\+Byte\+Array@{From\+Byte\+Array}!Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}}
+\subsubsection{\texorpdfstring{From\+Byte\+Array()}{FromByteArray()}}
+{\footnotesize\ttfamily static object Uniform\+Data\+Operator.\+Binary.\+Binary\+Handler.\+From\+Byte\+Array (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert bytes array to object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Deserialized object.
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_binary_handler_a31772237797bd25f97b204b74289df70}\label{class_uniform_data_operator_1_1_binary_1_1_binary_handler_a31772237797bd25f97b204b74289df70}} 
 \index{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}!From\+Byte\+Array$<$ T $>$@{From\+Byte\+Array$<$ T $>$}}
 \index{From\+Byte\+Array$<$ T $>$@{From\+Byte\+Array$<$ T $>$}!Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}}
 \subsubsection{\texorpdfstring{From\+Byte\+Array$<$ T $>$()}{FromByteArray< T >()}}
-{\footnotesize\ttfamily static T Uniform\+Data\+Operator.\+Binary.\+Binary\+Handler.\+From\+Byte\+Array$<$ T $>$ (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static T \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_binary_handler_ac3bd422de667147216fead7602828f3a}{Uniform\+Data\+Operator.\+Binary.\+Binary\+Handler.\+From\+Byte\+Array}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -43,21 +88,16 @@ Convert bytes array to object.
 \begin{DoxyReturn}{Returns}
 Deserialized object.
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_binary_handler_ab02d6e27dd8d96934cc6d08f3970b33d}\label{class_uniform_data_operator_1_1_binary_1_1_binary_handler_ab02d6e27dd8d96934cc6d08f3970b33d}} 
-\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}!To\+Byte\+Array$<$ T $>$@{To\+Byte\+Array$<$ T $>$}}
-\index{To\+Byte\+Array$<$ T $>$@{To\+Byte\+Array$<$ T $>$}!Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}}
-\subsubsection{\texorpdfstring{To\+Byte\+Array$<$ T $>$()}{ToByteArray< T >()}}
-{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} Uniform\+Data\+Operator.\+Binary.\+Binary\+Handler.\+To\+Byte\+Array$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_binary_handler_abe3a726c904b29b5817e0ad39a4e1463}\label{class_uniform_data_operator_1_1_binary_1_1_binary_handler_abe3a726c904b29b5817e0ad39a4e1463}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}!To\+Byte\+Array@{To\+Byte\+Array}}
+\index{To\+Byte\+Array@{To\+Byte\+Array}!Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler@{Uniform\+Data\+Operator\+::\+Binary\+::\+Binary\+Handler}}
+\subsubsection{\texorpdfstring{To\+Byte\+Array()}{ToByteArray()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} Uniform\+Data\+Operator.\+Binary.\+Binary\+Handler.\+To\+Byte\+Array (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Convert object to bytes array. 
 
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em T} & Type of target object.\\
-\hline
-\end{DoxyTemplParams}
 
 \begin{DoxyParams}{Parameters}
 {\em obj} & Object for serialization.\\

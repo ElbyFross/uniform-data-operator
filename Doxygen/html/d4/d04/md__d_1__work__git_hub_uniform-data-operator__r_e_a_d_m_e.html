@@ -30,9 +30,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Uniform Data Operator
-   &#160;<span id="projectnumber">1.0.0 alpha 5</span>
+   &#160;<span id="projectnumber">1.0.11</span>
    </div>
-   <div id="projectbrief">Easy | Fast | Protected</div>
+   <div id="projectbrief">Simple | Fast | Protected</div>
   </td>
  </tr>
  </tbody>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('d4/d04/md__d_1__work__git_hub_uniform-
 <div class="title">Uniform Data Operator </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>It's a framework that allow to oparate and manage yours data by unified way, not depending from your data base or prefered format. Standardize your data structures and avoid adjust of your product only for one storage type that could be not suitable for you in future.</p>
+<div class="textblock"><p>It's a framework that allow to oparate and manage yours data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjust of your product only for one storage type that could be not suitable for you in future.</p>
 <h1>Modules</h1>
 <h2>Binnary Handler</h2>
 <p>Provides base API for binary serizliation process.</p>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('d4/d04/md__d_1__work__git_hub_uniform-
 <p>For every table on server that must be compatible with your application on native level you need to provide the class/structure with compatible and correct described fields/properties.</p>
 <p>This class/structure would be a bridge betwee your local data and server representation.</p>
 <h3>Describing</h3>
-<p>Describing of data making by using of attributs from <code><a class="el" href="../../d4/de9/namespace_uniform_data_operator_1_1_sql_1_1_attributes.html">UniformDataOperator.Sql.Attributes</a></code> namespace. (Custom attributes and modifiers can has other namespace).</p>
+<p>Describing of data making by using of attributs from <code>UniformDataOperator.Sql.Attributes</code> namespace. (Custom attributes and modifiers can has other namespace).</p>
 <ol type="1">
 <li>Define <code>Table</code> attribute for your class/structure. Describe correct scheme and table name.</li>
 <li>Define <code>System.Serializable</code> attribute for your class.</li>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d4/d04/md__d_1__work__git_hub_uniform-
 <p>Use the default MySqlDataOperator (group of partial classes) as example. Them are pretty good documented. If you done this job please consider sharing this source as contribution into UDO.</p>
 <h2>My SQL server incompatible with DbDataType's indexes. How I can adjust my data?</h2>
 <p>By default <code>Column</code> attribute described via <code>DbDataType</code> that mostly unusable for huge count of types that custom for every different SQL server. If you faced with such kind of problem so just create your own modifying attribute that would be used on your custom <code>ISqlOperator</code> instance.</p>
-<p>Use <code><a class="el" href="../../dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override.html" title="Attribute that can be defined to override standard DBType defined in Column attribute, for columns that would created in MySql tables. ">UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride</a></code> as example for your source. Check how it using at <code>MySqlDataOperatorCommands.cs</code> in <code>ColumnDeclarationCommand</code> method.</p>
+<p>Use <code>UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride</code> as example for your source. Check how it using at <code>MySqlDataOperatorCommands.cs</code> in <code>ColumnDeclarationCommand</code> method.</p>
 <h2>Auto write/read not enough flexible for me. How I can make custom query?</h2>
 <p>Auto managing of duplex exchanging of data with SQL server it's just a high end feature. But not the only way to manage your uniformed data.</p>
 <p>All what you need it's pipe down on one level and start direct work with your <code>ISqlOperator</code> instance.</p>

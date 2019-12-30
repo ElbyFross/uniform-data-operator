@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noaction',['NoAction',['../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe',1,'UniformDataOperator::Sql::Attributes::IsForeignKey']]]
+  ['duplex',['Duplex',['../d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o.html#a3fee9a9bcba25974554ed63395942161acfefe70df0902a80bb48b04ff12a7436',1,'UniformDataOperator::Binary::IO']]]
 ];

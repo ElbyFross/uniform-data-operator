@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Markup::Modifiers::SetQueryIgnoreAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+    <briefdescription>
+<para>Can be defined to ignore of writing this value during set-like queries to server. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="79">
+        <label>Attribute</label>
+      </node>
+      <node id="78">
+        <label>UniformDataOperator.Sql.Markup.Modifiers.SetQueryIgnoreAttribute</label>
+        <link refid="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="81">
+        <label>Attribute</label>
+      </node>
+      <node id="80">
+        <label>UniformDataOperator.Sql.Markup.Modifiers.SetQueryIgnoreAttribute</label>
+        <link refid="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/SetQueryIgnoreAttribute.cs" line="24" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/SetQueryIgnoreAttribute.cs" bodystart="23" bodyend="25"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

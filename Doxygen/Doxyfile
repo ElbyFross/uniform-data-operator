@@ -38,13 +38,13 @@ PROJECT_NAME           = "Uniform Data Operator"
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = "1.0.0 alpha 5"
+PROJECT_NUMBER         = 1.0.11
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "Easy | Fast | Protected"
+PROJECT_BRIEF          = "Simple | Fast | Protected"
 
 # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
 # in the documentation. The maximum height of the logo should not exceed 55
@@ -873,7 +873,12 @@ RECURSIVE              = YES
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                = 
+EXCLUDE                = ../Tests \
+                         ../TestResults \
+                         ../bin \
+                         ../Properties \
+                         . \
+                         ../packages
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded

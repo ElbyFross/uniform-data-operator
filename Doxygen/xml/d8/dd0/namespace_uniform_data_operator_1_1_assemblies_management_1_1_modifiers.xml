@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d8/dd0/namespace_uniform_data_operator_1_1_assemblies_management_1_1_modifiers" kind="namespace" language="C#">
+    <compoundname>UniformDataOperator::AssembliesManagement::Modifiers</compoundname>
+    <innerclass refid="d3/d31/interface_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_i_base_type_changable" prot="public">UniformDataOperator::AssembliesManagement::Modifiers::IBaseTypeChangable</innerclass>
+    <innerclass refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer" prot="public">UniformDataOperator::AssembliesManagement::Modifiers::TypeReplacer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/Modifiers/IBaseTypeChangable.cs" line="18" column="1"/>
+  </compounddef>
+</doxygen>

@@ -26,7 +26,11 @@ var NAVTREE =
   [ "Uniform Data Operator", "index.html", [
     [ "Uniform Data Operator", "d4/d04/md__d_1__work__git_hub_uniform-data-operator__r_e_a_d_m_e.html", null ],
     [ "Packages", "namespaces.html", [
-      [ "Packages", "namespaces.html", "namespaces_dup" ]
+      [ "Packages", "namespaces.html", "namespaces_dup" ],
+      [ "Package Functions", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -47,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"index.html"
+"de/d8b/namespace_uniform_data_operator_1_1_sql_1_1_markup.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

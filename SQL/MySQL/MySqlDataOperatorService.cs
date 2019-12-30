@@ -24,13 +24,13 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 using System.Reflection;
-using UniformDataOperator.Sql.Attributes;
-using UniformDataOperator.Sql.Attributes.Modifiers;
+using UniformDataOperator.Sql.Markup;
+using UniformDataOperator.Sql.Markup.Modifiers;
 
 namespace UniformDataOperator.Sql.MySql
 {
     /// <summary>
-    /// Operator that provides possibility to operate data on MySQL data base server.
+    /// Operator that provides possibility to operate data on MySQL database server.
     /// </summary>
     public partial class MySqlDataOperator : ISqlOperator
     {        
@@ -106,23 +106,23 @@ namespace UniformDataOperator.Sql.MySql
         }
 
         /// <summary>
-        /// Validate data base table column acording to member attributes.
+        /// Validate database table column acording to member attributes.
         /// </summary>
         /// <param name="tableDescriptor">Table meta data.</param>
         /// <param name="columnMember">Member with defined Column attribute that would be comared with </param>
         /// <returns>Result of validation.</returns>W
-        public bool ValidateTableMember(Table tableDescriptor, MemberInfo columnMember)
+        public bool ValidateTableMember(TableAttribute tableDescriptor, MemberInfo columnMember)
         {
             throw new NotImplementedException();
         }
 
         /// <summary>
-        /// Convert value of member to data base parameter that can be used in command.
+        /// Convert value of member to database parameter that can be used in command.
         /// </summary>
         /// <param name="data">Value of the object that would applied to parameter.</param>
         /// <param name="column">Column attribute relative to member of data.</param>
-        /// <returns>Parameter that could by used in commands to data base.</returns>
-        public DbParameter MemberToParameter(object data, Column column)
+        /// <returns>Parameter that could by used in commands to database.</returns>
+        public DbParameter MemberToParameter(object data, ColumnAttribute column)
         {
             return new MySqlParameter("@" + column.title, data);
         }
@@ -131,15 +131,15 @@ namespace UniformDataOperator.Sql.MySql
         /// Trying to convert DBType to specified type in string format that suitable to this database.
         /// </summary>
         /// <param name="type">Common DBType.</param>
-        /// <returns>Type suitable for SQL command relative to this type of data base. 
+        /// <returns>Type suitable for SQL command relative to this type of database. 
         /// InvalidCastException in case if converting not possible.</returns>
         public string DbTypeToString(DbType type)
         {
-            MySqlParameter parm = new MySqlParameter
+            var parm = new MySqlParameter
             {
                 DbType = type
             };
-            MySqlDbType mySqlDbType = parm.MySqlDbType;
+            var mySqlDbType = parm.MySqlDbType;
 
             switch(mySqlDbType)
             {

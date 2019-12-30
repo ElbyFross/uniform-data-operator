@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['setnull',['SetNull',['../de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key.html#a6039622384e2bbd1aa386e326ee0f850a2ac481dd701d4f580b6b01eb34442e71',1,'UniformDataOperator::Sql::Attributes::IsForeignKey']]],
-  ['stored',['Stored',['../d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated.html#aa8286a355a1ac86ccd56cf5b44f5ed59a7bf2d26eab899c413218b729d4d914b7',1,'UniformDataOperator::Sql::Attributes::IsGenerated']]]
+  ['oneway',['Oneway',['../d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o.html#a3fee9a9bcba25974554ed63395942161ab6f2b2a3b9675cbd2f00f92c5bd93dd4',1,'UniformDataOperator::Binary::IO']]]
 ];
