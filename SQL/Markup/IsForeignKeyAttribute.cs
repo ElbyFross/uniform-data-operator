@@ -97,7 +97,12 @@ namespace UniformDataOperator.Sql.Markup
         /// <param name="column">Name of foreign column.</param>
         /// <param name="onDeleteCommand">Command that would be applied in case of deleting.</param>
         /// <param name="onUpdateCommand">Command that would be applied in case of updating.</param>
-        public IsForeignKeyAttribute(string schema, string table, string column, Action onDeleteCommand, Action onUpdateCommand)
+        public IsForeignKeyAttribute(
+            string schema, 
+            string table, 
+            string column, 
+            Action onDeleteCommand, 
+            Action onUpdateCommand)
         {
             this.schema = schema;
             this.table = table;
@@ -134,8 +139,8 @@ namespace UniformDataOperator.Sql.Markup
         public static string FKIndexDeclarationCommand(MemberInfo member, string selfTableName)
         {
             // Looking for column and FK definitions.
-            if (!MembersHandler.TryToGetAttribute<ColumnAttribute>(member, out ColumnAttribute column) || 
-                !MembersHandler.TryToGetAttribute<IsForeignKeyAttribute>(member, out IsForeignKeyAttribute isForeignKey)) 
+            if (!MembersHandler.TryToGetAttribute(member, out ColumnAttribute column) || 
+                !MembersHandler.TryToGetAttribute(member, out IsForeignKeyAttribute isForeignKey)) 
             {
                 // Deop if not defined.
                 return "";
@@ -151,7 +156,7 @@ namespace UniformDataOperator.Sql.Markup
 
             // Try to find overriding attribute.
             if (Modifiers.DBPathOverrideAttribute.TryToGetValidOverride<IsForeignKeyAttribute>(
-                member, 
+                member.DeclaringType, 
                 out Modifiers.DBPathOverrideAttribute fkOverrider))
             {
                 // Override fields.
@@ -170,7 +175,10 @@ namespace UniformDataOperator.Sql.Markup
         /// <param name="isForeignKey">FL attribute</param>
         /// <param name="selfTableName">Name of holding table.</param>
         /// <returns>Generated SQL command.</returns>
-        public static string FKIndexDeclarationCommand(ColumnAttribute column, IsForeignKeyAttribute isForeignKey, string selfTableName)
+        public static string FKIndexDeclarationCommand(
+            ColumnAttribute column, 
+            IsForeignKeyAttribute isForeignKey, 
+            string selfTableName)
         {
             // Generate comman
             string command = "INDEX `" +
@@ -218,7 +226,10 @@ namespace UniformDataOperator.Sql.Markup
         /// <param name="isForeignKey">FK attribute.</param>
         /// <param name="selfTableName">Name of holding table.</param>
         /// <returns>Generated SQL command.</returns>
-        public static string ConstrainDeclarationCommand(ColumnAttribute column, IsForeignKeyAttribute isForeignKey, string selfTableName)
+        public static string ConstrainDeclarationCommand(
+            ColumnAttribute column, 
+            IsForeignKeyAttribute isForeignKey,
+            string selfTableName)
         {
             string command = "";
             command += "CONSTRAINT `" + isForeignKey.FKName(selfTableName) + "`\n";
@@ -256,7 +267,7 @@ namespace UniformDataOperator.Sql.Markup
 
             // Try to find overriding attribute.
             if (Modifiers.DBPathOverrideAttribute.TryToGetValidOverride<IsForeignKeyAttribute>(
-                member,
+                member.DeclaringType,
                 out Modifiers.DBPathOverrideAttribute fkOverrider))
             {
                 // Override fields.

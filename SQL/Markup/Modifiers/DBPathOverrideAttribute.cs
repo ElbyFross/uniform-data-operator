@@ -22,10 +22,11 @@ using System.Threading.Tasks;
 namespace UniformDataOperator.Sql.Markup.Modifiers
 {
     /// <summary>
-    /// Overrides database path to member in attributes that looking for this attribute.
+    /// Defines for structures and classes derived from some base table descriptor. 
+    /// Overrides internal path or its part (schema/table/column) to a new one.
+    /// Other markup attributes that compatible with overriding will change a value to the new.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field |
-        AttributeTargets.Property | 
+    [AttributeUsage(
         AttributeTargets.Class |
         AttributeTargets.Struct,
         Inherited = false, 
@@ -92,7 +93,8 @@ namespace UniformDataOperator.Sql.Markup.Modifiers
             foreach(DBPathOverrideAttribute @override in overriders)
             {
                 // Check if uniform or for specified type.
-                if(@override.targetAttribute == null || @override.Equals(typeof(T)))
+                if(@override.targetAttribute == null || 
+                   @override.targetAttribute.Equals(typeof(T)))
                 {
                     // Set as output and inform about existing.
                     output = @override;

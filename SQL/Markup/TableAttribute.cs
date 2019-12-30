@@ -349,7 +349,7 @@ namespace UniformDataOperator.Sql.Markup
         /// <param name="tableType">Type that contains defined Table attribute.</param>
         /// <param name="tableDescriptor">Output table descriptor.</param>
         /// <param name="error">Error message in cvase if occured. Null in other case.</param>
-        /// <returns></returns>
+        /// <returns>A result of operation.</returns>
         public static bool TryToGetTableAttribute(Type tableType, out TableAttribute tableDescriptor, out string error)
         {
             // Drop if not table descriptor.

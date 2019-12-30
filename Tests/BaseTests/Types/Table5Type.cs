@@ -20,6 +20,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UniformDataOperator.Sql.MySql.Markup;
 using UniformDataOperator.Sql.Markup;
+using UniformDataOperator.Sql.Markup.Modifiers;
 using UniformDataOperator.Binary;
 using MySql.Data.MySqlClient;
 
@@ -27,10 +28,14 @@ namespace BaseTests.Types
 {
     [Serializable]
     [Table("testSchema2", "testTable5")]
+    [DBPathOverride(schema = "abcSchema", targetAttribute = typeof(IsForeignKeyAttribute))]
     public class Table5Type
     {
         [Column("intPKAI", DbType.Int32), IsPrimaryKey, IsAutoIncrement]
         public int intPKAI;
+        
+        [Column("intFK", DbType.Int32), IsForeignKey("testSchema", "testTable2", "fkSourceColumn")]
+        public int fk = 4;
 
         [Column("stringVar", DbType.String), IsUnique]
         public string stringVar = "testString";
