@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="39" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="39" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="40" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1ae30de021946efb358325415cf7e1bde2" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="45" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="45" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="46" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1a3f5c9e2892d5061f92d59d17b2636acb" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="51" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="51" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="52" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1a30bd9209a06db42db371c857573af3be" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="57" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="57" bodyend="-1"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="58" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="62" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="62" bodyend="62"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="63" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="63" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1ab288054b87a2c351923533496636db2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -127,7 +127,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="71" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="71" bodyend="77"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="72" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="72" bodyend="78"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -174,11 +174,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="86" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="86" bodyend="105"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="87" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="87" bodyend="107"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Overrides database path to member in attributes that looking for this attribute. </para>    </briefdescription>
+<para>Defines for structures and classes derived from some base table descriptor. Overrides internal path or its part (schema/table/column) to a new one. Other markup attributes that compatible with overriding will change a value to the new. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
@@ -203,7 +203,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="34" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="33" bodyend="106"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" line="35" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers/DBPathOverrideAttribute.cs" bodystart="34" bodyend="108"/>
     <listofallmembers>
       <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1a30bd9209a06db42db371c857573af3be" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::Modifiers::DBPathOverrideAttribute</scope><name>column</name></member>
       <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1aa0ce1c84c617ff1a11bd7ffc5a15f3b0" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::Modifiers::DBPathOverrideAttribute</scope><name>DBPathOverrideAttribute</name></member>

@@ -332,7 +332,7 @@
 <para>Error message in cvase if occured. Null in other case.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para></para></simplesect>
+<simplesect kind="return"><para>A result of operation.</para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
