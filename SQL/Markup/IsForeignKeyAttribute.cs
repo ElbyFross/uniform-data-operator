@@ -17,13 +17,13 @@ using System.Collections.Generic;
 using System.Reflection;
 using UniformDataOperator.AssembliesManagement;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
     /// Mark fireld as foreign key to other column.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsForeignKey : Attribute
+    public class IsForeignKeyAttribute : Attribute
     {
         // Set that contains used indexes.
         private static readonly HashSet<string> usedIndexes = new HashSet<string>();
@@ -82,7 +82,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="schema">Name of foreign schema.</param>
         /// <param name="table">Name of foreign table.</param>
         /// <param name="column">Name of foreign column.</param>
-        public IsForeignKey(string schema, string table, string column)
+        public IsForeignKeyAttribute(string schema, string table, string column)
         {
             this.schema = schema;
             this.table = table;
@@ -97,7 +97,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="column">Name of foreign column.</param>
         /// <param name="onDeleteCommand">Command that would be applied in case of deleting.</param>
         /// <param name="onUpdateCommand">Command that would be applied in case of updating.</param>
-        public IsForeignKey(string schema, string table, string column, Action onDeleteCommand, Action onUpdateCommand)
+        public IsForeignKeyAttribute(string schema, string table, string column, Action onDeleteCommand, Action onUpdateCommand)
         {
             this.schema = schema;
             this.table = table;
@@ -134,8 +134,8 @@ namespace UniformDataOperator.Sql.Attributes
         public static string FKIndexDeclarationCommand(MemberInfo member, string selfTableName)
         {
             // Looking for column and FK definitions.
-            if (!AttributesHandler.TryToGetAttribute<Column>(member, out Column column) || 
-                !AttributesHandler.TryToGetAttribute<IsForeignKey>(member, out IsForeignKey isForeignKey)) 
+            if (!MembersHandler.TryToGetAttribute<ColumnAttribute>(member, out ColumnAttribute column) || 
+                !MembersHandler.TryToGetAttribute<IsForeignKeyAttribute>(member, out IsForeignKeyAttribute isForeignKey)) 
             {
                 // Deop if not defined.
                 return "";
@@ -150,9 +150,9 @@ namespace UniformDataOperator.Sql.Attributes
             //}
 
             // Try to find overriding attribute.
-            if (Modifiers.DBPathOverride.TryToGetValidOverride<IsForeignKey>(
+            if (Modifiers.DBPathOverrideAttribute.TryToGetValidOverride<IsForeignKeyAttribute>(
                 member, 
-                out Modifiers.DBPathOverride fkOverrider))
+                out Modifiers.DBPathOverrideAttribute fkOverrider))
             {
                 // Override fields.
                 isForeignKey.schema = fkOverrider.schema ?? isForeignKey.schema;
@@ -170,7 +170,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="isForeignKey">FL attribute</param>
         /// <param name="selfTableName">Name of holding table.</param>
         /// <returns>Generated SQL command.</returns>
-        public static string FKIndexDeclarationCommand(Column column, IsForeignKey isForeignKey, string selfTableName)
+        public static string FKIndexDeclarationCommand(ColumnAttribute column, IsForeignKeyAttribute isForeignKey, string selfTableName)
         {
             // Generate comman
             string command = "INDEX `" +
@@ -218,14 +218,14 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="isForeignKey">FK attribute.</param>
         /// <param name="selfTableName">Name of holding table.</param>
         /// <returns>Generated SQL command.</returns>
-        public static string ConstrainDeclarationCommand(Column column, IsForeignKey isForeignKey, string selfTableName)
+        public static string ConstrainDeclarationCommand(ColumnAttribute column, IsForeignKeyAttribute isForeignKey, string selfTableName)
         {
             string command = "";
             command += "CONSTRAINT `" + isForeignKey.FKName(selfTableName) + "`\n";
             command += "\tFOREIGN KEY(`" + column.title + "`)\n";
             command += "\tREFERENCES `" + isForeignKey.schema + "`.`" + isForeignKey.table + "` (`" + isForeignKey.column + "`)\n";
-            command += "\tON DELETE " + IsForeignKey.ActionToCommand(isForeignKey.onDeleteCommand) + "\n";
-            command += "\tON UPDATE " + IsForeignKey.ActionToCommand(isForeignKey.onUpdateCommand);
+            command += "\tON DELETE " + IsForeignKeyAttribute.ActionToCommand(isForeignKey.onDeleteCommand) + "\n";
+            command += "\tON UPDATE " + IsForeignKeyAttribute.ActionToCommand(isForeignKey.onUpdateCommand);
             return command;
         }
 
@@ -239,8 +239,8 @@ namespace UniformDataOperator.Sql.Attributes
         public static string ConstrainDeclarationCommand(MemberInfo member, string selfTableName)
         {
             // Looking for column and FK definitions.
-            if (!AttributesHandler.TryToGetAttribute<Column>(member, out Column column) ||
-                !AttributesHandler.TryToGetAttribute<IsForeignKey>(member, out IsForeignKey isForeignKey))
+            if (!MembersHandler.TryToGetAttribute<ColumnAttribute>(member, out ColumnAttribute column) ||
+                !MembersHandler.TryToGetAttribute<IsForeignKeyAttribute>(member, out IsForeignKeyAttribute isForeignKey))
             {
                 // Deop if not defined.
                 return "";
@@ -255,9 +255,9 @@ namespace UniformDataOperator.Sql.Attributes
             //}
 
             // Try to find overriding attribute.
-            if (Modifiers.DBPathOverride.TryToGetValidOverride<IsForeignKey>(
+            if (Modifiers.DBPathOverrideAttribute.TryToGetValidOverride<IsForeignKeyAttribute>(
                 member,
-                out Modifiers.DBPathOverride fkOverrider))
+                out Modifiers.DBPathOverrideAttribute fkOverrider))
             {
                 // Override fields.
                 isForeignKey.schema = fkOverrider.schema ?? isForeignKey.schema;

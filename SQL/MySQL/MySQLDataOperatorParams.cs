@@ -22,16 +22,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using UniformDataOperator.Sql.Attributes;
+using UniformDataOperator.Sql.Markup;
 
 namespace UniformDataOperator.Sql.MySql
 {
     /// <summary>
-    /// Operator that provides possibility to operate data on MySQL data base server.
+    /// Operator that provides possibility to operate data on MySQL database server.
     /// </summary>
     public partial class MySqlDataOperator : ISqlOperator
     {
-        #region Single ton
+        #region Singleton
         /// <summary>
         /// Active single tone instance of MySQL data provider.
         /// </summary>

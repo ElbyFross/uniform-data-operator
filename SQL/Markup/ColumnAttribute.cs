@@ -19,13 +19,13 @@ using System.Data;
 using System.Data.Common;
 using UniformDataOperator.AssembliesManagement;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Descriptro of data base table's column.
+    /// Describes column metadata that will be added to server database
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class Column : Attribute
+    public class ColumnAttribute : Attribute
     {
         /// <summary>
         /// Title of column in table.
@@ -42,7 +42,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// </summary>
         /// <param name="title">Title of column in table.</param>
         /// <param name="type">Type of column in table.</param>
-        public Column(string title, DbType type)
+        public ColumnAttribute(string title, DbType type)
         {
             this.title = title;
             this.type = type;
@@ -52,7 +52,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// Converting column to string view.
         /// </summary>
         /// <param name="column">Input column.</param>
-        public static implicit operator string(Column column)
+        public static implicit operator string(ColumnAttribute column)
         {
             return column?.ToString();
         }
@@ -77,11 +77,11 @@ namespace UniformDataOperator.Sql.Attributes
             foreach (MemberInfo member in members)
             {
                 // Get column.
-                AttributesHandler.TryToGetAttribute<Column>(member, out Column column);
+                MembersHandler.TryToGetAttribute<ColumnAttribute>(member, out ColumnAttribute column);
 
-                // Drop generated cirtual columns.
-                if (AttributesHandler.TryToGetAttribute<IsGenerated>(member, out IsGenerated isGenerated) &&
-                    isGenerated.mode == IsGenerated.Mode.Virual)
+                // Drop generated virtual columns.
+                if (MembersHandler.TryToGetAttribute<IsGeneratedAttribute>(member, out IsGeneratedAttribute isGenerated) &&
+                    isGenerated.mode == IsGeneratedAttribute.Mode.Virual)
                 {
                     continue;
                 }
@@ -89,7 +89,7 @@ namespace UniformDataOperator.Sql.Attributes
                 // Add param.
                 command.Parameters.Add(
                         SqlOperatorHandler.Active.MemberToParameter(
-                            AttributesHandler.GetValue(data, member), 
+                            MembersHandler.GetValue(data, member), 
                         column)
                     );
             }
@@ -102,16 +102,16 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="columns">List that contains all detected columns descriptors.</param>
         /// <param name="variables">List that contains names of local variables in format allowed to internal queries generators.</param>
         public static void MembersToMetaLists(IEnumerable<MemberInfo> members,
-            out List<Column> columns,
+            out List<ColumnAttribute> columns,
             out List<string> variables)
         {
             // Init lists.
-            columns = new List<Column>();
+            columns = new List<ColumnAttribute>();
             variables = new List<string>();
 
             foreach (MemberInfo member in members)
             {
-                if(member.GetCustomAttribute<Column>() is Column column)
+                if(member.GetCustomAttribute<ColumnAttribute>() is ColumnAttribute column)
                 {
                     columns.Add(column); // Coping column.
                     variables.Add("@" + column.title); // Generate local var name.

@@ -14,13 +14,26 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Is data would stored in binary format.
+    /// Add default valu to the field.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsBinary : Attribute
+    public class DefaultAttribute : Attribute
     {
+        /// <summary>
+        /// Default or Expression value.
+        /// </summary>
+        public string defExp;
+
+        /// <summary>
+        /// Init default value.
+        /// </summary>
+        /// <param name="defExp">Default or Expression value.</param>
+        public DefaultAttribute(string defExp)
+        {
+            this.defExp = defExp;
+        }
     }
 }

@@ -18,14 +18,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniformDataOperator.Sql.MySql.Attributes;
-using UniformDataOperator.Sql.Attributes;
+using UniformDataOperator.Sql.MySql.Markup;
+using UniformDataOperator.Sql.Markup;
 using UniformDataOperator.Binary;
 using MySql.Data.MySqlClient;
 
 namespace BaseTests.Types
 {
-    [System.Serializable]
+    [Serializable]
     [Table("testSchema2", "testTable5")]
     public class Table5Type
     {

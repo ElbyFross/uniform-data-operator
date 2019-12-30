@@ -103,7 +103,7 @@ namespace UniformDataOperator.AssembliesManagement.Modifiers
         public static void OperateType(Type type)
         {
             // Try to fine replacing instruction.
-            if(!AttributesHandler.TryToGetAttribute<TypeReplacer>(type, out TypeReplacer typeReplacer))
+            if(!MembersHandler.TryToGetAttribute<TypeReplacer>(type, out TypeReplacer typeReplacer))
             {
                 // Drop cause type has no defined replacing attribute.
                 return;

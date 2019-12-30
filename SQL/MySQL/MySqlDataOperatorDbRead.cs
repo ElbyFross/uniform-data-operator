@@ -26,14 +26,14 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 using System.Reflection;
-using UniformDataOperator.Sql.Attributes;
-using UniformDataOperator.Sql.Attributes.Modifiers;
+using UniformDataOperator.Sql.Markup;
+using UniformDataOperator.Sql.Markup.Modifiers;
 using UniformDataOperator.AssembliesManagement;
 
 namespace UniformDataOperator.Sql.MySql
 {
     /// <summary>
-    /// Operator that provides possibility to operate data on MySQL data base server.
+    /// Operator that provides possibility to operate data on MySQL database server.
     /// </summary>
     public partial class MySqlDataOperator : ISqlOperator
     {
@@ -79,8 +79,8 @@ namespace UniformDataOperator.Sql.MySql
             DbCommand command = GenerateSetToObjectCommand(
                 tableType,
                 internalObj,
-                Table.FindMembersByColumns(members, where),
-                Table.FindMembersByColumns(members, select));
+                TableAttribute.FindMembersByColumns(members, where),
+                TableAttribute.FindMembersByColumns(members, select));
 
             // Drop if error has been occured.
             if (!string.IsNullOrEmpty(error))
@@ -307,8 +307,8 @@ namespace UniformDataOperator.Sql.MySql
             DbCommand command = GenerateSetToObjectCommand(
                 tableType,
                 internalObj,
-                Table.FindMembersByColumns(members, where),
-                Table.FindMembersByColumns(members, select));
+                TableAttribute.FindMembersByColumns(members, where),
+                TableAttribute.FindMembersByColumns(members, select));
 
             // Drop if error has been occured.
             if (!string.IsNullOrEmpty(error))
@@ -558,7 +558,7 @@ namespace UniformDataOperator.Sql.MySql
             }
 
             // Drop if not table descriptor.
-            if (!AttributesHandler.TryToGetAttribute<Table>(tableType, out Table _))
+            if (!MembersHandler.TryToGetAttribute<TableAttribute>(tableType, out TableAttribute _))
             {
                 error = "Not defined Table attribute for target type.";
                 return false;
@@ -595,12 +595,12 @@ namespace UniformDataOperator.Sql.MySql
 
             #region Mapping
             // Get target type map.
-            List<MemberInfo> members = AttributesHandler.FindMembersWithAttribute<Column>(tableType).ToList();
+            List<MemberInfo> members = MembersHandler.FindMembersWithAttribute<ColumnAttribute>(tableType).ToList();
             // Trying to detect member with defined isAutoIncrement attribute that has default value.
             MemberInfo autoIncrementMember;
             try
             {
-                autoIncrementMember = IsAutoIncrement.GetIgnorable(ref obj, members);
+                autoIncrementMember = IsAutoIncrementAttribute.GetIgnorable(ref obj, members);
             }
             catch (Exception ex)
             {
@@ -634,22 +634,22 @@ namespace UniformDataOperator.Sql.MySql
             IEnumerable<MemberInfo> select)
         {
             // Loking for table descriptor.
-            if (!Table.TryToGetTableAttribute(tableType, out Table tableDescriptor, out string error))
+            if (!TableAttribute.TryToGetTableAttribute(tableType, out TableAttribute tableDescriptor, out string error))
             {
                 SqlOperatorHandler.InvokeSQLErrorOccured(obj, error);
                 return null;
             }
 
             // Looking for primary keys.
-            Column.MembersToMetaLists(
+            ColumnAttribute.MembersToMetaLists(
                 where,
-                out List<Column> membersWhereColumns,
+                out List<ColumnAttribute> membersWhereColumns,
                 out List<string> membersWhereVars);
 
             // Looking for not key elements.
-            Column.MembersToMetaLists(
+            ColumnAttribute.MembersToMetaLists(
                 select,
-                out List<Column> membersSelectColumns,
+                out List<ColumnAttribute> membersSelectColumns,
                 out List<string> _);
             #endregion
 
@@ -677,8 +677,8 @@ namespace UniformDataOperator.Sql.MySql
             {
                 command.Parameters.Add(
                     Active.MemberToParameter(
-                            AttributesHandler.GetValue(obj, pk),
-                            pk.GetCustomAttribute<Column>()
+                            MembersHandler.GetValue(obj, pk),
+                            pk.GetCustomAttribute<ColumnAttribute>()
                         )
                     );
             }
@@ -697,14 +697,14 @@ namespace UniformDataOperator.Sql.MySql
         private static bool DetectPKToSet(Type tableType, out string error, out string[] pksArray)
         {
             // Get primary keys desribed in table.
-            var pkMembers = AttributesHandler.FindMembersWithAttribute<IsPrimaryKey>(tableType);
+            var pkMembers = MembersHandler.FindMembersWithAttribute<IsPrimaryKeyAttribute>(tableType);
             pksArray = new string[pkMembers.Count()];
             for (int i = 0; i < pkMembers.Count(); i++)
             {
                 try
                 {
                     // Get colum title.
-                    pksArray[i] = ((MemberInfo)pkMembers.ElementAt(i)).GetCustomAttribute<Column>().title;
+                    pksArray[i] = ((MemberInfo)pkMembers.ElementAt(i)).GetCustomAttribute<ColumnAttribute>().title;
                 }
                 catch (Exception ex)
                 {

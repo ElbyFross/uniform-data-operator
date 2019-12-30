@@ -20,13 +20,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UniformDataOperator.AssembliesManagement;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Attribute that would force to automatic generation of table on your SQL server suitable for declered members in class or structure.
+    /// Attribute that causes auto-generation of a table on the SQL server based on members declared in the relative class or structure.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, Inherited = false)]
-    public class Table : Attribute
+    public class TableAttribute : Attribute
     { 
         /// <summary>
         /// Name of the holding schema.
@@ -48,7 +48,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// </summary>
         /// <param name="schema">Name of foreign schema.</param>
         /// <param name="table">Name of foreign table.</param>
-        public Table(string schema, string table)
+        public TableAttribute(string schema, string table)
         {
             this.schema = schema;
             this.table = table;
@@ -60,7 +60,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="schema">Name of foreign schema.</param>
         /// <param name="table">Name of foreign table.</param>
         /// <param name="engine">Name of the database engine.</param>
-        public Table(string schema, string table, string engine)
+        public TableAttribute(string schema, string table, string engine)
         {
             this.schema = schema;
             this.table = table;
@@ -76,7 +76,7 @@ namespace UniformDataOperator.Sql.Attributes
         public static string GenerateCreateTableCommand(Type sourceType)
         {
             // Loking for table descriptor.
-            if (!Table.TryToGetTableAttribute(sourceType, out Table tableDescriptor, out string error))
+            if (!TableAttribute.TryToGetTableAttribute(sourceType, out TableAttribute tableDescriptor, out string error))
             {
                 SqlOperatorHandler.InvokeSQLErrorOccured(sourceType, error);
                 return null;
@@ -86,7 +86,7 @@ namespace UniformDataOperator.Sql.Attributes
             string command = "";
             command += "CREATE TABLE IF NOT EXISTS `" + tableDescriptor.schema + "`.`" + tableDescriptor.table + "` (\n";
 
-            IEnumerable<MemberInfo> columns = AttributesHandler.FindMembersWithAttribute<Column>(sourceType);
+            IEnumerable<MemberInfo> columns = MembersHandler.FindMembersWithAttribute<ColumnAttribute>(sourceType);
 
             #region Declere columns
             string colCommand = "";
@@ -106,14 +106,14 @@ namespace UniformDataOperator.Sql.Attributes
             string subPkCommand = "";
             foreach (MemberInfo cMeta in columns)
             {
-                if (AttributesHandler.TryToGetAttribute<IsPrimaryKey>(cMeta, out IsPrimaryKey isPrimaryKey))
+                if (MembersHandler.TryToGetAttribute<IsPrimaryKeyAttribute>(cMeta, out IsPrimaryKeyAttribute isPrimaryKey))
                 {
                     if (!string.IsNullOrEmpty(subPkCommand))
                     {
                         subPkCommand += ", ";
                     }
 
-                    AttributesHandler.TryToGetAttribute<Column>(cMeta, out Column column);
+                    MembersHandler.TryToGetAttribute<ColumnAttribute>(cMeta, out ColumnAttribute column);
                     subPkCommand += "`" + column.title + "`";
                 }
             }
@@ -125,7 +125,7 @@ namespace UniformDataOperator.Sql.Attributes
             #region Unique indexes
             foreach (MemberInfo cMeta in columns)
             {
-                if (AttributesHandler.TryToGetAttribute<IsUnique>(cMeta, out IsUnique isUnique))
+                if (MembersHandler.TryToGetAttribute<IsUniqueAttribute>(cMeta, out IsUniqueAttribute isUnique))
                 {
                     command += ",\n";
                     command += isUnique.UniqueIndexDeclarationCommand(cMeta);
@@ -134,10 +134,10 @@ namespace UniformDataOperator.Sql.Attributes
             #endregion
 
             #region FK indexes
-            IsForeignKey.DropIndexator();
+            IsForeignKeyAttribute.DropIndexator();
             foreach (MemberInfo cMeta in columns)
             {
-                string decleration = IsForeignKey.FKIndexDeclarationCommand(cMeta, tableDescriptor.table);
+                string decleration = IsForeignKeyAttribute.FKIndexDeclarationCommand(cMeta, tableDescriptor.table);
                 if (!string.IsNullOrEmpty(decleration))
                 {
                     command += ",\n" + decleration;
@@ -146,10 +146,10 @@ namespace UniformDataOperator.Sql.Attributes
             #endregion
 
             #region Constraints
-            IsForeignKey.DropIndexator();
+            IsForeignKeyAttribute.DropIndexator();
             foreach (MemberInfo cMeta in columns)
             {
-                string decleration = IsForeignKey.ConstrainDeclarationCommand(cMeta, tableDescriptor.table);
+                string decleration = IsForeignKeyAttribute.ConstrainDeclarationCommand(cMeta, tableDescriptor.table);
                 if (!string.IsNullOrEmpty(decleration))
                 {
                     command += ",\n" + decleration;
@@ -191,7 +191,7 @@ namespace UniformDataOperator.Sql.Attributes
                 }
 
                 // Drop if not table descriptor.
-                if (!AttributesHandler.HasAttribute<Table>(type))
+                if (!MembersHandler.HasAttribute<TableAttribute>(type))
                 {
                     error = "Not defined Table attribute for target type.";
                     return false;
@@ -263,7 +263,7 @@ namespace UniformDataOperator.Sql.Attributes
             }
 
             // Drop if not table descriptor.
-            if (!AttributesHandler.HasAttribute<Table>(tableDescriptor))
+            if (!MembersHandler.HasAttribute<TableAttribute>(tableDescriptor))
             {
                 error = "Not defined Table attribute for target type.";
                 return false;
@@ -324,7 +324,7 @@ namespace UniformDataOperator.Sql.Attributes
             foreach(MemberInfo mi in members)
             {
                 // Getting column descriptor.
-                if(mi.GetCustomAttribute<Column>() is Column column)
+                if(mi.GetCustomAttribute<ColumnAttribute>() is ColumnAttribute column)
                 {
                     // Checl every request.
                     for(int i = 0; i < ctl.Count; i++)
@@ -350,10 +350,10 @@ namespace UniformDataOperator.Sql.Attributes
         /// <param name="tableDescriptor">Output table descriptor.</param>
         /// <param name="error">Error message in cvase if occured. Null in other case.</param>
         /// <returns></returns>
-        public static bool TryToGetTableAttribute(Type tableType, out Table tableDescriptor, out string error)
+        public static bool TryToGetTableAttribute(Type tableType, out TableAttribute tableDescriptor, out string error)
         {
             // Drop if not table descriptor.
-            if (!AttributesHandler.TryToGetAttribute<Table>(tableType, out tableDescriptor))
+            if (!MembersHandler.TryToGetAttribute<TableAttribute>(tableType, out tableDescriptor))
             {
                 error = "Not defined Table attribute for target type.";
                 tableDescriptor = null;
@@ -361,9 +361,9 @@ namespace UniformDataOperator.Sql.Attributes
             }
 
             // Try to find overriding attribute for table descriptor.
-            if (Modifiers.DBPathOverride.TryToGetValidOverride<Table>(
+            if (Modifiers.DBPathOverrideAttribute.TryToGetValidOverride<TableAttribute>(
                 tableType,
-                out Modifiers.DBPathOverride tableOverrider))
+                out Modifiers.DBPathOverrideAttribute tableOverrider))
             {
                 tableDescriptor.schema = tableOverrider.schema ?? tableDescriptor.schema;
                 tableDescriptor.table = tableOverrider.table ?? tableDescriptor.table;

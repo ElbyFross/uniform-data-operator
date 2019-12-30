@@ -25,8 +25,9 @@ namespace UniformDataOperator.AssembliesManagement
     /// <summary>
     /// Provides API to handle attributes.
     /// </summary>
-    public static class AttributesHandler
+    public static class MembersHandler
     {
+        #region Search
         /// <summary>
         /// Looking for fields with defined target attribute.
         /// </summary>
@@ -136,7 +137,9 @@ namespace UniformDataOperator.AssembliesManagement
         {
             return source.GetProperties().Where(f => Attribute.IsDefined(f, typeof(T)));
         }
+        #endregion
 
+        #region Value management
         /// <summary>
         /// Return value of member.
         /// </summary>
@@ -219,7 +222,9 @@ namespace UniformDataOperator.AssembliesManagement
                 default: return data;
             }
         }
+        #endregion
 
+        #region Assebly extension
         /// <summary>
         /// Add to assembly the new type based on targetType but with existed new attribute.
         /// </summary>
@@ -245,5 +250,6 @@ namespace UniformDataOperator.AssembliesManagement
             tb.SetCustomAttribute(attrBuilder);
             tb.CreateType();
         }
+        #endregion
     }
 }

@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
     /// Mark field as generated.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
-    public class IsGenerated : Default
+    public class IsGeneratedAttribute : DefaultAttribute
     {
         /// <summary>
         /// Modes of generated columns.
@@ -28,7 +28,7 @@ namespace UniformDataOperator.Sql.Attributes
         public enum Mode
         {
             /// <summary>
-            /// Value computed be expression and stored in data base as value.
+            /// Value computed be expression and stored in database as value.
             /// </summary>
             Stored,
             /// <summary>
@@ -47,7 +47,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// </summary>
         /// <param name="mode">How to operate with value.</param>
         /// <param name="defExp">Default or Expression value.</param>
-        public IsGenerated(Mode mode, string defExp) : base(defExp)
+        public IsGeneratedAttribute(Mode mode, string defExp) : base(defExp)
         {
             this.mode = mode;
         }

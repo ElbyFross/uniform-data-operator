@@ -16,13 +16,13 @@ using System;
 using System.Reflection;
 using UniformDataOperator.AssembliesManagement;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Is this value must be unique by this column. 
+    /// Is a value must be unique for the column. 
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsUnique : Attribute
+    public class IsUniqueAttribute : Attribute
     {
         /// <summary>
         /// Return unique index init string.
@@ -31,7 +31,7 @@ namespace UniformDataOperator.Sql.Attributes
         public string UniqueIndexDeclarationCommand(MemberInfo member)
         {
             // Looking for column attribute.
-            if(!AttributesHandler.TryToGetAttribute<Column>(member, out Column column))
+            if(!MembersHandler.TryToGetAttribute<ColumnAttribute>(member, out ColumnAttribute column))
             {
                 // Drop if not column.
                 return "";

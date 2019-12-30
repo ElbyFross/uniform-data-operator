@@ -19,10 +19,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniformDataOperator.Sql.Attributes.Modifiers
+namespace UniformDataOperator.Sql.Markup.Modifiers
 {
     /// <summary>
-    /// Overriding data base path to member in attributes that looking for this attribute.
+    /// Overrides database path to member in attributes that looking for this attribute.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field |
         AttributeTargets.Property | 
@@ -30,7 +30,7 @@ namespace UniformDataOperator.Sql.Attributes.Modifiers
         AttributeTargets.Struct,
         Inherited = false, 
         AllowMultiple = true)]
-    public class DBPathOverride : Attribute
+    public class DBPathOverrideAttribute : Attribute
     {
         /// <summary>
         /// Type of attribute that would be affected by this overriding.
@@ -59,7 +59,7 @@ namespace UniformDataOperator.Sql.Attributes.Modifiers
         /// <summary>
         /// Base constructor.
         /// </summary>
-        public DBPathOverride() { }
+        public DBPathOverrideAttribute() { }
 
         /// <summary>
         /// Constructors that allow to initialize fields via reflected methods.
@@ -68,7 +68,7 @@ namespace UniformDataOperator.Sql.Attributes.Modifiers
         /// <param name="table"></param>
         /// <param name="column"></param>
         /// <param name="targetAttribute"></param>
-        public DBPathOverride(string schema, string table, string column, Type targetAttribute)
+        public DBPathOverrideAttribute(string schema, string table, string column, Type targetAttribute)
         {
             this.schema = schema;
             this.table = table;
@@ -83,13 +83,13 @@ namespace UniformDataOperator.Sql.Attributes.Modifiers
         /// <param name="member">Member that could contains attribute.</param>
         /// <param name="output">Suitable override attribute.</param>
         /// <returns>Result of operation.</returns>
-        public static bool TryToGetValidOverride<T>(MemberInfo member, out DBPathOverride output) where T : Attribute
+        public static bool TryToGetValidOverride<T>(MemberInfo member, out DBPathOverrideAttribute output) where T : Attribute
         {
             // Get all overriding attributes.
-            IEnumerable<Attribute> overriders = member.GetCustomAttributes(typeof(DBPathOverride));
+            IEnumerable<Attribute> overriders = member.GetCustomAttributes(typeof(DBPathOverrideAttribute));
 
             // Check every override attribute.
-            foreach(DBPathOverride @override in overriders)
+            foreach(DBPathOverrideAttribute @override in overriders)
             {
                 // Check if uniform or for specified type.
                 if(@override.targetAttribute == null || @override.Equals(typeof(T)))

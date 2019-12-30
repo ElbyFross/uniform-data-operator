@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Is value always not null.
+    /// Is value would be filled by zero by default. Only for numerical columns.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsNotNull : Attribute
+    public class IsZeroFillAttribute : Attribute
     {
     }
 }

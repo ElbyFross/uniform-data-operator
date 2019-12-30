@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Is not have signs after dot.
+    /// Is data would stored in binary format.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsUnsigned : Attribute
+    public class IsBinaryAttribute : Attribute
     {
     }
 }

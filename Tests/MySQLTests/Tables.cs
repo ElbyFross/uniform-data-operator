@@ -80,7 +80,7 @@ namespace MySQLTests
 
             #region Table set test
             // Generate tables.
-            bool tableResult = UniformDataOperator.Sql.Attributes.Table.TrySetTables(
+            bool tableResult = UniformDataOperator.Sql.Markup.TableAttribute.TrySetTables(
                 true, out error, 
                 typeof(TableType), 
                 typeof(Table2Type),
@@ -174,7 +174,7 @@ namespace MySQLTests
             SetDefault();
 
             // Activate base type to load assembly for tests.
-            Table2Type bufer = new Table2Type();
+            _ = new Table2Type();
 
             // Scan.
             SqlOperatorHandler.RescanDatabaseStructure();

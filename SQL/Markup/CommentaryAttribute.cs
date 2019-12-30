@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
     /// Add commentary to SQL table.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct, Inherited = true)]
-    public class Commentary : Attribute
+    public class CommentaryAttribute : Attribute
     {
         /// <summary>
         /// Commentary to the column.
@@ -31,7 +31,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// Init commentary for column in table.
         /// </summary>
         /// <param name="commentary">Commentary to the column.</param>
-        public Commentary(string commentary)
+        public CommentaryAttribute(string commentary)
         {
             this.commentary = commentary;
         }
@@ -49,7 +49,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// Return comment in string format.
         /// </summary>
         /// <param name="commentary">Input comment.</param>
-        public static implicit operator string(Commentary commentary)
+        public static implicit operator string(CommentaryAttribute commentary)
         {
             return commentary.commentary;
         }

@@ -18,8 +18,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniformDataOperator.Sql.MySql.Attributes;
-using UniformDataOperator.Sql.Attributes;
+using UniformDataOperator.Sql.MySql.Markup;
+using UniformDataOperator.Sql.Markup;
 using UniformDataOperator.Binary;
 using MySql.Data.MySqlClient;
 
@@ -54,11 +54,8 @@ namespace BaseTests.Types
         [Column("intFK", DbType.Int32), IsForeignKey("testSchema", "testTable2", "fkSourceColumn")]
         public int fk = 4;
 
-        //[Column("generatedVirtual", "INT"), IsGenerated(IsGenerated.Mode.Virual, ""]
-        //public int generatedCirtual;
-
         [Column("blobProp", DbType.Binary)]
-        [MySqlDBTypeOverride(MySqlDbType.TinyBlob)] // Override type for MySql db.
+        [MySqlDBTypeOverride(MySqlDbType.TinyBlob)] // Overrides type for MySql db.
         public byte[] BlobProp
         {
             get

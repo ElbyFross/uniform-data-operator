@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Attributes.Modifiers
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Can be defined to ignore of writing this value during set-like queries to server.
+    /// Is it's primary key.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class SetQueryIgnore : Attribute
+    public class IsPrimaryKeyAttribute : Attribute
     {
     }
 }

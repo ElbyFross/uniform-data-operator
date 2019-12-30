@@ -14,13 +14,13 @@
 
 using System;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
-    /// Is it's primary key.
+    /// Is value can't has a sign? Available only for integer members.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsPrimaryKey : Attribute
+    public class IsUnsignedAttribute : Attribute
     {
     }
 }

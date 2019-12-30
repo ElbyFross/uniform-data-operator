@@ -24,7 +24,7 @@ using System.Threading.Tasks;
 namespace UniformDataOperator.Sql
 {
     /// <summary>
-    /// Contains base catalog of uniform queries that strongly simplify managing of the data base.
+    /// Contains base catalog of uniform queries that strongly simplify managing of the database.
     /// </summary>
     public static class SqlOperatorHandler
     {
@@ -125,9 +125,9 @@ namespace UniformDataOperator.Sql
         }
 
         /// <summary>
-        /// Trying to apply data base data to object by members map.
+        /// Trying to apply database data to object by members map.
         /// </summary>
-        /// <param name="reader">Data base data reader that contains data recived from server.</param>
+        /// <param name="reader">Database data reader that contains data recived from server.</param>
         /// <param name="members">Map of members that would be lokking in reader.</param>
         /// <param name="obj">Target object that would contain output data.</param>
         /// <param name="error">Error occured during operation. Null if operation is success.</param>
@@ -148,7 +148,7 @@ namespace UniformDataOperator.Sql
             // Try to init all maped memvers.
             foreach (MemberInfo member in members)
             {
-                Attributes.Column column = member.GetCustomAttribute<Attributes.Column>();
+                Markup.ColumnAttribute column = member.GetCustomAttribute<Markup.ColumnAttribute>();
 
                 // Trying to get value from reader relative to this member.
                 object receivedValue = null;
@@ -172,7 +172,7 @@ namespace UniformDataOperator.Sql
                 try
                 {
                     // Try to set value
-                    AssembliesManagement.AttributesHandler.SetValue(obj, member, receivedValue);
+                    AssembliesManagement.MembersHandler.SetValue(obj, member, receivedValue);
                 }
                 catch (Exception ex)
                 {
@@ -186,7 +186,7 @@ namespace UniformDataOperator.Sql
         }
 
         /// <summary>
-        /// Scaning assemblies and looking for classes and structures with defined <see cref="Attributes.Table"/> attribute.
+        /// Scaning assemblies and looking for classes and structures with defined <see cref="Markup.TableAttribute"/> attribute.
         /// Trying to create shemas and tables via <see cref="Active"/>.
         /// </summary>
         public static void RescanDatabaseStructure()
@@ -199,7 +199,7 @@ namespace UniformDataOperator.Sql
                 foreach (Type type in assembly.GetTypes())
                 {
                     // Trying to get table edscriptor.
-                    Attributes.Table tableDescriptor = type.GetCustomAttribute<Attributes.Table>();
+                    Markup.TableAttribute tableDescriptor = type.GetCustomAttribute<Markup.TableAttribute>();
 
                     // Check if this type is subclass of query.
                     if (tableDescriptor != null)
@@ -217,7 +217,7 @@ namespace UniformDataOperator.Sql
                             continue;
                         }
 
-                        if (!Attributes.Table.TrySetTables(true, out error, type))
+                        if (!Markup.TableAttribute.TrySetTables(true, out error, type))
                         {
                             Console.WriteLine("SQL ERROR: Table creation failed. Details: " + error);
                             continue;

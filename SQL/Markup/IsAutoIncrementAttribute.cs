@@ -25,16 +25,16 @@ using MySql.Data.MySqlClient;
 
 using System.Reflection;
 using UniformDataOperator.AssembliesManagement;
-using UniformDataOperator.Sql.Attributes;
-using UniformDataOperator.Sql.Attributes.Modifiers;
+using UniformDataOperator.Sql.Markup;
+using UniformDataOperator.Sql.Markup.Modifiers;
 
-namespace UniformDataOperator.Sql.Attributes
+namespace UniformDataOperator.Sql.Markup
 {
     /// <summary>
     /// Is value of this column would incremented relative to previous one during init.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class IsAutoIncrement : Attribute
+    public class IsAutoIncrementAttribute : Attribute
     {
         /// <summary>
         /// Value that would be marked as default for numeric field.
@@ -48,7 +48,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// <summary>
         /// Mark column as auto increament. 
         /// </summary>
-        public IsAutoIncrement() { }
+        public IsAutoIncrementAttribute() { }
 
         /// <summary>
         /// Mark column as auto increament. Describe value that would be ignored by interpretator fro promary keys.
@@ -58,7 +58,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// In case if field\property would contains that alue then interpretator would conclude that value not described and 
         /// would INSERT table's object as new.
         /// In other case object would be described in UPDATE command.</param>
-        public IsAutoIncrement(int ignoreValue)
+        public IsAutoIncrementAttribute(int ignoreValue)
         {
             this.ignoreValue = ignoreValue;
         }
@@ -74,7 +74,7 @@ namespace UniformDataOperator.Sql.Attributes
         /// Null if IsAutoIncrement not defined or object has not defaul value.</returns>
         public static MemberInfo GetIgnorable(ref object data)
         {
-            return GetIgnorable(ref data, AttributesHandler.FindMembersWithAttribute<Column>(data.GetType()));
+            return GetIgnorable(ref data, MembersHandler.FindMembersWithAttribute<ColumnAttribute>(data.GetType()));
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace UniformDataOperator.Sql.Attributes
         {
             #region Validate map
             // Detect columns (one in normal) with defined auto increment attribute.
-            IEnumerable<MemberInfo> membersAutoInc = AttributesHandler.FindMembersWithAttribute<IsAutoIncrement>(members);
+            IEnumerable<MemberInfo> membersAutoInc = MembersHandler.FindMembersWithAttribute<IsAutoIncrementAttribute>(members);
             int count = membersAutoInc.Count();
 
             if (count > 1)
@@ -114,9 +114,9 @@ namespace UniformDataOperator.Sql.Attributes
 
                 // if contains autoincrement columns.
                 // Get auto increment settings descriptor.
-                IsAutoIncrement iaiDescriptor = memberInfo.GetCustomAttribute<IsAutoIncrement>();
+                IsAutoIncrementAttribute iaiDescriptor = memberInfo.GetCustomAttribute<IsAutoIncrementAttribute>();
 
-                object memberValue = AttributesHandler.GetValue(data, memberInfo);
+                object memberValue = MembersHandler.GetValue(data, memberInfo);
                 if(memberInfo is FieldInfo ? 
                     !IsIntLike(((FieldInfo)memberInfo).FieldType) : 
                     !IsIntLike(((PropertyInfo)memberInfo).PropertyType))

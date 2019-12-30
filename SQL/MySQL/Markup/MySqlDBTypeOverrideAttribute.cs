@@ -15,13 +15,13 @@
 using System;
 using MySql.Data.MySqlClient;
 
-namespace UniformDataOperator.Sql.MySql.Attributes
+namespace UniformDataOperator.Sql.MySql.Markup
 {
     /// <summary>
     /// Attribute that can be defined to override standard DBType defined in Column attribute, for columns that would created in MySql tables.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
-    public class MySqlDBTypeOverride : Attribute
+    public class MySqlDBTypeOverrideAttribute : Attribute
     {
         /// <summary>
         /// Type relative to MySql params.
@@ -42,7 +42,7 @@ namespace UniformDataOperator.Sql.MySql.Attributes
         /// TINYBLOB as example.
         /// </summary>
         /// <param name="type">Type relative to MySql params.</param>
-        public MySqlDBTypeOverride(MySqlDbType type)
+        public MySqlDBTypeOverrideAttribute(MySqlDbType type)
         {
             this.type = type;
             stringFormat = this.type.ToString();
@@ -54,7 +54,7 @@ namespace UniformDataOperator.Sql.MySql.Attributes
         /// <param name="type">Type relative to MySql params.</param>
         /// <param name="stringFormat">Type in string format that would be used during column declaration.
         /// Example: VARCHAR(45), BLOB(4196)</param>
-        public MySqlDBTypeOverride(MySqlDbType type, string stringFormat)
+        public MySqlDBTypeOverrideAttribute(MySqlDbType type, string stringFormat)
         {
             this.type = type;
             this.stringFormat = stringFormat;
