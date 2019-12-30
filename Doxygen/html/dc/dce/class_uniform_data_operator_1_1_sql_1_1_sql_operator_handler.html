@@ -30,9 +30,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Uniform Data Operator
-   &#160;<span id="projectnumber">1.0.0 alpha 5</span>
+   &#160;<span id="projectnumber">1.0.11</span>
    </div>
-   <div id="projectbrief">Easy | Fast | Protected</div>
+   <div id="projectbrief">Simple | Fast | Protected</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('dc/dce/class_uniform_data_operator_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>Contains base catalog of uniform queries that strongly simplify managing of the data base.  
+<p>Contains base catalog of uniform queries that strongly simplify managing of the database.  
  <a href="../../dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -115,8 +115,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac17e36b29fe5a17281927ab04dbeab26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concat to collections in format: headers0 = [braket]values0[braket], ..., headersN = [braket]valuesN[braket]  <a href="#ac17e36b29fe5a17281927ab04dbeab26">More...</a><br /></td></tr>
 <tr class="separator:ac17e36b29fe5a17281927ab04dbeab26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97954b0bb1559fbe600c12aa5e2c53ef"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler.html#a97954b0bb1559fbe600c12aa5e2c53ef">DatabaseDataToObject</a> (DbDataReader reader, IEnumerable&lt; MemberInfo &gt; members, object obj, out string error)</td></tr>
-<tr class="memdesc:a97954b0bb1559fbe600c12aa5e2c53ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trying to apply data base data to object by members map.  <a href="#a97954b0bb1559fbe600c12aa5e2c53ef">More...</a><br /></td></tr>
+<tr class="memdesc:a97954b0bb1559fbe600c12aa5e2c53ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trying to apply database data to object by members map.  <a href="#a97954b0bb1559fbe600c12aa5e2c53ef">More...</a><br /></td></tr>
 <tr class="separator:a97954b0bb1559fbe600c12aa5e2c53ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98735f024767c0551a0a8fccf0957fea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler.html#a98735f024767c0551a0a8fccf0957fea">RescanDatabaseStructure</a> ()</td></tr>
+<tr class="memdesc:a98735f024767c0551a0a8fccf0957fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scaning assemblies and looking for classes and structures with defined <a class="el" href="../../d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute.html" title="Attribute that causes auto-generation of a table on the SQL server based on members declared in the r...">Markup.TableAttribute</a> attribute. Trying to create shemas and tables via <a class="el" href="../../dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler.html#aa96eb9fd201700acbf53954599fec534" title="Contains las operator that asing itself to handler as active one. ">Active</a>.  <a href="#a98735f024767c0551a0a8fccf0957fea">More...</a><br /></td></tr>
+<tr class="separator:a98735f024767c0551a0a8fccf0957fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -126,12 +129,12 @@ Properties</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
 Events</h2></td></tr>
-<tr class="memitem:ab6cf915e80cf89b3e6eb14bf48a19185"><td class="memItemLeft" align="right" valign="top">static System.Action&lt; object, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler.html#ab6cf915e80cf89b3e6eb14bf48a19185">SqlErrorOccured</a></td></tr>
-<tr class="memdesc:ab6cf915e80cf89b3e6eb14bf48a19185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that can be called by operator to share errors during sql commands from async methods.  <a href="#ab6cf915e80cf89b3e6eb14bf48a19185">More...</a><br /></td></tr>
-<tr class="separator:ab6cf915e80cf89b3e6eb14bf48a19185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8373486df36ace17ffba1e14bf6a951a"><td class="memItemLeft" align="right" valign="top">static Action&lt; object, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler.html#a8373486df36ace17ffba1e14bf6a951a">SqlErrorOccured</a></td></tr>
+<tr class="memdesc:a8373486df36ace17ffba1e14bf6a951a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that can be called by operator to share errors during sql commands from async methods.  <a href="#a8373486df36ace17ffba1e14bf6a951a">More...</a><br /></td></tr>
+<tr class="separator:a8373486df36ace17ffba1e14bf6a951a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains base catalog of uniform queries that strongly simplify managing of the data base. </p>
+<div class="textblock"><p>Contains base catalog of uniform queries that strongly simplify managing of the database. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab2de5b9d7f8e8e67b518cf39c7e6f7a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2de5b9d7f8e8e67b518cf39c7e6f7a5">&#9670;&nbsp;</a></span>CollectionToString()</h2>
@@ -316,10 +319,10 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Trying to apply data base data to object by members map. </p>
+<p>Trying to apply database data to object by members map. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reader</td><td>Data base data reader that contains data recived from server.</td></tr>
+    <tr><td class="paramname">reader</td><td>Database data reader that contains data recived from server.</td></tr>
     <tr><td class="paramname">members</td><td>Map of members that would be lokking in reader.</td></tr>
     <tr><td class="paramname">obj</td><td>Target object that would contain output data.</td></tr>
     <tr><td class="paramname">error</td><td>Error occured during operation. Null if operation is success.</td></tr>
@@ -368,6 +371,33 @@ Events</h2></td></tr>
 
 </div>
 </div>
+<a id="a98735f024767c0551a0a8fccf0957fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98735f024767c0551a0a8fccf0957fea">&#9670;&nbsp;</a></span>RescanDatabaseStructure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void UniformDataOperator.Sql.SqlOperatorHandler.RescanDatabaseStructure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scaning assemblies and looking for classes and structures with defined <a class="el" href="../../d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute.html" title="Attribute that causes auto-generation of a table on the SQL server based on members declared in the r...">Markup.TableAttribute</a> attribute. Trying to create shemas and tables via <a class="el" href="../../dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler.html#aa96eb9fd201700acbf53954599fec534" title="Contains las operator that asing itself to handler as active one. ">Active</a>. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="aa96eb9fd201700acbf53954599fec534"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa96eb9fd201700acbf53954599fec534">&#9670;&nbsp;</a></span>Active</h2>
@@ -394,8 +424,8 @@ Events</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Event Documentation</h2>
-<a id="ab6cf915e80cf89b3e6eb14bf48a19185"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6cf915e80cf89b3e6eb14bf48a19185">&#9670;&nbsp;</a></span>SqlErrorOccured</h2>
+<a id="a8373486df36ace17ffba1e14bf6a951a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8373486df36ace17ffba1e14bf6a951a">&#9670;&nbsp;</a></span>SqlErrorOccured</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +434,7 @@ Events</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System.Action&lt;object, string&gt; UniformDataOperator.Sql.SqlOperatorHandler.SqlErrorOccured</td>
+          <td class="memname">Action&lt;object, string&gt; UniformDataOperator.Sql.SqlOperatorHandler.SqlErrorOccured</td>
         </tr>
       </table>
   </td>

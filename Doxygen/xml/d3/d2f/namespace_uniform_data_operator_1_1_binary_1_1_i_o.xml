@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o" kind="namespace" language="C#">
+    <compoundname>UniformDataOperator::Binary::IO</compoundname>
+    <innerclass refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler" prot="public">UniformDataOperator::Binary::IO::StreamHandler</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>StreamChanelMode</name>
+        <enumvalue id="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161acfefe70df0902a80bb48b04ff12a7436" prot="public">
+          <name>Duplex</name>
+          <briefdescription>
+<para>Server will wait for confirming of data receiving from client. Has advantage in case of small packages (about 8kb). Can take more time for precoessing in case if package is 64kb or higher. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161ab6f2b2a3b9675cbd2f00f92c5bd93dd4" prot="public">
+          <name>Oneway</name>
+          <briefdescription>
+<para>Server wait declared count of spins. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines what a type of stream chanel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamChanelMode.cs" line="21" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamChanelMode.cs" bodystart="20" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamChanelMode.cs" line="16" column="1"/>
+  </compounddef>
+</doxygen>

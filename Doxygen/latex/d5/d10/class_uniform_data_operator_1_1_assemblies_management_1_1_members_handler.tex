@@ -1,0 +1,352 @@
+\hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler}{}\section{Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler Class Reference}
+\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler}\index{Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler@{Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler}}
+
+
+Provides A\+PI to handle attributes.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static I\+Enumerable$<$ Field\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a563f793ce990d95b0830a3dff609a9ee}{Find\+Fields\+With\+Attribute$<$ T $>$}} (Type source)
+\begin{DoxyCompactList}\small\item\em Looking for fields with defined target attribute. \end{DoxyCompactList}\item 
+static I\+Enumerable$<$ Member\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_abf58fa664b9202a0776cbb9a1c659ba9}{Find\+Members\+With\+Attribute$<$ T $>$}} (Type source)
+\begin{DoxyCompactList}\small\item\em Looking for fields an properties members with defined target attribute. \end{DoxyCompactList}\item 
+static I\+Enumerable$<$ Member\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ad5add0d63eb8e0f8dac0e48be98032ae}{Find\+Members\+With\+Attribute$<$ T $>$}} (I\+Enumerable$<$ Member\+Info $>$ source)
+\begin{DoxyCompactList}\small\item\em Looking for members with defined target attribute. \end{DoxyCompactList}\item 
+static I\+Enumerable$<$ Member\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a1c637a7411bf34126f5ab90b130a3f04}{Find\+Members\+Without\+Attribute$<$ T $>$}} (I\+Enumerable$<$ Member\+Info $>$ source, System.\+Func$<$ Member\+Info, bool $>$ expression)
+\begin{DoxyCompactList}\small\item\em Looking for members without defined target attribute. \end{DoxyCompactList}\item 
+static I\+Enumerable$<$ Member\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a5c40c81b34d93d301c5f0d421dadc39a}{Find\+Members\+Without\+Attribute$<$ T $>$}} (I\+Enumerable$<$ Member\+Info $>$ source)
+\begin{DoxyCompactList}\small\item\em Looking for members without defined target attribute. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a4b9cd91b2f9c5f8871e71ff70912ff8d}{Has\+Attribute$<$ Attribute\+Type $>$}} (Member\+Info member)
+\begin{DoxyCompactList}\small\item\em Check does member has target attribute. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ab99b085c361e2edc003149ea57203f93}{Try\+To\+Get\+Attribute$<$ Attribute\+Type $>$}} (Member\+Info member, out Attribute\+Type attribute)
+\begin{DoxyCompactList}\small\item\em Trying to detect attribute defined on member. \end{DoxyCompactList}\item 
+static I\+Enumerable$<$ Property\+Info $>$ \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_af18869106319a1b9b0473a817a3c1964}{Find\+Properties\+With\+Attribute$<$ T $>$}} (Type source)
+\begin{DoxyCompactList}\small\item\em Looking for properties with defined target attribute. \end{DoxyCompactList}\item 
+static object \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a6cc89d5d7bbec4fe48b7f698ead2667f}{Get\+Value}} (object holder, Member\+Info member)
+\begin{DoxyCompactList}\small\item\em Return value of member. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a78639bd006a0e62b40abc26043f63c5b}{Set\+Value}} (object holder, Member\+Info member, object data)
+\begin{DoxyCompactList}\small\item\em Setting value to member on specific object. \end{DoxyCompactList}\item 
+static object \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a0401f2325dda95a28dea4129e62bc9fd}{Converter}} (Type target\+Type, object data)
+\begin{DoxyCompactList}\small\item\em Trying to convers object to other type. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ae0fefd738ce818c44bc8dbb602be3bf1}{Add\+Attribute}} (string assembly, Type target\+Type, Type attr\+Type, Type\mbox{[}$\,$\mbox{]} attr\+Constructor\+Signature, object\mbox{[}$\,$\mbox{]} attr\+Constructor\+Values)
+\begin{DoxyCompactList}\small\item\em Add to assembly the new type based on target\+Type but with existed new attribute. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides A\+PI to handle attributes. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ae0fefd738ce818c44bc8dbb602be3bf1}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ae0fefd738ce818c44bc8dbb602be3bf1}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Add\+Attribute@{Add\+Attribute}}
+\index{Add\+Attribute@{Add\+Attribute}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Add\+Attribute()}{AddAttribute()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Add\+Attribute (\begin{DoxyParamCaption}\item[{string}]{assembly,  }\item[{Type}]{target\+Type,  }\item[{Type}]{attr\+Type,  }\item[{Type \mbox{[}$\,$\mbox{]}}]{attr\+Constructor\+Signature,  }\item[{object \mbox{[}$\,$\mbox{]}}]{attr\+Constructor\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add to assembly the new type based on target\+Type but with existed new attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em assembly} & Assembly that will contains new the type.\\
+\hline
+{\em target\+Type} & Type that will inherited during creating of new type.\\
+\hline
+{\em attr\+Type} & Type of attribute that will added to the type.\\
+\hline
+{\em attr\+Constructor\+Signature} & Signature of attribute constructor.\\
+\hline
+{\em attr\+Constructor\+Values} & Values that will be shared in atttribute constructor.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a0401f2325dda95a28dea4129e62bc9fd}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a0401f2325dda95a28dea4129e62bc9fd}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Converter@{Converter}}
+\index{Converter@{Converter}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Converter()}{Converter()}}
+{\footnotesize\ttfamily static object Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Converter (\begin{DoxyParamCaption}\item[{Type}]{target\+Type,  }\item[{object}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trying to convers object to other type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Type} & Prefered type of output object.\\
+\hline
+{\em data} & Soutce object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted object. The same if converting not possible
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a563f793ce990d95b0830a3dff609a9ee}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a563f793ce990d95b0830a3dff609a9ee}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Find\+Fields\+With\+Attribute$<$ T $>$@{Find\+Fields\+With\+Attribute$<$ T $>$}}
+\index{Find\+Fields\+With\+Attribute$<$ T $>$@{Find\+Fields\+With\+Attribute$<$ T $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Find\+Fields\+With\+Attribute$<$ T $>$()}{FindFieldsWithAttribute< T >()}}
+{\footnotesize\ttfamily static I\+Enumerable$<$Field\+Info$>$ Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Find\+Fields\+With\+Attribute$<$ T $>$ (\begin{DoxyParamCaption}\item[{Type}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for fields with defined target attribute. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Attribute\textquotesingle{}s type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Type the would by used as source of fields.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection of found attributes.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Attribute}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_abf58fa664b9202a0776cbb9a1c659ba9}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_abf58fa664b9202a0776cbb9a1c659ba9}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Find\+Members\+With\+Attribute$<$ T $>$@{Find\+Members\+With\+Attribute$<$ T $>$}}
+\index{Find\+Members\+With\+Attribute$<$ T $>$@{Find\+Members\+With\+Attribute$<$ T $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Find\+Members\+With\+Attribute$<$ T $>$()}{FindMembersWithAttribute< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static I\+Enumerable$<$Member\+Info$>$ Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Find\+Members\+With\+Attribute$<$ T $>$ (\begin{DoxyParamCaption}\item[{Type}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for fields an properties members with defined target attribute. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Attribute\textquotesingle{}s type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Type the would by used as source of fields.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection of found attributes.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Attribute}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ad5add0d63eb8e0f8dac0e48be98032ae}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ad5add0d63eb8e0f8dac0e48be98032ae}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Find\+Members\+With\+Attribute$<$ T $>$@{Find\+Members\+With\+Attribute$<$ T $>$}}
+\index{Find\+Members\+With\+Attribute$<$ T $>$@{Find\+Members\+With\+Attribute$<$ T $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Find\+Members\+With\+Attribute$<$ T $>$()}{FindMembersWithAttribute< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static I\+Enumerable$<$Member\+Info$>$ Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Find\+Members\+With\+Attribute$<$ T $>$ (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ Member\+Info $>$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for members with defined target attribute. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Attribute\textquotesingle{}s type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Type the would by used as source of fields.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection of found attributes.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Attribute}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a1c637a7411bf34126f5ab90b130a3f04}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a1c637a7411bf34126f5ab90b130a3f04}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Find\+Members\+Without\+Attribute$<$ T $>$@{Find\+Members\+Without\+Attribute$<$ T $>$}}
+\index{Find\+Members\+Without\+Attribute$<$ T $>$@{Find\+Members\+Without\+Attribute$<$ T $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Find\+Members\+Without\+Attribute$<$ T $>$()}{FindMembersWithoutAttribute< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static I\+Enumerable$<$Member\+Info$>$ Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Find\+Members\+Without\+Attribute$<$ T $>$ (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ Member\+Info $>$}]{source,  }\item[{System.\+Func$<$ Member\+Info, bool $>$}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for members without defined target attribute. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Attribute\textquotesingle{}s type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Type the would by used as source of fields.\\
+\hline
+{\em expression} & Delegate that would be called to compare member by custom way.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection of found attributes.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Attribute}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a5c40c81b34d93d301c5f0d421dadc39a}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a5c40c81b34d93d301c5f0d421dadc39a}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Find\+Members\+Without\+Attribute$<$ T $>$@{Find\+Members\+Without\+Attribute$<$ T $>$}}
+\index{Find\+Members\+Without\+Attribute$<$ T $>$@{Find\+Members\+Without\+Attribute$<$ T $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Find\+Members\+Without\+Attribute$<$ T $>$()}{FindMembersWithoutAttribute< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static I\+Enumerable$<$Member\+Info$>$ Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Find\+Members\+Without\+Attribute$<$ T $>$ (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ Member\+Info $>$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for members without defined target attribute. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Attribute\textquotesingle{}s type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Type the would by used as source of fields.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection of found attributes.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Attribute}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_af18869106319a1b9b0473a817a3c1964}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_af18869106319a1b9b0473a817a3c1964}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Find\+Properties\+With\+Attribute$<$ T $>$@{Find\+Properties\+With\+Attribute$<$ T $>$}}
+\index{Find\+Properties\+With\+Attribute$<$ T $>$@{Find\+Properties\+With\+Attribute$<$ T $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Find\+Properties\+With\+Attribute$<$ T $>$()}{FindPropertiesWithAttribute< T >()}}
+{\footnotesize\ttfamily static I\+Enumerable$<$Property\+Info$>$ Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Find\+Properties\+With\+Attribute$<$ T $>$ (\begin{DoxyParamCaption}\item[{Type}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Looking for properties with defined target attribute. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Attribute\textquotesingle{}s type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Type the would by used as source of fields.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection of found attributes.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Attribute}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a6cc89d5d7bbec4fe48b7f698ead2667f}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a6cc89d5d7bbec4fe48b7f698ead2667f}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}}
+{\footnotesize\ttfamily static object Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Get\+Value (\begin{DoxyParamCaption}\item[{object}]{holder,  }\item[{Member\+Info}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return value of member. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em holder} & Object that contain member info.\\
+\hline
+{\em member} & Target memeber\textquotesingle{}s info.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value of member.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a4b9cd91b2f9c5f8871e71ff70912ff8d}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a4b9cd91b2f9c5f8871e71ff70912ff8d}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Has\+Attribute$<$ Attribute\+Type $>$@{Has\+Attribute$<$ Attribute\+Type $>$}}
+\index{Has\+Attribute$<$ Attribute\+Type $>$@{Has\+Attribute$<$ Attribute\+Type $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Has\+Attribute$<$ Attribute\+Type $>$()}{HasAttribute< AttributeType >()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Has\+Attribute$<$ Attribute\+Type $>$ (\begin{DoxyParamCaption}\item[{Member\+Info}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check does member has target attribute. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Attribute\+Type} & Type of target attribute.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em member} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em Attribute\+Type} : {\em Attribute}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a78639bd006a0e62b40abc26043f63c5b}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a78639bd006a0e62b40abc26043f63c5b}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Set\+Value()}{SetValue()}}
+{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Set\+Value (\begin{DoxyParamCaption}\item[{object}]{holder,  }\item[{Member\+Info}]{member,  }\item[{object}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Setting value to member on specific object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em holder} & Object that contain member info.\\
+\hline
+{\em member} & Target memeber\textquotesingle{}s info.\\
+\hline
+{\em data} & Data that would be setted up to member.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ab99b085c361e2edc003149ea57203f93}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ab99b085c361e2edc003149ea57203f93}} 
+\index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Try\+To\+Get\+Attribute$<$ Attribute\+Type $>$@{Try\+To\+Get\+Attribute$<$ Attribute\+Type $>$}}
+\index{Try\+To\+Get\+Attribute$<$ Attribute\+Type $>$@{Try\+To\+Get\+Attribute$<$ Attribute\+Type $>$}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
+\subsubsection{\texorpdfstring{Try\+To\+Get\+Attribute$<$ Attribute\+Type $>$()}{TryToGetAttribute< AttributeType >()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Try\+To\+Get\+Attribute$<$ Attribute\+Type $>$ (\begin{DoxyParamCaption}\item[{Member\+Info}]{member,  }\item[{out Attribute\+Type}]{attribute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trying to detect attribute defined on member. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Attribute\+Type} & Type of target attribute.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em member} & Member object.\\
+\hline
+{\em attribute} & Outbut that would contains found attribute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the search.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em Attribute\+Type} : {\em Attribute}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+Assemblies\+Management/Members\+Handler.\+cs\end{DoxyCompactItemize}

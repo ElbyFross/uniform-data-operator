@@ -1,0 +1,154 @@
+\hypertarget{class_uniform_data_operator_1_1_binary_1_1_boyer_moore}{}\section{Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore Class Reference}
+\label{class_uniform_data_operator_1_1_binary_1_1_boyer_moore}\index{Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore@{Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore}}
+
+
+Implement algorithm of Boyer-\/\+Moore for searching of binary parts.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_abd5f37407f9c6ab55a7d537e65bdd22c}{Index\+Of}} (string data, string fragment)
+\begin{DoxyCompactList}\small\item\em Returns the index within this string of the first occurrence of the specified substring.\+If it is not a substring, return -\/1. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_abf651c244965e9d5da5a9b5af10a77b5}{Index\+Of}} (byte\mbox{[}$\,$\mbox{]} data, byte\mbox{[}$\,$\mbox{]} fragment)
+\begin{DoxyCompactList}\small\item\em Returns the index within this string of the first occurrence of the specified substring.\+If it is not a substring, return -\/1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_aaf7372d00d5026e3b25a6545a7e65709}{Make\+Char\+Table}} (byte\mbox{[}$\,$\mbox{]} fragment)
+\begin{DoxyCompactList}\small\item\em Makes the jump table based on the mismatched character information. \end{DoxyCompactList}\item 
+static int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_a99ef34f3b467801db8f93ef7f584fd63}{Make\+Offset\+Table}} (byte\mbox{[}$\,$\mbox{]} fragment)
+\begin{DoxyCompactList}\small\item\em Makes the jump table based on the scan offset which mismatch occurs. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_ae65dcc0297e2910d1dd1c6efcc18f015}{Is\+Prefix}} (byte\mbox{[}$\,$\mbox{]} fragment, int p)
+\begin{DoxyCompactList}\small\item\em Is fragment\mbox{[}p\+:end\mbox{]} a prefix of fragment? \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_afc33837427631cdffa540614247e4ffc}{Suffix\+Length}} (byte\mbox{[}$\,$\mbox{]} fragment, int p)
+\begin{DoxyCompactList}\small\item\em Returns the maximum length of the substring ends at p and is a suffix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement algorithm of Boyer-\/\+Moore for searching of binary parts. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_abd5f37407f9c6ab55a7d537e65bdd22c}\label{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_abd5f37407f9c6ab55a7d537e65bdd22c}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}!Index\+Of@{Index\+Of}}
+\index{Index\+Of@{Index\+Of}!Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}}
+\subsubsection{\texorpdfstring{Index\+Of()}{IndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore.\+Index\+Of (\begin{DoxyParamCaption}\item[{string}]{data,  }\item[{string}]{fragment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the index within this string of the first occurrence of the specified substring.\+If it is not a substring, return -\/1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} array that would be source for search.\\
+\hline
+{\em fragment} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} fragment that would be looked into data array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of fragment start. -\/1 if no found.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_abf651c244965e9d5da5a9b5af10a77b5}\label{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_abf651c244965e9d5da5a9b5af10a77b5}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}!Index\+Of@{Index\+Of}}
+\index{Index\+Of@{Index\+Of}!Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}}
+\subsubsection{\texorpdfstring{Index\+Of()}{IndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore.\+Index\+Of (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{fragment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the index within this string of the first occurrence of the specified substring.\+If it is not a substring, return -\/1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} array that would be source for search.\\
+\hline
+{\em fragment} & \mbox{\hyperlink{namespace_uniform_data_operator_1_1_binary}{Binary}} fragment that would be looked into data array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of fragment start. -\/1 if no found.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_ae65dcc0297e2910d1dd1c6efcc18f015}\label{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_ae65dcc0297e2910d1dd1c6efcc18f015}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}!Is\+Prefix@{Is\+Prefix}}
+\index{Is\+Prefix@{Is\+Prefix}!Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}}
+\subsubsection{\texorpdfstring{Is\+Prefix()}{IsPrefix()}}
+{\footnotesize\ttfamily static bool Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore.\+Is\+Prefix (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{fragment,  }\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Is fragment\mbox{[}p\+:end\mbox{]} a prefix of fragment? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fragment} & Target binry fragment to search.\\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_aaf7372d00d5026e3b25a6545a7e65709}\label{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_aaf7372d00d5026e3b25a6545a7e65709}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}!Make\+Char\+Table@{Make\+Char\+Table}}
+\index{Make\+Char\+Table@{Make\+Char\+Table}!Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}}
+\subsubsection{\texorpdfstring{Make\+Char\+Table()}{MakeCharTable()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore.\+Make\+Char\+Table (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{fragment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Makes the jump table based on the mismatched character information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fragment} & Target binry fragment to search.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Char table.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_a99ef34f3b467801db8f93ef7f584fd63}\label{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_a99ef34f3b467801db8f93ef7f584fd63}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}!Make\+Offset\+Table@{Make\+Offset\+Table}}
+\index{Make\+Offset\+Table@{Make\+Offset\+Table}!Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}}
+\subsubsection{\texorpdfstring{Make\+Offset\+Table()}{MakeOffsetTable()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore.\+Make\+Offset\+Table (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{fragment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Makes the jump table based on the scan offset which mismatch occurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fragment} & Target binry fragment to search.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_afc33837427631cdffa540614247e4ffc}\label{class_uniform_data_operator_1_1_binary_1_1_boyer_moore_afc33837427631cdffa540614247e4ffc}} 
+\index{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}!Suffix\+Length@{Suffix\+Length}}
+\index{Suffix\+Length@{Suffix\+Length}!Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore@{Uniform\+Data\+Operator\+::\+Binary\+::\+Boyer\+Moore}}
+\subsubsection{\texorpdfstring{Suffix\+Length()}{SuffixLength()}}
+{\footnotesize\ttfamily static int Uniform\+Data\+Operator.\+Binary.\+Boyer\+Moore.\+Suffix\+Length (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{fragment,  }\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Returns the maximum length of the substring ends at p and is a suffix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fragment} & Target binry fragment to search.\\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Work/\+Git\+Hub/uniform-\/data-\/operator/\+Binary/Boyer\+Moore.\+cs\end{DoxyCompactItemize}

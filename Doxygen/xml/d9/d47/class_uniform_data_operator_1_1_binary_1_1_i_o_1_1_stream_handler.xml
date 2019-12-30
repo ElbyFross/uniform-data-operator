@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Binary::IO::StreamHandler</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a74670b4bc43b03cbfcb5f222fe731da0" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int UniformDataOperator.Binary.IO.StreamHandler.HEADER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>HEADER_SIZE</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+<para>Size of package&apos;s header in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="38" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a1b6540f8d3bf3c455caabc0f007f6702" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UniformDataOperator.Binary.IO.StreamHandler.OneWaySpinsPause</definition>
+        <argsstring></argsstring>
+        <name>OneWaySpinsPause</name>
+        <initializer>= 1800000</initializer>
+        <briefdescription>
+<para>How many spins package builder will wait before manage next package. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="43" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="property" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a9f8d84e7fcc7106e4dfed14d7f574b87" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UniformDataOperator.Binary.IO.StreamHandler.MilisecondsBeforeDrop</definition>
+        <argsstring></argsstring>
+        <name>MilisecondsBeforeDrop</name>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+<para>How many miliseconds would wait stream server before drop connection as failed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="48" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a20c247a11a6523790a60e98f5f704fc7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync</definition>
+        <argsstring>(PipeStream stream, byte[] data)</argsstring>
+        <name>StreamWriterAsync</name>
+        <param>
+          <type>PipeStream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>byte []</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Writing asynchronicly binary data to stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target stream.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="da/d8e/namespace_uniform_data_operator_1_1_binary" kindref="compound">Binary</ref> data that would be sent to stream.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asynchronous operation of data writing.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="59" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a18b5d8b3ab9402ea3b112c7e7bd830be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync</definition>
+        <argsstring>(PipeStream stream, object nonBinaryData)</argsstring>
+        <name>StreamWriterAsync</name>
+        <param>
+          <type>PipeStream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>nonBinaryData</declname>
+        </param>
+        <briefdescription>
+<para>Writing asynchronicly binary data to stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target stream.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nonBinaryData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non binary object that would be shared via stream.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asynchronous operation of data writing.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="77" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="77" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a0fc1ed2097c0b9582d4abb366cee82b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync</definition>
+        <argsstring>(Stream stream, StreamChanelMode mode, byte[] data, int dataBlockSize=610000)</argsstring>
+        <name>StreamWriterAsync</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161" kindref="member">StreamChanelMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>byte []</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dataBlockSize</declname>
+          <defval>610000</defval>
+        </param>
+        <briefdescription>
+<para>Writing asynchronicly binary data to stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target stream.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines mode of package building. In case of Duplex streaming would droped if  timeout passed without client&apos;s confirmation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="da/d8e/namespace_uniform_data_operator_1_1_binary" kindref="compound">Binary</ref> data that would be sent to stream.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataBlockSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of block in bytes that would be send to stream per each flush.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asynchronous operation of data writing.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="103" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="103" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a60e2d04b9c5f656e5257ff52951207ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync</definition>
+        <argsstring>(PipeStream stream, StreamChanelMode mode, byte[] data, int dataBlockSize=128000)</argsstring>
+        <name>StreamWriterAsync</name>
+        <param>
+          <type>PipeStream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161" kindref="member">StreamChanelMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>byte []</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dataBlockSize</declname>
+          <defval>128000</defval>
+        </param>
+        <briefdescription>
+<para>Writing asynchronicly binary data to stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target stream.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines mode of package building. In case of Duplex streaming would droped if  timeout passed without client&apos;s confirmation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="da/d8e/namespace_uniform_data_operator_1_1_binary" kindref="compound">Binary</ref> data that would be sent to stream.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataBlockSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of block in bytes that would be send to stream per each flush.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asynchronous operation of data writing.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="176" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="176" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a8270ca6e114f289818bd1efabb5048b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UniformDataOperator.Binary.IO.StreamHandler.WaitPackageReceiving</definition>
+        <argsstring>(Stream stream, StreamChanelMode mode)</argsstring>
+        <name>WaitPackageReceiving</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161" kindref="member">StreamChanelMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Whaiting for previous package receiving by client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream to client.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mode of stram managing.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="241" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="241" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a779f1ec9fe46ac47fe164e51fac29bca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int UniformDataOperator.Binary.IO.StreamHandler.ComputeRequiredPackages</definition>
+        <argsstring>(int blockSize, int dataBytes)</argsstring>
+        <name>ComputeRequiredPackages</name>
+        <param>
+          <type>int</type>
+          <declname>blockSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dataBytes</declname>
+        </param>
+        <briefdescription>
+<para>Computing count of packages required to data transmission. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>blockSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of one transmission package.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataBytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linght of data to sharing in bytes.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Count of required packages.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="290" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="290" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1ac3b951b7af74e35d8c01f9986d59abbf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UniformDataOperator.Binary.IO.StreamHandler.BuildPackage</definition>
+        <argsstring>(int index, int headerIndex, int blockSize, byte[] source, out byte[] package)</argsstring>
+        <name>BuildPackage</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>headerIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blockSize</declname>
+        </param>
+        <param>
+          <type>byte []</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>out byte []</type>
+          <declname>package</declname>
+        </param>
+        <briefdescription>
+<para>Building data package by index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of data block.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headerIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index that would be used as header to determine is a data block received.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blockSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of block including header.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="da/d8e/namespace_uniform_data_operator_1_1_binary" kindref="compound">Binary</ref> data devided on packages.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>package</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Builded binaty package.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="309" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="309" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a8953608e9eefaff797f3e4ed49f85bcf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; byte[]&gt;</type>
+        <definition>static async Task&lt;byte[]&gt; UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync</definition>
+        <argsstring>(PipeStream stream)</argsstring>
+        <name>StreamReaderAsync</name>
+        <param>
+          <type>PipeStream</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Asynchronous reading formated data from stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target stream.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Readed binary data.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="335" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="335" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1ab22ce5f10fb894fff4a675e96917dfbf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; T &gt;</type>
+        <definition>static async Task&lt;T&gt; UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync&lt; T &gt;</definition>
+        <argsstring>(PipeStream stream)</argsstring>
+        <name>StreamReaderAsync&lt; T &gt;</name>
+        <param>
+          <type>PipeStream</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Asynchronous reading formated data from stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of data after binary decoding.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target stream.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Readed binary data.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="355" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="355" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1aa001d58762b89cb8fdaa729b53b2a9af" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; byte[]&gt;</type>
+        <definition>static async Task&lt;byte[]&gt; UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync</definition>
+        <argsstring>(Stream stream)</argsstring>
+        <name>StreamReaderAsync</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Asynchronous reading formated data from stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target stream.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Readed binary data.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="374" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="374" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a3732dec20d216595f8148e91b7aac76a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UniformDataOperator.Binary.IO.StreamHandler.InformAboutReceving</definition>
+        <argsstring>(StreamChanelMode mode, Stream stream)</argsstring>
+        <name>InformAboutReceving</name>
+        <param>
+          <type><ref refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161" kindref="member">StreamChanelMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Informing server about receiving message by client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server mode that decide reaction.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target to server stream.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="473" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="473" bodyend="494"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that provides way to operating binary data streams. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" line="33" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/Binary/IO/StreamHandler.cs" bodystart="32" bodyend="496"/>
+    <listofallmembers>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1ac3b951b7af74e35d8c01f9986d59abbf" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>BuildPackage</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a779f1ec9fe46ac47fe164e51fac29bca" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>ComputeRequiredPackages</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a74670b4bc43b03cbfcb5f222fe731da0" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>HEADER_SIZE</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a3732dec20d216595f8148e91b7aac76a" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>InformAboutReceving</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a9f8d84e7fcc7106e4dfed14d7f574b87" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>MilisecondsBeforeDrop</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a1b6540f8d3bf3c455caabc0f007f6702" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>OneWaySpinsPause</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a8953608e9eefaff797f3e4ed49f85bcf" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>StreamReaderAsync</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1aa001d58762b89cb8fdaa729b53b2a9af" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>StreamReaderAsync</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1ab22ce5f10fb894fff4a675e96917dfbf" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>StreamReaderAsync&lt; T &gt;</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a20c247a11a6523790a60e98f5f704fc7" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>StreamWriterAsync</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a18b5d8b3ab9402ea3b112c7e7bd830be" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>StreamWriterAsync</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a0fc1ed2097c0b9582d4abb366cee82b2" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>StreamWriterAsync</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a60e2d04b9c5f656e5257ff52951207ce" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>StreamWriterAsync</name></member>
+      <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a8270ca6e114f289818bd1efabb5048b6" prot="public" virt="non-virtual"><scope>UniformDataOperator::Binary::IO::StreamHandler</scope><name>WaitPackageReceiving</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

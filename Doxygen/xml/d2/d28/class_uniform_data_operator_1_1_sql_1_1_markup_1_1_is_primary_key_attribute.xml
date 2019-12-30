@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d2/d28/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_primary_key_attribute" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Markup::IsPrimaryKeyAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+    <briefdescription>
+<para>Is it&apos;s primary key. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="48">
+        <label>Attribute</label>
+      </node>
+      <node id="47">
+        <label>UniformDataOperator.Sql.Markup.IsPrimaryKeyAttribute</label>
+        <link refid="d2/d28/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_primary_key_attribute"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="50">
+        <label>Attribute</label>
+      </node>
+      <node id="49">
+        <label>UniformDataOperator.Sql.Markup.IsPrimaryKeyAttribute</label>
+        <link refid="d2/d28/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_primary_key_attribute"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/IsPrimaryKeyAttribute.cs" line="24" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/IsPrimaryKeyAttribute.cs" bodystart="23" bodyend="25"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

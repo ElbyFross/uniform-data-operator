@@ -1,99 +1,97 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
-  <compound refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler" kind="class"><name>UniformDataOperator::AttributesHandler</name>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a075ceb8dabe05f15f7bd0bd4b1517c80" kind="function"><name>FindFieldsWithAttribute&lt; T &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1af629ef53b40e2b73b2e8fb5dafd1239d" kind="function"><name>FindMembersWithAttribute&lt; T &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a5e4058aa0ace67c90606d7974690cafe" kind="function"><name>FindMembersWithAttribute&lt; T &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1abf0519ca2624a4c03b894e5b5cd2c594" kind="function"><name>FindMembersWithoutAttribute&lt; T &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a0a4cca8daa161032ea820531b35695d7" kind="function"><name>FindMembersWithoutAttribute&lt; T &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a83786a45a828f4c0584dc3e48dba9dfd" kind="function"><name>HasAttribute&lt; AttributeType &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a95972193f6a4743f588dc1e00e646ce7" kind="function"><name>TryToGetAttribute&lt; AttributeType &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1aadbc72ffe71063da1ecd611925f26e16" kind="function"><name>FindPropertiesWithAttribute&lt; T &gt;</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1aca737c7e65bf12379f107fb1b77cf8e3" kind="function"><name>GetValue</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a2619c62d9978b033619e4bfd248f5290" kind="function"><name>SetValue</name></member>
-    <member refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler_1a3c0dc5fda5e0397bf6b284392236c46e" kind="function"><name>Converter</name></member>
+  <compound refid="d9/d9d/class_uniform_data_operator_1_1_assemblies_management_1_1_assemblies_handler" kind="class"><name>UniformDataOperator::AssembliesManagement::AssembliesHandler</name>
+    <member refid="d9/d9d/class_uniform_data_operator_1_1_assemblies_management_1_1_assemblies_handler_1a6413bf47f459171f32c840afd92db34f" kind="function"><name>LoadAssemblies</name></member>
+    <member refid="d9/d9d/class_uniform_data_operator_1_1_assemblies_management_1_1_assemblies_handler_1a319a18fddc641dc2090dcf51ddcb015d" kind="function"><name>LoadAssemblies</name></member>
   </compound>
   <compound refid="d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler" kind="class"><name>UniformDataOperator::Binary::BinaryHandler</name>
-    <member refid="d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler_1ab02d6e27dd8d96934cc6d08f3970b33d" kind="function"><name>ToByteArray&lt; T &gt;</name></member>
+    <member refid="d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler_1a3c4d62809082682bf2bb1bf644df6134" kind="function"><name>BinaryHandler</name></member>
+    <member refid="d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler_1a7fa6cdd576cd1597bc1107186ec1e730" kind="function"><name>CurrentDomain_AssemblyResolve</name></member>
+    <member refid="d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler_1abe3a726c904b29b5817e0ad39a4e1463" kind="function"><name>ToByteArray</name></member>
     <member refid="d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler_1a31772237797bd25f97b204b74289df70" kind="function"><name>FromByteArray&lt; T &gt;</name></member>
+    <member refid="d5/dc1/class_uniform_data_operator_1_1_binary_1_1_binary_handler_1ac3bd422de667147216fead7602828f3a" kind="function"><name>FromByteArray</name></member>
   </compound>
-  <compound refid="d3/d34/class_base_tests_1_1_binary_1_1_binary_handler_tests" kind="class"><name>BaseTests::Binary::BinaryHandlerTests</name>
-    <member refid="d3/d34/class_base_tests_1_1_binary_1_1_binary_handler_tests_1a7a80b90b70f7775abee8957780d62718" kind="function"><name>Serizlize</name></member>
-    <member refid="d3/d34/class_base_tests_1_1_binary_1_1_binary_handler_tests_1a3f56cf1a807a4b9a03a5ade61e24eab5" kind="function"><name>Deserialize</name></member>
+  <compound refid="da/d1e/class_uniform_data_operator_1_1_binary_1_1_boyer_moore" kind="class"><name>UniformDataOperator::Binary::BoyerMoore</name>
+    <member refid="da/d1e/class_uniform_data_operator_1_1_binary_1_1_boyer_moore_1abd5f37407f9c6ab55a7d537e65bdd22c" kind="function"><name>IndexOf</name></member>
+    <member refid="da/d1e/class_uniform_data_operator_1_1_binary_1_1_boyer_moore_1abf651c244965e9d5da5a9b5af10a77b5" kind="function"><name>IndexOf</name></member>
+    <member refid="da/d1e/class_uniform_data_operator_1_1_binary_1_1_boyer_moore_1aaf7372d00d5026e3b25a6545a7e65709" kind="function"><name>MakeCharTable</name></member>
+    <member refid="da/d1e/class_uniform_data_operator_1_1_binary_1_1_boyer_moore_1a99ef34f3b467801db8f93ef7f584fd63" kind="function"><name>MakeOffsetTable</name></member>
+    <member refid="da/d1e/class_uniform_data_operator_1_1_binary_1_1_boyer_moore_1ae65dcc0297e2910d1dd1c6efcc18f015" kind="function"><name>IsPrefix</name></member>
+    <member refid="da/d1e/class_uniform_data_operator_1_1_binary_1_1_boyer_moore_1afc33837427631cdffa540614247e4ffc" kind="function"><name>SuffixLength</name></member>
   </compound>
-  <compound refid="dd/dac/class_base_tests_1_1_types_1_1_blob_type" kind="class"><name>BaseTests::Types::BlobType</name>
-    <member refid="dd/dac/class_base_tests_1_1_types_1_1_blob_type_1a3c06188698a50aeb4b1f91d330b252a3" kind="variable"><name>s</name></member>
-    <member refid="dd/dac/class_base_tests_1_1_types_1_1_blob_type_1a4abad716178d46f3141cff38ad3cec8a" kind="variable"><name>i</name></member>
-    <member refid="dd/dac/class_base_tests_1_1_types_1_1_blob_type_1a8d21732eca92e641ec3507406b955bf0" kind="variable"><name>ui</name></member>
+  <compound refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::ColumnAttribute</name>
+    <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ab12600e7022c9c4aa36816f89e360d01" kind="variable"><name>title</name></member>
+    <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a35e345cb138b9b436a62d1d8594c8e1a" kind="variable"><name>type</name></member>
+    <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ace297ed7882b6fb0ee79a837a1ad6eac" kind="function"><name>ColumnAttribute</name></member>
+    <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ad43634da4c1bf9fc730ad81b7cec5d6e" kind="function"><name>ToString</name></member>
+    <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a4dbbb1a9e3623b25d66ba2778b9c35d9" kind="function"><name>operator string</name></member>
+    <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1aace39db1b2c58ae0f181a0a6eea8b58b" kind="function"><name>MembersDataToCommand</name></member>
+    <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a08a75320f0f56cd19df66367ef876689" kind="function"><name>MembersToMetaLists</name></member>
   </compound>
-  <compound refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column" kind="class"><name>UniformDataOperator::Sql::Attributes::Column</name>
-    <member refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_1af17925ba835ca424a854689016526e93" kind="variable"><name>title</name></member>
-    <member refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_1ad42f01b863fcea9172fc5efe2b8a0834" kind="variable"><name>type</name></member>
-    <member refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_1a8ff9ad5c1502f9e64f08273d7d4a50f6" kind="function"><name>Column</name></member>
-    <member refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_1a20c1639a185fb8f5c3cd09927e79d672" kind="function"><name>ToString</name></member>
-    <member refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_1a2f2533d559fba4736f749a5eba9852f6" kind="function"><name>operator string</name></member>
-    <member refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_1aa3e174a477fdbeaa14aff1c783c2b1f9" kind="function"><name>MembersDataToCommand</name></member>
-    <member refid="d9/d44/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_column_1a7b8f106a53f21e586ef1f8f2ac5a43eb" kind="function"><name>MembersToMetaLists</name></member>
+  <compound refid="d0/d7f/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_commentary_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::CommentaryAttribute</name>
+    <member refid="d0/d7f/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_commentary_attribute_1a729a7d6773b3df9dd31090b1cf8e35b1" kind="variable"><name>commentary</name></member>
+    <member refid="d0/d7f/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_commentary_attribute_1a89e4ce7ba19efd0b533ef9a5d013658d" kind="function"><name>CommentaryAttribute</name></member>
+    <member refid="d0/d7f/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_commentary_attribute_1a90440c0a6947fd524fef872cdb7c7683" kind="function"><name>ToString</name></member>
+    <member refid="d0/d7f/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_commentary_attribute_1a7bf4b9cbf59270e66700f7c2468ccb00" kind="function"><name>operator string</name></member>
   </compound>
-  <compound refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary" kind="class"><name>UniformDataOperator::Sql::Attributes::Commentary</name>
-    <member refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary_1a5cb463ba92cc10199d1a8ffb8c8729fd" kind="variable"><name>commentary</name></member>
-    <member refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary_1a32175c17c1db206f170ec84a8e83abd7" kind="function"><name>Commentary</name></member>
-    <member refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary_1a254d1f32018f1686b615a9ced5c0b1d5" kind="function"><name>ToString</name></member>
-    <member refid="d7/d35/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_commentary_1adb8a38bd8b9febe1222e715e7f7309d8" kind="function"><name>operator string</name></member>
+  <compound refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::Modifiers::DBPathOverrideAttribute</name>
+    <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1ad6b2408b337cc95c58034f0130c89ac8" kind="variable"><name>targetAttribute</name></member>
+    <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1ae30de021946efb358325415cf7e1bde2" kind="variable"><name>schema</name></member>
+    <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1a3f5c9e2892d5061f92d59d17b2636acb" kind="variable"><name>table</name></member>
+    <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1a30bd9209a06db42db371c857573af3be" kind="variable"><name>column</name></member>
+    <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1aa0ce1c84c617ff1a11bd7ffc5a15f3b0" kind="function"><name>DBPathOverrideAttribute</name></member>
+    <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1ab288054b87a2c351923533496636db2b" kind="function"><name>DBPathOverrideAttribute</name></member>
+    <member refid="d0/d9c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_d_b_path_override_attribute_1ab7f28cf1f5eda5b9ac5e052a39514aad" kind="function"><name>TryToGetValidOverride&lt; T &gt;</name></member>
   </compound>
-  <compound refid="d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override" kind="class"><name>UniformDataOperator::Sql::Attributes::Modifiers::DBPathOverride</name>
-    <member refid="d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override_1adab73111e55f6fe699e34e19a1b86335" kind="variable"><name>targetAttribute</name></member>
-    <member refid="d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override_1ac9dae1ac46998a11f6b037dc72639e53" kind="variable"><name>schema</name></member>
-    <member refid="d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override_1abc320e5e035c21997a54aad8e4df52b7" kind="variable"><name>table</name></member>
-    <member refid="d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override_1afb1db0b618dd444cdaaab366172e4af1" kind="variable"><name>column</name></member>
-    <member refid="d0/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_d_b_path_override_1aa7601220e39d8a68e911e4215bf94cb5" kind="function"><name>TryToGetValidOverride&lt; T &gt;</name></member>
+  <compound refid="d6/d7e/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_default_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::DefaultAttribute</name>
+    <member refid="d6/d7e/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_default_attribute_1a64185e68bab327c41b4b7424ef88677b" kind="variable"><name>defExp</name></member>
+    <member refid="d6/d7e/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_default_attribute_1ab6166dcaa64b5fecb183e6d946cd94b7" kind="function"><name>DefaultAttribute</name></member>
   </compound>
-  <compound refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default" kind="class"><name>UniformDataOperator::Sql::Attributes::Default</name>
-    <member refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default_1a1ba564b7f35af4395bafa39d6f5f69dc" kind="variable"><name>defExp</name></member>
-    <member refid="d6/df9/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_default_1a9b6f3f42eccfc683466b3b8740e57212" kind="function"><name>Default</name></member>
+  <compound refid="d3/d31/interface_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_i_base_type_changable" kind="interface"><name>UniformDataOperator::AssembliesManagement::Modifiers::IBaseTypeChangable</name>
+    <member refid="d3/d31/interface_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_i_base_type_changable_1abd6ebc983b5489d21dfdcc8d43a887f3" kind="property"><name>OperatingType</name></member>
   </compound>
-  <compound refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment" kind="class"><name>UniformDataOperator::Sql::Attributes::IsAutoIncrement</name>
-    <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1a3d14551782db0a2825335c02058c4735" kind="variable"><name>ignoreValue</name></member>
-    <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1a738141c99b028f95fa9943dc385dd896" kind="function"><name>IsAutoIncrement</name></member>
-    <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ad3e160ed18c83920560794d457cb9f97" kind="function"><name>IsAutoIncrement</name></member>
-    <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ac254039f081903e685e116ec6993f9db" kind="function"><name>GetIgnorable</name></member>
-    <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1ac662ab14322c8114855cb22e5395ab56" kind="function"><name>GetIgnorable</name></member>
-    <member refid="d0/d59/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_auto_increment_1acea9a992c39c789aa6ac336d7240a7bc" kind="function"><name>IsIntLike</name></member>
+  <compound refid="d8/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_auto_increment_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsAutoIncrementAttribute</name>
+    <member refid="d8/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_auto_increment_attribute_1acba50682b9c68a26b2f1aff969580e9c" kind="variable"><name>ignoreValue</name></member>
+    <member refid="d8/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_auto_increment_attribute_1a08b552e4e7152960faef3ecbd14eaf37" kind="function"><name>IsAutoIncrementAttribute</name></member>
+    <member refid="d8/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_auto_increment_attribute_1a9818a7b2015d08c7e682988f382a0755" kind="function"><name>IsAutoIncrementAttribute</name></member>
+    <member refid="d8/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_auto_increment_attribute_1ac2747b8dff8be12c4460ed75de72047b" kind="function"><name>GetIgnorable</name></member>
+    <member refid="d8/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_auto_increment_attribute_1a01792b68658d2ad636c7d8684e0e5104" kind="function"><name>GetIgnorable</name></member>
+    <member refid="d8/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_auto_increment_attribute_1a922a00a448b76833772358145b830403" kind="function"><name>IsIntLike</name></member>
   </compound>
-  <compound refid="d7/d13/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_binary" kind="class"><name>UniformDataOperator::Sql::Attributes::IsBinary</name>
+  <compound refid="df/dc1/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_binary_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsBinaryAttribute</name>
   </compound>
-  <compound refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key" kind="class"><name>UniformDataOperator::Sql::Attributes::IsForeignKey</name>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850" kind="enum"><name>Action</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a1e601ea653db1c729c9ee5746730fabe" kind="enumvalue"><name>NoAction</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a2dc2b15e8b0ee7ed3fdd4cf53ad0a8c3" kind="enumvalue"><name>Cascade</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a034d70b46e41ec9d0306b0001e04cae7" kind="enumvalue"><name>Restrict</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6039622384e2bbd1aa386e326ee0f850a2ac481dd701d4f580b6b01eb34442e71" kind="enumvalue"><name>SetNull</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a30ca24c3d7b8c38c36a112c6d3d9db55" kind="variable"><name>usedIndexes</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3adbb93b1e9ebb988b6fabf24e10991e" kind="variable"><name>schema</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ac480fc5f3f8ff86e0bb5877bab793e19" kind="variable"><name>table</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d14eef86991a9e1a187876626cbb70b" kind="variable"><name>column</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1af70b31f4805f136d6a32b1fa33d9bbf6" kind="variable"><name>onDeleteCommand</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a3a45eb5c4419a10aafcc097c227bb794" kind="variable"><name>onUpdateCommand</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a9c18736fa9035fb89c30cd5269d3ccc7" kind="function"><name>IsForeignKey</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a9075c37e69d16608cd912c53726a683e" kind="function"><name>IsForeignKey</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a0e272caef16165a57fee1499c7a94c8d" kind="function"><name>FKName</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a2673778ee437ef079b99d58636f7617b" kind="function"><name>ActionToCommand</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a8d5c79de848dd87916ab946972db0188" kind="function"><name>FKIndexDeclarationCommand</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a6becd6dc4bd6df070252b152a57f0152" kind="function"><name>FKIndexDeclarationCommand</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1aba50c9adf8e4fac95010d26a17b54644" kind="function"><name>DropIndexator</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1a795f460cb328bfe6d471134b4d48bedf" kind="function"><name>ConstrainDeclarationCommand</name></member>
-    <member refid="de/db6/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_foreign_key_1ae1dae3d2e36c2c38fe5306b42209ef74" kind="function"><name>ConstrainDeclarationCommand</name></member>
+  <compound refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsForeignKeyAttribute</name>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1ae6c77deaf80d5c4d07709edf51eaebc5" kind="enum"><name>Action</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1ae6c77deaf80d5c4d07709edf51eaebc5a1e601ea653db1c729c9ee5746730fabe" kind="enumvalue"><name>NoAction</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1ae6c77deaf80d5c4d07709edf51eaebc5a2dc2b15e8b0ee7ed3fdd4cf53ad0a8c3" kind="enumvalue"><name>Cascade</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1ae6c77deaf80d5c4d07709edf51eaebc5a034d70b46e41ec9d0306b0001e04cae7" kind="enumvalue"><name>Restrict</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1ae6c77deaf80d5c4d07709edf51eaebc5a2ac481dd701d4f580b6b01eb34442e71" kind="enumvalue"><name>SetNull</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a721bfcadb70f6fb4b2c76b980cfcbbd8" kind="variable"><name>usedIndexes</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a0ccdb7ac6c441bbba664d370aec645d1" kind="variable"><name>schema</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1ae210d1001824383251ca3ba1a0f3fd20" kind="variable"><name>table</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1aa305b69f1eac8e7335b9776b5d30625e" kind="variable"><name>column</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a5055e5326f37afb695398139353139b2" kind="variable"><name>onDeleteCommand</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a262baa0ebcc9ee448750f96019f0e14c" kind="variable"><name>onUpdateCommand</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a3e87ebbd7ead7b4e0c359c7340bcc2cb" kind="function"><name>IsForeignKeyAttribute</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a9e2d1563091c53e8e1c9c66e53eea23e" kind="function"><name>IsForeignKeyAttribute</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a5812ac056c373e4514466df8336ad808" kind="function"><name>FKName</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1adaff7734b94478d0b37cc8659a0c2acd" kind="function"><name>ActionToCommand</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1abd2895acf461357533df2802681cfdc6" kind="function"><name>FKIndexDeclarationCommand</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a8a30669fa1f999d6d08cc042f707091c" kind="function"><name>FKIndexDeclarationCommand</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1abec2624118cb8518ddac018eb4bff213" kind="function"><name>DropIndexator</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1a60708064b8a8d38e8df273e8a8f8fb3d" kind="function"><name>ConstrainDeclarationCommand</name></member>
+    <member refid="dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute_1ad02f765ed51d51466ebd143c083ff412" kind="function"><name>ConstrainDeclarationCommand</name></member>
   </compound>
-  <compound refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated" kind="class"><name>UniformDataOperator::Sql::Attributes::IsGenerated</name>
-    <member refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1aa8286a355a1ac86ccd56cf5b44f5ed59" kind="enum"><name>Mode</name></member>
-    <member refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1aa8286a355a1ac86ccd56cf5b44f5ed59a7bf2d26eab899c413218b729d4d914b7" kind="enumvalue"><name>Stored</name></member>
-    <member refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1aa8286a355a1ac86ccd56cf5b44f5ed59aa6d194ab7efe0417c28a02b8a8997bd0" kind="enumvalue"><name>Virual</name></member>
-    <member refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1a9721250897ee9813cccc2aaa17ec8983" kind="variable"><name>mode</name></member>
-    <member refid="d7/daf/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_generated_1ae54943cf65edc20532518f10236ded09" kind="function"><name>IsGenerated</name></member>
+  <compound refid="db/d72/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_generated_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsGeneratedAttribute</name>
+    <member refid="db/d72/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_generated_attribute_1a03e5e76ff63dbcf2cca5746e3098b23d" kind="enum"><name>Mode</name></member>
+    <member refid="db/d72/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_generated_attribute_1a03e5e76ff63dbcf2cca5746e3098b23da7bf2d26eab899c413218b729d4d914b7" kind="enumvalue"><name>Stored</name></member>
+    <member refid="db/d72/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_generated_attribute_1a03e5e76ff63dbcf2cca5746e3098b23daa6d194ab7efe0417c28a02b8a8997bd0" kind="enumvalue"><name>Virual</name></member>
+    <member refid="db/d72/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_generated_attribute_1a026c142857b7314d18d3031c76a74c41" kind="variable"><name>mode</name></member>
+    <member refid="db/d72/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_generated_attribute_1a03bea379c3a0e0694e9a29eba9b11797" kind="function"><name>IsGeneratedAttribute</name></member>
   </compound>
-  <compound refid="d4/d02/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_not_null" kind="class"><name>UniformDataOperator::Sql::Attributes::IsNotNull</name>
+  <compound refid="d2/dbb/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_not_null_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsNotNullAttribute</name>
   </compound>
-  <compound refid="d4/da1/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_primary_key" kind="class"><name>UniformDataOperator::Sql::Attributes::IsPrimaryKey</name>
+  <compound refid="d2/d28/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_primary_key_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsPrimaryKeyAttribute</name>
   </compound>
   <compound refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator" kind="interface"><name>UniformDataOperator::Sql::ISqlOperator</name>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab1b593e38cb9377dac847811c483f2f3" kind="property"><name>Server</name></member>
@@ -105,11 +103,11 @@
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a590fa080f8c35ebf5ee6ac535545e2a8" kind="function"><name>Initialize</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1afc0fd8b8c82515c498a6959453f331f1" kind="function"><name>NewCommand</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a10c43a3bfb6e8c88b692488c3341f297" kind="function"><name>NewCommand</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1aa122fe55f022891be5a888ff49e6eddd" kind="function"><name>MemberToParameter</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac09f73e97974a4bd697046e0c54a93d3" kind="function"><name>MemberToParameter</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a12d464e0532a3e194b1221eee0c32d34" kind="function"><name>DisableSqlChecks</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a0757f304a24ffaa743e23e8bdd210950" kind="function"><name>DisableSqlChecks</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a51af40df39808d53cdcc81852b836634" kind="function"><name>DbTypeToString</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3b5fbe97e664e1ef689576ab8757f957" kind="function"><name>ValidateTableMember</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac8df6e071646a229acd4781c80d43b68" kind="function"><name>ValidateTableMember</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a6fc9e5efd1e21ae9998b9c56ae9e347c" kind="function"><name>OpenConnection</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a6429996e1bbb452f4e034fd634e640" kind="function"><name>CloseConnection</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a096be4f746c1fcbb8b2894c2517b937c" kind="function"><name>Backup</name></member>
@@ -127,20 +125,30 @@
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a16e1513f43f3b9d76c687ba3b026573d" kind="function"><name>SetToObjectAsync</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a3a973b49f190dabe6bcd0bf3e79b3c5e" kind="function"><name>SetToObjectAsync</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a497325acf359d4f8444ee0c2ff858e6e" kind="function"><name>SetToObjectAsync</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a1a913ae60feb71cdf262e4e42e79bceb" kind="function"><name>SetToObjectsAsync</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ab2b82841cfb00ba1b8b46de5edf15e77" kind="function"><name>SetToObjectsAsync</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a2844a6839130dfab7cbe7541787f7dfe" kind="function"><name>SetToObjectsAsync</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a396bf6c6d962ba910367755ad13d3d3c" kind="function"><name>SetToObjectsAsync</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a277f97eaff18d7966e9b7ce00c171a0a" kind="function"><name>SetToObjectsAsync</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac8deb4d7a21d382b352b401f714deea9" kind="function"><name>SetToObjectsAsync</name></member>
   </compound>
-  <compound refid="d0/d90/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_unique" kind="class"><name>UniformDataOperator::Sql::Attributes::IsUnique</name>
-    <member refid="d0/d90/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_unique_1aff4e39a64a247b951300a64992c72238" kind="function"><name>UniqueIndexDeclarationCommand</name></member>
+  <compound refid="d0/d27/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_unique_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsUniqueAttribute</name>
+    <member refid="d0/d27/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_unique_attribute_1abe2b67c5dd704a30acfb0a2f55d8f858" kind="function"><name>UniqueIndexDeclarationCommand</name></member>
   </compound>
-  <compound refid="d5/d70/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_unsigned" kind="class"><name>UniformDataOperator::Sql::Attributes::IsUnsigned</name>
+  <compound refid="d6/d2f/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_unsigned_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsUnsignedAttribute</name>
   </compound>
-  <compound refid="d5/d8d/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_is_zero_fill" kind="class"><name>UniformDataOperator::Sql::Attributes::IsZeroFill</name>
+  <compound refid="d1/d7c/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_zero_fill_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::IsZeroFillAttribute</name>
   </compound>
-  <compound refid="d9/dde/class_my_s_q_l_tests_1_1_local" kind="class"><name>MySQLTests::Local</name>
-    <member refid="d9/dde/class_my_s_q_l_tests_1_1_local_1a19d9d8d0e3af59a0856bba6184a464eb" kind="variable"><name>username</name></member>
-    <member refid="d9/dde/class_my_s_q_l_tests_1_1_local_1ad4430d5a115b43817b9776f2ccbf5633" kind="variable"><name>password</name></member>
+  <compound refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler" kind="class"><name>UniformDataOperator::AssembliesManagement::MembersHandler</name>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a563f793ce990d95b0830a3dff609a9ee" kind="function"><name>FindFieldsWithAttribute&lt; T &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1abf58fa664b9202a0776cbb9a1c659ba9" kind="function"><name>FindMembersWithAttribute&lt; T &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1ad5add0d63eb8e0f8dac0e48be98032ae" kind="function"><name>FindMembersWithAttribute&lt; T &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a1c637a7411bf34126f5ab90b130a3f04" kind="function"><name>FindMembersWithoutAttribute&lt; T &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a5c40c81b34d93d301c5f0d421dadc39a" kind="function"><name>FindMembersWithoutAttribute&lt; T &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a4b9cd91b2f9c5f8871e71ff70912ff8d" kind="function"><name>HasAttribute&lt; AttributeType &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1ab99b085c361e2edc003149ea57203f93" kind="function"><name>TryToGetAttribute&lt; AttributeType &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1af18869106319a1b9b0473a817a3c1964" kind="function"><name>FindPropertiesWithAttribute&lt; T &gt;</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a6cc89d5d7bbec4fe48b7f698ead2667f" kind="function"><name>GetValue</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a78639bd006a0e62b40abc26043f63c5b" kind="function"><name>SetValue</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a0401f2325dda95a28dea4129e62bc9fd" kind="function"><name>Converter</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1ae0fefd738ce818c44bc8dbb602be3bf1" kind="function"><name>AddAttribute</name></member>
   </compound>
   <compound refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator" kind="class"><name>UniformDataOperator::Sql::MySql::MySqlDataOperator</name>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a8e8f8f936f6a4306dc4dc0d3eb07770c" kind="property"><name>Active</name></member>
@@ -179,86 +187,77 @@
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a6c2e2d374072c275953a515379963881" kind="function"><name>NewCommand</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1affbacb4fb1773fc14cdbb9cbcd315c5f" kind="function"><name>DisableSqlChecks</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a3e80f9136c9fef46a443901a15f1e289" kind="function"><name>DisableSqlChecks</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a233ab791c68b93aded97bfd9986767e8" kind="function"><name>ValidateTableMember</name></member>
-    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7d10fc1dfc16ece78ad066f596523782" kind="function"><name>MemberToParameter</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a3c1a7ceec19175ba5bbce8109565be05" kind="function"><name>ValidateTableMember</name></member>
+    <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a4f878911e378a4ece16d93f4c3352234" kind="function"><name>MemberToParameter</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a7b854ebbcdf31c67716d8c365c321a31" kind="function"><name>DbTypeToString</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a821d08d641098b3f5e4dd6342a3db718" kind="function"><name>ValidateEntryRD</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1ad6b8397c665d57eac1a2680c7b5f44e9" kind="function"><name>MembersAllowedToSet</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a0d3153822bac0ad760aed9f37e58d69b" kind="function"><name>GenerateSetToObjectCommand</name></member>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a30fd1063d13dae2c7833aed7c405554c" kind="function"><name>DetectPKToSet</name></member>
   </compound>
-  <compound refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override" kind="class"><name>UniformDataOperator::Sql::MySql::Attributes::MySqlDBTypeOverride</name>
-    <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1a6521991385a038d7f5878ab6bbcb5795" kind="variable"><name>type</name></member>
-    <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1a708ba68a2b1ab31ed51c196bb3e4574f" kind="variable"><name>stringFormat</name></member>
-    <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1aa560e25692613f1a6860f8991dc18a66" kind="function"><name>MySqlDBTypeOverride</name></member>
-    <member refid="dc/d3f/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes_1_1_my_sql_d_b_type_override_1acd28e7a908283c3cb18a0c83e701b85e" kind="function"><name>MySqlDBTypeOverride</name></member>
+  <compound refid="da/d96/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_markup_1_1_my_sql_d_b_type_override_attribute" kind="class"><name>UniformDataOperator::Sql::MySql::Markup::MySqlDBTypeOverrideAttribute</name>
+    <member refid="da/d96/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_markup_1_1_my_sql_d_b_type_override_attribute_1ab2a4ea0d332bbef5fcda9c1be1a568c9" kind="variable"><name>type</name></member>
+    <member refid="da/d96/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_markup_1_1_my_sql_d_b_type_override_attribute_1a7410daaecf6cc40b01fd9ed17c0d02aa" kind="variable"><name>stringFormat</name></member>
+    <member refid="da/d96/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_markup_1_1_my_sql_d_b_type_override_attribute_1aa74bbebc2d24175c5789db6c59994150" kind="function"><name>MySqlDBTypeOverrideAttribute</name></member>
+    <member refid="da/d96/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_markup_1_1_my_sql_d_b_type_override_attribute_1a192b467574dfb619a19417aafd5150cd" kind="function"><name>MySqlDBTypeOverrideAttribute</name></member>
   </compound>
-  <compound refid="db/ddc/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers_1_1_set_query_ignore" kind="class"><name>UniformDataOperator::Sql::Attributes::Modifiers::SetQueryIgnore</name>
+  <compound refid="dd/d32/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1_1_replacing_meta" kind="class"><name>UniformDataOperator::AssembliesManagement::Modifiers::TypeReplacer::ReplacingMeta</name>
+    <member refid="dd/d32/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1_1_replacing_meta_1aa2bcb9c1376fd1f1dba1d7fe3c51b105" kind="variable"><name>usingType</name></member>
+    <member refid="dd/d32/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1_1_replacing_meta_1ac1e6b32459f6ec0bfd07c1c26d682a61" kind="variable"><name>replacedWithPriority</name></member>
+  </compound>
+  <compound refid="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::Modifiers::SetQueryIgnoreAttribute</name>
   </compound>
   <compound refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler" kind="class"><name>UniformDataOperator::Sql::SqlOperatorHandler</name>
-    <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab6cf915e80cf89b3e6eb14bf48a19185" kind="event"><name>SqlErrorOccured</name></member>
+    <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a8373486df36ace17ffba1e14bf6a951a" kind="event"><name>SqlErrorOccured</name></member>
     <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1aa96eb9fd201700acbf53954599fec534" kind="property"><name>Active</name></member>
     <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a898993886fbe98ece762f9f7f2af11fb" kind="function"><name>InvokeSQLErrorOccured</name></member>
     <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ab2de5b9d7f8e8e67b518cf39c7e6f7a5" kind="function"><name>CollectionToString</name></member>
     <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a6973169901301adaecd52fab70df280e" kind="function"><name>ConcatFormatedCollections</name></member>
     <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1ac17e36b29fe5a17281927ab04dbeab26" kind="function"><name>ConcatFormatedCollections</name></member>
     <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a97954b0bb1559fbe600c12aa5e2c53ef" kind="function"><name>DatabaseDataToObject</name></member>
+    <member refid="dc/dce/class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_1a98735f024767c0551a0a8fccf0957fea" kind="function"><name>RescanDatabaseStructure</name></member>
   </compound>
-  <compound refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table" kind="class"><name>UniformDataOperator::Sql::Attributes::Table</name>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a8390d02fa5d0b96ffd6e8f40cafefb7d" kind="variable"><name>schema</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1ab413ed3bf0c1b110cf4b05cdea966de5" kind="variable"><name>table</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1afe0c2479401391900b1b16055a090e07" kind="variable"><name>engine</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1ad56af3278ca73f930b84b9dcbe777d5d" kind="function"><name>Table</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a5c66b02de1ddfe8cd11ee4585ec77d82" kind="function"><name>Table</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a4a18e92f3ee33003a7da468a9d5ab696" kind="function"><name>GenerateCreateTableCommand</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a0b905b5fd9ab2e381ce6cf81c3324a22" kind="function"><name>TrySetTables</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a80d799a2ba3419b489b9840f624880ff" kind="function"><name>TrySetTable</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a7808fc23fc487fc878bd8d7869304ed1" kind="function"><name>FindMembersByColumns</name></member>
-    <member refid="dd/deb/class_uniform_data_operator_1_1_sql_1_1_attributes_1_1_table_1a8de48462eb10c4eddc660a2f19e96d0e" kind="function"><name>TryToGetTableAttribute</name></member>
+  <compound refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler" kind="class"><name>UniformDataOperator::Binary::IO::StreamHandler</name>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a74670b4bc43b03cbfcb5f222fe731da0" kind="variable"><name>HEADER_SIZE</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a1b6540f8d3bf3c455caabc0f007f6702" kind="property"><name>OneWaySpinsPause</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a9f8d84e7fcc7106e4dfed14d7f574b87" kind="property"><name>MilisecondsBeforeDrop</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a20c247a11a6523790a60e98f5f704fc7" kind="function"><name>StreamWriterAsync</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a18b5d8b3ab9402ea3b112c7e7bd830be" kind="function"><name>StreamWriterAsync</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a0fc1ed2097c0b9582d4abb366cee82b2" kind="function"><name>StreamWriterAsync</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a60e2d04b9c5f656e5257ff52951207ce" kind="function"><name>StreamWriterAsync</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a8270ca6e114f289818bd1efabb5048b6" kind="function"><name>WaitPackageReceiving</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a779f1ec9fe46ac47fe164e51fac29bca" kind="function"><name>ComputeRequiredPackages</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1ac3b951b7af74e35d8c01f9986d59abbf" kind="function"><name>BuildPackage</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a8953608e9eefaff797f3e4ed49f85bcf" kind="function"><name>StreamReaderAsync</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1ab22ce5f10fb894fff4a675e96917dfbf" kind="function"><name>StreamReaderAsync&lt; T &gt;</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1aa001d58762b89cb8fdaa729b53b2a9af" kind="function"><name>StreamReaderAsync</name></member>
+    <member refid="d9/d47/class_uniform_data_operator_1_1_binary_1_1_i_o_1_1_stream_handler_1a3732dec20d216595f8148e91b7aac76a" kind="function"><name>InformAboutReceving</name></member>
   </compound>
-  <compound refid="d3/d81/class_base_tests_1_1_types_1_1_table2_type" kind="class"><name>BaseTests::Types::Table2Type</name>
-    <member refid="d3/d81/class_base_tests_1_1_types_1_1_table2_type_1a2de891713a0dc1d7e774bb0bdad1ef3c" kind="variable"><name>intFK</name></member>
-    <member refid="d3/d81/class_base_tests_1_1_types_1_1_table2_type_1adb1d8b5e52be3103e77e032916aa6d88" kind="variable"><name>stringVar</name></member>
+  <compound refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::TableAttribute</name>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1ac0f169e34020d96155a9fd961b207391" kind="variable"><name>schema</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1afbaa6ebc381e83a2be76e904f417d7ac" kind="variable"><name>table</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1a6dd17faa4c4e02428620528929a2d497" kind="variable"><name>engine</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1a3cfe088f4e36ab209cec341c10917ff6" kind="function"><name>TableAttribute</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1a085ad4c643842f099ce19c6113e2475f" kind="function"><name>TableAttribute</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1aca369c412ca492ccb2937c8a129f7802" kind="function"><name>GenerateCreateTableCommand</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1a2efef1ffee6dc4329d9b2359513ae41a" kind="function"><name>TrySetTables</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1a5da0c0409e593c08ff76a5245dcdb904" kind="function"><name>TrySetTable</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1a10f9e13016b88c06908c4bf0d5dac4b9" kind="function"><name>FindMembersByColumns</name></member>
+    <member refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute_1ace5105a7193faa48f53f32ce58a2a58c" kind="function"><name>TryToGetTableAttribute</name></member>
   </compound>
-  <compound refid="dc/d35/class_base_tests_1_1_types_1_1_table3_type" kind="class"><name>BaseTests::Types::Table3Type</name>
-    <member refid="dc/d35/class_base_tests_1_1_types_1_1_table3_type_1adbab457a69b0bbbc8bc2807e19a2793d" kind="variable"><name>intFK</name></member>
-    <member refid="dc/d35/class_base_tests_1_1_types_1_1_table3_type_1ab1c6286c3999dc909fcf2dd9b9836da1" kind="variable"><name>intPKAI</name></member>
-    <member refid="dc/d35/class_base_tests_1_1_types_1_1_table3_type_1abd686cdb0d1bc99ed5281c5a6128d39e" kind="variable"><name>stringVar</name></member>
-  </compound>
-  <compound refid="d8/de1/class_base_tests_1_1_types_1_1_table4_type" kind="class"><name>BaseTests::Types::Table4Type</name>
-    <member refid="d8/de1/class_base_tests_1_1_types_1_1_table4_type_1abd9dec41fe331ba2b57dda96f660f603" kind="variable"><name>intPKAI</name></member>
-    <member refid="d8/de1/class_base_tests_1_1_types_1_1_table4_type_1a074de14ad3b69717e4eca6a7e714e1c5" kind="variable"><name>stringVar</name></member>
-  </compound>
-  <compound refid="df/d32/class_base_tests_1_1_types_1_1_table5_type" kind="class"><name>BaseTests::Types::Table5Type</name>
-    <member refid="df/d32/class_base_tests_1_1_types_1_1_table5_type_1ae14f965f57c11a3a98b3b0533ef26f13" kind="variable"><name>intPKAI</name></member>
-    <member refid="df/d32/class_base_tests_1_1_types_1_1_table5_type_1ae30aa67ba478910dd4e0d7872e898f83" kind="variable"><name>stringVar</name></member>
-  </compound>
-  <compound refid="d7/d6b/class_my_s_q_l_tests_1_1_tables" kind="class"><name>MySQLTests::Tables</name>
-    <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1a2bf30026249403d4a1764d4bc88af649" kind="function"><name>SetDefault</name></member>
-    <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1ae9a63c27e5b8bae040555a7d633de210" kind="function"><name>Connection</name></member>
-    <member refid="d7/d6b/class_my_s_q_l_tests_1_1_tables_1a8b0f4f83fdeedb1cba72d520644b3bd9" kind="function"><name>Generate</name></member>
-  </compound>
-  <compound refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type" kind="class"><name>BaseTests::Types::TableType</name>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1abb14850439cf72cba85bad7b4c54f32f" kind="variable"><name>pk</name></member>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1ac96fc61cbc59ca606a19fbb72ec42ff0" kind="variable"><name>intVar</name></member>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1a6078c0d18572937a59ff4b4dc0a94522" kind="variable"><name>_intProp</name></member>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1a5584287994bbf69958866d3ad23feeff" kind="variable"><name>uintVar</name></member>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1a425a914b6ee5c1dff7fa2f47d8c57fc2" kind="variable"><name>fk</name></member>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1abb4e5f2a420c546fc70a4aa725151118" kind="variable"><name>blob</name></member>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1a08cf8ecd229624514fd695b2259e689d" kind="property"><name>IntProp</name></member>
-    <member refid="d6/ddc/class_base_tests_1_1_types_1_1_table_type_1aa2bea278a987cb00b79198501cdd233b" kind="property"><name>BlobProp</name></member>
-  </compound>
-  <compound refid="d6/d11/namespace_base_tests" kind="namespace"><name>BaseTests</name>
-  </compound>
-  <compound refid="d2/dcb/namespace_base_tests_1_1_binary" kind="namespace"><name>BaseTests::Binary</name>
-  </compound>
-  <compound refid="df/df2/namespace_base_tests_1_1_types" kind="namespace"><name>BaseTests::Types</name>
-  </compound>
-  <compound refid="da/d38/namespace_microsoft_1_1_visual_studio_1_1_test_tools_1_1_unit_testing" kind="namespace"><name>Microsoft::VisualStudio::TestTools::UnitTesting</name>
+  <compound refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer" kind="class"><name>UniformDataOperator::AssembliesManagement::Modifiers::TypeReplacer</name>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a92c79d556f9906ecfae49fd97816aa1e" kind="variable"><name>replacingType</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a9ff1766eb3660514a89255bf15c16742" kind="variable"><name>usingType</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a677ea9d2870e47626a39bf6e64015f18" kind="variable"><name>overridingPriority</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a693a4f48eeaa0a95f46dcd06be46bc74" kind="variable"><name>ExludingTable</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a467c5c1990d36d4b4d5a7847fd794a2f" kind="function"><name>TypeReplacer</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a53ed7a62064129d34748e8cde818e191" kind="function"><name>TypeReplacer</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1ab16c97c7cb86db03b862a0fdd5889819" kind="function"><name>GetValidType</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a51670e843f80ee62f24afa784d5424dc" kind="function"><name>OperateType</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a748273934b293a1473b5c6c061990de8" kind="function"><name>IsReplaced</name></member>
+    <member refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1a3fc9dceab9bd6da387ce1be9213aaa9e" kind="function"><name>RescanAssemblies</name></member>
   </compound>
   <compound refid="de/df3/namespace_my_sql_1_1_data_1_1_my_sql_client" kind="namespace"><name>MySql::Data::MySqlClient</name>
-  </compound>
-  <compound refid="dd/d5d/namespace_my_s_q_l_tests" kind="namespace"><name>MySQLTests</name>
   </compound>
   <compound refid="d8/dd0/namespace_system" kind="namespace"><name>System</name>
   </compound>
@@ -276,13 +275,13 @@
   </compound>
   <compound refid="dc/d30/namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
   </compound>
+  <compound refid="d9/dd6/namespace_system_1_1_i_o_1_1_pipes" kind="namespace"><name>System::IO::Pipes</name>
+  </compound>
   <compound refid="d5/de4/namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
   </compound>
   <compound refid="d0/d9d/namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
   </compound>
-  <compound refid="da/d54/namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
-  </compound>
-  <compound refid="d1/dee/namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  <compound refid="d0/db7/namespace_system_1_1_reflection_1_1_emit" kind="namespace"><name>System::Reflection::Emit</name>
   </compound>
   <compound refid="dd/d85/namespace_system_1_1_runtime_1_1_serialization" kind="namespace"><name>System::Runtime::Serialization</name>
   </compound>
@@ -296,63 +295,78 @@
   </compound>
   <compound refid="de/d66/namespace_uniform_data_operator" kind="namespace"><name>UniformDataOperator</name>
   </compound>
+  <compound refid="d4/d07/namespace_uniform_data_operator_1_1_assemblies_management" kind="namespace"><name>UniformDataOperator::AssembliesManagement</name>
+  </compound>
+  <compound refid="d8/dd0/namespace_uniform_data_operator_1_1_assemblies_management_1_1_modifiers" kind="namespace"><name>UniformDataOperator::AssembliesManagement::Modifiers</name>
+  </compound>
   <compound refid="da/d8e/namespace_uniform_data_operator_1_1_binary" kind="namespace"><name>UniformDataOperator::Binary</name>
+  </compound>
+  <compound refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o" kind="namespace"><name>UniformDataOperator::Binary::IO</name>
+    <member refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161" kind="enum"><name>StreamChanelMode</name></member>
+    <member refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161acfefe70df0902a80bb48b04ff12a7436" kind="enumvalue"><name>Duplex</name></member>
+    <member refid="d3/d2f/namespace_uniform_data_operator_1_1_binary_1_1_i_o_1a3fee9a9bcba25974554ed63395942161ab6f2b2a3b9675cbd2f00f92c5bd93dd4" kind="enumvalue"><name>Oneway</name></member>
   </compound>
   <compound refid="da/dc4/namespace_uniform_data_operator_1_1_sql" kind="namespace"><name>UniformDataOperator::Sql</name>
   </compound>
-  <compound refid="d4/de9/namespace_uniform_data_operator_1_1_sql_1_1_attributes" kind="namespace"><name>UniformDataOperator::Sql::Attributes</name>
+  <compound refid="de/d8b/namespace_uniform_data_operator_1_1_sql_1_1_markup" kind="namespace"><name>UniformDataOperator::Sql::Markup</name>
   </compound>
-  <compound refid="d4/d8c/namespace_uniform_data_operator_1_1_sql_1_1_attributes_1_1_modifiers" kind="namespace"><name>UniformDataOperator::Sql::Attributes::Modifiers</name>
+  <compound refid="dd/d11/namespace_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers" kind="namespace"><name>UniformDataOperator::Sql::Markup::Modifiers</name>
   </compound>
   <compound refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kind="namespace"><name>UniformDataOperator::Sql::MySql</name>
   </compound>
-  <compound refid="dc/d4b/namespace_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_attributes" kind="namespace"><name>UniformDataOperator::Sql::MySql::Attributes</name>
+  <compound refid="d4/de0/namespace_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_markup" kind="namespace"><name>UniformDataOperator::Sql::MySql::Markup</name>
   </compound>
-  <compound refid="de/d9c/_attributes_handler_8cs" kind="file"><name>AttributesHandler.cs</name>
+  <compound refid="db/d10/_assemblies_handler_8cs" kind="file"><name>AssembliesHandler.cs</name>
+  </compound>
+  <compound refid="d0/df9/_members_handler_8cs" kind="file"><name>MembersHandler.cs</name>
+  </compound>
+  <compound refid="d4/de8/_i_base_type_changable_8cs" kind="file"><name>IBaseTypeChangable.cs</name>
+  </compound>
+  <compound refid="d3/df7/_type_replacer_8cs" kind="file"><name>TypeReplacer.cs</name>
   </compound>
   <compound refid="d6/d0b/_binary_handler_8cs" kind="file"><name>BinaryHandler.cs</name>
   </compound>
-  <compound refid="d7/dac/_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  <compound refid="d8/d5d/_boyer_moore_8cs" kind="file"><name>BoyerMoore.cs</name>
   </compound>
-  <compound refid="d6/dac/_tests_2_base_tests_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  <compound refid="d9/d3c/_stream_chanel_mode_8cs" kind="file"><name>StreamChanelMode.cs</name>
   </compound>
-  <compound refid="d9/dfb/_tests_2_my_s_q_l_tests_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  <compound refid="d3/d85/_stream_handler_8cs" kind="file"><name>StreamHandler.cs</name>
   </compound>
   <compound refid="d9/dd6/_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
-  <compound refid="d3/daa/_column_8cs" kind="file"><name>Column.cs</name>
+  <compound refid="d8/df3/_i_s_q_l_operator_8cs" kind="file"><name>ISQLOperator.cs</name>
   </compound>
-  <compound refid="db/dfd/_commentary_8cs" kind="file"><name>Commentary.cs</name>
+  <compound refid="dd/df5/_column_attribute_8cs" kind="file"><name>ColumnAttribute.cs</name>
   </compound>
-  <compound refid="dd/dc9/_default_8cs" kind="file"><name>Default.cs</name>
+  <compound refid="d6/d4c/_commentary_attribute_8cs" kind="file"><name>CommentaryAttribute.cs</name>
   </compound>
-  <compound refid="d9/d9a/_is_auto_increment_8cs" kind="file"><name>IsAutoIncrement.cs</name>
+  <compound refid="d3/db2/_default_attribute_8cs" kind="file"><name>DefaultAttribute.cs</name>
   </compound>
-  <compound refid="dd/d99/_is_binary_8cs" kind="file"><name>IsBinary.cs</name>
+  <compound refid="db/da1/_is_auto_increment_attribute_8cs" kind="file"><name>IsAutoIncrementAttribute.cs</name>
   </compound>
-  <compound refid="de/d3c/_is_foreign_key_8cs" kind="file"><name>IsForeignKey.cs</name>
+  <compound refid="de/d81/_is_binary_attribute_8cs" kind="file"><name>IsBinaryAttribute.cs</name>
   </compound>
-  <compound refid="d0/d2d/_is_generated_8cs" kind="file"><name>IsGenerated.cs</name>
+  <compound refid="d3/d2d/_is_foreign_key_attribute_8cs" kind="file"><name>IsForeignKeyAttribute.cs</name>
   </compound>
-  <compound refid="d0/db6/_is_not_null_8cs" kind="file"><name>IsNotNull.cs</name>
+  <compound refid="dc/db2/_is_generated_attribute_8cs" kind="file"><name>IsGeneratedAttribute.cs</name>
   </compound>
-  <compound refid="d5/de4/_is_primary_key_8cs" kind="file"><name>IsPrimaryKey.cs</name>
+  <compound refid="d0/d75/_is_not_null_attribute_8cs" kind="file"><name>IsNotNullAttribute.cs</name>
   </compound>
-  <compound refid="da/d47/_is_unique_8cs" kind="file"><name>IsUnique.cs</name>
+  <compound refid="d4/d23/_is_primary_key_attribute_8cs" kind="file"><name>IsPrimaryKeyAttribute.cs</name>
   </compound>
-  <compound refid="dc/db3/_is_unsigned_8cs" kind="file"><name>IsUnsigned.cs</name>
+  <compound refid="d6/de6/_is_unique_attribute_8cs" kind="file"><name>IsUniqueAttribute.cs</name>
   </compound>
-  <compound refid="da/d47/_is_zero_fill_8cs" kind="file"><name>IsZeroFill.cs</name>
+  <compound refid="d3/d01/_is_unsigned_attribute_8cs" kind="file"><name>IsUnsignedAttribute.cs</name>
   </compound>
-  <compound refid="d4/ded/_d_b_path_override_8cs" kind="file"><name>DBPathOverride.cs</name>
+  <compound refid="d0/d3f/_is_zero_fill_attribute_8cs" kind="file"><name>IsZeroFillAttribute.cs</name>
   </compound>
-  <compound refid="dd/d74/_set_query_ignore_8cs" kind="file"><name>SetQueryIgnore.cs</name>
+  <compound refid="dc/d8a/_d_b_path_override_attribute_8cs" kind="file"><name>DBPathOverrideAttribute.cs</name>
   </compound>
-  <compound refid="d6/ddb/_table_8cs" kind="file"><name>Table.cs</name>
+  <compound refid="d1/d6b/_set_query_ignore_attribute_8cs" kind="file"><name>SetQueryIgnoreAttribute.cs</name>
   </compound>
-  <compound refid="d6/de1/_i_sql_operator_8cs" kind="file"><name>ISqlOperator.cs</name>
+  <compound refid="df/d5f/_table_attribute_8cs" kind="file"><name>TableAttribute.cs</name>
   </compound>
-  <compound refid="d5/d5b/_my_sql_d_b_type_override_8cs" kind="file"><name>MySqlDBTypeOverride.cs</name>
+  <compound refid="d0/de4/_my_sql_d_b_type_override_attribute_8cs" kind="file"><name>MySqlDBTypeOverrideAttribute.cs</name>
   </compound>
   <compound refid="db/d52/_my_s_q_l_data_operator_backup_8cs" kind="file"><name>MySQLDataOperatorBackup.cs</name>
   </compound>
@@ -368,52 +382,24 @@
   </compound>
   <compound refid="dd/d9c/_s_q_l_operator_handler_8cs" kind="file"><name>SQLOperatorHandler.cs</name>
   </compound>
-  <compound refid="dd/d95/_binary_handler_tests_8cs" kind="file"><name>BinaryHandlerTests.cs</name>
-  </compound>
-  <compound refid="d6/d60/_blob_type_8cs" kind="file"><name>BlobType.cs</name>
-  </compound>
-  <compound refid="d1/d8e/_table2_type_8cs" kind="file"><name>Table2Type.cs</name>
-  </compound>
-  <compound refid="d7/d01/_table3_type_8cs" kind="file"><name>Table3Type.cs</name>
-  </compound>
-  <compound refid="db/da4/_table4_type_8cs" kind="file"><name>Table4Type.cs</name>
-  </compound>
-  <compound refid="dc/dec/_table5_type_8cs" kind="file"><name>Table5Type.cs</name>
-  </compound>
-  <compound refid="df/d68/_table_type_8cs" kind="file"><name>TableType.cs</name>
-  </compound>
-  <compound refid="d5/d5b/_local_8cs" kind="file"><name>Local.cs</name>
-  </compound>
-  <compound refid="d7/dba/_tables_8cs" kind="file"><name>Tables.cs</name>
-  </compound>
   <compound refid="d4/d04/md__d_1__work__git_hub_uniform-data-operator__r_e_a_d_m_e" kind="page"><name>md_D:_Work_GitHub_uniform-data-operator_README</name>
   </compound>
-  <compound refid="dir_71a3177dd112d1a447d142a9aa5aa050" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/Attributes</name>
-  </compound>
-  <compound refid="dir_4c47892d8e1a099eb81c31c13360c560" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Attributes</name>
-  </compound>
-  <compound refid="dir_ed829fa21371b53c3aab1222f4bdb75a" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Tests/BaseTests</name>
+  <compound refid="dir_a29a196b1a4c40d3ff3fd35bb97b41de" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/AssembliesManagement</name>
   </compound>
   <compound refid="dir_3785288b95ad083bc6e0b212dbe13340" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Binary</name>
   </compound>
-  <compound refid="dir_348d4ee3d92f600152ae8a22f07abb6a" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Binary</name>
+  <compound refid="dir_1a56e1e6490a9f081c0b0cf28f0d2529" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Binary/IO</name>
   </compound>
-  <compound refid="dir_fa4265bae3af2b5d4ba073a282ef7ec8" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/Attributes/Modifiers</name>
+  <compound refid="dir_f003c08f43fb9b3f69fe1fc1a7b807db" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/MySQL/Markup</name>
+  </compound>
+  <compound refid="dir_fe0f8d1f573ae42145a374c69e21b163" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/Markup</name>
+  </compound>
+  <compound refid="dir_b4dd1d8b4151a6682e96f01ff71822b1" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/Markup/Modifiers</name>
+  </compound>
+  <compound refid="dir_a52b6a545b0889fb102957d3a78e39f2" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/AssembliesManagement/Modifiers</name>
   </compound>
   <compound refid="dir_0ccb68387d9136c295cc472a658b0e07" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL/MySQL</name>
   </compound>
-  <compound refid="dir_11a46d23963d1d70fa890af8272f8442" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests</name>
-  </compound>
-  <compound refid="dir_d051c76eebdc544d9c3d734575641c72" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Properties</name>
-  </compound>
-  <compound refid="dir_972c7a92acaaca757cc02403f0ea3def" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Properties</name>
-  </compound>
-  <compound refid="dir_2ed167d6e6cfc2212692214a326d670a" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Tests/MySQLTests/Properties</name>
-  </compound>
   <compound refid="dir_5acd0999974efcf9285444e791ce31d5" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/SQL</name>
-  </compound>
-  <compound refid="dir_33c78a012c8d08979f57a54a07694c46" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Tests</name>
-  </compound>
-  <compound refid="dir_82913a5e6fef26a353ad5994f9ca394b" kind="dir"><name>D:/Work/GitHub/uniform-data-operator/Tests/BaseTests/Types</name>
   </compound>
 </doxygenindex>

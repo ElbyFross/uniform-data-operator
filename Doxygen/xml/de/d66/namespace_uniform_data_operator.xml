@@ -2,13 +2,13 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="de/d66/namespace_uniform_data_operator" kind="namespace" language="C#">
     <compoundname>UniformDataOperator</compoundname>
-    <innerclass refid="da/dcd/class_uniform_data_operator_1_1_attributes_handler" prot="public">UniformDataOperator::AttributesHandler</innerclass>
+    <innernamespace refid="d4/d07/namespace_uniform_data_operator_1_1_assemblies_management">UniformDataOperator::AssembliesManagement</innernamespace>
     <innernamespace refid="da/d8e/namespace_uniform_data_operator_1_1_binary">UniformDataOperator::Binary</innernamespace>
     <innernamespace refid="da/dc4/namespace_uniform_data_operator_1_1_sql">UniformDataOperator::Sql</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/Work/GitHub/uniform-data-operator/AttributesHandler.cs" line="23" column="1"/>
+    <location file="[generated]" line="1" column="1"/>
   </compounddef>
 </doxygen>

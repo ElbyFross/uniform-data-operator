@@ -2,9 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="dir_5acd0999974efcf9285444e791ce31d5" kind="dir">
     <compoundname>D:/Work/GitHub/uniform-data-operator/SQL</compoundname>
-    <innerdir refid="dir_71a3177dd112d1a447d142a9aa5aa050">D:/Work/GitHub/uniform-data-operator/SQL/Attributes</innerdir>
+    <innerdir refid="dir_fe0f8d1f573ae42145a374c69e21b163">D:/Work/GitHub/uniform-data-operator/SQL/Markup</innerdir>
     <innerdir refid="dir_0ccb68387d9136c295cc472a658b0e07">D:/Work/GitHub/uniform-data-operator/SQL/MySQL</innerdir>
-    <innerfile refid="d6/de1/_i_sql_operator_8cs">ISqlOperator.cs</innerfile>
+    <innerfile refid="d8/df3/_i_s_q_l_operator_8cs">ISQLOperator.cs</innerfile>
     <innerfile refid="dd/d9c/_s_q_l_operator_handler_8cs">SQLOperatorHandler.cs</innerfile>
     <briefdescription>
     </briefdescription>

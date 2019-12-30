@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute" kind="class" language="C#" prot="public">
+    <compoundname>UniformDataOperator::Sql::Markup::ColumnAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ab12600e7022c9c4aa36816f89e360d01" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UniformDataOperator.Sql.Markup.ColumnAttribute.title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+<para>Title of column in table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="33" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a35e345cb138b9b436a62d1d8594c8e1a" prot="public" static="no" mutable="no">
+        <type>DbType</type>
+        <definition>DbType UniformDataOperator.Sql.Markup.ColumnAttribute.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of column in table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="38" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ace297ed7882b6fb0ee79a837a1ad6eac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UniformDataOperator.Sql.Markup.ColumnAttribute.ColumnAttribute</definition>
+        <argsstring>(string title, DbType type)</argsstring>
+        <name>ColumnAttribute</name>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>DbType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Init column. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of column in table.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of column in table.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="45" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ad43634da4c1bf9fc730ad81b7cec5d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string UniformDataOperator.Sql.Markup.ColumnAttribute.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+<para>Converting column to string view. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tielt of column.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="64" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="64" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a4dbbb1a9e3623b25d66ba2778b9c35d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit UniformDataOperator.Sql.Markup.ColumnAttribute.operator string</definition>
+        <argsstring>(ColumnAttribute column)</argsstring>
+        <name>operator string</name>
+        <param>
+          <type><ref refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute" kindref="compound">ColumnAttribute</ref></type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Converting column to string view. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input column.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="55" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1aace39db1b2c58ae0f181a0a6eea8b58b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UniformDataOperator.Sql.Markup.ColumnAttribute.MembersDataToCommand</definition>
+        <argsstring>(ref object data, ref DbCommand command, IEnumerable&lt; MemberInfo &gt; members)</argsstring>
+        <name>MembersDataToCommand</name>
+        <param>
+          <type>ref object</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>ref DbCommand</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; MemberInfo &gt;</type>
+          <declname>members</declname>
+        </param>
+        <briefdescription>
+<para>Adding members columns data to params. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that contains values relative to members.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command objects that would share values.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>members</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Members that with defined Column attribute that would be stored to command.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="75" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="75" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a08a75320f0f56cd19df66367ef876689" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UniformDataOperator.Sql.Markup.ColumnAttribute.MembersToMetaLists</definition>
+        <argsstring>(IEnumerable&lt; MemberInfo &gt; members, out List&lt; ColumnAttribute &gt; columns, out List&lt; string &gt; variables)</argsstring>
+        <name>MembersToMetaLists</name>
+        <param>
+          <type>IEnumerable&lt; MemberInfo &gt;</type>
+          <declname>members</declname>
+        </param>
+        <param>
+          <type>out List&lt; <ref refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute" kindref="compound">ColumnAttribute</ref> &gt;</type>
+          <declname>columns</declname>
+        </param>
+        <param>
+          <type>out List&lt; string &gt;</type>
+          <declname>variables</declname>
+        </param>
+        <briefdescription>
+<para>Converting collection of members to lists that contain&apos;s splited meta data suitable for queries. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>members</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source collection of memers.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>columns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List that contains all detected columns descriptors.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>variables</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List that contains names of local variables in format allowed to internal queries generators.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="104" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="104" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes column metadata that will be added to server database </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>Attribute</label>
+      </node>
+      <node id="6">
+        <label>UniformDataOperator.Sql.Markup.ColumnAttribute</label>
+        <link refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>Attribute</label>
+      </node>
+      <node id="8">
+        <label>UniformDataOperator.Sql.Markup.ColumnAttribute</label>
+        <link refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/SQL/Markup/ColumnAttribute.cs" bodystart="28" bodyend="121"/>
+    <listofallmembers>
+      <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ace297ed7882b6fb0ee79a837a1ad6eac" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::ColumnAttribute</scope><name>ColumnAttribute</name></member>
+      <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1aace39db1b2c58ae0f181a0a6eea8b58b" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::ColumnAttribute</scope><name>MembersDataToCommand</name></member>
+      <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a08a75320f0f56cd19df66367ef876689" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::ColumnAttribute</scope><name>MembersToMetaLists</name></member>
+      <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a4dbbb1a9e3623b25d66ba2778b9c35d9" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::ColumnAttribute</scope><name>operator string</name></member>
+      <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ab12600e7022c9c4aa36816f89e360d01" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::ColumnAttribute</scope><name>title</name></member>
+      <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1ad43634da4c1bf9fc730ad81b7cec5d6e" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::ColumnAttribute</scope><name>ToString</name></member>
+      <member refid="d0/d68/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute_1a35e345cb138b9b436a62d1d8594c8e1a" prot="public" virt="non-virtual"><scope>UniformDataOperator::Sql::Markup::ColumnAttribute</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
