@@ -589,7 +589,7 @@ Would be used as table descriptor during queri building.</para></parameterdescri
         <definition>bool UniformDataOperator.Sql.MySql.MySqlDataOperator.SetToObject</definition>
         <argsstring>(Type tableType, object obj, out string error, params string[] select)</argsstring>
         <name>SetToObject</name>
-        <reimplements refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ae1053edf9aa3d9385ef3591e7ee863c7">SetToObject</reimplements>
+        <reimplements refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5d151cd156c1ced0e9fe09be866adae7">SetToObject</reimplements>
         <param>
           <type>Type</type>
           <declname>tableType</declname>

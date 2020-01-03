@@ -2,7 +2,7 @@
 \label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator}\index{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator@{Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator}}
 
 
-Implement that interface to provide possiblity to controll your database by using S\+QL queryes.  
+Implement that interface to provide possibility to control your database by unified commands.  
 
 
 Inheritance diagram for Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator\+:\begin{figure}[H]
@@ -15,80 +15,80 @@ Inheritance diagram for Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator\+:\begi
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a590fa080f8c35ebf5ee6ac535545e2a8}{Initialize}} ()
-\begin{DoxyCompactList}\small\item\em Initialize operator. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Initializes an operator. \end{DoxyCompactList}\item 
 Db\+Command \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_afc0fd8b8c82515c498a6959453f331f1}{New\+Command}} ()
-\begin{DoxyCompactList}\small\item\em Return new clear command suitable for current DB. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns a new clear command suitable for current DB. \end{DoxyCompactList}\item 
 Db\+Command \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a10c43a3bfb6e8c88b692488c3341f297}{New\+Command}} (string command\+Text)
-\begin{DoxyCompactList}\small\item\em Return new clear command suitable for current DB with included command text. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns a new clear command suitable for current DB with included command text. \end{DoxyCompactList}\item 
 Db\+Parameter \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac09f73e97974a4bd697046e0c54a93d3}{Member\+To\+Parameter}} (object data, \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_markup_1_1_column_attribute}{Column\+Attribute}} column)
-\begin{DoxyCompactList}\small\item\em Convert value of member to database parameter that can be used in command. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Converts a value of a member to a database parameter that can be used in some command. \end{DoxyCompactList}\item 
 Db\+Command \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a12d464e0532a3e194b1221eee0c32d34}{Disable\+Sql\+Checks}} (Db\+Command command)
-\begin{DoxyCompactList}\small\item\em Add code that disabling S\+QL checks during executing command. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adds some code that disabling S\+QL checks during executing a command. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a0757f304a24ffaa743e23e8bdd210950}{Disable\+Sql\+Checks}} (string command)
-\begin{DoxyCompactList}\small\item\em Add code that disabling S\+QL checks during executing command. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adds some code that disabling S\+QL checks during executing a command. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a51af40df39808d53cdcc81852b836634}{Db\+Type\+To\+String}} (Db\+Type type)
 \begin{DoxyCompactList}\small\item\em Trying to convert D\+B\+Type to specified type in string format that suitable to this database. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac8df6e071646a229acd4781c80d43b68}{Validate\+Table\+Member}} (\mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute}{Table\+Attribute}} table\+Descriptor, Member\+Info column\+Member)
-\begin{DoxyCompactList}\small\item\em Validate database table column acording to member attributes. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Validates a database table\textquotesingle{}s column according to member attributes. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a6fc9e5efd1e21ae9998b9c56ae9e347c}{Open\+Connection}} (out string error)
-\begin{DoxyCompactList}\small\item\em Opening connection to S\+QL server. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Opens new connection to a S\+QL server. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a1a6429996e1bbb452f4e034fd634e640}{Close\+Connection}} ()
-\begin{DoxyCompactList}\small\item\em Closing connection to S\+QL server. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Closes an opened connection to a S\+QL server. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a096be4f746c1fcbb8b2894c2517b937c}{Backup}} (string directory)
-\begin{DoxyCompactList}\small\item\em Backuping database to sql file in directory. Name would be generated by timestamp. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Backup a database to recovery container. The name will be generated by a timestamp. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_acf6fdbfc57a21efc371e0772244defd5}{Restore}} (string file\+Path)
-\begin{DoxyCompactList}\small\item\em Restoring S\+QL db from file. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Restores a S\+QL database from a recovery container. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a5ae8328a464ef80f1ae1bd46a573c265}{Activate\+Schema}} (string schema\+Name, out string error)
-\begin{DoxyCompactList}\small\item\em Trying to set schema to databases server in case if schema not exist. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adds a schema if not exist. Sets the schema as current one. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_aac9c3ed1e73af66e383340a154786ec7}{Column\+Declaration\+Command}} (Member\+Info member)
-\begin{DoxyCompactList}\small\item\em Return generated S\+QL command relative to init time. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns generated S\+QL command that declares the column into the table. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ad05106eb6bd1a50f35b476a42821dfa3}{Set\+To\+Table}} (Type table\+Type, object data, out string error)
-\begin{DoxyCompactList}\small\item\em Creating request that setting up data from object to database server acording to attributes. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Creates and handles a command that send a data from object to a database on a S\+QL server. \end{DoxyCompactList}\item 
 Task \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a35ef3899954f213e391751e9cda09322}{Set\+To\+Table\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object data)
-\begin{DoxyCompactList}\small\item\em Creating request that setting up data from object to database server acording to attributes. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Creates and handles an asynchronous command that send a data from object to a database on a S\+QL server. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a9a1822fcafcb1a3abd59b40f2cef7930}{Set\+To\+Object}} (Type table\+Type, object obj, out string error, string\mbox{[}$\,$\mbox{]} select, params string\mbox{[}$\,$\mbox{]} where)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ae1053edf9aa3d9385ef3591e7ee863c7}{Set\+To\+Object}} (Type table\+Type, object obj, out string error, params string\mbox{[}$\,$\mbox{]} selsect)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a5d151cd156c1ced0e9fe09be866adae7}{Set\+To\+Object}} (Type table\+Type, object obj, out string error, params string\mbox{[}$\,$\mbox{]} select)
+\begin{DoxyCompactList}\small\item\em Sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac170526dd0fa31f2848ece5f5c5bb9d7}{Set\+To\+Object}} (Type table\+Type, object obj, out string error)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ae5c6fb9c7448e7171414b7d20095cc08}{Set\+To\+Objects}} (Type table\+Type, object obj, out I\+List collection, out string error, string\mbox{[}$\,$\mbox{]} select, params string\mbox{[}$\,$\mbox{]} where)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac75ce5e3b29a8d2d94f96d4a9ff47820}{Set\+To\+Objects}} (Type table\+Type, object obj, out I\+List collection, out string error, params string\mbox{[}$\,$\mbox{]} select)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Looks for the data by primary keys values. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a6bde25bff76c7b2105aa4e14740eb07d}{Set\+To\+Objects}} (Type table\+Type, object obj, out I\+List collection, out string error)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Selects all the fields described into the table. Looks for the data by primary keys values. \end{DoxyCompactList}\item 
 Task \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a16e1513f43f3b9d76c687ba3b026573d}{Set\+To\+Object\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj, string\mbox{[}$\,$\mbox{]} select, params string\mbox{[}$\,$\mbox{]} where)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Asynchronously sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. \end{DoxyCompactList}\item 
 Task \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a3a973b49f190dabe6bcd0bf3e79b3c5e}{Set\+To\+Object\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj, params string\mbox{[}$\,$\mbox{]} select)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Asynchronously sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Looks for the data by primary keys values. \end{DoxyCompactList}\item 
 Task \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a497325acf359d4f8444ee0c2ff858e6e}{Set\+To\+Object\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Asynchronously sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Selects all the fields described into the table. Looks for the data by primary keys values. \end{DoxyCompactList}\item 
 Task \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a396bf6c6d962ba910367755ad13d3d3c}{Set\+To\+Objects\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj, Action$<$ I\+List $>$ callback, string\mbox{[}$\,$\mbox{]} select, params string\mbox{[}$\,$\mbox{]} where)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Asynchronously sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. \end{DoxyCompactList}\item 
 Task \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a277f97eaff18d7966e9b7ce00c171a0a}{Set\+To\+Objects\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj, Action$<$ I\+List $>$ callback, params string\mbox{[}$\,$\mbox{]} select)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Asynchronously sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Looks for the data by primary keys values. \end{DoxyCompactList}\item 
 Task \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac8deb4d7a21d382b352b401f714deea9}{Set\+To\+Objects\+Async}} (Type table\+Type, Cancellation\+Token cancellation\+Token, object obj, Action$<$ I\+List $>$ callback)
-\begin{DoxyCompactList}\small\item\em Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Asynchronously sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Selects all the fields described into the table. Looks for the data by primary keys values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 string \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ab1b593e38cb9377dac847811c483f2f3}{Server}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em Server\textquotesingle{}s ip. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em An ip of a server. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a2d0ac2538fa196b181f6e0ab523db137}{Port}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em Port for server access. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em A port for access a binded server. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a55b7f28ed4ab20f124e67e2d447f8b40}{Database}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em Database\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Name a target database. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_abf0c3a32c8161030b37ccf960c395d4f}{User\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em User for connection. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em A user for connection to a S\+QL server. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a90f63ab37347ec080b37dc3256ead7a4}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em User\textquotesingle{}s password. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em A password for the user impersonation. \end{DoxyCompactList}\item 
 Db\+Connection \mbox{\hyperlink{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a99f034a986828e96955e3187cdfb28da}{Connection}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em Connection to DB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A handler that manage connection between the app and a database. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Implement that interface to provide possiblity to controll your database by using S\+QL queryes. 
+Implement that interface to provide possibility to control your database by unified commands. 
 
 
 
@@ -101,17 +101,17 @@ Implement that interface to provide possiblity to controll your database by usin
 
 
 
-Trying to set schema to databases server in case if schema not exist. 
+Adds a schema if not exist. Sets the schema as current one. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em schema\+Name} & Name of the schema that would be used.\\
+{\em schema\+Name} & A name of the schema that will be used.\\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during operation.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+A result of the opertion.
 \end{DoxyReturn}
 
 
@@ -125,11 +125,11 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Backuping database to sql file in directory. Name would be generated by timestamp. 
+Backup a database to recovery container. The name will be generated by a timestamp. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em directory} & Directory that would store the backup file.\\
+{\em directory} & A directory that will contains the backup file. \\
 \hline
 \end{DoxyParams}
 
@@ -144,10 +144,10 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Closing connection to S\+QL server. 
+Closes an opened connection to a S\+QL server. 
 
 \begin{DoxyReturn}{Returns}
-Result of connection closing.
+A result of connection closing.
 \end{DoxyReturn}
 
 
@@ -161,15 +161,15 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Return generated S\+QL command relative to init time. 
+Returns generated S\+QL command that declares the column into the table. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em member} & Member that contains defined attributes that describes column definition.\\
+{\em member} & A member with defined attributes that describe a column.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-S\+QL command relative to target server.
+A S\+QL command relative to target server.
 \end{DoxyReturn}
 
 
@@ -187,12 +187,17 @@ Trying to convert D\+B\+Type to specified type in string format that suitable to
 
 
 \begin{DoxyParams}{Parameters}
-{\em type} & Common D\+B\+Type.\\
+{\em type} & A common D\+B\+Type. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Type suitable for S\+QL command relative to this type of database. Invalid\+Cast\+Exception in case if converting not possible.
+A type suitable for an S\+QL command relative to this type of database. 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Cast\+Exception} & In case if converting not possible. \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a7b854ebbcdf31c67716d8c365c321a31}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator}}.
@@ -205,15 +210,15 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Add code that disabling S\+QL checks during executing command. 
+Adds some code that disabling S\+QL checks during executing a command. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em command} & Target command that would be modified during operation.\\
+{\em command} & A target command that would be modified during the operation. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Modified comand.
+The modified comand. 
 \end{DoxyReturn}
 
 
@@ -227,15 +232,15 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Add code that disabling S\+QL checks during executing command. 
+Adds some code that disabling S\+QL checks during executing a command. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em command} & Target command that would be modified during operation.\\
+{\em command} & A target command that will be modified during the operation. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Modified comand.
+The modified comand. 
 \end{DoxyReturn}
 
 
@@ -249,7 +254,7 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Initialize operator. 
+Initializes an operator. 
 
 
 
@@ -263,17 +268,17 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Convert value of member to database parameter that can be used in command. 
+Converts a value of a member to a database parameter that can be used in some command. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em data} & Value of the object that would applied to parameter.\\
+{\em data} & A value of an object that will applied to the parameter.\\
 \hline
-{\em column} & Column attribute relative to member of data.\\
+{\em column} & A column attribute relative to member of data.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Parameter that could by used in commands to database.
+A parameter that could be used in commands to database. 
 \end{DoxyReturn}
 
 
@@ -287,7 +292,7 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Return new clear command suitable for current DB. 
+Returns a new clear command suitable for current DB. 
 
 
 
@@ -301,7 +306,7 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Return new clear command suitable for current DB with included command text. 
+Returns a new clear command suitable for current DB with included command text. 
 
 
 
@@ -315,15 +320,15 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Opening connection to S\+QL server. 
+Opens new connection to a S\+QL server. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em error} & Faced error. Null if passed success.\\
+{\em error} & A faced error. Null if passed success.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of connection.
+A result of connection.
 \end{DoxyReturn}
 
 
@@ -337,11 +342,11 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Restoring S\+QL db from file. 
+Restores a S\+QL database from a recovery container. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em file\+Path} & Full path to file\\
+{\em file\+Path} & A full path to the file.\\
 \hline
 \end{DoxyParams}
 
@@ -356,37 +361,37 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during a query generation. \\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during the operation.\\
 \hline
-{\em select} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
-{\em where} & List of requested columns that would included to {\ttfamily W\+H\+E\+RE} part of S\+QL query.\\
+{\em where} & A list of requested columns that will included to the {\ttfamily W\+H\+E\+RE} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of operation.
+A result of the operation.
 \end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a8f44635dc337c3652041f079190a792d}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator}}.
 
-\mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ae1053edf9aa3d9385ef3591e7ee863c7}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ae1053edf9aa3d9385ef3591e7ee863c7}} 
+\mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a5d151cd156c1ced0e9fe09be866adae7}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a5d151cd156c1ced0e9fe09be866adae7}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Set\+To\+Object@{Set\+To\+Object}}
 \index{Set\+To\+Object@{Set\+To\+Object}!Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}}
 \subsubsection{\texorpdfstring{Set\+To\+Object()}{SetToObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator.\+Set\+To\+Object (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{out string}]{error,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{selsect }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Uniform\+Data\+Operator.\+Sql.\+I\+Sql\+Operator.\+Set\+To\+Object (\begin{DoxyParamCaption}\item[{Type}]{table\+Type,  }\item[{object}]{obj,  }\item[{out string}]{error,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{select }\end{DoxyParamCaption})}
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -394,13 +399,13 @@ Setting data from DB Data reader to object by using column map described at obje
 \hline
 {\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during the operation.\\
 \hline
-{\em selsect} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of operation.
+A result of the operation.
 \end{DoxyReturn}
 
 
@@ -414,19 +419,19 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute. Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
 {\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during the operation.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of operation.
+A result of the operation.
 \end{DoxyReturn}
 
 
@@ -440,23 +445,24 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
-
-Add to W\+H\+E\+RE block only requested columns. Request data only for required columns. 
+Asynchronously sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em cancellation\+Token} & Token that can terminate operation.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during a query generation. \\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation. After operation would contains recived object.\\
+{\em cancellation\+Token} & A token that can be used to terminate the operation.\\
 \hline
-{\em select} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
-{\em where} & List of requested columns that would included to {\ttfamily W\+H\+E\+RE} part of S\+QL query.\\
+{\em where} & A list of requested columns that will included to the {\ttfamily W\+H\+E\+RE} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A started task.
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a98b579ed4a87c3f9dbdb90ffc28bf15c}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator}}.
@@ -469,21 +475,22 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
-
-Request data only for required columns. 
+Asynchronously sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Looks for the data by primary keys values. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em cancellation\+Token} & Token that can terminate operation.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during a query generation. \\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation. After operation would contains recived object.\\
+{\em cancellation\+Token} & A token that can be used to terminate the operation.\\
 \hline
-{\em select} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A started task.
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a49ee22a2a69fbc0752c989c7b79e5e43}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator}}.
@@ -496,17 +503,20 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Asynchronously sets a data from a Db\+Data\+Reader to an object by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Selects all the fields described into the table. Looks for the data by primary keys values. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em cancellation\+Token} & Token that can terminate operation.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during a query generation. \\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation. After operation would contains recived object.\\
+{\em cancellation\+Token} & A token that can be used to terminate the operation.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A started task.
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a3be9aeb9ce11e3fd536449843a585490}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator}}.
@@ -519,25 +529,25 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation. After operation would contains recived object.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during an S\+QL query generation. After operation would contains a recived object. \\
 \hline
-{\em collection} & Output collection that would contains recived object with the same Type like obj.\\
+{\em collection} & An output collection that will contains the received objects with a same Type as the source {\ttfamily obj} instance. \\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during the operation.\\
 \hline
-{\em select} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
-{\em where} & List of requested columns that would included to {\ttfamily W\+H\+E\+RE} part of S\+QL query.\\
+{\em where} & A list of requested columns that will included to the {\ttfamily W\+H\+E\+RE} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of operation.
+A result of operation. Invokes \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} in case if data not found. 
 \end{DoxyReturn}
 
 
@@ -551,23 +561,23 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Looks for the data by primary keys values. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation. After operation would contains recived object.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during an S\+QL query generation. After operation would contains a recived object. \\
 \hline
-{\em collection} & Output collection that would contains recived object with the same Type like obj.\\
+{\em collection} & An output collection that will contains the received objects with a same Type as the source {\ttfamily obj} instance. \\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during the operation.\\
 \hline
-{\em select} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of operation.
+A result of operation. Invokes \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} in case if data not found. 
 \end{DoxyReturn}
 
 
@@ -581,21 +591,21 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
+Sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Selects all the fields described into the table. Looks for the data by primary keys values. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation. After operation would contains recived object.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during an S\+QL query generation. After operation would contains a recived object. \\
 \hline
-{\em collection} & Output collection that would contains recived object with the same Type like obj.\\
+{\em collection} & An output collection that will contains the received objects with a same Type as the source {\ttfamily obj} instance. \\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during the operation.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of operation.
+A result of operation. Invokes \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} in case if data not found. 
 \end{DoxyReturn}
 
 
@@ -609,25 +619,26 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
-
-Add to W\+H\+E\+RE block only requested columns. Request data only for required columns. 
+Asynchronously sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em cancellation\+Token} & Token that can terminate operation.\\
+{\em cancellation\+Token} & A token that can be used to terminate the operation.\\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during an S\+QL query generation. After operation would contains a recived object. \\
 \hline
-{\em callback} & Delegate that would be called and return retcived collection of objects.\\
+{\em callback} & A delegate that will handle received objects collection. The collection has the same Type as the source {\ttfamily obj} instance. \\
 \hline
-{\em select} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
-{\em where} & List of requested columns that would included to {\ttfamily W\+H\+E\+RE} part of S\+QL query.\\
+{\em where} & A list of requested columns that will included to the {\ttfamily W\+H\+E\+RE} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A started task. Invokes \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} in case if data not found. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a277f97eaff18d7966e9b7ce00c171a0a}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a277f97eaff18d7966e9b7ce00c171a0a}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Set\+To\+Objects\+Async@{Set\+To\+Objects\+Async}}
 \index{Set\+To\+Objects\+Async@{Set\+To\+Objects\+Async}!Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}}
@@ -636,23 +647,24 @@ Add to W\+H\+E\+RE block only requested columns. Request data only for required 
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
-
-Add to W\+H\+E\+RE block only requested columns. Request data only for required columns. 
+Asynchronously sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Looks for the data by primary keys values. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em cancellation\+Token} & Token that can terminate operation.\\
+{\em cancellation\+Token} & A token that can be used to terminate the operation.\\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during an S\+QL query generation. After operation would contains a recived object. \\
 \hline
-{\em callback} & Delegate that would be called and return retcived collection of objects.\\
+{\em callback} & A delegate that will handle received objects collection. The collection has the same Type as the source {\ttfamily obj} instance. \\
 \hline
-{\em select} & List of requested columns that would included to S\+QL query.\\
+{\em select} & A list of requested columns that will included to the {\ttfamily S\+E\+L\+E\+CT} part of an S\+QL query.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A started task. Invokes \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} in case if data not found. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac8deb4d7a21d382b352b401f714deea9}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ac8deb4d7a21d382b352b401f714deea9}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Set\+To\+Objects\+Async@{Set\+To\+Objects\+Async}}
 \index{Set\+To\+Objects\+Async@{Set\+To\+Objects\+Async}!Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}}
@@ -661,21 +673,22 @@ Add to W\+H\+E\+RE block only requested columns. Request data only for required 
 
 
 
-Setting data from DB Data reader to object by using column map described at object Type. Auto-\/generate S\+QL query and request coluns data relative to privary keys described in object. 
-
-Add to W\+H\+E\+RE block only requested columns. Request data only for required columns. 
+Asynchronously sets a data from a Db\+Data\+Reader to an objects list by using a columns map described at the object\textquotesingle{}s Type. Builds an handles an S\+QL query for request of columns data relative to primary keys described in the object. Can receive the objects with count starts at one. Selects all the fields described into the table. Looks for the data by primary keys values. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em cancellation\+Token} & Token that can terminate operation.\\
+{\em cancellation\+Token} & A token that can be used to terminate the operation.\\
 \hline
-{\em obj} & Target object that cantains described primary keys, that would be used during query generation.\\
+{\em obj} & A target object that cantains described primary keys, that will be used during an S\+QL query generation. After operation would contains a recived object. \\
 \hline
-{\em callback} & Delegate that would be called and return retcived collection of objects.\\
+{\em callback} & A delegate that will handle received objects collection. The collection has the same Type as the source {\ttfamily obj} instance. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A started task. Invokes \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_sql_operator_handler_a8373486df36ace17ffba1e14bf6a951a}{Sql\+Operator\+Handler.\+Sql\+Error\+Occured}} in case if data not found. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ad05106eb6bd1a50f35b476a42821dfa3}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ad05106eb6bd1a50f35b476a42821dfa3}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Set\+To\+Table@{Set\+To\+Table}}
 \index{Set\+To\+Table@{Set\+To\+Table}!Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}}
@@ -684,19 +697,19 @@ Add to W\+H\+E\+RE block only requested columns. Request data only for required 
 
 
 
-Creating request that setting up data from object to database server acording to attributes. 
+Creates and handles a command that send a data from object to a database on a S\+QL server. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute. Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em data} & Object that contains fields that would be writed to database. Affected only fields and properties with defined Column attribute.\\
+{\em data} & An object that contains fields/properties which values that will be written to a database. Affected only fields and properties with defined Column\+Attribute. \\
 \hline
-{\em error} & Error faces during operation.\\
+{\em error} & An error faced during the operation. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of operation.
+A result of the operation.
 \end{DoxyReturn}
 
 
@@ -710,17 +723,20 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Creating request that setting up data from object to database server acording to attributes. 
+Creates and handles an asynchronous command that send a data from object to a database on a S\+QL server. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Type} & Type that has defined Table attribute Would be used as table descriptor during query building.\\
+{\em table\+Type} & A type that has defined Table\+Attribute. Will be used as a table descriptor during the query building. Defines a behavior by attributes defined to the members. \\
 \hline
-{\em cancellation\+Token} & Token that can terminate operation.\\
+{\em cancellation\+Token} & A token that can be used to terminate the operation.\\
 \hline
-{\em data} & Object that contains fields that would be writed to database. Affected only fields and properties with defined Column attribute.\\
+{\em data} & An object that contains fields/properties which values that will be written to a database. Affected only fields and properties with defined Column\+Attribute. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A started task. 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_a036b234868363f2f680e5157ee459439}{Uniform\+Data\+Operator.\+Sql.\+My\+Sql.\+My\+Sql\+Data\+Operator}}.
@@ -733,17 +749,17 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Validate database table column acording to member attributes. 
+Validates a database table\textquotesingle{}s column according to member attributes. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em table\+Descriptor} & Table meta data.\\
+{\em table\+Descriptor} & A table metadata.\\
 \hline
-{\em column\+Member} & Member with defined Column attribute that would be comared with \\
+{\em column\+Member} & A member with defined Column\+Attribute attribute that will be compared with instantiated into the database. . \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Result of validation.
+A result of validation.
 \end{DoxyReturn}
 
 
@@ -760,7 +776,7 @@ Implemented in \mbox{\hyperlink{class_uniform_data_operator_1_1_sql_1_1_my_sql_1
 
 
 
-Connection to DB. 
+A handler that manage connection between the app and a database. 
 
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a55b7f28ed4ab20f124e67e2d447f8b40}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a55b7f28ed4ab20f124e67e2d447f8b40}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Database@{Database}}
@@ -770,7 +786,7 @@ Connection to DB.
 
 
 
-Database\textquotesingle{}s name. 
+Name a target database. 
 
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a90f63ab37347ec080b37dc3256ead7a4}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a90f63ab37347ec080b37dc3256ead7a4}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Password@{Password}}
@@ -780,7 +796,7 @@ Database\textquotesingle{}s name.
 
 
 
-User\textquotesingle{}s password. 
+A password for the user impersonation. 
 
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a2d0ac2538fa196b181f6e0ab523db137}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_a2d0ac2538fa196b181f6e0ab523db137}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Port@{Port}}
@@ -790,7 +806,7 @@ User\textquotesingle{}s password.
 
 
 
-Port for server access. 
+A port for access a binded server. 
 
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ab1b593e38cb9377dac847811c483f2f3}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_ab1b593e38cb9377dac847811c483f2f3}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!Server@{Server}}
@@ -800,7 +816,7 @@ Port for server access.
 
 
 
-Server\textquotesingle{}s ip. 
+An ip of a server. 
 
 \mbox{\Hypertarget{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_abf0c3a32c8161030b37ccf960c395d4f}\label{interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_abf0c3a32c8161030b37ccf960c395d4f}} 
 \index{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator@{Uniform\+Data\+Operator\+::\+Sql\+::\+I\+Sql\+Operator}!User\+Id@{User\+Id}}
@@ -810,7 +826,7 @@ Server\textquotesingle{}s ip.
 
 
 
-User for connection. 
+A user for connection to a S\+QL server. 
 
 
 

@@ -213,7 +213,7 @@ namespace UniformDataOperator.Sql.MySql
         /// <returns>Result of operation.</returns>
         public bool SetToObjects(Type tableType, object obj, out IList collection, out string error, string[] select, params string[] where)
         {
-            // Cinstiniate output collection.
+            // Instiniating an output collection.
             collection = (IList)Activator.CreateInstance((typeof(List<>).MakeGenericType(obj.GetType())));
             collection.Add(obj);
 

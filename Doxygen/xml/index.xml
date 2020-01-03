@@ -117,7 +117,7 @@
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ad05106eb6bd1a50f35b476a42821dfa3" kind="function"><name>SetToTable</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a35ef3899954f213e391751e9cda09322" kind="function"><name>SetToTableAsync</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a9a1822fcafcb1a3abd59b40f2cef7930" kind="function"><name>SetToObject</name></member>
-    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ae1053edf9aa3d9385ef3591e7ee863c7" kind="function"><name>SetToObject</name></member>
+    <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1a5d151cd156c1ced0e9fe09be866adae7" kind="function"><name>SetToObject</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac170526dd0fa31f2848ece5f5c5bb9d7" kind="function"><name>SetToObject</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ae5c6fb9c7448e7171414b7d20095cc08" kind="function"><name>SetToObjects</name></member>
     <member refid="d1/dad/interface_uniform_data_operator_1_1_sql_1_1_i_sql_operator_1ac75ce5e3b29a8d2d94f96d4a9ff47820" kind="function"><name>SetToObjects</name></member>
