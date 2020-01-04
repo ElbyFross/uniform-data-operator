@@ -1,21 +1,6 @@
 ﻿# Uniform Data Operator
 It's a framework that allow to oparate and manage yours data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjust of your product only for one storage type that could be not suitable for you in future.
 
-# Modules 
-## Binnary Handler
-Provides base API for binary serizliation process.
-
-## SQLOperatorHandler
-Provides methods that simplify converting of app's data to query format.
-Inform subscribers about `ISqlPperators` events.
-Provides access to current `Active` SQL operator.
-
-## AttributesHandler
-Provides API thats simplify working with UDO attributes and members data.
-
-## Included operators:
-- `MySQLDataOperator` - provides uniform way to manage your data via MySQL database.
-
 # F.A.Q.
 ## How to describe table class/struct?
 ### Conception
@@ -51,7 +36,7 @@ compatible with your specific server.
 Use the default MySqlDataOperator (group of partial classes) as example. Them are pretty good documented.
 If you done this job please consider sharing this source as contribution into UDO.
 
-## My SQL server incompatible with DbDataType's indexes. How I can adjust my data?
+## My SQL server incompatible with the DbDataType's indexes. How I can adjust my data?
 By default `Column` attribute described via `DbDataType` that mostly unusable for huge count of types that custom for every different SQL server.
 If you faced with such kind of problem so just create your own modifying attribute that would be used on your custom `ISqlOperator` instance.
 
@@ -64,11 +49,10 @@ But not the only way to manage your uniformed data.
 
 All what you need it's pipe down on one level and start direct work with your `ISqlOperator` instance.
 
-Make your own SQL query suitable by your specific task and send it to server via `SqlOperatoHandler.Active` by use one of provided methods :
+Make your own SQL command suitable by your specific task and send it to server via `SqlOperatorHandler.Active.NewCommand(YOUR_COMMAND)` by use one of provided methods :
 - `ExecuteNonQuery`
 - `ExecuteScalar`
 - `ExecuteReader`
-- `Count`
 
 ## How to establish connection with server?
 1. Create and instance of your `ISqlOperator` instance. 
@@ -82,3 +66,5 @@ Make your own SQL query suitable by your specific task and send it to server via
 4. Call `OpenConnection` method on your `ISqlOperator` instance.
 5. Execute your SQL query.
 6. Call `CloseConnection` method on your `ISqlOperator` instance.
+
+> Note that the action required only for manual commands. 
