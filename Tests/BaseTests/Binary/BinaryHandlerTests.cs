@@ -20,6 +20,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BaseTests.Types;
 using UniformDataOperator.Binary;
+using UniformDataOperator.Binary.IO;
 
 namespace BaseTests.Binary
 {
@@ -81,7 +82,7 @@ namespace BaseTests.Binary
 
             string message = GenerateMessage();
 
-            MemoryStream stream = new MemoryStream();
+            var stream = new MemoryStream();
             
             var reading = new Task(async delegate ()
             {
@@ -90,7 +91,7 @@ namespace BaseTests.Binary
                     byte[] data = null;
                     while (data == null)
                     {
-                        data = await UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync(stream);
+                        data = await StreamHandler.StreamReaderAsync(stream);
                         Thread.Sleep(5);
                     }
                     string receivedMessage = BinaryHandler.FromByteArray<string>(data);
@@ -107,9 +108,9 @@ namespace BaseTests.Binary
             
             var writing = new Task(async delegate ()
             {
-                await UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync(
+                await StreamHandler.StreamWriterAsync(
                     stream,
-                    UniformDataOperator.Binary.IO.StreamChanelMode.Oneway,
+                    StreamChanelMode.Oneway,
                     BinaryHandler.ToByteArray(message));
             });
 
@@ -195,7 +196,7 @@ namespace BaseTests.Binary
                 try
                 {
                     // Data to message format.
-                    string receivedMessage = await UniformDataOperator.Binary.IO.StreamHandler.StreamReaderAsync<string>(client);
+                    string receivedMessage = await StreamHandler.StreamReaderAsync<string>(client);
 
                     // Validate data.
                     success = receivedMessage.Equals(message);
@@ -216,7 +217,7 @@ namespace BaseTests.Binary
                 try
                 {
                     // Sending message to stream.
-                    await UniformDataOperator.Binary.IO.StreamHandler.StreamWriterAsync(server, message);
+                    await StreamHandler.StreamWriterAsync(server, message);
                 }
                 catch (Exception ex)
                 {
