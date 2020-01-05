@@ -92,17 +92,6 @@ $(document).ready(function(){initNavTree('d4/d04/md__d_1__work__git_hub_uniform-
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>It's a framework that allow to oparate and manage yours data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjust of your product only for one storage type that could be not suitable for you in future.</p>
-<h1>Modules</h1>
-<h2>Binnary Handler</h2>
-<p>Provides base API for binary serizliation process.</p>
-<h2>SQLOperatorHandler</h2>
-<p>Provides methods that simplify converting of app's data to query format. Inform subscribers about <code>ISqlPperators</code> events. Provides access to current <code>Active</code> SQL operator.</p>
-<h2>AttributesHandler</h2>
-<p>Provides API thats simplify working with UDO attributes and members data.</p>
-<h2>Included operators:</h2>
-<ul>
-<li><code>MySQLDataOperator</code> - provides uniform way to manage your data via MySQL database.</li>
-</ul>
 <h1>F.A.Q.</h1>
 <h2>How to describe table class/struct?</h2>
 <h3>Conception</h3>
@@ -125,17 +114,16 @@ $(document).ready(function(){initNavTree('d4/d04/md__d_1__work__git_hub_uniform-
 <h2>Can I add supporting of other SQL server?</h2>
 <p>Sure. Just create you ServerNameOperator that implement ISqlOperator interface and your data described by UDO's attributes would be compatible with your specific server.</p>
 <p>Use the default MySqlDataOperator (group of partial classes) as example. Them are pretty good documented. If you done this job please consider sharing this source as contribution into UDO.</p>
-<h2>My SQL server incompatible with DbDataType's indexes. How I can adjust my data?</h2>
+<h2>My SQL server incompatible with the DbDataType's indexes. How I can adjust my data?</h2>
 <p>By default <code>Column</code> attribute described via <code>DbDataType</code> that mostly unusable for huge count of types that custom for every different SQL server. If you faced with such kind of problem so just create your own modifying attribute that would be used on your custom <code>ISqlOperator</code> instance.</p>
 <p>Use <code>UniformDataOperator.Sql.MySql.Attributes.MySqlDBTypeOverride</code> as example for your source. Check how it using at <code>MySqlDataOperatorCommands.cs</code> in <code>ColumnDeclarationCommand</code> method.</p>
 <h2>Auto write/read not enough flexible for me. How I can make custom query?</h2>
 <p>Auto managing of duplex exchanging of data with SQL server it's just a high end feature. But not the only way to manage your uniformed data.</p>
 <p>All what you need it's pipe down on one level and start direct work with your <code>ISqlOperator</code> instance.</p>
-<p>Make your own SQL query suitable by your specific task and send it to server via <code>SqlOperatoHandler.Active</code> by use one of provided methods :</p><ul>
+<p>Make your own SQL command suitable by your specific task and send it to server via <code>SqlOperatorHandler.Active.NewCommand(YOUR_COMMAND)</code> by use one of provided methods :</p><ul>
 <li><code>ExecuteNonQuery</code></li>
 <li><code>ExecuteScalar</code></li>
 <li><code>ExecuteReader</code></li>
-<li><code>Count</code></li>
 </ul>
 <h2>How to establish connection with server?</h2>
 <ol type="1">
@@ -151,8 +139,11 @@ $(document).ready(function(){initNavTree('d4/d04/md__d_1__work__git_hub_uniform-
 <li>Call <code>Initialize</code> method on your <code>ISqlOperator</code> instance.</li>
 <li>Call <code>OpenConnection</code> method on your <code>ISqlOperator</code> instance.</li>
 <li>Execute your SQL query.</li>
-<li>Call <code>CloseConnection</code> method on your <code>ISqlOperator</code> instance. </li>
+<li>Call <code>CloseConnection</code> method on your <code>ISqlOperator</code> instance.</li>
 </ol>
+<blockquote class="doxtable">
+<p>Note that the action required only for manual commands. </p>
+</blockquote>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

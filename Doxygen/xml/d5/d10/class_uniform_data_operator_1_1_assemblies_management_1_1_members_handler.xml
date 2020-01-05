@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler" kind="class" language="C#" prot="public">
     <compoundname>UniformDataOperator::AssembliesManagement::MembersHandler</compoundname>
+    <innerclass refid="d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info" prot="public">UniformDataOperator::AssembliesManagement::MembersHandler::RuntimeAttributeInfo</innerclass>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a563f793ce990d95b0830a3dff609a9ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerable&lt; FieldInfo &gt;</type>
@@ -419,10 +420,10 @@
         </inbodydescription>
         <location file="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" line="194" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" bodystart="194" bodyend="224"/>
       </memberdef>
-      <memberdef kind="function" id="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1ae0fefd738ce818c44bc8dbb602be3bf1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>static void UniformDataOperator.AssembliesManagement.MembersHandler.AddAttribute</definition>
-        <argsstring>(string assembly, Type targetType, Type attrType, Type[] attrConstructorSignature, object[] attrConstructorValues)</argsstring>
+      <memberdef kind="function" id="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a66f0295fa016e2d296046fd968103a4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>static Type UniformDataOperator.AssembliesManagement.MembersHandler.AddAttribute</definition>
+        <argsstring>(string assembly, Type targetType, params RuntimeAttributeInfo[] attributesInfo)</argsstring>
         <name>AddAttribute</name>
         <param>
           <type>string</type>
@@ -433,16 +434,8 @@
           <declname>targetType</declname>
         </param>
         <param>
-          <type>Type</type>
-          <declname>attrType</declname>
-        </param>
-        <param>
-          <type>Type []</type>
-          <declname>attrConstructorSignature</declname>
-        </param>
-        <param>
-          <type>object []</type>
-          <declname>attrConstructorValues</declname>
+          <type>params <ref refid="d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info" kindref="compound">RuntimeAttributeInfo</ref> []</type>
+          <declname>attributesInfo</declname>
         </param>
         <briefdescription>
 <para>Add to assembly the new type based on targetType but with existed new attribute. </para>        </briefdescription>
@@ -452,50 +445,45 @@
 <parametername>assembly</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Assembly that will contains new the type.</para></parameterdescription>
+<para>Assembly that will contains new the type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>targetType</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Type that will inherited during creating of new type.</para></parameterdescription>
+<para>Type that will inherited during creating of new type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>attrType</parametername>
+<parametername>attributesInfo</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Type of attribute that will added to the type.</para></parameterdescription>
+<para>An array with metadate that describe a new attributes which will added to the new type. </para></parameterdescription>
 </parameteritem>
-<parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A runtime type with added attribute </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
 <parameternamelist>
-<parametername>attrConstructorSignature</parametername>
+<parametername>MissingMethodException</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Signature of attribute constructor.</para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>attrConstructorValues</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Values that will be shared in atttribute constructor.</para></parameterdescription>
+<para>Occurs when <computeroutput>attrConstructorValues</computeroutput> not suitable for an any <computeroutput>attrType</computeroutput> constructor. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" line="236" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" bodystart="236" bodyend="252"/>
+        <location file="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" line="246" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" bodystart="246" bodyend="321"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Provides API to handle attributes. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" bodystart="28" bodyend="254"/>
+    <location file="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" line="29" column="1" bodyfile="D:/Work/GitHub/uniform-data-operator/AssembliesManagement/MembersHandler.cs" bodystart="28" bodyend="351"/>
     <listofallmembers>
-      <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1ae0fefd738ce818c44bc8dbb602be3bf1" prot="public" virt="non-virtual"><scope>UniformDataOperator::AssembliesManagement::MembersHandler</scope><name>AddAttribute</name></member>
+      <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a66f0295fa016e2d296046fd968103a4e" prot="public" virt="non-virtual"><scope>UniformDataOperator::AssembliesManagement::MembersHandler</scope><name>AddAttribute</name></member>
       <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a0401f2325dda95a28dea4129e62bc9fd" prot="public" virt="non-virtual"><scope>UniformDataOperator::AssembliesManagement::MembersHandler</scope><name>Converter</name></member>
       <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a563f793ce990d95b0830a3dff609a9ee" prot="public" virt="non-virtual"><scope>UniformDataOperator::AssembliesManagement::MembersHandler</scope><name>FindFieldsWithAttribute&lt; T &gt;</name></member>
       <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1abf58fa664b9202a0776cbb9a1c659ba9" prot="public" virt="non-virtual"><scope>UniformDataOperator::AssembliesManagement::MembersHandler</scope><name>FindMembersWithAttribute&lt; T &gt;</name></member>

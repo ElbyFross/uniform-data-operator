@@ -10,21 +10,6 @@
 <codeline><highlight class="normal">#<sp/>Uniform<sp/>Data<sp/>Operator</highlight></codeline>
 <codeline><highlight class="normal">It&apos;s<sp/>a<sp/>framework<sp/>that<sp/>allow<sp/>to<sp/>oparate<sp/>and<sp/>manage<sp/>yours<sp/>data<sp/>by<sp/>unified<sp/>way,<sp/>not<sp/>depending<sp/>from<sp/>your<sp/>database<sp/>or<sp/>prefered<sp/>format.<sp/>Standardize<sp/>your<sp/>data<sp/>structures<sp/>and<sp/>avoid<sp/>adjust<sp/>of<sp/>your<sp/>product<sp/>only<sp/>for<sp/>one<sp/>storage<sp/>type<sp/>that<sp/>could<sp/>be<sp/>not<sp/>suitable<sp/>for<sp/>you<sp/>in<sp/>future.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">#<sp/>Modules<sp/></highlight></codeline>
-<codeline><highlight class="normal">##<sp/>Binnary<sp/>Handler</highlight></codeline>
-<codeline><highlight class="normal">Provides<sp/>base<sp/>API<sp/>for<sp/>binary<sp/>serizliation<sp/>process.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">##<sp/>SQLOperatorHandler</highlight></codeline>
-<codeline><highlight class="normal">Provides<sp/>methods<sp/>that<sp/>simplify<sp/>converting<sp/>of<sp/>app&apos;s<sp/>data<sp/>to<sp/>query<sp/>format.</highlight></codeline>
-<codeline><highlight class="normal">Inform<sp/>subscribers<sp/>about<sp/>`ISqlPperators`<sp/>events.</highlight></codeline>
-<codeline><highlight class="normal">Provides<sp/>access<sp/>to<sp/>current<sp/>`Active`<sp/>SQL<sp/>operator.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">##<sp/>AttributesHandler</highlight></codeline>
-<codeline><highlight class="normal">Provides<sp/>API<sp/>thats<sp/>simplify<sp/>working<sp/>with<sp/>UDO<sp/>attributes<sp/>and<sp/>members<sp/>data.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Included<sp/>operators:</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>`MySQLDataOperator`<sp/>-<sp/>provides<sp/>uniform<sp/>way<sp/>to<sp/>manage<sp/>your<sp/>data<sp/>via<sp/>MySQL<sp/>database.</highlight></codeline>
-<codeline></codeline>
 <codeline><highlight class="normal">#<sp/>F.A.Q.</highlight></codeline>
 <codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>describe<sp/>table<sp/>class/struct?</highlight></codeline>
 <codeline><highlight class="normal">###<sp/>Conception</highlight></codeline>
@@ -60,7 +45,7 @@
 <codeline><highlight class="normal">Use<sp/>the<sp/>default<sp/>MySqlDataOperator<sp/>(group<sp/>of<sp/>partial<sp/>classes)<sp/>as<sp/>example.<sp/>Them<sp/>are<sp/>pretty<sp/>good<sp/>documented.</highlight></codeline>
 <codeline><highlight class="normal">If<sp/>you<sp/>done<sp/>this<sp/>job<sp/>please<sp/>consider<sp/>sharing<sp/>this<sp/>source<sp/>as<sp/>contribution<sp/>into<sp/>UDO.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>My<sp/>SQL<sp/>server<sp/>incompatible<sp/>with<sp/>DbDataType&apos;s<sp/>indexes.<sp/>How<sp/>I<sp/>can<sp/>adjust<sp/>my<sp/>data?</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>My<sp/>SQL<sp/>server<sp/>incompatible<sp/>with<sp/>the<sp/>DbDataType&apos;s<sp/>indexes.<sp/>How<sp/>I<sp/>can<sp/>adjust<sp/>my<sp/>data?</highlight></codeline>
 <codeline><highlight class="normal">By<sp/>default<sp/>`Column`<sp/>attribute<sp/>described<sp/>via<sp/>`DbDataType`<sp/>that<sp/>mostly<sp/>unusable<sp/>for<sp/>huge<sp/>count<sp/>of<sp/>types<sp/>that<sp/>custom<sp/>for<sp/>every<sp/>different<sp/>SQL<sp/>server.</highlight></codeline>
 <codeline><highlight class="normal">If<sp/>you<sp/>faced<sp/>with<sp/>such<sp/>kind<sp/>of<sp/>problem<sp/>so<sp/>just<sp/>create<sp/>your<sp/>own<sp/>modifying<sp/>attribute<sp/>that<sp/>would<sp/>be<sp/>used<sp/>on<sp/>your<sp/>custom<sp/>`ISqlOperator`<sp/>instance.</highlight></codeline>
 <codeline></codeline>
@@ -73,11 +58,10 @@
 <codeline></codeline>
 <codeline><highlight class="normal">All<sp/>what<sp/>you<sp/>need<sp/>it&apos;s<sp/>pipe<sp/>down<sp/>on<sp/>one<sp/>level<sp/>and<sp/>start<sp/>direct<sp/>work<sp/>with<sp/>your<sp/>`ISqlOperator`<sp/>instance.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Make<sp/>your<sp/>own<sp/>SQL<sp/>query<sp/>suitable<sp/>by<sp/>your<sp/>specific<sp/>task<sp/>and<sp/>send<sp/>it<sp/>to<sp/>server<sp/>via<sp/>`SqlOperatoHandler.Active`<sp/>by<sp/>use<sp/>one<sp/>of<sp/>provided<sp/>methods<sp/>:</highlight></codeline>
+<codeline><highlight class="normal">Make<sp/>your<sp/>own<sp/>SQL<sp/>command<sp/>suitable<sp/>by<sp/>your<sp/>specific<sp/>task<sp/>and<sp/>send<sp/>it<sp/>to<sp/>server<sp/>via<sp/>`SqlOperatorHandler.Active.NewCommand(YOUR_COMMAND)`<sp/>by<sp/>use<sp/>one<sp/>of<sp/>provided<sp/>methods<sp/>:</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>`ExecuteNonQuery`</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>`ExecuteScalar`</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>`ExecuteReader`</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>`Count`</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>establish<sp/>connection<sp/>with<sp/>server?</highlight></codeline>
 <codeline><highlight class="normal">1.<sp/>Create<sp/>and<sp/>instance<sp/>of<sp/>your<sp/>`ISqlOperator`<sp/>instance.<sp/></highlight></codeline>
@@ -91,6 +75,8 @@
 <codeline><highlight class="normal">4.<sp/>Call<sp/>`OpenConnection`<sp/>method<sp/>on<sp/>your<sp/>`ISqlOperator`<sp/>instance.</highlight></codeline>
 <codeline><highlight class="normal">5.<sp/>Execute<sp/>your<sp/>SQL<sp/>query.</highlight></codeline>
 <codeline><highlight class="normal">6.<sp/>Call<sp/>`CloseConnection`<sp/>method<sp/>on<sp/>your<sp/>`ISqlOperator`<sp/>instance.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Note<sp/>that<sp/>the<sp/>action<sp/>required<sp/>only<sp/>for<sp/>manual<sp/>commands.<sp/></highlight></codeline>
     </programlisting>
     <location file="D:/Work/GitHub/uniform-data-operator/README.md"/>
   </compounddef>

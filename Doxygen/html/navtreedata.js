@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"de/d8b/namespace_uniform_data_operator_1_1_sql_1_1_markup.html"
+"dd/d33/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_is_foreign_key_attribute.html#ae6c77deaf80d5c4d07709edf51eaebc5a2ac481dd701d4f580b6b01eb34442e71"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

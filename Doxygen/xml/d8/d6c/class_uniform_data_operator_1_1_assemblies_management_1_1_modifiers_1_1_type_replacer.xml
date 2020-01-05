@@ -223,17 +223,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="91">
-        <label>Attribute</label>
-      </node>
-      <node id="90">
-        <label>UniformDataOperator.AssembliesManagement.Modifiers.TypeReplacer</label>
-        <link refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer"/>
-        <childnode refid="91" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="93">
         <label>Attribute</label>
       </node>
@@ -241,6 +230,17 @@
         <label>UniformDataOperator.AssembliesManagement.Modifiers.TypeReplacer</label>
         <link refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer"/>
         <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="95">
+        <label>Attribute</label>
+      </node>
+      <node id="94">
+        <label>UniformDataOperator.AssembliesManagement.Modifiers.TypeReplacer</label>
+        <link refid="d8/d6c/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer"/>
+        <childnode refid="95" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,6 +1,7 @@
 var class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler =
 [
-    [ "AddAttribute", "d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#ae0fefd738ce818c44bc8dbb602be3bf1", null ],
+    [ "RuntimeAttributeInfo", "d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info.html", "d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info" ],
+    [ "AddAttribute", "d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#a66f0295fa016e2d296046fd968103a4e", null ],
     [ "Converter", "d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#a0401f2325dda95a28dea4129e62bc9fd", null ],
     [ "FindFieldsWithAttribute< T >", "d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#a563f793ce990d95b0830a3dff609a9ee", null ],
     [ "FindMembersWithAttribute< T >", "d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#abf58fa664b9202a0776cbb9a1c659ba9", null ],

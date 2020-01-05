@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('d5/d10/class_uniform_data_operator_1_1
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../db/da8/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,6 +99,12 @@ $(document).ready(function(){initNavTree('d5/d10/class_uniform_data_operator_1_1
 <p>Provides API to handle attributes.  
  <a href="../../d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info.html">RuntimeAttributeInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A metadata about a runtime added attribute.  <a href="../../d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a563f793ce990d95b0830a3dff609a9ee"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; FieldInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#a563f793ce990d95b0830a3dff609a9ee">FindFieldsWithAttribute&lt; T &gt;</a> (Type source)</td></tr>
@@ -133,15 +140,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0401f2325dda95a28dea4129e62bc9fd"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#a0401f2325dda95a28dea4129e62bc9fd">Converter</a> (Type targetType, object data)</td></tr>
 <tr class="memdesc:a0401f2325dda95a28dea4129e62bc9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trying to convers object to other type.  <a href="#a0401f2325dda95a28dea4129e62bc9fd">More...</a><br /></td></tr>
 <tr class="separator:a0401f2325dda95a28dea4129e62bc9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0fefd738ce818c44bc8dbb602be3bf1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#ae0fefd738ce818c44bc8dbb602be3bf1">AddAttribute</a> (string assembly, Type targetType, Type attrType, Type[] attrConstructorSignature, object[] attrConstructorValues)</td></tr>
-<tr class="memdesc:ae0fefd738ce818c44bc8dbb602be3bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to assembly the new type based on targetType but with existed new attribute.  <a href="#ae0fefd738ce818c44bc8dbb602be3bf1">More...</a><br /></td></tr>
-<tr class="separator:ae0fefd738ce818c44bc8dbb602be3bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f0295fa016e2d296046fd968103a4e"><td class="memItemLeft" align="right" valign="top">static Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler.html#a66f0295fa016e2d296046fd968103a4e">AddAttribute</a> (string assembly, Type targetType, params <a class="el" href="../../d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info.html">RuntimeAttributeInfo</a>[] attributesInfo)</td></tr>
+<tr class="memdesc:a66f0295fa016e2d296046fd968103a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to assembly the new type based on targetType but with existed new attribute.  <a href="#a66f0295fa016e2d296046fd968103a4e">More...</a><br /></td></tr>
+<tr class="separator:a66f0295fa016e2d296046fd968103a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides API to handle attributes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae0fefd738ce818c44bc8dbb602be3bf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0fefd738ce818c44bc8dbb602be3bf1">&#9670;&nbsp;</a></span>AddAttribute()</h2>
+<a id="a66f0295fa016e2d296046fd968103a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f0295fa016e2d296046fd968103a4e">&#9670;&nbsp;</a></span>AddAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +157,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void UniformDataOperator.AssembliesManagement.MembersHandler.AddAttribute </td>
+          <td class="memname">static Type UniformDataOperator.AssembliesManagement.MembersHandler.AddAttribute </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>assembly</em>, </td>
@@ -164,20 +171,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>attrType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Type []&#160;</td>
-          <td class="paramname"><em>attrConstructorSignature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">object []&#160;</td>
-          <td class="paramname"><em>attrConstructorValues</em>&#160;</td>
+          <td class="paramtype">params <a class="el" href="../../d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info.html">RuntimeAttributeInfo</a> []&#160;</td>
+          <td class="paramname"><em>attributesInfo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,11 +190,16 @@ Static Public Member Functions</h2></td></tr>
 <p>Add to assembly the new type based on targetType but with existed new attribute. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">assembly</td><td>Assembly that will contains new the type.</td></tr>
-    <tr><td class="paramname">targetType</td><td>Type that will inherited during creating of new type.</td></tr>
-    <tr><td class="paramname">attrType</td><td>Type of attribute that will added to the type.</td></tr>
-    <tr><td class="paramname">attrConstructorSignature</td><td>Signature of attribute constructor.</td></tr>
-    <tr><td class="paramname">attrConstructorValues</td><td>Values that will be shared in atttribute constructor.</td></tr>
+    <tr><td class="paramname">assembly</td><td>Assembly that will contains new the type. </td></tr>
+    <tr><td class="paramname">targetType</td><td>Type that will inherited during creating of new type. </td></tr>
+    <tr><td class="paramname">attributesInfo</td><td>An array with metadate that describe a new attributes which will added to the new type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A runtime type with added attribute </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MissingMethodException</td><td>Occurs when <code>attrConstructorValues</code> not suitable for an any <code>attrType</code> constructor. </td></tr>
   </table>
   </dd>
 </dl>

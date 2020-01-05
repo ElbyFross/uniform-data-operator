@@ -5,6 +5,11 @@
 Provides A\+PI to handle attributes.  
 
 
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info}{Runtime\+Attribute\+Info}}
+\begin{DoxyCompactList}\small\item\em A metadata about a runtime added attribute. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,7 +35,7 @@ static void \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_manageme
 \begin{DoxyCompactList}\small\item\em Setting value to member on specific object. \end{DoxyCompactList}\item 
 static object \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a0401f2325dda95a28dea4129e62bc9fd}{Converter}} (Type target\+Type, object data)
 \begin{DoxyCompactList}\small\item\em Trying to convers object to other type. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ae0fefd738ce818c44bc8dbb602be3bf1}{Add\+Attribute}} (string assembly, Type target\+Type, Type attr\+Type, Type\mbox{[}$\,$\mbox{]} attr\+Constructor\+Signature, object\mbox{[}$\,$\mbox{]} attr\+Constructor\+Values)
+static Type \mbox{\hyperlink{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a66f0295fa016e2d296046fd968103a4e}{Add\+Attribute}} (string assembly, Type target\+Type, params \mbox{\hyperlink{struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info}{Runtime\+Attribute\+Info}}\mbox{[}$\,$\mbox{]} attributes\+Info)
 \begin{DoxyCompactList}\small\item\em Add to assembly the new type based on target\+Type but with existed new attribute. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -40,11 +45,11 @@ Provides A\+PI to handle attributes.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ae0fefd738ce818c44bc8dbb602be3bf1}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_ae0fefd738ce818c44bc8dbb602be3bf1}} 
+\mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a66f0295fa016e2d296046fd968103a4e}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a66f0295fa016e2d296046fd968103a4e}} 
 \index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Add\+Attribute@{Add\+Attribute}}
 \index{Add\+Attribute@{Add\+Attribute}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}
 \subsubsection{\texorpdfstring{Add\+Attribute()}{AddAttribute()}}
-{\footnotesize\ttfamily static void Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Add\+Attribute (\begin{DoxyParamCaption}\item[{string}]{assembly,  }\item[{Type}]{target\+Type,  }\item[{Type}]{attr\+Type,  }\item[{Type \mbox{[}$\,$\mbox{]}}]{attr\+Constructor\+Signature,  }\item[{object \mbox{[}$\,$\mbox{]}}]{attr\+Constructor\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static Type Uniform\+Data\+Operator.\+Assemblies\+Management.\+Members\+Handler.\+Add\+Attribute (\begin{DoxyParamCaption}\item[{string}]{assembly,  }\item[{Type}]{target\+Type,  }\item[{params \mbox{\hyperlink{struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info}{Runtime\+Attribute\+Info}} \mbox{[}$\,$\mbox{]}}]{attributes\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -52,17 +57,21 @@ Add to assembly the new type based on target\+Type but with existed new attribut
 
 
 \begin{DoxyParams}{Parameters}
-{\em assembly} & Assembly that will contains new the type.\\
+{\em assembly} & Assembly that will contains new the type. \\
 \hline
-{\em target\+Type} & Type that will inherited during creating of new type.\\
+{\em target\+Type} & Type that will inherited during creating of new type. \\
 \hline
-{\em attr\+Type} & Type of attribute that will added to the type.\\
-\hline
-{\em attr\+Constructor\+Signature} & Signature of attribute constructor.\\
-\hline
-{\em attr\+Constructor\+Values} & Values that will be shared in atttribute constructor.\\
+{\em attributes\+Info} & An array with metadate that describe a new attributes which will added to the new type. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A runtime type with added attribute 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Missing\+Method\+Exception} & Occurs when {\ttfamily attr\+Constructor\+Values} not suitable for an any {\ttfamily attr\+Type} constructor. \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a0401f2325dda95a28dea4129e62bc9fd}\label{class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_a0401f2325dda95a28dea4129e62bc9fd}} 
 \index{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}!Converter@{Converter}}
 \index{Converter@{Converter}!Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler@{Uniform\+Data\+Operator\+::\+Assemblies\+Management\+::\+Members\+Handler}}

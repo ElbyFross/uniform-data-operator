@@ -95,7 +95,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Attribute that can be defined to override standard DBType defined in Column attribute, for columns that would created in <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> tables. </para>    </briefdescription>
+<para>An attribute that can be defined to override some standard <computeroutput>DBType</computeroutput> defined via a <computeroutput>Column</computeroutput> attribute, for columns that willcreated in <ref refid="d1/d09/namespace_uniform_data_operator_1_1_sql_1_1_my_sql" kindref="compound">MySql</ref> tables. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>

@@ -148,7 +148,7 @@
     <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a6cc89d5d7bbec4fe48b7f698ead2667f" kind="function"><name>GetValue</name></member>
     <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a78639bd006a0e62b40abc26043f63c5b" kind="function"><name>SetValue</name></member>
     <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a0401f2325dda95a28dea4129e62bc9fd" kind="function"><name>Converter</name></member>
-    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1ae0fefd738ce818c44bc8dbb602be3bf1" kind="function"><name>AddAttribute</name></member>
+    <member refid="d5/d10/class_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1a66f0295fa016e2d296046fd968103a4e" kind="function"><name>AddAttribute</name></member>
   </compound>
   <compound refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator" kind="class"><name>UniformDataOperator::Sql::MySql::MySqlDataOperator</name>
     <member refid="d5/d34/class_uniform_data_operator_1_1_sql_1_1_my_sql_1_1_my_sql_data_operator_1a8e8f8f936f6a4306dc4dc0d3eb07770c" kind="property"><name>Active</name></member>
@@ -204,6 +204,11 @@
   <compound refid="dd/d32/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1_1_replacing_meta" kind="class"><name>UniformDataOperator::AssembliesManagement::Modifiers::TypeReplacer::ReplacingMeta</name>
     <member refid="dd/d32/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1_1_replacing_meta_1aa2bcb9c1376fd1f1dba1d7fe3c51b105" kind="variable"><name>usingType</name></member>
     <member refid="dd/d32/class_uniform_data_operator_1_1_assemblies_management_1_1_modifiers_1_1_type_replacer_1_1_replacing_meta_1ac1e6b32459f6ec0bfd07c1c26d682a61" kind="variable"><name>replacedWithPriority</name></member>
+  </compound>
+  <compound refid="d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info" kind="struct"><name>UniformDataOperator::AssembliesManagement::MembersHandler::RuntimeAttributeInfo</name>
+    <member refid="d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info_1ad2bdc32de1197f2e1660f3b2d970a082" kind="property"><name>AttributeType</name></member>
+    <member refid="d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info_1afd71e1f3850bd096fb8e1bab8ecdc62b" kind="property"><name>Parameters</name></member>
+    <member refid="d6/d56/struct_uniform_data_operator_1_1_assemblies_management_1_1_members_handler_1_1_runtime_attribute_info_1a45baa9397521811a8e3bdc6cb2215067" kind="function"><name>RuntimeAttributeInfo</name></member>
   </compound>
   <compound refid="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute" kind="class"><name>UniformDataOperator::Sql::Markup::Modifiers::SetQueryIgnoreAttribute</name>
   </compound>

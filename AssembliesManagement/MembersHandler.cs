@@ -228,10 +228,15 @@ namespace UniformDataOperator.AssembliesManagement
         /// <summary>
         /// Add to assembly the new type based on targetType but with existed new attribute.
         /// </summary>
-        /// <param name="assembly">Assembly that will contains new the type.</param>
-        /// <param name="targetType">Type that will inherited during creating of new type.</param>
-        /// <param name="attrType">Type of attribute that will added to the type.</param>
-        /// <param name="attrConstructorValues">Values that will be shared in atttribute constructor.</param>
+        /// <param name="assembly">
+        /// Assembly that will contains new the type.
+        /// </param>
+        /// <param name="targetType">
+        /// Type that will inherited during creating of new type.
+        /// </param>
+        /// <param name="attributesInfo">
+        /// An array with metadate that describe a new attributes which will added to the new type.
+        /// </param>
         /// <returns>
         /// A runtime type with added attribute
         /// </returns>

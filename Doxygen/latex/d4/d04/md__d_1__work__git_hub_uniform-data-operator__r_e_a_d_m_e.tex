@@ -1,26 +1,5 @@
 It\textquotesingle{}s a framework that allow to oparate and manage yours data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjust of your product only for one storage type that could be not suitable for you in future.
 
-\section*{Modules}
-
-\subsection*{Binnary Handler}
-
-Provides base A\+PI for binary serizliation process.
-
-\subsection*{S\+Q\+L\+Operator\+Handler}
-
-Provides methods that simplify converting of app\textquotesingle{}s data to query format. Inform subscribers about {\ttfamily I\+Sql\+Pperators} events. Provides access to current {\ttfamily Active} S\+QL operator.
-
-\subsection*{Attributes\+Handler}
-
-Provides A\+PI thats simplify working with U\+DO attributes and members data.
-
-\subsection*{Included operators\+:}
-
-
-\begin{DoxyItemize}
-\item {\ttfamily My\+S\+Q\+L\+Data\+Operator} -\/ provides uniform way to manage your data via My\+S\+QL database.
-\end{DoxyItemize}
-
 \section*{F.\+A.\+Q.}
 
 \subsection*{How to describe table class/struct?}
@@ -61,7 +40,7 @@ Sure. Just create you Server\+Name\+Operator that implement I\+Sql\+Operator int
 
 Use the default My\+Sql\+Data\+Operator (group of partial classes) as example. Them are pretty good documented. If you done this job please consider sharing this source as contribution into U\+DO.
 
-\subsection*{My S\+QL server incompatible with Db\+Data\+Type\textquotesingle{}s indexes. How I can adjust my data?}
+\subsection*{My S\+QL server incompatible with the Db\+Data\+Type\textquotesingle{}s indexes. How I can adjust my data?}
 
 By default {\ttfamily Column} attribute described via {\ttfamily Db\+Data\+Type} that mostly unusable for huge count of types that custom for every different S\+QL server. If you faced with such kind of problem so just create your own modifying attribute that would be used on your custom {\ttfamily I\+Sql\+Operator} instance.
 
@@ -73,12 +52,11 @@ Auto managing of duplex exchanging of data with S\+QL server it\textquotesingle{
 
 All what you need it\textquotesingle{}s pipe down on one level and start direct work with your {\ttfamily I\+Sql\+Operator} instance.
 
-Make your own S\+QL query suitable by your specific task and send it to server via {\ttfamily Sql\+Operato\+Handler.\+Active} by use one of provided methods \+:
+Make your own S\+QL command suitable by your specific task and send it to server via {\ttfamily Sql\+Operator\+Handler.\+Active.\+New\+Command(\+Y\+O\+U\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D)} by use one of provided methods \+:
 \begin{DoxyItemize}
 \item {\ttfamily Execute\+Non\+Query}
 \item {\ttfamily Execute\+Scalar}
 \item {\ttfamily Execute\+Reader}
-\item {\ttfamily Count}
 \end{DoxyItemize}
 
 \subsection*{How to establish connection with server?}
@@ -97,5 +75,8 @@ Make your own S\+QL query suitable by your specific task and send it to server v
 \item Call {\ttfamily Initialize} method on your {\ttfamily I\+Sql\+Operator} instance.
 \item Call {\ttfamily Open\+Connection} method on your {\ttfamily I\+Sql\+Operator} instance.
 \item Execute your S\+QL query.
-\item Call {\ttfamily Close\+Connection} method on your {\ttfamily I\+Sql\+Operator} instance. 
+\item Call {\ttfamily Close\+Connection} method on your {\ttfamily I\+Sql\+Operator} instance.
 \end{DoxyEnumerate}
+
+\begin{quote}
+Note that the action required only for manual commands. \end{quote}

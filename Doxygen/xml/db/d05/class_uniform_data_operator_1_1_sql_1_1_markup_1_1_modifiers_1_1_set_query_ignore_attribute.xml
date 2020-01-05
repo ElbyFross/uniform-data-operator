@@ -8,17 +8,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="79">
-        <label>Attribute</label>
-      </node>
-      <node id="78">
-        <label>UniformDataOperator.Sql.Markup.Modifiers.SetQueryIgnoreAttribute</label>
-        <link refid="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute"/>
-        <childnode refid="79" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="81">
         <label>Attribute</label>
       </node>
@@ -26,6 +15,17 @@
         <label>UniformDataOperator.Sql.Markup.Modifiers.SetQueryIgnoreAttribute</label>
         <link refid="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute"/>
         <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="83">
+        <label>Attribute</label>
+      </node>
+      <node id="82">
+        <label>UniformDataOperator.Sql.Markup.Modifiers.SetQueryIgnoreAttribute</label>
+        <link refid="db/d05/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_modifiers_1_1_set_query_ignore_attribute"/>
+        <childnode refid="83" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

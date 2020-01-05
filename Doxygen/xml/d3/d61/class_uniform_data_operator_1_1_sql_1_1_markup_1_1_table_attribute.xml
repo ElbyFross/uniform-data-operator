@@ -344,17 +344,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="87">
-        <label>Attribute</label>
-      </node>
-      <node id="86">
-        <label>UniformDataOperator.Sql.Markup.TableAttribute</label>
-        <link refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute"/>
-        <childnode refid="87" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="89">
         <label>Attribute</label>
       </node>
@@ -362,6 +351,17 @@
         <label>UniformDataOperator.Sql.Markup.TableAttribute</label>
         <link refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute"/>
         <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="91">
+        <label>Attribute</label>
+      </node>
+      <node id="90">
+        <label>UniformDataOperator.Sql.Markup.TableAttribute</label>
+        <link refid="d3/d61/class_uniform_data_operator_1_1_sql_1_1_markup_1_1_table_attribute"/>
+        <childnode refid="91" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
