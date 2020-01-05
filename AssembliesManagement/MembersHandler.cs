@@ -231,25 +231,117 @@ namespace UniformDataOperator.AssembliesManagement
         /// <param name="assembly">Assembly that will contains new the type.</param>
         /// <param name="targetType">Type that will inherited during creating of new type.</param>
         /// <param name="attrType">Type of attribute that will added to the type.</param>
-        /// <param name="attrConstructorSignature">Signature of attribute constructor.</param>
         /// <param name="attrConstructorValues">Values that will be shared in atttribute constructor.</param>
-        public static void AddAttribute(
+        /// <returns>
+        /// A runtime type with added attribute
+        /// </returns>
+        /// <exception cref="MissingMethodException">
+        /// Occurs when `attrConstructorValues` not suitable for an any `attrType` constructor.
+        /// </exception>
+        public static Type AddAttribute(
             string assembly, 
             Type targetType,
-            Type attrType, 
-            Type[] attrConstructorSignature,
-            object[] attrConstructorValues)
+            params RuntimeAttributeInfo[] attributesInfo)
         {
+            // Decalring a runtime type based on the `targetType`.
             var aName = new AssemblyName(assembly);
             var ab = AppDomain.CurrentDomain.DefineDynamicAssembly(aName, AssemblyBuilderAccess.Run);
             var mb = ab.DefineDynamicModule(aName.Name);
             var tb = mb.DefineType(targetType.Name, TypeAttributes.Public, targetType);
 
-            var attrCtorInfo = attrType.GetConstructor(attrConstructorSignature);
-            var attrBuilder = new CustomAttributeBuilder(attrCtorInfo, attrConstructorValues);
-            tb.SetCustomAttribute(attrBuilder);
-            tb.CreateType();
+            // Adding an every attribute.
+            foreach (RuntimeAttributeInfo info in attributesInfo)
+            {
+                // Getting constructors of the attribute.
+                var constructors = info.AttributeType.GetConstructors();
+
+                bool constructorFound = false;
+                for (int constructorIndex = 0; constructorIndex < constructors.Length; constructorIndex++)
+                {
+                    // Getting the construtor paramemters.
+                    var constructorParams = constructors[constructorIndex].GetParameters();
+
+                    // Skip if params length not equal.
+                    if (info.Parameters.Length != constructorParams.Length)
+                    {
+                        continue;
+                    }
+
+                    // Checking signatures.
+                    bool isTheSameSignature = true;
+                    for (int paramIndex = 0; paramIndex < info.Parameters.Length; paramIndex++)
+                    {
+                        // Getting types.
+                        var sharedType = info.Parameters[paramIndex].GetType();
+                        var declaredType = constructorParams[paramIndex].ParameterType;
+
+                        // Drop if the types not equal each other.
+                        if (!sharedType.Equals(declaredType))
+                        {
+                            isTheSameSignature = false;
+                            break;
+                        }
+                    }
+
+                    // Skip constructor if has a different signature.
+                    if (!isTheSameSignature) continue;
+
+                    // Looking for constructor parameter's types.
+                    var attrConstructorSignature = new Type[constructorParams.Length];
+                    for (int i = 0; i < constructorParams.Length; i++)
+                    {
+                        attrConstructorSignature[i] = constructorParams[i].ParameterType;
+                    }
+                    
+                    // Defining an attribute for the type.
+                    var attrCtorInfo = info.AttributeType.GetConstructor(attrConstructorSignature);
+                    var attrBuilder = new CustomAttributeBuilder(attrCtorInfo, info.Parameters);
+                    tb.SetCustomAttribute(attrBuilder);
+
+                    constructorFound = true;
+                }
+
+                if (!constructorFound)
+                {
+                    // Throwing an exception.
+                    throw new MissingMethodException("Cosntructor with shared suitable" +
+                        " signature for the type `"
+                        + info.AttributeType.FullName + "` not found.");
+                }
+            }
+
+            // Creating the new type.
+            var resultType = tb.CreateType();
+            return resultType;
         }
+
+        /// <summary>
+        /// A metadata about a runtime added attribute.
+        /// </summary>
+        public struct RuntimeAttributeInfo
+        {
+            /// <summary>
+            /// A type of the attribute instance.
+            /// </summary>
+            public Type AttributeType { get; private set; }
+
+            /// <summary>
+            /// Parameters applied to the attribute during instantiation type.
+            /// </summary>
+            public object[] Parameters { get; private set; }
+
+            /// <summary>
+            /// Instiniate an infor of the runtime added attribute.
+            /// </summary>
+            /// <param name="attributeType"></param>
+            /// <param name="constructorParameters"></param>
+            public RuntimeAttributeInfo(Type attributeType ,params object[] constructorParameters)
+            {
+                AttributeType = attributeType;
+                Parameters = constructorParameters;
+            }
+        }
+
         #endregion
     }
 }

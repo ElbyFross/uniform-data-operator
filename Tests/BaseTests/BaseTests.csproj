@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Binary\BinaryHandlerTests.cs" />
+    <Compile Include="Members\MembersHandlerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\BlobType.cs" />
     <Compile Include="Types\Table5Type.cs" />

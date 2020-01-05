@@ -18,7 +18,7 @@ using MySql.Data.MySqlClient;
 namespace UniformDataOperator.Sql.MySql.Markup
 {
     /// <summary>
-    /// Attribute that can be defined to override standard DBType defined in Column attribute, for columns that would created in MySql tables.
+    /// An attribute that can be defined to override some standard `DBType` defined via a `Column` attribute, for columns that willcreated in MySql tables.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class MySqlDBTypeOverrideAttribute : Attribute
