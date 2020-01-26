@@ -1,5 +1,5 @@
 ﻿# Uniform Data Operator
-It's a framework that allow to oparate and manage yours data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjust of your product only for one storage type that could be not suitable for you in future.
+It's a framework that allows to oparate and manage your data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjusting of your product only for one storage type that could be not suitable for you in future.
 
 # F.A.Q.
 ## How to describe table class/struct?
