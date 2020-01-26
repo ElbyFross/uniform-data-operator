@@ -1,5 +1,12 @@
 ﻿# Uniform Data Operator
-It's a framework that allow to oparate and manage yours data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjust of your product only for one storage type that could be not suitable for you in future.
+It's a framework that allows to oparate and manage your data by unified way, not depending from your database or prefered format. Standardize your data structures and avoid adjusting of your product only for one storage type that could be not suitable for you in future.
+
+## Documetation
+| Format | Description | Link |
+| :---: | --- | :---: |
+| Wiki | Contains a description of logic processes into the framework. | [Link](https://github.com/ElbyFross/uniform-data-operator/wiki) |
+| API | An online documentation with API overview. | [Link](https://elbyfross.github.io/udo-docs/) |
+| Local | A repository with generated documentation that could be used offline. | [Link](https://github.com/ElbyFross/udo-docs) |
 
 # F.A.Q.
 ## How to describe table class/struct?
