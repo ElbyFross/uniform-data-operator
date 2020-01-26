@@ -85,6 +85,48 @@ namespace UniformDataOperator.Binary
                 return ms.ToArray();
             }
         }
+        
+        /// <summary>
+        /// Convert object to bytes array.
+        /// </summary>
+        /// <param name="obj">Object for serialization.</param>
+        /// <returns>Binary data</returns>
+        public static MemoryStream ToMemoryStream(object obj)
+        {
+            if (obj == null)
+                return null;
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+            bf.Serialize(ms, obj);
+            return ms;
+        }
+
+        /// <summary>
+        /// Convert object to bytes array.
+        /// </summary>
+        /// <param name="obj">Object for serialization.</param>
+        /// <returns>Binary data</returns>
+        public static object FromMemoryStream(MemoryStream stream)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+            return bf.Deserialize(stream);
+        }
+
+        /// <summary>
+        /// Convert object to bytes array.
+        /// </summary>
+        /// <param name="obj">Object for serialization.</param>
+        /// <returns>Binary data</returns>
+        public static MemoryStream ToByteStream(object obj)
+        {
+            if (obj == null)
+                return null;
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+            bf.Serialize(ms, obj);
+            return ms;
+        }
 
         /// <summary>
         /// Convert bytes array to object.

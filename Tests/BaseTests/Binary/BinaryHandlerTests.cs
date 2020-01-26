@@ -123,6 +123,8 @@ namespace BaseTests.Binary
                 Thread.Sleep(5);
             }
 
+            stream.Dispose();
+
             Assert.IsTrue(success);
         }
 
@@ -175,6 +177,8 @@ namespace BaseTests.Binary
                 Thread.Sleep(5);
             }
 
+            stream.Dispose();
+
             Assert.IsTrue(success);
         }
 
@@ -184,10 +188,14 @@ namespace BaseTests.Binary
             bool success = false;
             bool completed = false;
 
-            string message = GenerateMessage();
+            int size = 200000000;
+            string message = GenerateMessage(size);
 
             var client = new System.IO.Pipes.NamedPipeClientStream("TESTPIPE");
             var server = new System.IO.Pipes.NamedPipeServerStream("TESTPIPE");
+
+            var banchmarkTimer = new System.Diagnostics.Stopwatch();
+            banchmarkTimer.Start();
 
             var reading = new Task(async delegate ()
             {
@@ -197,6 +205,9 @@ namespace BaseTests.Binary
                 {
                     // Data to message format.
                     string receivedMessage = await StreamHandler.StreamReaderAsync<string>(client);
+                    
+                    // Stoping banchmark.
+                    banchmarkTimer.Stop();
 
                     // Validate data.
                     success = receivedMessage.Equals(message);
@@ -234,6 +245,19 @@ namespace BaseTests.Binary
             {
                 Thread.Sleep(5);
             }
+
+            float secondsFromStart = banchmarkTimer.ElapsedMilliseconds / (1000.0f);
+            float sharedMBSize = size / 1000000.0f;
+            float speedMBpS = sharedMBSize / secondsFromStart;
+            Console.WriteLine("Transmission time: " + secondsFromStart + " seconds");
+            Console.WriteLine("Transmisted: " + sharedMBSize + " MB");
+            Console.WriteLine("Speed: " +
+                speedMBpS + " MB/s | " + 
+                (speedMBpS * 8) + "Mb/s");
+
+
+            client.Dispose();
+            server.Dispose();
 
             Assert.IsTrue(success);
         }

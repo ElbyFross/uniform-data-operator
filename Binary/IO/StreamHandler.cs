@@ -76,6 +76,15 @@ namespace UniformDataOperator.Binary.IO
         /// <returns>Asynchronous operation of data writing.</returns>
         public static async Task StreamWriterAsync(PipeStream stream, object nonBinaryData)
         {
+            //var bs = BinaryHandler.ToMemoryStream(nonBinaryData);
+
+            //// Write header.
+            //await stream.WriteAsync(BitConverter.GetBytes(bs.Length), 0, 4);
+
+            //await bs.CopyToAsync(stream);
+
+            //await stream.FlushAsync();
+
             // Convert data to binary format.
             byte[] data = BinaryHandler.ToByteArray(nonBinaryData);
 
@@ -160,6 +169,9 @@ namespace UniformDataOperator.Binary.IO
                 // Wait before sending next package.
                 WaitPackageReceiving(stream, mode);
             }
+
+            // Releasing unmanaged memory.
+            sw.Dispose();
         }
 
         /// <summary>
@@ -304,95 +316,97 @@ namespace UniformDataOperator.Binary.IO
         public static async Task<byte[]> StreamReaderAsync(Stream stream)
         {
             // Open stream reader.
-            BinaryReader sr = new BinaryReader(stream);
-
-            // Wait.
-            while (sr.BaseStream.Length == 0) Thread.Sleep(5);
-
-            #region Receiving data size
-            // Receiving block with data size
-            int dataSize = 0;
-            int dataBlockSize = -1;
-            StreamChanelMode mode;
-
-            try
+            using (BinaryReader sr = new BinaryReader(stream))
             {
-                lock (stream)
-                {
-                    byte[] binaryBufer = new byte[4];
-                    sr.BaseStream.Position = HEADER_SIZE;
 
-                    // Reading header that describe data size.
-                    sr.Read(binaryBufer, 0, 4);
-                    dataSize = BitConverter.ToInt32(binaryBufer, 0);
+                // Wait.
+                while (sr.BaseStream.Length == 0) Thread.Sleep(5);
 
-                    // Reading size of data block.
-                    sr.Read(binaryBufer, 0, 4);
-                    dataBlockSize = BitConverter.ToInt32(binaryBufer, 0);
-                    
-                    // Reading transmission mode.
-                    sr.Read(binaryBufer, 0, 4);
-                    mode = (StreamChanelMode)BitConverter.ToInt32(binaryBufer, 0);
+                #region Receiving data size
+                // Receiving block with data size
+                int dataSize = 0;
+                int dataBlockSize = -1;
+                StreamChanelMode mode;
 
-                    InformAboutReceving(mode, sr.BaseStream);
-                }
-            }
-            catch (EndOfStreamException efse)
-            {
-                Console.WriteLine("Stream ended: Operation rejected. Detatils: " + efse.Message);
-                return null;
-            }
-            #endregion
-
-            #region Receiving data
-            // Create data array with target size.
-            byte[] data = new byte[dataSize];
-            int lastIndex = 1;
-
-            // Reading until finish of declared data.
-            byte[] header = new byte[HEADER_SIZE]; // Bufer that contains package header.
-            int blockIndex;  // Bufer that contains current block index.
-            for (int dataByteIndex = 0; dataByteIndex < dataSize;)
-            {
-                #region Wait new package
-                // Wait data flush.
-                while (true)
+                try
                 {
                     lock (stream)
                     {
-                        // Compute current index block.
-                        sr.BaseStream.Position = 0;
-                        sr.Read(header, 0, HEADER_SIZE);
+                        byte[] binaryBufer = new byte[4];
+                        sr.BaseStream.Position = HEADER_SIZE;
+
+                        // Reading header that describe data size.
+                        sr.Read(binaryBufer, 0, 4);
+                        dataSize = BitConverter.ToInt32(binaryBufer, 0);
+
+                        // Reading size of data block.
+                        sr.Read(binaryBufer, 0, 4);
+                        dataBlockSize = BitConverter.ToInt32(binaryBufer, 0);
+
+                        // Reading transmission mode.
+                        sr.Read(binaryBufer, 0, 4);
+                        mode = (StreamChanelMode)BitConverter.ToInt32(binaryBufer, 0);
+
+                        InformAboutReceving(mode, sr.BaseStream);
                     }
-                    blockIndex = BitConverter.ToInt32(header, 0);
-
-                    // Drop if second block received.
-                    if (blockIndex == lastIndex) break;
-
-                    // Wait.
-                    await Task.Yield();
-                    //Thread.Sleep(5);
                 }
-                lastIndex++;
+                catch (EndOfStreamException efse)
+                {
+                    Console.WriteLine("Stream ended: Operation rejected. Detatils: " + efse.Message);
+                    return null;
+                }
                 #endregion
 
-                lock (stream)
+                #region Receiving data
+                // Create data array with target size.
+                byte[] data = new byte[dataSize];
+                int lastIndex = 1;
+
+                // Reading until finish of declared data.
+                byte[] header = new byte[HEADER_SIZE]; // Bufer that contains package header.
+                int blockIndex;  // Bufer that contains current block index.
+                for (int dataByteIndex = 0; dataByteIndex < dataSize;)
                 {
-                    sr.BaseStream.Position = HEADER_SIZE;
-                    // Fill block.
-                    for (int i = HEADER_SIZE; i < dataBlockSize && dataByteIndex < dataSize; i++, dataByteIndex++)
+                    #region Wait new package
+                    // Wait data flush.
+                    while (true)
                     {
-                        data[dataByteIndex] = sr.ReadByte();
+                        lock (stream)
+                        {
+                            // Compute current index block.
+                            sr.BaseStream.Position = 0;
+                            sr.Read(header, 0, HEADER_SIZE);
+                        }
+                        blockIndex = BitConverter.ToInt32(header, 0);
+
+                        // Drop if second block received.
+                        if (blockIndex == lastIndex) break;
+
+                        // Wait.
+                        await Task.Yield();
+                        //Thread.Sleep(5);
                     }
+                    lastIndex++;
+                    #endregion
+
+                    lock (stream)
+                    {
+                        sr.BaseStream.Position = HEADER_SIZE;
+                        // Fill block.
+                        for (int i = HEADER_SIZE; i < dataBlockSize && dataByteIndex < dataSize; i++, dataByteIndex++)
+                        {
+                            data[dataByteIndex] = sr.ReadByte();
+                        }
+                    }
+
+                    // Inform server that data recevied.
+                    InformAboutReceving(mode, sr.BaseStream);
                 }
+                #endregion
 
-                // Inform server that data recevied.
-                InformAboutReceving(mode, sr.BaseStream);
+                // Returning received data.
+                return data;
             }
-            #endregion
-
-            // Returning received data.
-            return data;
         }
 
         /// <summary>
