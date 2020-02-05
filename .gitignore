@@ -14,3 +14,7 @@
 **/TestResults
 **/packages
 local.cs
+nuget.config
+*.nuspec
+*.nupkg
+nuget.exe
